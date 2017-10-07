@@ -1,0 +1,29 @@
+{
+  "name": "lcui.css",
+  "version": "0.1.0",
+  "description": "Simple CSS framework for developing LCUI application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-compile": "node-sass --output dist/css --output-style expanded src/scss/lcui.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lc-ui/lcui.css.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "lcui",
+    "framework"
+  ],
+  "author": "lc-soft (https://lc-soft.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lc-ui/lcui.css/issues"
+  },
+  "homepage": "https://github.com/lc-ui/lcui.css#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
