@@ -1,0 +1,20 @@
+// Functions
+//
+// Utility mixins and functions for evalutating source code across our variables, maps, and mixins.
+
+// Retreive color Sass maps
+@function color($key: "blue") {
+  @return map-get($colors, $key);
+}
+
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+@function gray($key: "100") {
+  @return map-get($grays, $key);
+}
+
+@function to-rem($value) {
+  @return 14px * $value;
+}

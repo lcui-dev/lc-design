@@ -1,0 +1,169 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+//
+// Color system
+//
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge((
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+), $colors);
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "primary":    $blue,
+  "secondary":  $gray-600,
+  "success":    $green,
+  "info":       $cyan,
+  "warning":    $yellow,
+  "danger":     $red,
+  "light":      $gray-100,
+  "dark":       $gray-800
+), $theme-colors);
+// stylelint-enable
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval:      8% !default;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: to-rem(1) !default;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+) !default;
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+) !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                theme-color("primary") !default;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     underline !default;
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom:   to-rem(1) !default;
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg:              1.5 !default;
+$line-height-sm:              1.5 !default;
+
+$border-width:                1px !default;
+$border-color:                $gray-200 !default;
+
+$component-active-color:      $white !default;
+$component-active-bg:         theme-color("primary") !default;
+
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-color-base:             #333;
+$font-family-base:            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", simsun !default;
+
+$font-size-base:              to-rem(1) !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                to-rem(1.25) !default;
+$font-size-sm:                to-rem(.875) !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                to-rem(2.5) !default;
+$h2-font-size:                to-rem(2) !default;
+$h3-font-size:                to-rem(1.75) !default;
+$h4-font-size:                to-rem(1.5) !default;
+$h5-font-size:                to-rem(1.25) !default;
+$h6-font-size:                to-rem(1) !default;
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-family:        $font-family-base !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.1 !default;
+$headings-color:              $font-color-base !default;
+
+$small-font-size:             80% !default;
+
+$text-muted:                  $gray-600 !default;
+
+$hr-border-color:             rgba($black,.1) !default;
+$hr-border-width:             $border-width !default;

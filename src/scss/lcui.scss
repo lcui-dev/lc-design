@@ -1,5 +1,7 @@
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "type";
 @import "iconfont";
-
-root {
-  background: #fff;
-}
+@import "textview";
+@import "button";
