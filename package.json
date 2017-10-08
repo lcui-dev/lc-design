@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css-compile": "node-sass --output dist/css --output-style expanded src/scss/lcui.scss"
+    "build": "npm-run-all build-css build-font",
+    "build-css": "node-sass --output dist/css --output-style expanded src/scss/lcui.scss",
+    "build-font": "node ./scripts/build-font.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,10 @@
   },
   "homepage": "https://github.com/lc-ui/lcui.css#readme",
   "devDependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1"
+  },
+  "dependencies": {
+    "mdi": "^2.0.46"
   }
 }

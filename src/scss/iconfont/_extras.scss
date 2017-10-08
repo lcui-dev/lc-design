@@ -1,0 +1,24 @@
+$sizes: 18 24 36 48;
+@each $size in $sizes {
+    .#{$mdi-css-prefix}-#{$size}px {
+        &.#{$mdi-css-prefix}-set,
+        &.#{$mdi-css-prefix} {
+            font-size: $size * 1px;
+        }
+    }
+}
+
+.#{$mdi-css-prefix}-dark {
+    color: rgba(0, 0, 0, 0.54);
+
+    &.#{$mdi-css-prefix} {
+        color: rgba(0, 0, 0, 0.26);
+    }
+}
+.#{$mdi-css-prefix}-light {
+    color: rgba(255, 255, 255, 1);
+
+    &.#{$mdi-css-prefix}-inactive {
+        color: rgba(255, 255, 255, 0.3);
+    }
+}

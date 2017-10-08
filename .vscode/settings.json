@@ -7,5 +7,9 @@
     "[scss]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2
+    },
+    "[javascript]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
     }
 }

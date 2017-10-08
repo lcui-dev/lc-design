@@ -1,0 +1,8 @@
+$mdi-font-size-base:   16px;
+$mdi-css-prefix:       icon;
+
+@import "../../node_modules/mdi/scss/variables";
+@import "../../node_modules/mdi/scss/functions";
+@import "iconfont/path";
+@import "iconfont/icons";
+@import "iconfont/extras";

@@ -1,0 +1,10 @@
+@each $key, $value in $mdi-icons {
+  .#{$mdi-css-prefix}-#{$key} {
+      content: char($value);
+  }
+}
+
+.#{$mdi-css-prefix}-blank {
+  content: "\F68C";
+  visibility: hidden;
+}
