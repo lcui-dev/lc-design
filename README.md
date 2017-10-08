@@ -14,12 +14,12 @@
 
 <br>
 
-### Download
+## Download
 
 - [Download the latest release.](https://github.com/lc-ui/lcui.css/releases)
 - Clone the repo: `https://github.com/lc-ui/lcui.css.git`
 
-### Build
+## Build
 
 ### Prerequisites
 
@@ -27,20 +27,45 @@ Building LCUI.css has the following dependencies:
 
 * [NodeJS](https://nodejs.org) — a JavaScript runtime to run building tools
 
-After installing NodeJS, run the following command to install the NodeJS dependency packages:
+After installing NodeJS, please run the following command to install the NodeJS dependency packages:
 
     npm install
 
 
 ### Build Targets
 
-    npm run build             # build all targets.
+    npm run build             # Build all targets.
     npm run build-css         # Compile SCSS file to CSS file.
     npm run build-font        # Build iconfont file.
 
 ## Install
 
 Copy the files from the **dist** directory to your project directory, and configure your project assets include path.
+
+We recommend that you use the following directory structure, this will be able to directly copy the files from the **dist** directory to **yourapp/app/assets/** directory.
+
+```
+yourapp/
+├── app/
+│   ├── assets/
+│   │   ├── stylesheets/
+│   │   │   ├── app.css
+│   │   │   └── lcui.css
+│   │   ├── views/
+│   │   │   ├── app.xml
+│   │   │   └── ...
+│   │   ├── fonts/
+│   │   │   └── iconfont.ttf
+│   │   ├── images/
+│   │   └── ...
+│   └── ...
+├── src/
+│   ├── scss/
+│   ├── lib/
+│   ├── ui/
+│   └── ...
+└── ...
+```
 
 ## Creator
 
