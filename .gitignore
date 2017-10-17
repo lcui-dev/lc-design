@@ -1,2 +1,14 @@
 node_modules
 dist
+.vs
+*.pdb
+*.ipdb
+*.iobj
+*.exe
+*.log
+*.lib
+*.dll
+demo/app/assets/stylesheets
+demo/app/assets/fonts
+demo/build
+vendor/lib
