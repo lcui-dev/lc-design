@@ -8,6 +8,10 @@
         "editor.insertSpaces": true,
         "editor.tabSize": 2
     },
+    "[c]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 8
+    },
     "[javascript]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2

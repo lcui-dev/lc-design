@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <resource type="text/css" src="assets/stylesheets/lcui.css"/>
+  <resource type="text/css" src="assets/stylesheets/demo.css"/>
+  <resource type="application/font-ttf" src="assets/fonts/iconfont.ttf"/>
+  <ui>
+    <widget class="navbar bg-light">
+      <widget class="navbar-brand"></widget>
+    </widget>
+    <widget type="textview">Hello, World!</widget>
+  </ui>
+</lcui-app>

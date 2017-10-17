@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm-run-all build-css build-font",
-    "build-css": "node-sass --output dist/stylesheets --output-style expanded src/scss/lcui.scss",
-    "build-font": "node ./scripts/build-font.js"
+    "build": "npm-run-all build-css build-font build-demo",
+    "build-css": "node-sass --output dist/assets/stylesheets --output-style expanded src/scss/lcui.scss",
+    "build-font": "node ./scripts/build-font.js",
+    "build-demo": "npm-run-all build-demo-css build-demo-exe",
+    "build-demo-css": "node-sass --output demo/app/assets/stylesheets --output-style expanded demo/src/scss/demo.scss",
+    "build-demo-exe": "node ./scripts/build-demo-exe.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,7 @@
   },
   "homepage": "https://github.com/lc-ui/lcui.css#readme",
   "devDependencies": {
+    "iconv-lite": "^0.4.19",
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.1.1"
   },

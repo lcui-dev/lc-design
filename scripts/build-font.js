@@ -1,5 +1,5 @@
 var fs = require('fs');
-var fontdir = 'dist/fonts/';
+var fontdir = 'dist/assets/fonts/';
 
 if (!fs.existsSync(fontdir)) {
   fs.mkdirSync(fontdir);
