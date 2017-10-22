@@ -56,10 +56,10 @@
 // Hide tabbable panes to start, show them when `.active`
 
 .tab-content {
-  > .tab-pane {
+  .tab-pane {
     display: none;
   }
-  > .active {
+  .active {
     display: block;
   }
 }

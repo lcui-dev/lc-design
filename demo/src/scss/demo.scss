@@ -1,3 +1,6 @@
+@import "../../../src/scss/functions";
+@import "../../../src/scss/variables";
+
 .demo-navbar {
   background-color: #5cbb6b;
 
@@ -5,5 +8,12 @@
     width: 37.75px;
     text-align: center;
     border: 1px solid #fff;
+  }
+  .navbar-nav.float-right {
+    top: $navbar-padding-y;
+    right: $navbar-padding-x;
+  }
+  .btn-outline-yellow:active, .btn-outline-yellow:hover {
+    color: #2a2730;
   }
 }

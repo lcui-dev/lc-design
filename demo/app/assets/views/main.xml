@@ -14,6 +14,9 @@
           <widget class="nav-link" type="textview">Documentation</widget>
         </widget>
       </widget>
+      <widget class="navbar-nav float-right">
+        <widget type="button" class="btn btn-outline-yellow">Download</widget>
+      </widget>
     </widget>
   </ui>
 </lcui-app>

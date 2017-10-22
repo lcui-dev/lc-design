@@ -38,7 +38,7 @@ $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
+$yellow:  #ffe207 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
@@ -73,8 +73,24 @@ $theme-colors: map-merge((
 ), $theme-colors);
 // stylelint-enable
 
+
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret:              true !default;
+$enable-rounded:            false !default;
+$enable-shadows:            false !default;
+$enable-gradients:          false !default;
+$enable-transitions:        false !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       false !default;
+
 
 // Spacing
 //
@@ -184,6 +200,10 @@ $hr-border-width:             $border-width !default;
 $input-btn-padding-y:         to-rem(.375) !default;
 $input-btn-padding-x:         to-rem(.75) !default;
 $input-btn-line-height:       $line-height-base !default;
+
+$input-btn-focus-width:       to-rem(.2) !default;
+$input-btn-focus-color:       rgba(theme-color("primary"), .25) !default;
+$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
 $input-btn-padding-y-sm:      to-rem(.25) !default;
 $input-btn-padding-x-sm:      to-rem(.5) !default;

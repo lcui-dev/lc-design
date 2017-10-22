@@ -1,0 +1,15 @@
+@mixin float-right {
+  right: 0;
+  position: absolute;
+}
+
+@mixin float-left {
+  left: 0;
+  position: absolute;
+}
+
+@mixin float-none {
+  left: auto;
+  right: auto;
+  position: static;
+}

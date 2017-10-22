@@ -1,3 +1,15 @@
+// Utilities
 @import "mixins/text";
 @import "mixins/hover";
+
+// // Components
+@import "mixins/buttons";
+
+// // Skins
 @import "mixins/background-variant";
+@import "mixins/border-radius";
+@import "mixins/box-shadow";
+@import "mixins/gradients";
+
+// // Layout
+@import "mixins/float";
