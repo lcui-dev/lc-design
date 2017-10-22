@@ -15,6 +15,9 @@
         </widget>
       </widget>
       <widget class="navbar-nav float-right">
+        <widget class="nav-item">
+          <widget class="nav-link icon icon-github-circle" type="textview"></widget>
+        </widget>
         <widget type="button" class="btn btn-outline-yellow">Download</widget>
       </widget>
     </widget>

@@ -9,9 +9,12 @@
     text-align: center;
     border: 1px solid #fff;
   }
+  .navbar-nav .icon {
+    font-size: 16px;
+  }
   .navbar-nav.float-right {
-    top: $navbar-padding-y;
-    right: $navbar-padding-x;
+    padding-top: $navbar-padding-y;
+    padding-right: $navbar-padding-x;
   }
   .btn-outline-yellow:active, .btn-outline-yellow:hover {
     color: #2a2730;
