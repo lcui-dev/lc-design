@@ -1,8 +1,9 @@
-.navbar .navbar-brand {
-  width: 36px;
-  height: 36px;
-  display: inline-block;
-  background-size: contain;
-  background-position: center;
-  background-image: url(assets/images/lcui-logo.png);
+.demo-navbar {
+  background-color: #5cbb6b;
+
+  .navbar-brand {
+    width: 37.75px;
+    text-align: center;
+    border: 1px solid #fff;
+  }
 }

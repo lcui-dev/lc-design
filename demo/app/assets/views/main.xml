@@ -4,9 +4,16 @@
   <resource type="text/css" src="assets/stylesheets/demo.css"/>
   <resource type="application/font-ttf" src="assets/fonts/iconfont.ttf"/>
   <ui>
-    <widget class="navbar bg-light">
-      <widget class="navbar-brand"></widget>
+    <widget class="navbar navbar-dark demo-navbar">
+      <widget class="navbar-brand" type="textview">LC</widget>
+      <widget class="navbar-nav">
+        <widget class="nav-item">
+          <widget class="nav-link" type="textview">Home</widget>
+        </widget>
+        <widget class="nav-item">
+          <widget class="nav-link" type="textview">Documentation</widget>
+        </widget>
+      </widget>
     </widget>
-    <widget type="textview">Hello, World!</widget>
   </ui>
 </lcui-app>

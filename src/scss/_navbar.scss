@@ -40,9 +40,14 @@
 // Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
 
 .navbar-nav {
+  display: inline-block;
+
+  .nav-item {
+    display: inline-block;
+  }
   .nav-link {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: to-rem(.5);
+    padding-left: to-rem(.5);
   }
 }
 
