@@ -7,3 +7,9 @@
 .float-none {
   @include float-none;
 }
+.float-top {
+  @include float-top;
+}
+.float-bottom {
+  @include float-bottom;
+}

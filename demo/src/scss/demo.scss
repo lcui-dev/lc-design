@@ -1,9 +1,17 @@
 @import "../../../src/scss/functions";
 @import "../../../src/scss/variables";
 
-.demo-navbar {
-  background-color: #5cbb6b;
+$sidebar-width: 256px;
 
+root {
+  min-width: 960px;
+  min-height: 720px;
+}
+.demo-navbar {
+  width: 100%;
+  background-color: $green;
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+  
   .navbar-brand {
     width: 37.75px;
     text-align: center;
@@ -18,5 +26,57 @@
   }
   .btn-outline-yellow:active, .btn-outline-yellow:hover {
     color: #2a2730;
+  }
+}
+.demo-body {
+  height: 100%;
+  padding-top: 52px;
+
+  .container-fluid {
+    height: 100%;
+  }
+}
+.demo-sidebar {
+  height: 100%;
+  width: $sidebar-width;
+  background-color: #fff;
+  border-right: 1px solid $border-color;
+
+  .demo-links {
+    padding-top: to-rem(1);
+    padding-bottom: to-rem(1);
+  }
+  .subnav .nav-item {
+    .nav-link {
+      color: rgba(0,0,0,.65);
+
+      &:hover {
+        color: rgba(0,0,0,.85);
+      }
+    }
+
+    &.active {
+      background-color: rgba($green, .1);
+    }
+  }
+}
+.demo-content {
+  height: 100%;
+  padding-left: $sidebar-width;
+}
+scrollbar {
+  width: 10px;
+  background-color: rgba(#ddd, .2);
+  border: 1px solid rgba(#ddd, .5);
+
+  .slider {
+    background-color: #bbb;
+
+    &:hover {
+      background-color: #ddd;
+    }
+    &:active {
+      background-color: #aaa;
+    }
   }
 }
