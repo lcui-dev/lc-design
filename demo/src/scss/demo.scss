@@ -62,7 +62,7 @@ root {
 }
 .demo-content {
   height: 100%;
-  padding-left: $sidebar-width;
+  padding: to-rem(1) to-rem(1) to-rem(1) $sidebar-width + to-rem(2);
 }
 scrollbar {
   width: 10px;
@@ -73,10 +73,10 @@ scrollbar {
     background-color: #bbb;
 
     &:hover {
-      background-color: #ddd;
+      background-color: #aaa;
     }
     &:active {
-      background-color: #aaa;
+      background-color: #999;
     }
   }
 }
