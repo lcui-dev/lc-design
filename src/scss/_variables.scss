@@ -32,7 +32,7 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:    #007bff !default;
+$blue:    #1890ff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -71,11 +71,14 @@ $theme-colors: map-merge((
   "light":      $gray-100,
   "dark":       $gray-800
 ), $theme-colors);
-// stylelint-enable
 
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $gray-900 !default;
+$yiq-text-light: $white !default;
 
 
 // Options
@@ -201,7 +204,7 @@ $input-btn-padding-y:         to-rem(.375) !default;
 $input-btn-padding-x:         to-rem(.75) !default;
 $input-btn-line-height:       $line-height-base !default;
 
-$input-btn-focus-width:       to-rem(.2) !default;
+$input-btn-focus-width:       2px !default;
 $input-btn-focus-color:       rgba(theme-color("primary"), .25) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
@@ -226,7 +229,8 @@ $btn-block-spacing-y:         to-rem(.5) !default;
 $btn-border-radius:           $border-radius !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
-
+$btn-border-width:            $border-width !default;
+$btn-border-color:            $border-color !default;
 $btn-transition:              background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
 

@@ -11,6 +11,21 @@
   @return map-get($theme-colors, $key);
 }
 
+// Color contrast
+@function color-yiq($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+  @if ($yiq >= 200) {
+    @return $yiq-text-dark;
+  } @else {
+    @return $yiq-text-light;
+  }
+}
+
 @function gray($key: "100") {
   @return map-get($grays, $key);
 }

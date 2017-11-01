@@ -1,10 +1,27 @@
 button, .btn {
+  $color: theme-color();
   display: inline-block;
   font-weight: $btn-font-weight;
   text-align: center;
   white-space: nowrap;
   @include text-default-style;
   @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
+  border: $btn-border-width solid $btn-border-color;
+  background-color: #fff;
+
+  &:hover, &:focus {
+    color: $color;
+    border-color: $color;
+    background-color: #fff;
+  }
+  &:active {
+    color: darken($color, 10%);
+    border-color: darken($color, 10%);
+    background-color: #fff;
+  }
+  &:focus {
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .2);
+  }
 }
 
 
@@ -25,6 +42,22 @@ button, .btn {
   }
 }
 
+.btn.btn-link {
+  $color: theme-color();
+  color: $color;
+  border-color: transparent;
+  background-color: transparent;
+
+  &:hover {
+    color: lighten($color, 10%);
+  }
+  &:active {
+    color: darken($color, 10%);
+  }
+  &:focus {
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .2);
+  }
+}
 
 //
 // Button Sizes

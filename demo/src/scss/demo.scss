@@ -47,6 +47,8 @@ root {
     padding-bottom: to-rem(1);
   }
   .subnav .nav-item {
+    padding-left: to-rem(1);
+
     .nav-link {
       color: rgba(0,0,0,.65);
 
@@ -63,6 +65,14 @@ root {
 .demo-content {
   height: 100%;
   padding: to-rem(1) to-rem(1) to-rem(1) $sidebar-width + to-rem(2);
+}
+.demo-box {
+  padding: 8px;
+  margin: -8px;
+
+  .btn {
+    margin-right: to-rem(.5);
+  }
 }
 scrollbar {
   width: 10px;

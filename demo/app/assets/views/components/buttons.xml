@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w type="h1">Buttons</w>
+    <w type="p">Buttons include simple button styles for actions in different types and sizes.</w>
+    <w class="demo-box">
+      <w type="button" class="btn">default button</w>
+      <w type="button" class="btn btn-primary">primary button</w>
+      <w type="button" class="btn btn-link">link button</w>
+    </w>
+  </ui>
+</lcui-app>
