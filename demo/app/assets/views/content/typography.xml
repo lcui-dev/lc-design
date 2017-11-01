@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w type="h1">h1. LCUI heading</w>
+    <w type="h2">h2. LCUI heading</w>
+    <w type="h3">h3. LCUI heading</w>
+    <w type="h4">h4. LCUI heading</w>
+    <w type="h5">h5. LCUI heading</w>
+    <w type="h6">h6. LCUI heading</w>
+    <w type="textview">Hello, World!</w>
+  </ui>
+</lcui-app>

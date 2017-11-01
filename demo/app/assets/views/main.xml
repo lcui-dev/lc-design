@@ -10,7 +10,7 @@
         <w class="nav-item">
           <w class="nav-link" type="textview">Home</w>
         </w>
-        <w class="nav-item">
+        <w class="nav-item active">
           <w class="nav-link" type="textview">Documentation</w>
         </w>
       </w>
@@ -31,12 +31,12 @@
               </w>
               <w class="subnav">
                 <w class="nav-item active">
-                  <w class="nav-link" type="textview">
+                  <w class="nav-link" type="a" href="getting-started/introduction.xml" target="demo-content">
                     Introduction
                   </w>
                 </w>
                 <w class="nav-item">
-                  <w class="nav-link" type="textview">
+                  <w class="nav-link" type="a" href="getting-started/download.xml" target="demo-content">
                     Download
                   </w>
                 </w>
@@ -80,7 +80,7 @@
               </w>
               <w class="subnav">
                 <w class="nav-item">
-                  <w class="nav-link" type="textview">
+                  <w class="nav-link" type="a" href="content/typography.xml" target="demo-content">
                     Typography
                   </w>
                 </w>
@@ -102,7 +102,7 @@
                   </w>
                 </w>
                 <w class="nav-item">
-                  <w class="nav-link" type="textview">
+                  <w class="nav-link" type="a" href="components/buttons.xml" target="demo-content">
                     Buttons
                   </w>
                 </w>
@@ -156,14 +156,7 @@
           </w>
           <w type="scrollbar" data-parent="demo-sidebar" data-layer="demo-sidebar-links"/>
         </w>
-        <w class="demo-content">
-          <w type="h1">h1. LCUI heading</w>
-          <w type="h2">h2. LCUI heading</w>
-          <w type="h3">h3. LCUI heading</w>
-          <w type="h4">h4. LCUI heading</w>
-          <w type="h5">h5. LCUI heading</w>
-          <w type="h6">h6. LCUI heading</w>
-          <w type="textview">Hello, World!</w>
+        <w class="demo-content" id="demo-content">
         </w>
       </w>
     </w>

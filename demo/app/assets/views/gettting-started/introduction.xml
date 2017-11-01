@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w type="h1">Introduction</w>
+    <h type="p">Hello, World!</w>
+    <h type="h2">Starter template</w>
+    <h type="p">Hello, World!</w>
+  </ui>
+</lcui-app>
