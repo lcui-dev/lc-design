@@ -10,7 +10,6 @@ root {
 .demo-navbar {
   width: 100%;
   background-color: $green;
-  box-shadow: 0 2px 5px rgba(0,0,0,.26);
   
   .navbar-brand {
     width: 37.75px;
@@ -62,13 +61,20 @@ root {
     }
   }
 }
-.demo-content {
+.demo-content-wrapper {
   height: 100%;
   padding: to-rem(1) to-rem(1) to-rem(1) $sidebar-width + to-rem(2);
+
+  h2 {
+    margin-top: to-rem(2);
+  }
+  h2:first-child, .demo-box h2 {
+    margin-top: 0;
+  }
 }
 .demo-box {
-  padding: 8px;
-  margin: -8px;
+  padding: to-rem(1.5);
+  border: to-rem(.2) solid #f7f7f9;
 
   .btn {
     margin-right: to-rem(.5);

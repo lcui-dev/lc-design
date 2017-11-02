@@ -55,6 +55,9 @@
 
   &:focus,
   &.focus {
+    color: $color-hover;
+    border-color: $color;
+    background-color: transparent;
     box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .5);
   }
 

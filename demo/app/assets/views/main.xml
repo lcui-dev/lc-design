@@ -156,7 +156,9 @@
           </w>
           <w type="scrollbar" data-parent="demo-sidebar" data-layer="demo-sidebar-links"/>
         </w>
-        <w class="demo-content" id="demo-content">
+        <w class="demo-content-wrapper" id="demo-content-wrapper">
+          <w class="demo-content scrolllayer" id="demo-content"></w>
+          <w type="scrollbar" data-parent="demo-content-wrapper" data-layer="demo-content"/>
         </w>
       </w>
     </w>
