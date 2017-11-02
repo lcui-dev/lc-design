@@ -9,15 +9,17 @@
   border-color: $border;
   @include box-shadow($btn-box-shadow);
 
-  @include hover {
+  &:hover, &:hover:focus {
     color: color-yiq($hover-background);
     @include gradient-bg($hover-background);
     border-color: $hover-border;
   }
 
-  &:active {
-    background-color: $active-background;
-    border-color: $active-border;
+  &:active, &.active {
+    &, &:focus {
+      background-color: $active-background;
+      border-color: $active-border;
+    }
   }
 
   &:focus,
