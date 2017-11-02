@@ -46,8 +46,8 @@
     display: inline-block;
   }
   .nav-link {
-    padding-right: to-rem(.5);
-    padding-left: to-rem(.5);
+    padding-right: rem2px(.5);
+    padding-left: rem2px(.5);
   }
 }
 

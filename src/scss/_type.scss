@@ -23,8 +23,8 @@ h6, .h6 { font-size: $h6-font-size; }
 //
 
 hr {
-  margin-top: to-rem(1);
-  margin-bottom: to-rem(1);
+  margin-top: rem2px(1);
+  margin-bottom: rem2px(1);
   border: 0;
   border-top: $hr-border-width solid $hr-border-color;
 }

@@ -101,7 +101,7 @@ $enable-print-styles:       false !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: to-rem(1) !default;
+$spacer: rem2px(1) !default;
 $spacers: (
   0: 0,
   1: ($spacer * .25),
@@ -139,7 +139,7 @@ $link-hover-decoration:     underline !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   to-rem(1) !default;
+$paragraph-margin-bottom:   rem2px(1) !default;
 
 
 // Components
@@ -163,10 +163,11 @@ $component-active-bg:         theme-color("primary") !default;
 // Font, line-height, and color for body text, headings, and more.
 $font-color-base:             #333;
 $font-family-base:            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", simsun !default;
+$font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
-$font-size-base:              to-rem(1) !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                to-rem(1.25) !default;
-$font-size-sm:                to-rem(.875) !default;
+$font-size-base:              rem2px(1) !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                rem2px(1.25) !default;
+$font-size-sm:                rem2px(.875) !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
@@ -175,12 +176,12 @@ $font-weight-bold:            700 !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                to-rem(2.5) !default;
-$h2-font-size:                to-rem(2) !default;
-$h3-font-size:                to-rem(1.75) !default;
-$h4-font-size:                to-rem(1.5) !default;
-$h5-font-size:                to-rem(1.25) !default;
-$h6-font-size:                to-rem(1) !default;
+$h1-font-size:                rem2px(2.5) !default;
+$h2-font-size:                rem2px(2) !default;
+$h3-font-size:                rem2px(1.75) !default;
+$h4-font-size:                rem2px(1.5) !default;
+$h5-font-size:                rem2px(1.25) !default;
+$h6-font-size:                rem2px(1) !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        $font-family-base !default;
@@ -200,20 +201,20 @@ $hr-border-width:             $border-width !default;
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-$input-btn-padding-y:         to-rem(.375) !default;
-$input-btn-padding-x:         to-rem(.75) !default;
+$input-btn-padding-y:         rem2px(.375) !default;
+$input-btn-padding-x:         rem2px(.75) !default;
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       2px !default;
 $input-btn-focus-color:       rgba(theme-color("primary"), .25) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
-$input-btn-padding-y-sm:      to-rem(.25) !default;
-$input-btn-padding-x-sm:      to-rem(.5) !default;
+$input-btn-padding-y-sm:      rem2px(.25) !default;
+$input-btn-padding-x-sm:      rem2px(.5) !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
-$input-btn-padding-y-lg:      to-rem(.5) !default;
-$input-btn-padding-x-lg:      to-rem(1) !default;
+$input-btn-padding-y-lg:      rem2px(.5) !default;
+$input-btn-padding-x-lg:      rem2px(1) !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
 
 $btn-font-weight:             $font-weight-normal !default;
@@ -223,7 +224,7 @@ $btn-active-box-shadow:       inset 0 3px 5px rgba($black,.125) !default;
 
 $btn-link-disabled-color:     $gray-600 !default;
 
-$btn-block-spacing-y:         to-rem(.5) !default;
+$btn-block-spacing-y:         rem2px(.5) !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           $border-radius !default;
@@ -236,8 +237,8 @@ $btn-transition:              background-color .15s ease-in-out, border-color .1
 
 // Navs
 
-$nav-link-padding-y:                to-rem(.5) !default;
-$nav-link-padding-x:                to-rem(1) !default;
+$nav-link-padding-y:                rem2px(.5) !default;
+$nav-link-padding-x:                rem2px(1) !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
 $nav-tabs-border-color:             #ddd !default;
@@ -263,8 +264,8 @@ $nav-link-height:                   $navbar-brand-font-size * $line-height-base 
 $navbar-brand-height:               ($font-size-base * $line-height-base + $nav-link-padding-y * 2) !default;
 $navbar-brand-padding-y:            ($navbar-brand-height - $nav-link-height) / 2 !default;
 
-$navbar-toggler-padding-y:          to-rem(.25) !default;
-$navbar-toggler-padding-x:          to-rem(.75) !default;
+$navbar-toggler-padding-y:          rem2px(.25) !default;
+$navbar-toggler-padding-x:          rem2px(.75) !default;
 $navbar-toggler-font-size:          $font-size-lg !default;
 $navbar-toggler-border-radius:      $btn-border-radius !default;
 

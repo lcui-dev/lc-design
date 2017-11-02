@@ -30,6 +30,6 @@
   @return map-get($grays, $key);
 }
 
-@function to-rem($value) {
+@function rem2px($value) {
   @return 14px * $value;
 }

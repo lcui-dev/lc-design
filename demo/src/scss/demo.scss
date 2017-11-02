@@ -42,11 +42,11 @@ root {
   border-right: 1px solid $border-color;
 
   .demo-links {
-    padding-top: to-rem(1);
-    padding-bottom: to-rem(1);
+    padding-top: rem2px(1);
+    padding-bottom: rem2px(1);
   }
   .subnav .nav-item {
-    padding-left: to-rem(1);
+    padding-left: rem2px(1);
 
     .nav-link {
       color: rgba(0,0,0,.65);
@@ -63,21 +63,21 @@ root {
 }
 .demo-content-wrapper {
   height: 100%;
-  padding: to-rem(1) to-rem(1) to-rem(1) $sidebar-width + to-rem(2);
+  padding: rem2px(1) rem2px(1) rem2px(1) $sidebar-width + rem2px(2);
 
   h2 {
-    margin-top: to-rem(2);
+    margin-top: rem2px(2);
   }
   h2:first-child, .demo-box h2 {
     margin-top: 0;
   }
 }
 .demo-box {
-  padding: to-rem(1.5);
-  border: to-rem(.2) solid #f7f7f9;
+  padding: rem2px(1.5);
+  border: rem2px(.2) solid #f7f7f9;
 
   .btn {
-    margin-right: to-rem(.5);
+    margin-right: rem2px(.5);
   }
 }
 scrollbar {
