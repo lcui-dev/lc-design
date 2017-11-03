@@ -75,11 +75,17 @@ root {
 .demo-box {
   padding: rem2px(1.5);
   border: rem2px(.2) solid #f7f7f9;
+  margin-bottom: rem2px(1.5);
 
-  .btn {
-    margin-right: rem2px(.5);
+  &.buttons-demo {
+    padding: rem2px(1) rem2px(1.25);
+
+    .btn {
+      margin: rem2px(.25) rem2px(.5);
+    }
   }
 }
+
 scrollbar {
   width: 10px;
   background-color: rgba(#ddd, .2);

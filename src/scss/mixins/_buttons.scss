@@ -43,7 +43,7 @@
   background-image: none;
   border-color: $color;
 
-  @include hover {
+  &:hover, &:focus:hover {
     color: $color-hover;
     background-color: $color;
     border-color: $color;
@@ -51,13 +51,15 @@
 
   &:active,
   &.active {
-    background-color: darken($color, 5);
-    border-color: darken($color, 4);
+    &, &:focus {
+      background-color: darken($color, 5);
+      border-color: darken($color, 4);
+    }
   }
 
   &:focus,
   &.focus {
-    color: $color-hover;
+    color: $color;
     border-color: $color;
     background-color: transparent;
     box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .5);
