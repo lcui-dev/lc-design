@@ -26,6 +26,7 @@
 Building LCUI.css has the following dependencies:
 
 * [NodeJS](https://nodejs.org) — a JavaScript runtime to run building tools
+* [Python](https://www.python.org/) - A environment for run python building tools
 
 After installing NodeJS, please run the following command to install the NodeJS dependency packages:
 
@@ -40,14 +41,15 @@ After installing NodeJS, please run the following command to install the NodeJS 
     npm run build-demo        # Build demo application and it's css file.
     npm run build-demo-css    # Build css file of demo application.
     npm run build-demo-exe    # Build demo application only.
+    npm run build-docs        # Build documentations.
 
 ## Install
 
 Copy the files from the **dist** directory to your project directory, and configure your project assets include path.
 
-We recommend that you use the following directory structure, this will be able to directly copy the files from the **dist** directory to **yourapp/app/assets/** directory.
+We recommend that you use the following directory structure, this will be able to directly copy the files from the **dist/assets/** directory to **yourapp/app/** directory.
 
-```
+``` text
 yourapp/
 ├── app/
 │   ├── assets/

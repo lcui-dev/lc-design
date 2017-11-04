@@ -63,7 +63,7 @@ root {
 }
 .demo-content-wrapper {
   height: 100%;
-  padding: rem2px(1) rem2px(1) rem2px(1) $sidebar-width + rem2px(2);
+  padding: rem2px(1) rem2px(2) rem2px(1) $sidebar-width + rem2px(2);
 
   h2 {
     margin-top: rem2px(2);
@@ -73,11 +73,17 @@ root {
   }
 }
 .demo-box {
-  padding: rem2px(1.5);
   border: rem2px(.2) solid #f7f7f9;
   margin-bottom: rem2px(1.5);
 
-  &.buttons-demo {
+  .demo-preview-box {
+    padding: rem2px(1.5);
+  }
+  .code-block {
+    padding: rem2px(1.5);
+    background-color: #f7f7f9;
+  }
+  &.buttons-demo .demo-preview-box {
     padding: rem2px(1) rem2px(1.25);
 
     .btn {

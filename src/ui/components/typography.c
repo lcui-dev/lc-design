@@ -31,5 +31,7 @@ void LCUIEx_InitTypograhhy( void )
 	LCUIWidget_NewPrototype( "h5", "textview" );
 	LCUIWidget_NewPrototype( "h6", "textview" );
 	LCUIWidget_NewPrototype( "p", "textview" );
+	LCUIWidget_NewPrototype( "pre", "textview" );
+	LCUIWidget_NewPrototype( "code-block", "textview" );
 	LCUIWidget_NewPrototype( "small", "textview" );
 }
