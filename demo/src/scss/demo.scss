@@ -72,6 +72,11 @@ root {
     margin-top: 0;
   }
 }
+.code-block {
+  padding: rem2px(1.5);
+  background-color: #f7f7f9;
+  margin-bottom: rem2px(1.5);
+}
 .demo-box {
   border: rem2px(.2) solid #f7f7f9;
   margin-bottom: rem2px(1.5);
@@ -80,8 +85,7 @@ root {
     padding: rem2px(1.5);
   }
   .code-block {
-    padding: rem2px(1.5);
-    background-color: #f7f7f9;
+    margin-bottom: 0;
   }
   &.buttons-demo .demo-preview-box {
     padding: rem2px(1) rem2px(1.25);

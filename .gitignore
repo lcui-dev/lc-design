@@ -10,6 +10,7 @@ dist
 *.dll
 demo/app/assets/stylesheets
 demo/app/assets/fonts
+demo/app/assets/views
 demo/build
 vendor/lib
 build

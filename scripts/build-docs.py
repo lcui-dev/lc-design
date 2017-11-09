@@ -36,8 +36,9 @@ class XMLRenderer(m.HtmlRenderer):
             if i > 0:
                 class_  = ' ' + lang[:i] + 'demo'
             return self.DEMO_CODE_TMPL.format(class_, code, escapeXML(code))
-        if lang != 'demo-xml':
-            return self.CODE_TMPL.format(code)
+        if lang == 'embedded-xml':
+            return code
+        return self.CODE_TMPL.format(escapeXML(code))
 
     def paragraph(self, text):
         return '<w type="p">{}</w>\n'.format(text)
