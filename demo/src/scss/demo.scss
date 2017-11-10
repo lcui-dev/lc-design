@@ -94,6 +94,27 @@ root {
       margin: rem2px(.25) rem2px(.5);
     }
   }
+  &.icons-demo .demo-preview-box {
+    padding-left: rem2px(1.25) - 12px;
+    padding-bottom: rem2px(1) - 12px;
+
+    .icon {
+      padding: 12px;
+      font-size: 24px;
+      line-height: 24px;
+      border: 1px solid #eee;
+      margin: 0 0 12px 12px;
+
+      &:hover {
+        color: #fff;
+        background-color: #6F6F6F;
+      }
+      &:active {
+        color: #fff;
+        background-color: $green;
+      }
+    }
+  }
 }
 
 scrollbar {

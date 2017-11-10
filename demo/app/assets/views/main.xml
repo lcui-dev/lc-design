@@ -85,6 +85,11 @@
                   </w>
                 </w>
                 <w class="nav-item">
+                  <w class="nav-link" type="a" href="content/icons.xml" target="demo-content">
+                    Icons
+                  </w>
+                </w>
+                <w class="nav-item">
                   <w class="nav-link" type="textview">
                     Images
                   </w>
