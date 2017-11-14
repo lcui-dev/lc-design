@@ -1,0 +1,21 @@
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+@if $enable-grid-classes {
+  .container {
+    @include make-container();
+    max-width: $container-default-max-width;
+  }
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but with 100% width for
+// fluid, full width layouts.
+
+@if $enable-grid-classes {
+  .container-fluid {
+    @include make-container();
+  }
+}

@@ -1,0 +1,24 @@
+// stylelint-disable declaration-no-important
+
+//
+// Text
+//
+
+// Alignment
+
+.text-nowrap   { white-space: nowrap; }
+
+.font-weight-light  { font-weight: $font-weight-light; }
+.font-weight-normal { font-weight: $font-weight-normal; }
+.font-weight-bold   { font-weight: $font-weight-bold; }
+.font-italic        { font-style: italic; }
+
+// Contextual colors
+
+.text-white { color: #fff; }
+
+@each $color, $value in $theme-colors {
+  @include text-emphasis-variant(".text-#{$color}", $value);
+}
+
+.text-muted { color: $text-muted; }

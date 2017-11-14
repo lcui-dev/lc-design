@@ -1,0 +1,45 @@
+// Margin and Padding
+
+$infix: "";
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $spacers {
+
+    .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length; }
+    .#{$abbrev}t#{$infix}-#{$size},
+    .#{$abbrev}y#{$infix}-#{$size} {
+      #{$prop}-top: $length;
+    }
+    .#{$abbrev}r#{$infix}-#{$size},
+    .#{$abbrev}x#{$infix}-#{$size} {
+      #{$prop}-right: $length;
+    }
+    .#{$abbrev}b#{$infix}-#{$size},
+    .#{$abbrev}y#{$infix}-#{$size} {
+      #{$prop}-bottom: $length;
+    }
+    .#{$abbrev}l#{$infix}-#{$size},
+    .#{$abbrev}x#{$infix}-#{$size} {
+      #{$prop}-left: $length;
+    }
+  }
+}
+
+// Some special margin utils
+.m#{$infix}-auto { margin: auto; }
+.mt#{$infix}-auto,
+.my#{$infix}-auto {
+  margin-top: auto;
+}
+.mr#{$infix}-auto,
+.mx#{$infix}-auto {
+  margin-right: auto;
+}
+.mb#{$infix}-auto,
+.my#{$infix}-auto {
+  margin-bottom: auto;
+}
+.ml#{$infix}-auto,
+.mx#{$infix}-auto {
+  margin-left: auto;
+}
