@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w class="home-masthead">
+      <w class="container">
+        <w type="h1">LCUI.css</w>
+        <w type="p" class="lead">
+          A simple CSS framework for building LCUI application.
+        </w>
+        <w type="p" class="lead mb-4">
+          LCUI.css is an open source toolkit for developing with XML, CSS, and C. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, simple grid system, common prebuilt components.
+        </w>
+        <w class="lead mb-3">
+          <w type="a" class="btn btn-outline-green btn-lg mr-3">Get started</w>
+          <w type="a" class="btn btn-outline-secondary btn-lg">Download</w>
+        </w>
+        <w type="p" class="text-muted">
+          Currently v.0.1.0-alpha
+        </w>
+      </w>
+    </w>
+  </ui>
+</lcui-app>
