@@ -4,6 +4,7 @@
 #include <LCUI/gui/builder.h>
 #include <LCUI/timer.h>
 #include <LCUIEx.h>
+#include "ui.h"
 
 #ifdef _WIN32
 #include <locale.h>
@@ -36,13 +37,12 @@ int main( int argc, char **argv )
 	LCUIEx_Init();
 	root = LCUIWidget_GetRoot();
 	pack = LCUIBuilder_LoadFile( "assets/views/main.xml" );
-	if (!pack) {
+	if( !pack ) {
 		return -1;
 	}
 	Widget_Append( root, pack );
 	Widget_Unwrap( pack );
 	Widget_SetTitleW( root, L"LCUI.css - Simple CSS framework for developing LCUI application." );
-	Widget_PrintStyleSheets( LCUIWidget_GetById( "debug-text" ) );
-	LCUITimer_Set( 1000, OnTimer, NULL, FALSE );
+	Navigation_Init();
 	return LCUI_Main();
 }

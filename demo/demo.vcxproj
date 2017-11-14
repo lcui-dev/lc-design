@@ -168,6 +168,12 @@ xcopy "$(SolutionDir)dist\assets" "$(ProjectDir)app\assets" /S /Y</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\navigation.c" />
+    <ClCompile Include="src\ui\views\documentation_view.c" />
+    <ClCompile Include="src\ui\views\home_view.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ui.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

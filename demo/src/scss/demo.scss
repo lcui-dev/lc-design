@@ -4,7 +4,7 @@
 $sidebar-width: 256px;
 
 root {
-  min-width: 960px;
+  min-width: 1080px;
   min-height: 720px;
 }
 .demo-navbar {
@@ -33,6 +33,13 @@ root {
 
   .container-fluid {
     height: 100%;
+  }
+}
+.home-masthead {
+  padding: rem2px(5) rem2px(1);
+
+  h1 {
+    color: $green;
   }
 }
 .demo-sidebar {
