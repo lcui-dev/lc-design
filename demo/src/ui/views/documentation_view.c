@@ -27,6 +27,7 @@ void DocumentationView_Init( void )
 {
 	LCUI_Widget sidebar = LCUIWidget_GetById( ID_SIDEBAR_LINKS );
 	Widget_BindEvent( sidebar, "click", OnClickSidebarLink, NULL, NULL );
+	ActiveLink( sidebar, ID_LINK_GETTING_STARTED );
 }
 
 void DocumentationView_Free( void )

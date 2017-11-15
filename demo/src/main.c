@@ -42,7 +42,7 @@ int main( int argc, char **argv )
 	}
 	Widget_Append( root, pack );
 	Widget_Unwrap( pack );
-	Widget_SetTitleW( root, L"LCUI.css - Simple CSS framework for developing LCUI application." );
+	Widget_SetTitleW( root, L"LCUI.css - A simple CSS framework for building LCUI application." );
 	Navigation_Init();
 	return LCUI_Main();
 }

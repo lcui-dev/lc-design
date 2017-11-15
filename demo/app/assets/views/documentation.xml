@@ -1,147 +1,149 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <lcui-app>
   <ui>
-    <w id="demo-sidebar" class="demo-sidebar float-left">
-      <w id="demo-sidebar-links" class="nav demo-links scrolllayer">
-        <w class="nav-item">
-          <w class="nav-link nav-header" type="textview">
-            Getting started
+    <w class="docs-body">
+      <w id="demo-sidebar" class="demo-sidebar float-left">
+        <w id="demo-sidebar-links" class="nav demo-links scrolllayer">
+          <w class="nav-item">
+            <w class="nav-link nav-header" type="textview">
+              Getting started
+            </w>
+            <w class="subnav">
+              <w class="nav-item">
+                <w id="doc-link-getting-strted" class="nav-link" type="a" href="getting-started/introduction.xml" target="demo-content">
+                  Introduction
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="a" href="getting-started/download.xml" target="demo-content">
+                  Download
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Contents
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Build tools
+                </w>
+              </w>
+            </w>
           </w>
-          <w class="subnav">
-            <w class="nav-item">
-              <w class="nav-link" type="a" href="getting-started/introduction.xml" target="demo-content">
-                Introduction
+          <w class="nav-item">
+            <w class="nav-link nav-header" type="textview">
+              Layout
+            </w>
+            <w class="subnav">
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Overview
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Grid
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Utilities for layout
+                </w>
               </w>
             </w>
-            <w class="nav-item">
-              <w class="nav-link" type="a" href="getting-started/download.xml" target="demo-content">
-                Download
+          </w>
+          <w class="nav-item">
+            <w class="nav-link nav-header" type="textview">
+              Content
+            </w>
+            <w class="subnav">
+              <w class="nav-item">
+                <w class="nav-link" type="a" href="content/typography.xml" target="demo-content">
+                  Typography
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="a" href="content/icons.xml" target="demo-content">
+                  Icons
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Images
+                </w>
               </w>
             </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Contents
-              </w>
+          </w>
+          <w class="nav-item">
+            <w class="nav-link nav-header" type="textview">
+              Components
             </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Build tools
+            <w class="subnav">
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Alerts
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="a" href="components/buttons.xml" target="demo-content">
+                  Buttons
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Button group
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Card
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Dropdowns
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  List group
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Modal
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Navs
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Navbar
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Progress
+                </w>
+              </w>
+              <w class="nav-item">
+                <w class="nav-link" type="textview">
+                  Scrollbar
+                </w>
               </w>
             </w>
           </w>
         </w>
-        <w class="nav-item">
-          <w class="nav-link nav-header" type="textview">
-            Layout
-          </w>
-          <w class="subnav">
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Overview
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Grid
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Utilities for layout
-              </w>
-            </w>
-          </w>
-        </w>
-        <w class="nav-item">
-          <w class="nav-link nav-header" type="textview">
-            Content
-          </w>
-          <w class="subnav">
-            <w class="nav-item">
-              <w class="nav-link" type="a" href="content/typography.xml" target="demo-content">
-                Typography
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="a" href="content/icons.xml" target="demo-content">
-                Icons
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Images
-              </w>
-            </w>
-          </w>
-        </w>
-        <w class="nav-item">
-          <w class="nav-link nav-header" type="textview">
-            Components
-          </w>
-          <w class="subnav">
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Alerts
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="a" href="components/buttons.xml" target="demo-content">
-                Buttons
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Button group
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Card
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Dropdowns
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                List group
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Modal
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Navs
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Navbar
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Progress
-              </w>
-            </w>
-            <w class="nav-item">
-              <w class="nav-link" type="textview">
-                Scrollbar
-              </w>
-            </w>
-          </w>
-        </w>
+        <w type="scrollbar" data-parent="demo-sidebar" data-layer="demo-sidebar-links"/>
       </w>
-      <w type="scrollbar" data-parent="demo-sidebar" data-layer="demo-sidebar-links"/>
-    </w>
-    <w class="demo-content-wrapper" id="demo-content-wrapper">
-      <w class="demo-content scrolllayer" id="demo-content"></w>
-      <w type="scrollbar" data-parent="demo-content-wrapper" data-layer="demo-content"/>
+      <w class="demo-content-wrapper" id="demo-content-wrapper">
+        <w class="demo-content scrolllayer" id="demo-content"></w>
+        <w type="scrollbar" data-parent="demo-content-wrapper" data-layer="demo-content"/>
+      </w>
     </w>
   </ui>
 </lcui-app>

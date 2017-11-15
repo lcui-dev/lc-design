@@ -27,7 +27,6 @@ static LCUI_Widget GetNavigationItem( LCUI_Widget link )
 	return NULL;
 }
 
-
 static int Navigation_GetPointId( LCUI_Widget link )
 {
 	const char *name;
@@ -73,29 +72,13 @@ static void OnClickNavbarLink( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
 	nav.active = link;
 }
 
-static void ActiveLink( LCUI_Widget parent, const char *link_id )
-{
-	LCUI_Widget link;
-	LCUI_WidgetEventRec ev = { 0 };
-	if( !link_id ) {
-		return;
-	}
-	link = LCUIWidget_GetById( link_id );
-	if( !link ) {
-		return;
-	}
-	ev.type = WET_CLICK;
-	ev.button.button = 1;
-	Widget_TriggerEvent( link, &ev, NULL );
-}
-
 void Navigation_Init( void )
 {
 	LCUI_Widget root = LCUIWidget_GetRoot();
 	LCUI_Widget navbar = LCUIWidget_GetById( ID_NAVBAR_LINKS );
 	Widget_BindEvent( navbar, "click", OnClickNavbarLink, NULL, NULL );
 	Widget_BindEvent( root, "loaded.anchor", OnViewLoaded, NULL, NULL );
-	ActiveLink( navbar, ID_NAV_LINK_HOME );
+	ActiveLink( navbar, ID_LINK_NAV_HOME );
 	nav.points[NAV_HOME].init = HomeView_Init;
 	nav.points[NAV_HOME].free = HomeView_Free;
 	nav.points[NAV_DOCS].init = DocumentationView_Init;
