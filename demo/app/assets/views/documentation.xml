@@ -5,7 +5,7 @@
       <w id="demo-sidebar" class="demo-sidebar float-left">
         <w id="demo-sidebar-links" class="nav demo-links scrolllayer">
           <w class="nav-item">
-            <w class="nav-link nav-header" type="textview">
+            <w class="nav-link nav-header" type="a" href="getting-started/introduction.xml" target="demo-content">
               Getting started
             </w>
             <w class="subnav">
@@ -32,12 +32,12 @@
             </w>
           </w>
           <w class="nav-item">
-            <w class="nav-link nav-header" type="textview">
+            <w class="nav-link nav-header" type="a" href="layout/overview.xml" target="demo-content">
               Layout
             </w>
             <w class="subnav">
               <w class="nav-item">
-                <w class="nav-link" type="textview">
+                <w class="nav-link" type="a" href="layout/overview.xml" target="demo-content">
                   Overview
                 </w>
               </w>

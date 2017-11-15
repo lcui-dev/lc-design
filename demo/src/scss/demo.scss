@@ -1,5 +1,6 @@
 @import "../../../src/scss/functions";
 @import "../../../src/scss/variables";
+@import "../../../src/scss/mixins";
 
 $sidebar-width: 256px;
 
@@ -121,6 +122,38 @@ root {
       }
     }
   }
+  &.layout-demo {
+    .container {
+      max-width: 400px;
+    }
+  }
+}
+
+$container-header-height: rem2px(3);
+$container-header-margin-bottom: rem2px(.5);
+
+.docs-example-container-header {
+  height: $container-header-height;
+  margin-bottom: $container-header-margin-bottom;
+  background-color: $gray-400;
+}
+
+.docs-example-container-sidebar {
+  height: rem2px(8);
+  width: rem2px(4);
+  background-color: lighten($blue, 10%);
+  @include float-right;
+  top: $container-header-height + $container-header-margin-bottom;
+  right: $grid-gutter-width / 2;
+}
+
+.docs-example-container-body {
+  padding-right: rem2px(4 + .5);
+}
+
+.docs-example-container-content {
+  height: rem2px(8);
+  background-color: lighten($green, 10%);
 }
 
 scrollbar {
