@@ -9,18 +9,36 @@ static struct {
 
 static void OnClickSidebarLink( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
 {
-	LCUI_Widget link;
+	LinkedListNode *node;
+	LCUI_Widget link, subnav;
+
 	for( link = e->target; link; link = link->parent ) {
-		if( !Widget_HasClass( link, "nav-item" ) ) {
+		if( Widget_HasClass( link, "nav-item" ) ) {
+			break;
+		}
+		if( !Widget_HasClass( link, "nav-header" ) ) {
 			continue;
 		}
-		if( self.active_item ) {
-			Widget_RemoveClass( self.active_item, "active" );
+		subnav = Widget_GetNext( link );
+		if( !subnav ) {
+			continue;
 		}
-		Widget_AddClass( link, "active" );
-		self.active_item = link;
+		for( LinkedList_Each( node, &subnav->children ) ) {
+			link = node->data;
+			if( Widget_HasClass( link, "nav-item" ) ) {
+				break;
+			}
+		}
 		break;
 	}
+	if( !link ) {
+		return;
+	}
+	if( self.active_item ) {
+		Widget_RemoveClass( self.active_item, "active" );
+	}
+	Widget_AddClass( link, "active" );
+	self.active_item = link;
 }
 
 void DocumentationView_Init( void )
