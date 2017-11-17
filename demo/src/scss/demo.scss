@@ -127,6 +127,16 @@ root {
       max-width: 400px;
     }
   }
+  &.grid-demo {
+    .container {
+      padding: 0;
+    }
+    .col {
+      color: darken($green, 50);
+      border: 1px solid $green;
+      background-color: mix($green, $white, 50);
+    }
+  }
 }
 
 $container-header-height: rem2px(3);

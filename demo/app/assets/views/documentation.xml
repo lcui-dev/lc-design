@@ -42,7 +42,7 @@
                 </w>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="textview">
+                <w class="nav-link" type="a" href="layout/grid.xml" target="demo-content">
                   Grid
                 </w>
               </w>

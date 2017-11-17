@@ -3,7 +3,7 @@
 // Used only by Bootstrap to generate the correct number of grid classes given
 // any value of `$grid-columns`.
 
-@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width) {
   // Common properties for all breakpoints
   %grid-column {
     position: relative;
@@ -13,57 +13,30 @@
     padding-left: ($gutter / 2);
   }
 
-  @each $breakpoint in map-keys($breakpoints) {
-    $infix: breakpoint-infix($breakpoint, $breakpoints);
+  $infix: "";
 
-    // Allow columns to stretch full width below their breakpoints
-    @for $i from 1 through $columns {
-      .col#{$infix}-#{$i} {
-        @extend %grid-column;
-      }
-    }
-    .col#{$infix},
-    .col#{$infix}-auto {
+  @for $i from 1 through $columns {
+    .col#{$infix}-#{$i} {
       @extend %grid-column;
     }
+  }
+  .col#{$infix},
+  .col#{$infix}-auto {
+    @extend %grid-column;
+  }
 
-    @include media-breakpoint-up($breakpoint, $breakpoints) {
-      // Provide basic `.col-{bp}` classes for equal-width flexbox columns
-      .col#{$infix} {
-        flex-basis: 0;
-        flex-grow: 1;
-        max-width: 100%;
-      }
-      .col#{$infix}-auto {
-        flex: 0 0 auto;
-        width: auto;
-        max-width: none; // Reset earlier grid tiers
-      }
+  .col#{$infix} {
+    max-width: 100%;
+    display: inline-block;
+  }
+  .col#{$infix}-auto {
+    width: auto;
+    max-width: none;
+  }
 
-      @for $i from 1 through $columns {
-        .col#{$infix}-#{$i} {
-          @include make-col($i, $columns);
-        }
-      }
-
-      .order#{$infix}-first {
-        order: -1;
-      }
-
-      @for $i from 1 through $columns {
-        .order#{$infix}-#{$i} {
-          order: $i;
-        }
-      }
-
-      // `$columns - 1` because offsetting by the width of an entire row isn't possible
-      @for $i from 0 through ($columns - 1) {
-        @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
-          .offset#{$infix}-#{$i} {
-            @include make-col-offset($i, $columns);
-          }
-        }
-      }
+  @for $i from 1 through $columns {
+    .col#{$infix}-#{$i} {
+      @include make-col($i, $columns);
     }
   }
 }

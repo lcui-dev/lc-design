@@ -9,3 +9,13 @@
   padding-right: ($grid-gutter-width / 2);
   padding-left:  ($grid-gutter-width / 2);
 }
+
+@mixin make-row() {
+  display: block;
+  margin-right: ($grid-gutter-width / -2);
+  margin-left: ($grid-gutter-width / -2);
+}
+
+@mixin make-col($size, $columns: $grid-columns) {
+  max-width: percentage($size / $columns);
+}

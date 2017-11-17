@@ -18,7 +18,6 @@ LCUIFont_LoadFile("assets/fonts/iconfont.ttf");
 Icon and text are the same, we can use the `textview` widget to display it,  just as in the example below. For highlight the icons effect, the icons example has been increased in size, and added a border.
 
 ``` icons-demo-xml
-
 <w type="textview" class="icon icon-apple"></w>
 <w type="textview" class="icon icon-android"></w>
 <w type="textview" class="icon icon-windows"></w>
