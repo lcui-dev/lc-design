@@ -22,7 +22,7 @@
 #include <LCUI/gui/widget.h>
 #include "ui/components.h"
 
-void LCUIEx_InitTypograhhy( void )
+void LCUIEx_InitTypograhy( void )
 {
 	LCUIWidget_NewPrototype( "h1", "textview" );
 	LCUIWidget_NewPrototype( "h2", "textview" );

@@ -20,6 +20,6 @@
 #ifndef LCUIEX_UI_COMPONETS_H
 #define LCUIEX_UI_COMPONETS_H
 
-LCUI_API void LCUIEx_InitTypograhhy( void );
+LCUI_API void LCUIEx_InitTypograhy( void );
 
 #endif

@@ -23,5 +23,5 @@
 
 void LCUIEx_Init( void )
 {
-	LCUIEx_InitTypograhhy();
+	LCUIEx_InitTypograhy();
 }
