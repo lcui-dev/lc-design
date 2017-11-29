@@ -44,3 +44,11 @@ small,
   font-size: $small-font-size;
   font-weight: $font-weight-normal;
 }
+
+//
+// Code
+//
+
+code-block, pre {
+  font-family: $font-family-monospace;
+}
