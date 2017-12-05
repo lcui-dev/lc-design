@@ -39,7 +39,7 @@ $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffe207 !default;
-$green:   #4CAF50 !default;
+$green:   #32b643 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
@@ -183,8 +183,9 @@ $component-active-bg:         theme-color("primary") !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 $font-color-base:             #333;
-$font-family-base:            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", simsun !default;
-$font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-cjk:             "Microsft YaHei", "Malgun Gothic", simsun !default;
+$font-family-base:            "Segoe UI", Roboto, "Helvetica Neue", Arial, $font-family-cjk !default;
+$font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", $font-family-cjk !default;
 
 $font-size-base:              rem2px(1) !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                rem2px(1.25) !default;
@@ -220,7 +221,8 @@ $text-muted:                  $gray-600 !default;
 $hr-border-color:             rgba($black,.1) !default;
 $hr-border-width:             $border-width !default;
 
-
+$blockquote-border-color:     $gray-200 !default;
+$blockquote-border-width:     rem2px(.2) !default;
 // Buttons
 //
 // For each of Bootstrap's buttons, define text, background and border color.

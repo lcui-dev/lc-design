@@ -52,3 +52,22 @@ small,
 code-block, pre {
   font-family: $font-family-monospace;
 }
+
+
+//
+// Misc
+//
+
+blockquote, .blockquote {
+  margin-bottom: rem2px(1); 
+  padding: rem2px(.4) rem2px(.8);
+  border-left: $blockquote-border-width solid $blockquote-border-color;
+}
+
+i, cite {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: $font-weight-bold;
+}
