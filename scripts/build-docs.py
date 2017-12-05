@@ -44,7 +44,8 @@ class XMLRenderer(m.HtmlRenderer):
         return '<w type="p">{}</w>\n'.format(text)
     
     def codespan(self, text):
-        return '[color=#bd4147] {} [/color]'.format(text.strip())
+        return '[color=#bd4147][bgcolor=#fdf4f4]'\
+                ' {} [/bgcolor][/color]'.format(text.strip())
 
 def convert_path(path):
     return path.replace('/', os.path.sep)
