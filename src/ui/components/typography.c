@@ -33,5 +33,9 @@ void LCUIEx_InitTypograhy( void )
 	LCUIWidget_NewPrototype( "p", "textview" );
 	LCUIWidget_NewPrototype( "pre", "textview" );
 	LCUIWidget_NewPrototype( "code-block", "textview" );
-	LCUIWidget_NewPrototype( "small", "textview" );
+	LCUIWidget_NewPrototype( "blockquote", "textview" );
+	LCUIWidget_NewPrototype( "i", "textview" );
+	LCUIWidget_NewPrototype( "b", "textview" );
+	LCUIWidget_NewPrototype( "cite", "textview" );
+	LCUIWidget_NewPrototype( "strong", "textview" );
 }
