@@ -24,6 +24,9 @@ root {
     padding-top: $navbar-padding-y;
     padding-right: $navbar-padding-x;
   }
+  .nav-item.active .nav-link {
+    font-weight: bold;
+  }
   .btn-outline-yellow:active, .btn-outline-yellow:hover {
     color: #2a2730;
   }
@@ -66,6 +69,9 @@ root {
     &.active {
       background-color: rgba($green, .1);
     }
+  }
+  .nav-header {
+    font-weight: bold;
   }
 }
 .demo-content-wrapper {
@@ -128,11 +134,10 @@ root {
     }
   }
   &.grid-demo {
-    .container {
-      padding: 0;
-    }
     .col {
-      color: darken($green, 50);
+      color: darken($green, 20);
+      text-align: center;
+      padding: rem2px(.75);
       border: 1px solid $green;
       background-color: mix($green, $white, 50);
     }

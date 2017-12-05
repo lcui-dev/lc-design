@@ -6,7 +6,7 @@
     <w class="navbar navbar-dark demo-navbar float-top">
       <w class="navbar-brand" type="textview">LC</w>
       <w class="navbar-nav" id="demo-navbar-links">
-        <w class="nav-item" nav-point="home" id="devbyug">
+        <w class="nav-item" nav-point="home">
           <w class="nav-link" type="a" id="navbar-link-home" href="home.xml" target="demo-body">Home</w>
         </w>
         <w class="nav-item" nav-point="docs">
