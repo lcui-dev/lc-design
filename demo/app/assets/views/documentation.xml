@@ -101,7 +101,7 @@
                 </w>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="textview">
+                <w class="nav-link" type="a" href="components/dropdowns.xml" target="demo-content">
                   Dropdowns
                 </w>
               </w>

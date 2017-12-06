@@ -87,7 +87,7 @@ $yiq-text-light: $white !default;
 
 $enable-caret:              true !default;
 $enable-rounded:            false !default;
-$enable-shadows:            false !default;
+$enable-shadows:            true !default;
 $enable-gradients:          false !default;
 $enable-transitions:        false !default;
 $enable-hover-media-query:  false !default;
@@ -259,6 +259,43 @@ $btn-border-radius-sm:        $border-radius-sm !default;
 $btn-border-width:            $border-width !default;
 $btn-border-color:            $border-color !default;
 $btn-transition:              background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-min-width:                rem2px(10) !default;
+$dropdown-padding-y:                rem2px(.5) !default;
+$dropdown-spacer:                   rem2px(.125) !default;
+$dropdown-bg:                       $white !default;
+$dropdown-border-color:             rgba($black, .15) !default;
+$dropdown-border-radius:            $border-radius !default;
+$dropdown-border-width:             $border-width !default;
+$dropdown-divider-bg:               $gray-200 !default;
+$dropdown-box-shadow:               0 rem2px(.5) rem2px(1) rgba($black, .15) !default;
+
+$dropdown-link-color:               $gray-900 !default;
+$dropdown-link-hover-color:         darken($gray-900, 5%) !default;
+$dropdown-link-hover-bg:            $gray-100 !default;
+
+$dropdown-link-active-color:        $component-active-color !default;
+$dropdown-link-active-bg:           $component-active-bg !default;
+
+$dropdown-link-disabled-color:      $gray-600 !default;
+
+$dropdown-item-padding-y:           rem2px(.25) !default;
+$dropdown-item-padding-x:           rem2px(1.5) !default;
+
+$dropdown-header-color:             $gray-600 !default;
+
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-dropdown:                   1000 !default;
 
 
 // Navs

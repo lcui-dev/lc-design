@@ -1,5 +1,6 @@
 button, .btn {
   $color: theme-color();
+
   display: inline-block;
   font-weight: $btn-font-weight;
   text-align: center;
@@ -9,15 +10,24 @@ button, .btn {
   border: $btn-border-width solid $btn-border-color;
   background-color: #fff;
 
+  @include text {
+    display: inline-block;
+  }
   &:hover, &:focus {
-    color: $color;
     border-color: $color;
     background-color: #fff;
+
+    @include text {
+      color: $color;
+    }
   }
   &:active {
-    color: darken($color, 10%);
     border-color: darken($color, 10%);
     background-color: #fff;
+
+    @include text {
+      color: darken($color, 10%);
+    }
   }
   &:focus {
     box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .2);
@@ -44,15 +54,22 @@ button, .btn {
 
 .btn.btn-link {
   $color: theme-color();
-  color: $color;
+
   border-color: transparent;
   background-color: transparent;
 
+  @include text {
+    color: $color;
+  }
   &:hover {
-    color: lighten($color, 10%);
+    @include text {
+      color: lighten($color, 10%);
+    }
   }
   &:active {
-    color: darken($color, 10%);
+    @include text {
+      color: darken($color, 10%);
+    }
   }
   &:focus {
     box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .2);
