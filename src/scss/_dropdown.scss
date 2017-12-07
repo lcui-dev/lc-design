@@ -15,6 +15,11 @@
   @include box-shadow($dropdown-box-shadow);
 }
 
+// Dividers (basically an `<hr>`) within the dropdown
+.dropdown-divider {
+  @include nav-divider($dropdown-divider-bg);
+}
+
 // Links, buttons, and more within the dropdown menu
 .dropdown-item {
   display: block;
