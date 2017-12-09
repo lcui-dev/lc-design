@@ -25,6 +25,6 @@ p {
   margin-bottom: $paragraph-margin-bottom;
 }
 
-i, b, cite, strong, a, p, h1, h2, h3, h4, h5, h6, textview, .text {
+ #{$text-elements}, .text {
   @include text-default-style;
 }

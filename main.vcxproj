@@ -151,6 +151,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\ui\components\label.c" />
+    <ClCompile Include="src\ui\components\password.c" />
     <ClCompile Include="src\ui\components\typography.c" />
   </ItemGroup>
   <ItemGroup>
