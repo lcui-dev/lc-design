@@ -23,6 +23,7 @@
 
 void LCUIEx_Init( void )
 {
+	LCUIEx_InitAlert();
 	LCUIEx_InitLabel();
 	LCUIEx_InitPassword();
 	LCUIEx_InitTypograhy();

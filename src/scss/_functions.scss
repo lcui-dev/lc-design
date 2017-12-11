@@ -30,6 +30,15 @@
   @return map-get($grays, $key);
 }
 
+// Request a theme color level
+@function theme-color-level($color-name: "primary", $level: 0) {
+  $color: theme-color($color-name);
+  $color-base: if($level > 0, #000, #fff);
+  $level: abs($level);
+
+  @return mix($color-base, $color, $level * $theme-color-interval);
+}
+
 @function rem2px($value) {
   @return 14px * $value;
 }

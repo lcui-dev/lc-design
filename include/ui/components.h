@@ -20,6 +20,8 @@
 #ifndef LCUIEX_UI_COMPONETS_H
 #define LCUIEX_UI_COMPONETS_H
 
+LCUI_API void LCUIEx_InitAlert( void );
+
 LCUI_API void LCUIEx_InitLabel( void );
 
 LCUI_API void LCUIEx_InitPassword( void );

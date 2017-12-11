@@ -28,3 +28,7 @@ p {
  #{$text-elements}, .text {
   @include text-default-style;
 }
+
+strong, b, cite, textview {
+  display: inline-block;
+}
