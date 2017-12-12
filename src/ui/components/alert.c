@@ -12,7 +12,7 @@ static void Alert_OnClick( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
 	const char *attr;
 	if( e->target ) {
 		attr = Widget_GetAttribute( e->target, "data-dismiss" );
-		if( attr && strcmp( attr, "alert" ) ) {
+		if( attr && strcmp( attr, "alert" ) == 0 ) {
 			Widget_Destroy( w );
 		}
 	}

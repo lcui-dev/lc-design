@@ -5,7 +5,6 @@
     color: $close-color;
     font-size: $close-font-size;
     font-weight: $close-font-weight;
-    text-shadow: $close-text-shadow;
   }
   @include float-right;
   @include hover-focus {
@@ -16,12 +15,6 @@
   }
 }
 
-// Additional properties for button version
-// iOS requires the button element instead of an anchor tag.
-// If you want the anchor version, it requires `href="#"`.
-// See https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
-
-// stylelint-disable property-no-vendor-prefix, selector-no-qualifying-type
 button.close {
   padding: 0;
   border: 0;

@@ -43,6 +43,6 @@ On the dismiss button, add the `data-dismiss="alert"` attribute, which triggers 
 <w type="alert" class="alert alert-warning alert-dismissible">
   <w type="strong">Holy guacamole!</w>
   <w type="textview">You should check in on some of those fields below.</w>
-  <w type="button" class="close">X</w>
+  <w type="button" class="close" data-dismiss="alert">&#215;</w>
 </w>
 ```
