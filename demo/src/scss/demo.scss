@@ -155,6 +155,12 @@ root {
       background-color: mix($green, $white, 50);
     }
   }
+  &.modal-demo {
+    .modal {
+      display: block;
+      position: static;
+    }
+  }
 }
 
 $container-header-height: rem2px(3);

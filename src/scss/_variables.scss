@@ -380,6 +380,7 @@ $dropdown-header-color:             $gray-600 !default;
 // of components dependent on the z-axis and are designed to all work together.
 
 $zindex-dropdown:                   1000 !default;
+$zindex-modal:                      1050 !default;
 
 
 // Navs
@@ -429,6 +430,35 @@ $navbar-light-active-color:         rgba($black,.9) !default;
 $navbar-light-disabled-color:       rgba($black,.3) !default;
 $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 $navbar-light-toggler-border-color: rgba($black,.1) !default;
+
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:         rem2px(1) !default;
+
+$modal-dialog-margin:         rem2px(.5) !default;
+$modal-dialog-margin-y-sm-up: rem2px(1.75) !default;
+
+$modal-title-line-height:           $line-height-base !default;
+
+$modal-content-bg:               $white !default;
+$modal-content-border-color:     rgba($black, .2) !default;
+$modal-content-border-width:     $border-width !default;
+$modal-content-box-shadow-xs:    0 rem2px(.25) rem2px(.5) rgba($black, .5) !default;
+$modal-content-box-shadow-sm-up: 0 rem2px(.5) rem2px(1) rgba($black, .5) !default;
+
+$modal-header-border-color:   $gray-200 !default;
+$modal-footer-border-color:   $modal-header-border-color !default;
+$modal-header-border-width:   $modal-content-border-width !default;
+$modal-footer-border-width:   $modal-header-border-width !default;
+$modal-header-padding:        rem2px(1) !default;
+
+$modal-lg:                          800px !default;
+$modal-md:                          500px !default;
+$modal-sm:                          300px !default;
+
+$modal-transition:                  transform .3s ease-out !default;
 
 
 // Alerts
