@@ -22,6 +22,10 @@
 
 #include "ui/components.h"
 
+LCUI_API void LCUIEx_InitToggle( void );
+
+LCUI_API void LCUIEx_InitDismiss( void );
+
 LCUI_API void LCUIEx_Init( void );
 
 #endif

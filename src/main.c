@@ -28,4 +28,6 @@ void LCUIEx_Init( void )
 	LCUIEx_InitPassword();
 	LCUIEx_InitTypograhy();
 	LCUIEx_InitModal();
+	LCUIEx_InitToggle();
+	LCUIEx_InitDismiss();
 }
