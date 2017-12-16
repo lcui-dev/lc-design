@@ -380,6 +380,7 @@ $dropdown-header-color:             $gray-600 !default;
 // of components dependent on the z-axis and are designed to all work together.
 
 $zindex-dropdown:                   1000 !default;
+$zindex-modal-backdrop:             1040 !default;
 $zindex-modal:                      1050 !default;
 
 
@@ -448,6 +449,8 @@ $modal-content-border-width:     $border-width !default;
 $modal-content-box-shadow-xs:    0 rem2px(.25) rem2px(.5) rgba($black, .5) !default;
 $modal-content-box-shadow-sm-up: 0 rem2px(.5) rem2px(1) rgba($black, .5) !default;
 
+$modal-backdrop-bg:           $black !default;
+$modal-backdrop-opacity:      .5 !default;
 $modal-header-border-color:   $gray-200 !default;
 $modal-footer-border-color:   $modal-header-border-color !default;
 $modal-header-border-width:   $modal-content-border-width !default;

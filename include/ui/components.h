@@ -20,6 +20,8 @@
 #ifndef LCUIEX_UI_COMPONETS_H
 #define LCUIEX_UI_COMPONETS_H
 
+#include <LCUI/gui/widget.h>
+
 LCUI_API void LCUIEx_InitAlert( void );
 
 LCUI_API void LCUIEx_InitLabel( void );
@@ -27,5 +29,11 @@ LCUI_API void LCUIEx_InitLabel( void );
 LCUI_API void LCUIEx_InitPassword( void );
 
 LCUI_API void LCUIEx_InitTypograhy( void );
+
+LCUI_API void LCUIEx_InitModal( void );
+
+LCUI_API void Modal_Show( LCUI_Widget w );
+
+LCUI_API void Modal_Hide( LCUI_Widget w );
 
 #endif

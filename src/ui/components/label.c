@@ -1,7 +1,6 @@
 ﻿#include <LCUI_Build.h>
 #include <LCUI/LCUI.h>
-#include <LCUI/gui/widget.h>
-#include <LCUI/gui/widget/textview.h>
+#include "ui/components.h"
 
 static struct LCUIEx_LabelModule {
 	LCUI_WidgetPrototype proto;

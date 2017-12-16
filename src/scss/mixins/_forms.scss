@@ -40,13 +40,12 @@
     z-index: 5;
     display: none;
     width: 250px;
-    padding: .5rem;
-    margin-top: .1rem;
-    font-size: .875rem;
+    padding: rem2px(.5);
+    margin-top: rem2px(.1);
+    font-size: rem2px(.875);
     line-height: 1;
     color: #fff;
     background-color: rgba($color, .8);
-    border-radius: .2rem;
   }
 
   .form-control,

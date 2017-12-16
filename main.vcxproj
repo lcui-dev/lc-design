@@ -153,8 +153,11 @@
     <ClCompile Include="src\main.c" />
     <ClCompile Include="src\ui\components\alert.c" />
     <ClCompile Include="src\ui\components\label.c" />
+    <ClCompile Include="src\ui\components\modal.c" />
     <ClCompile Include="src\ui\components\password.c" />
     <ClCompile Include="src\ui\components\typography.c" />
+    <ClCompile Include="src\ui\dismiss.c" />
+    <ClCompile Include="src\ui\toggle.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LCUIEx.h" />

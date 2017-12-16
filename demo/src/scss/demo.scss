@@ -155,8 +155,10 @@ root {
       background-color: mix($green, $white, 50);
     }
   }
-  &.modal-demo {
+  &.static-modal-demo {
     .modal {
+      width: auto;
+      height: auto;
       display: block;
       position: static;
     }

@@ -30,6 +30,15 @@
     <ClCompile Include="src\ui\components\alert.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\ui\components\modal.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\toggle.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\dismiss.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LCUIEx.h">
