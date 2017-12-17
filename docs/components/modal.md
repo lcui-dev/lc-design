@@ -50,7 +50,71 @@ Toggle a working modal demo by clicking the button below. It will slide down in 
         <w type="p">Woohoo, you're reading this text in a modal!</w>
       </w>
       <w class="modal-footer">
-        <w type="button" class="btn">Close</w>
+        <w type="button" class="btn" data-dismiss="modal">Close</w>
+        <w type="button" class="btn btn-primary">Save changes</w>
+      </w>
+    </w>
+  </w>
+</w>
+```
+
+### Scrolling long content
+
+When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.
+
+``` modal-demo-xml
+<!-- Button trigger modal -->
+<w type="button" class="btn btn-primary" data-toggle="modal" data-target="example-modal-2">
+  Launch demo modal
+</w>
+
+<!-- Modal -->
+<w id="example-modal-2" type="modal" class="modal">
+  <w class="modal-dialog">
+    <w class="modal-content">
+      <w class="modal-header">
+        <w type="h5" class="modal-title">Modal Title</w>
+        <w type="button" data-dismiss="modal" class="close">&#215;</w>
+      </w>
+      <w class="modal-body">
+        <w type="p">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</w>
+
+        <w type="p">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</w>
+
+        <w type="p">Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</w>
+
+        <w type="p">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</w>
+
+        <w type="p">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</w>
+
+        <w type="p">Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</w>
+
+        <w type="p">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</w>
+
+        <w type="p">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</w>
+
+        <w type="p">Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</w>
+
+        <w type="p">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</w>
+
+        <w type="p">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</w>
+
+        <w type="p">Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</w>
+
+        <w type="p">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</w>
+
+        <w type="p">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</w>
+
+        <w type="p">Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</w>
+
+        <w type="p">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</w>
+
+        <w type="p">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</w>
+
+        <w type="p">Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</w>
+      </w>
+      <w class="modal-footer">
+        <w type="button" class="btn" data-dismiss="modal">Close</w>
         <w type="button" class="btn btn-primary">Save changes</w>
       </w>
     </w>

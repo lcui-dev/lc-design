@@ -37,7 +37,6 @@ void Modal_Show( LCUI_Widget w )
 	}
 	Widget_Append( root, w );
 	Widget_Show( w );
-	Widget_PrintStyleSheets( w );
 }
 
 void Modal_Hide( LCUI_Widget w )

@@ -36,7 +36,7 @@ static void OnClick( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
 			continue;
 		}
 		for( w = e->target->parent; w; w = w->parent ) {
-			if( Widget_CheckType( w, "alert" ) ) {
+			if( Widget_CheckType( w, handler->name ) ) {
 				handler->dismiss( w );
 				break;
 			}
