@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://lcui.org">
-    <img src="https://lcui.lc-soft.io/static/images/lcui-logo-lg.png" width=72 height=72>
+    <img src="https://lc-soft.io/static/images/logo-lcui-css.png" width=72 height=72>
   </a>
 
   <h3 align="center">LCUI.css</h3>
