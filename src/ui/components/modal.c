@@ -1,6 +1,5 @@
 #include <LCUI_Build.h>
 #include <LCUI/LCUI.h>
-#include <LCUI/timer.h>
 #include "ui/components.h"
 #include <LCUI/gui/widget/scrollbar.h>
 

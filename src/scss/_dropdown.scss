@@ -1,9 +1,9 @@
 .dropdown-menu {
-  //position: absolute;
   top: 100%;
   left: 0;
+  position: absolute;
   z-index: $zindex-dropdown;
-  //display: none; // none by default, but block on "open" of the menu
+  display: none; // none by default, but block on "open" of the menu
   min-width: $dropdown-min-width;
   padding: $dropdown-padding-y 0;
   margin: $dropdown-spacer 0 0; // override default ul
@@ -13,6 +13,10 @@
   background-color: $dropdown-bg;
   border: $dropdown-border-width solid $dropdown-border-color;
   @include box-shadow($dropdown-box-shadow);
+
+  &.show {
+    display: block;
+  }
 }
 
 // Dividers (basically an `<hr>`) within the dropdown

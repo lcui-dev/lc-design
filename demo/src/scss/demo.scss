@@ -165,6 +165,12 @@ root {
       position: static;
     }
   }
+  &.static-dropdowns-demo {
+    .dropdown-menu {
+      display: block;
+      position: static;
+    }
+  }
 }
 
 $container-header-height: rem2px(3);

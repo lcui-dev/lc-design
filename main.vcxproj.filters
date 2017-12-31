@@ -21,6 +21,9 @@
     <ClCompile Include="src\ui\components\typography.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\ui\components\dropdown.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="src\ui\components\label.c">
       <Filter>源文件</Filter>
     </ClCompile>

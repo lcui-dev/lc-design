@@ -36,4 +36,16 @@ LCUI_API void Modal_Show( LCUI_Widget w );
 
 LCUI_API void Modal_Hide( LCUI_Widget w );
 
+LCUI_API void LCUIEx_InitDropdown( void );
+
+LCUI_API void Dropdown_Hide( LCUI_Widget w );
+
+LCUI_API void Dropdown_Show( LCUI_Widget w );
+
+LCUI_API void Dropdown_BindTarget( LCUI_Widget w, LCUI_Widget target );
+
+LCUI_API void Dropdown_Toggle( LCUI_Widget w );
+
+LCUI_API void Dropdown_SetPosition( LCUI_Widget w, LCUI_StyleValue position );
+
 #endif

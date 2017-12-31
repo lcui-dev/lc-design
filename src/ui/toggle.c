@@ -3,7 +3,7 @@
 #include <LCUI/gui/widget.h>
 #include "LCUIEx.h"
 
-#define HANDLERS_COUNT 1
+#define HANDLERS_COUNT 2
 
 typedef struct LCUIEx_ToggleHandlerRec_ {
 	const char *name;
@@ -17,11 +17,20 @@ static void ToggleModal( LCUI_Widget btn, LCUI_Widget target )
 	}
 }
 
+static void ToggleDropdown( LCUI_Widget btn, LCUI_Widget target )
+{
+	if( target ) {
+		Dropdown_BindTarget( target, btn );
+		Dropdown_Toggle( target );
+	}
+}
+
 static struct LCUIEx_ToggleModule {
 	LCUIEx_ToggleHandlerRec handlers[HANDLERS_COUNT];
 } self = {
 	{
-		{ "modal", ToggleModal }
+		{ "modal", ToggleModal },
+		{ "dropdown", ToggleDropdown }
 	}
 };
 
@@ -31,8 +40,13 @@ static void OnClick( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
 	const char *target_id;
 	const char *name = NULL;
 	LCUIEx_ToggleHandler handler;
-	if( e->target ) {
-		name = Widget_GetAttribute( e->target, "data-toggle" );
+	LCUI_Widget btn;
+
+	for( btn = e->target; btn; btn = btn->parent ) {
+		name = Widget_GetAttribute( btn, "data-toggle" );
+		if( name ) {
+			break;
+		}
 	}
 	if( !name ) {
 		return;
@@ -42,8 +56,8 @@ static void OnClick( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
 		if( strcmp( handler->name, name ) != 0 ) {
 			continue;
 		}
-		target_id = Widget_GetAttribute( e->target, "data-target" );
-		handler->toggle( e->target, LCUIWidget_GetById( target_id ) );
+		target_id = Widget_GetAttribute( btn, "data-target" );
+		handler->toggle( btn, LCUIWidget_GetById( target_id ) );
 	}
 }
 
