@@ -3,6 +3,8 @@
 @import "../../../src/scss/mixins";
 
 $sidebar-width: 256px;
+$navbar-bg-color: #7952b3;
+$demo-primary-color: #7952b3;
 
 root {
   min-width: 1080px;
@@ -10,7 +12,7 @@ root {
 }
 .demo-navbar {
   width: 100%;
-  background-color: $green;
+  background-color: $navbar-bg-color;
   
   .navbar-brand {
     width: 37.75px;
@@ -42,7 +44,7 @@ root {
   padding: rem2px(5) rem2px(1);
 
   h1 {
-    color: $green;
+    color: #7952b3;
   }
 }
 .demo-sidebar {
@@ -67,7 +69,7 @@ root {
     }
 
     &.active {
-      background-color: rgba($green, .1);
+      background-color: rgba($demo-primary-color, .1);
     }
   }
   .nav-header {
@@ -124,7 +126,7 @@ root {
       }
       &:active {
         color: #fff;
-        background-color: $green;
+        background-color: $demo-primary-color;
       }
     }
   }
@@ -148,11 +150,11 @@ root {
   }
   &.grid-demo {
     .col {
-      color: darken($green, 20);
+      color: darken($demo-primary-color, 20);
       text-align: center;
       padding: rem2px(.75);
-      border: 1px solid $green;
-      background-color: mix($green, $white, 50);
+      border: 1px solid $demo-primary-color;
+      background-color: mix($demo-primary-color, $white, 50);
     }
   }
   &.static-modal-demo {
@@ -189,22 +191,21 @@ $container-header-margin-bottom: rem2px(.5);
 
 .docs-example-container-content {
   height: rem2px(8);
-  background-color: lighten($green, 10%);
+  background-color: lighten($demo-primary-color, 10%);
 }
 
 scrollbar {
   width: 10px;
-  background-color: rgba(#ddd, .2);
-  border: 1px solid rgba(#ddd, .5);
+  background-color: #f1f1f1;
 
   .slider {
-    background-color: #bbb;
+    background-color: #c1c1c1;
 
     &:hover {
-      background-color: #aaa;
+      background-color: darken(#c1c1c1, 10%);
     }
     &:active {
-      background-color: #999;
+      background-color: darken(#c1c1c1, 20%);
     }
   }
 }

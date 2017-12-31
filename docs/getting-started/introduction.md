@@ -8,7 +8,7 @@ Download the compiled LCUI.css package:
 
 ``` embedded-xml
 <w type="p">
-  <w type="a" class="btn btn-green" href="https://github.com/lc-ui/lcui.css/releases">Download LCUI.css</w>
+  <w type="a" class="btn" href="https://github.com/lc-ui/lcui.css/releases">Download LCUI.css</w>
 </w>
 ```
 
