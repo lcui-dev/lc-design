@@ -42,6 +42,9 @@
     <ClCompile Include="src\ui\dismiss.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\ui\components\icon.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LCUIEx.h">

@@ -25,6 +25,7 @@ void LCUIEx_Init( void )
 {
 	LCUIEx_InitAlert();
 	LCUIEx_InitLabel();
+	LCUIEx_InitIcon();
 	LCUIEx_InitPassword();
 	LCUIEx_InitTypograhy();
 	LCUIEx_InitModal();

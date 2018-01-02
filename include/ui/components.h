@@ -26,6 +26,8 @@ LCUI_API void LCUIEx_InitAlert( void );
 
 LCUI_API void LCUIEx_InitLabel( void );
 
+LCUI_API void LCUIEx_InitIcon( void );
+
 LCUI_API void LCUIEx_InitPassword( void );
 
 LCUI_API void LCUIEx_InitTypograhy( void );
