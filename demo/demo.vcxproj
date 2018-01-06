@@ -108,7 +108,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)vendor\include;$(SolutionDir)..\LCUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -132,7 +132,7 @@ xcopy "$(SolutionDir)dist\assets" "$(ProjectDir)app\assets" /S /Y</Command>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)vendor\include;$(SolutionDir)..\LCUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -172,6 +172,7 @@ xcopy "$(SolutionDir)dist\assets" "$(ProjectDir)app\assets" /S /Y</Command>
     <ClCompile Include="src\ui\helpers\ui_helper.c" />
     <ClCompile Include="src\ui\views\documentation_view.c" />
     <ClCompile Include="src\ui\views\home_view.c" />
+    <ClCompile Include="src\ui\views\navbar.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ui.h" />

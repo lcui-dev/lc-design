@@ -30,6 +30,9 @@
     <ClCompile Include="src\ui\helpers\ui_helper.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\ui\views\navbar.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ui.h">

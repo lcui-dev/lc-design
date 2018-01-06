@@ -12,6 +12,7 @@ typedef enum NavigationPointId {
 
 void ActiveLink( LCUI_Widget parent, const char *link_id );
 
+void Navbar_Init( void );
 void Navigation_Init( void );
 
 void DocumentationView_Init( void );

@@ -24,6 +24,10 @@
     &, &:focus {
       background-color: $active-background;
       border-color: $active-border;
+
+      @include text {
+        color: color-yiq($active-background);
+      }
     }
   }
 
@@ -68,6 +72,10 @@
     &, &:focus {
       background-color: darken($color, 5);
       border-color: darken($color, 4);
+
+      @include text {
+        color: $color-hover;
+      }
     }
   }
 

@@ -78,14 +78,20 @@
 
   .navbar-nav {
     .nav-link {
-      color: $navbar-light-color;
+      @include text {
+        color: $navbar-light-color;
+      }
 
       @include hover-focus {
-        color: $navbar-light-hover-color;
+        @include text {
+          color: $navbar-light-hover-color;
+        }
       }
 
       &.disabled {
-        color: $navbar-light-disabled-color;
+        @include text {
+          color: $navbar-light-disabled-color;
+        }
       }
     }
 
@@ -93,7 +99,9 @@
     .active .nav-link,
     .nav-link.show,
     .nav-link.active {
-      color: $navbar-light-active-color;
+      @include text {
+        color: $navbar-light-active-color;
+      }
     }
   }
 
@@ -121,14 +129,20 @@
 
   .navbar-nav {
     .nav-link {
-      color: $navbar-dark-color;
+      @include text {
+        color: $navbar-dark-color;
+      }
 
       @include hover-focus {
-        color: $navbar-dark-hover-color;
+        @include text {
+          color: $navbar-dark-hover-color;
+        }
       }
 
       &.disabled {
-        color: $navbar-dark-disabled-color;
+        @include text {
+          color: $navbar-dark-disabled-color;
+        }
       }
     }
 
@@ -136,7 +150,9 @@
     .active .nav-link,
     .nav-link.show,
     .nav-link.active {
-      color: $navbar-dark-active-color;
+      @include text {
+        color: $navbar-dark-active-color;
+      }
     }
   }
 

@@ -15,6 +15,20 @@
       </w>
       <w class="navbar-nav float-right">
         <w class="nav-item">
+          <w id="btn-change-global-scale" class="nav-link" data-toggle="dropdown" data-target="dropdown-global-scale">
+            <w type="textview">100%</w>
+            <w type="icon" class="text" name="chevron-down"></w>
+          </w>
+          <w type="dropdown-menu" id="dropdown-global-scale">
+            <w type="h6" class="dropdown-header">Zoom level</w>
+            <w type="textview" class="dropdown-item" value="1">100%</w>
+            <w type="textview" class="dropdown-item" value="1.25">125%</w>
+            <w type="textview" class="dropdown-item" value="1.5">150%</w>
+            <w type="textview" class="dropdown-item" value="1.75">175%</w>
+            <w type="textview" class="dropdown-item" value="2">200%</w>
+          </w>
+        </w>
+        <w class="nav-item">
           <w class="nav-link icon icon-github-circle" type="textview"></w>
         </w>
         <w type="button" class="btn btn-outline-yellow ml-3">Download</w>

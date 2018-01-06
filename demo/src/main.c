@@ -44,5 +44,6 @@ int main( int argc, char **argv )
 	Widget_Unwrap( pack );
 	Widget_SetTitleW( root, L"LCUI.css - A simple CSS framework for building LCUI application." );
 	Navigation_Init();
+	Navbar_Init();
 	return LCUI_Main();
 }
