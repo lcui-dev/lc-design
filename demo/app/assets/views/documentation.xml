@@ -14,21 +14,6 @@
                   Introduction
                 </w>
               </w>
-              <w class="nav-item">
-                <w class="nav-link" type="a" href="getting-started/download.xml" target="demo-content">
-                  Download
-                </w>
-              </w>
-              <w class="nav-item">
-                <w class="nav-link" type="textview">
-                  Contents
-                </w>
-              </w>
-              <w class="nav-item">
-                <w class="nav-link" type="textview">
-                  Build tools
-                </w>
-              </w>
             </w>
           </w>
           <w class="nav-item">
@@ -46,11 +31,6 @@
                   Grid
                 </w>
               </w>
-              <w class="nav-item">
-                <w class="nav-link" type="textview">
-                  Utilities for layout
-                </w>
-              </w>
             </w>
           </w>
           <w class="nav-item">
@@ -66,11 +46,6 @@
               <w class="nav-item">
                 <w class="nav-link" type="a" href="content/icons.xml" target="demo-content">
                   Icons
-                </w>
-              </w>
-              <w class="nav-item">
-                <w class="nav-link" type="textview">
-                  Images
                 </w>
               </w>
             </w>
@@ -91,16 +66,6 @@
                 </w>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="textview">
-                  Button group
-                </w>
-              </w>
-              <w class="nav-item">
-                <w class="nav-link" type="textview">
-                  Card
-                </w>
-              </w>
-              <w class="nav-item">
                 <w class="nav-link" type="a" href="components/dropdowns.xml" target="demo-content">
                   Dropdowns
                 </w>
@@ -118,21 +83,6 @@
               <w class="nav-item">
                 <w class="nav-link" type="a" href="components/modal.xml" target="demo-content">
                   Modal
-                </w>
-              </w>
-              <w class="nav-item">
-                <w class="nav-link" type="textview">
-                  Navs
-                </w>
-              </w>
-              <w class="nav-item">
-                <w class="nav-link" type="textview">
-                  Navbar
-                </w>
-              </w>
-              <w class="nav-item">
-                <w class="nav-link" type="textview">
-                  Progress
                 </w>
               </w>
               <w class="nav-item">
