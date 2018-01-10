@@ -35,6 +35,7 @@ In need of a button, but not the hefty background colors they bring? Replace the
 ```
 
 ## Sizes
+
 Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes.
 
 ``` buttons-demo-xml
