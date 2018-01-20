@@ -18,24 +18,48 @@ Copy the files from the dist directory to your project directory, and configure 
 
 ``` xml
 <resource type="text/css" src="assets/stylesheets/lcui.css"/>
-<resource type="application/font-ttf" src="assets/fonts/iconfont.ttf"/>
 ```
 
 ### C Dependencies
 
-Copy include and lib directory from the dist directory to you project vendor directory, and configure your project compiler settings.
+Copy **include** and **lib** directory from the **dist** directory to you project **vendor** directory, and configure your project compiler settings.
 
 ## Starter template
+
+main.xml:
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <lcui-app>
   <resource type="text/css" src="assets/stylesheets/lcui.css"/>
-  <resource type="application/font-ttf" src="assets/fonts/iconfont.ttf"/>
   <ui>
     <w type="h1">Hello, world!</w>
   </ui>
 </lcui-app>
+```
+
+main.c:
+
+``` c
+#include <LCUI_Build.h>
+#include <LCUI/LCUI.h>
+#include <LCUI/gui/widget.h>
+#include <LCUI/gui/builder.h>
+
+int main( int argc, char **argv )
+{
+        LCUI_Widget root, pack;
+
+        LCUI_Init();
+        root = LCUIWidget_GetRoot();
+        pack = LCUIBuilder_LoadFile( "main.xml" );
+        if( !pack ) {
+                return -1;
+        }
+        Widget_Append( root, pack );
+        Widget_Unwrap( pack );
+        return LCUI_Main();
+}
 ```
 
 That's all you need for overall app requirements. Visit the Layout docs or our official examples to start laying out your site’s content and components.

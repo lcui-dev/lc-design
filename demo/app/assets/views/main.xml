@@ -10,7 +10,7 @@
           <w class="nav-link" type="a" id="navbar-link-home" href="home.xml" target="demo-body">Home</w>
         </w>
         <w class="nav-item" nav-point="docs">
-          <w class="nav-link" type="a" id="navbar-link-doc" href="documentation.xml" target="demo-body">Documentation</w>
+          <w class="nav-link" type="a" id="navbar-link-docs" href="documentation.xml" target="demo-body">Documentation</w>
         </w>
       </w>
       <w class="navbar-nav float-right">
@@ -29,9 +29,9 @@
           </w>
         </w>
         <w class="nav-item">
-          <w class="nav-link icon icon-github-circle" type="textview"></w>
+          <w type="a" href="https://github.com/lc-ui/lcui.css" class="nav-link icon icon-github-circle"></w>
         </w>
-        <w type="button" class="btn btn-outline-yellow ml-3">Download</w>
+        <w type="a" href="https://github.com/lc-ui/lcui.css/releases" class="btn btn-outline-yellow ml-3">Download</w>
       </w>
     </w>
     <w id="demo-body" class="demo-body"></w>
