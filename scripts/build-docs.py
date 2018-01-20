@@ -254,6 +254,15 @@ class XMLRenderer(m.HtmlRenderer):
         text = convert_html(highlight(code, lexer, formatter))
         return self.CODE_TMPL.format(text)
 
+    def emphasis(self, text):
+        return '[b]{}[/b]'.format(text)
+    
+    def double_emphasis(self, text):
+        return '[b]{}[/b]'.format(text)
+    
+    def triple_emphasis(self, text):
+        return '[b]{}[/b]'.format(text)
+    
     def paragraph(self, text):
         return '<w type="p">{}</w>\n'.format(text)
     
