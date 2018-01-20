@@ -1,9 +1,11 @@
 #define ID_SIDEBAR_LINKS	"demo-sidebar-links"
 #define ID_NAVBAR_LINKS		"demo-navbar-links"
 #define ID_LINK_NAV_HOME	"navbar-link-home"
+#define ID_LINK_NAV_DOCS	"navbar-link-docs"
 #define ID_LINK_GETTING_STARTED	"doc-link-getting-strted"
 
 typedef enum NavigationPointId {
+	NAV_NONE,
 	NAV_HOME,
 	NAV_DOCS,
 	NAV_TOTAL_NUM
