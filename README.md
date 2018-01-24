@@ -16,6 +16,8 @@
 
 ## Download
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lc-ui/lcui.css.svg)](https://greenkeeper.io/)
+
 - [Download the latest release.](https://github.com/lc-ui/lcui.css/releases)
 - Clone the repo: `https://github.com/lc-ui/lcui.css.git`
 
