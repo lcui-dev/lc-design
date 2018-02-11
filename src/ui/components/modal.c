@@ -1,6 +1,6 @@
 #include <LCUI_Build.h>
 #include <LCUI/LCUI.h>
-#include "ui/components.h"
+#include <LCUIEx/ui/components.h>
 #include <LCUI/gui/widget/scrollbar.h>
 
 typedef struct LCUIEx_ModalRec_ {

@@ -163,7 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LCUIEx.h" />
-    <ClInclude Include="include\ui\components.h" />
+    <ClInclude Include="include\LCUIEx\ui\components.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -20,7 +20,7 @@
 #include <LCUI_Build.h>
 #include <LCUI/LCUI.h>
 #include <LCUI/gui/widget.h>
-#include "ui/components.h"
+#include <LCUIEx/ui/components.h>
 
 void LCUIEx_InitTypograhy( void )
 {

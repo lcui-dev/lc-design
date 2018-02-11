@@ -1,7 +1,7 @@
 ﻿#include <stdio.h>
 #include <LCUI_Build.h>
 #include <LCUI/LCUI.h>
-#include "ui/components.h"
+#include <LCUIEx/ui/components.h>
 
 #define CLASS_NAME		"icon"
 #define CLASS_PREFIX_NAME	"icon-"

@@ -20,7 +20,7 @@
 #ifndef LCUIEX_H
 #define LCUIEX_H
 
-#include "ui/components.h"
+#include <LCUIEx/ui/components.h>
 
 LCUI_API void LCUIEx_InitToggle( void );
 

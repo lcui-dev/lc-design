@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\LCUIEx">
+      <UniqueIdentifier>{77a88f5c-5e32-4f96-823c-71ef7b7eaa5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\LCUIEx\components">
+      <UniqueIdentifier>{147f2b02-5a02-4e85-9225-f945930f2cfa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.c">
@@ -50,8 +56,8 @@
     <ClInclude Include="include\LCUIEx.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\ui\components.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="include\LCUIEx\ui\components.h">
+      <Filter>头文件\LCUIEx</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

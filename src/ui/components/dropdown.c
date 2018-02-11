@@ -36,7 +36,7 @@
 
 #include <LCUI_Build.h>
 #include <LCUI/LCUI.h>
-#include "ui/components.h"
+#include <LCUIEx/ui/components.h>
 
 typedef struct LCUIEx_DropdownRec_ {
 	int handler_id;
