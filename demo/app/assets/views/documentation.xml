@@ -76,7 +76,7 @@
                 </w>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="textview">
+                <w class="nav-link" type="a" href="components/list-group.xml" target="demo-content">
                   List group
                 </w>
               </w>

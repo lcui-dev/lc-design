@@ -51,6 +51,7 @@ int main( int argc, char **argv )
         LCUI_Widget root, pack;
 
         LCUI_Init();
+        LCUIEx_Init();
         root = LCUIWidget_GetRoot();
         pack = LCUIBuilder_LoadFile( "main.xml" );
         if( !pack ) {

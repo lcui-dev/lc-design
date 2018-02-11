@@ -171,6 +171,11 @@ root {
       position: static;
     }
   }
+  &.list-group-demo {
+    .list-group {
+      max-width: 400px;
+    }
+  }
 }
 
 $container-header-height: rem2px(3);

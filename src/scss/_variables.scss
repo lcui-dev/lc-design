@@ -120,7 +120,7 @@ $sizes: (
 ) !default;
 
 $text-elements: i, b, a, p, h1, h2, h3, h4, h5, h6,
-label, cite, strong, textview, textedit, password;
+label, cite, strong, textview, textedit, password, button;
 
 // Body
 //
@@ -474,6 +474,31 @@ $alert-margin-bottom:               rem2px(1) !default;
 $alert-border-radius:               $border-radius !default;
 $alert-link-font-weight:            $font-weight-bold !default;
 $alert-border-width:                $border-width !default;
+
+
+// List group
+
+$list-group-bg:                     $white !default;
+$list-group-border-color:           rgba($black, .125) !default;
+$list-group-border-width:           $border-width !default;
+$list-group-border-radius:          $border-radius !default;
+
+$list-group-item-padding-y:         rem2px(.75) !default;
+$list-group-item-padding-x:         rem2px(1.25) !default;
+
+$list-group-hover-bg:               $gray-100 !default;
+$list-group-active-color:           $component-active-color !default;
+$list-group-active-bg:              $component-active-bg !default;
+$list-group-active-border-color:    $list-group-active-bg !default;
+
+$list-group-disabled-color:         $gray-600 !default;
+$list-group-disabled-bg:            $list-group-bg !default;
+
+$list-group-action-color:           $gray-700 !default;
+$list-group-action-hover-color:     $list-group-action-color !default;
+
+$list-group-action-active-color:    $body-color !default;
+$list-group-action-active-bg:       $gray-200 !default;
 
 
 // Close
