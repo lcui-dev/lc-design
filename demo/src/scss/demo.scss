@@ -176,6 +176,14 @@ root {
       max-width: 400px;
     }
   }
+  &.scrollbar-demo {
+    .view-box {
+      height: 480px;
+      padding: 15px;
+      box-sizing: border-box;
+      border: 1px solid #eee;
+    }
+  }
 }
 
 $container-header-height: rem2px(3);
@@ -208,15 +216,15 @@ $container-header-margin-bottom: rem2px(.5);
 scrollbar {
   width: 10px;
   background-color: #f1f1f1;
+}
 
-  .slider {
-    background-color: #c1c1c1;
+.scrollbar-slider {
+  background-color: #c1c1c1;
 
-    &:hover {
-      background-color: darken(#c1c1c1, 10%);
-    }
-    &:active {
-      background-color: darken(#c1c1c1, 20%);
-    }
+  &:hover {
+    background-color: darken(#c1c1c1, 10%);
+  }
+  &:active {
+    background-color: darken(#c1c1c1, 20%);
   }
 }

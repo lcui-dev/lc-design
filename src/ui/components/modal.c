@@ -45,7 +45,7 @@ static void Modal_InitDialog( LCUI_Widget w )
 		}
 	}
 	if( modal->dialog ) {
-		ScrollBar_BindLayer( modal->scrollbar, modal->dialog );
+		ScrollBar_BindTarget( modal->scrollbar, modal->dialog );
 	}
 }
 
