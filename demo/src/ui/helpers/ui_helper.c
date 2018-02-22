@@ -15,7 +15,7 @@ void ActiveLink( LCUI_Widget parent, const char *link_id )
 	if( !link ) {
 		return;
 	}
-	ev.type = WET_CLICK;
+	ev.type = LCUI_WEVENT_CLICK;
 	ev.button.button = 1;
 	Widget_TriggerEvent( link, &ev, NULL );
 }
