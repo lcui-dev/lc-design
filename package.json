@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "demo": "cd demo/app && ./demo",
+    "demo": "node ./scripts/demo.js",
     "build": "npm-run-all build-css build-font build-bin build-demo",
-    "build-bin": "xmake",
+    "build-bin": "node ./scripts/build-bin.js",
     "build-css": "node-sass --output dist/assets/stylesheets --output-style expanded src/scss/lcui.scss",
     "build-font": "node ./scripts/build-font.js",
     "build-demo": "npm-run-all build-demo-bin build-demo-assets",
