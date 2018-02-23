@@ -31,14 +31,14 @@ target("demo")
     add_linkdirs("../vendor/lib", "../dist/lib")
     add_links("LCUIEx", "LCUI")
     before_build(function (target)
-        if is_os("windows") then
+        if val("plat") == "windows" then
             os.cp("../dist/lib/*.dll", "app/")
         else
             os.cp("../dist/lib/*.so", "app/")
         end
         os.cp("../dist/assets/*", "app/assets")
     end)
-    if is_os("windows") then
+    if not is_os("windows") then
         add_rpathdirs(".", "/usr/local/lib")
     end
 
