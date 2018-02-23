@@ -36,6 +36,7 @@ After installing NodeJS, please run the following command to install the NodeJS 
 ### Build Targets
 
     npm run build             # Build all targets.
+    npm run build-bin         # Build binary files.
     npm run build-css         # Build css file.
     npm run build-font        # Build iconfont file.
     npm run build-demo        # Build demo application.
