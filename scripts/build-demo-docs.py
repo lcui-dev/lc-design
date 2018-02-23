@@ -1,3 +1,4 @@
+# -*- coding:utf8 -*-
 import os
 import sys
 import misaka as m
@@ -128,19 +129,15 @@ XML_TEMPLATE = '''\
 
 def get_style_tags(class_name):
     def get_value(name):
-        value = None
-        if base_style.has_key(name):
-            value = base_style[name]
-        if new_style and new_style.has_key(name):
+        value = base_style.get(name)
+        if new_style and new_style.get(name):
             value = new_style[name]
         return value
 
     tags = []
-    new_style = None
-    if not HIGHLIGH_STYLES.has_key(class_name):
+    if not HIGHLIGH_STYLES.get(class_name):
         return tags
-    if VS_STYLES.has_key(class_name):
-        new_style = VS_STYLES[class_name]
+    new_style = VS_STYLES.get(class_name)
     base_style = HIGHLIGH_STYLES[class_name]
     value = get_value('color')
     if value:
@@ -168,7 +165,7 @@ def get_style_tags_str(tags):
     tags_str = ''
     for tag in tags:
         tags_str += '[%s' % tag['name']
-        if tag.has_key('value'):
+        if tag.get('value'):
             tags_str += '=%s' % tag['value']
         tags_str += ']'
     return tags_str
@@ -293,9 +290,13 @@ def build_docs(docs_dir='docs', output_dir='demo/app/assets/views'):
             xml_dir = os.path.dirname(xml_path)
             if not os.path.exists(xml_dir):
                 os.makedirs(xml_dir)
-            print 'build: %s' % xml_path
-            md_file = open(doc_path, 'r')
-            xml_file = open(xml_path, 'w+')
+            print('build: %s' % xml_path)
+            if sys.version_info > (3, 0):
+                md_file = open(doc_path, 'r', encoding='utf8')
+                xml_file = open(xml_path, 'w+', encoding='utf8')
+            else:
+                md_file = open(doc_path, 'r')
+                xml_file = open(xml_path, 'w+')
             xml_content = md(md_file.read())
             xml_content = XML_TEMPLATE.format(xml_content)
             xml_file.write(xml_content)
@@ -303,6 +304,7 @@ def build_docs(docs_dir='docs', output_dir='demo/app/assets/views'):
             md_file.close()
 
 if __name__ == '__main__':
-    reload(sys)
-    sys.setdefaultencoding('utf-8')
+    if sys.version_info < (3, 0):
+        reload(sys)
+        sys.setdefaultencoding('utf8')
     build_docs()
