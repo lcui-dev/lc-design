@@ -20,10 +20,14 @@ end
 
 target("LCUIEx")
     set_kind("shared")
+    set_targetdir("dist/lib")
     add_files("src/*.c")
     add_files("src/ui/*.c")
     add_files("src/ui/components/*.c")
     add_includedirs("include", "../LCUI/include", "vendor/include", "vendor/lib")
     add_links("LCUI")
-    add_rpathdirs("/usr/local/lib")
-    set_targetdir("dist/lib")
+    if is_os("windows") then
+        add_linkdirs("vendor/lib")
+    else
+        add_rpathdirs("/usr/local/lib")
+    end

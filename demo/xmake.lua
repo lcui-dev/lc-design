@@ -29,14 +29,16 @@ target("demo")
     add_files("src/ui/helpers/*.c")
     add_includedirs("include", "../include", "../../LCUI/include", "../vendor/include")
     add_linkdirs("../vendor/lib", "../dist/lib")
-    add_rpathdirs(".", "../../dist/lib", "/usr/local/lib")
     add_links("LCUIEx", "LCUI")
     before_build(function (target)
-        if "$(os)" == "windows" then
+        if is_os("windows") then
             os.cp("../dist/lib/*.dll", "app/")
         else
             os.cp("../dist/lib/*.so", "app/")
         end
         os.cp("../dist/assets/*", "app/assets")
     end)
+    if is_os("windows") then
+        add_rpathdirs(".", "/usr/local/lib")
+    end
 
