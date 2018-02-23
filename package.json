@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm-run-all build-css build-font build-demo build-docs",
+    "demo": "cd demo/app && ./demo",
+    "build": "npm-run-all build-css build-font build-bin build-demo",
+    "build-bin": "xmake",
     "build-css": "node-sass --output dist/assets/stylesheets --output-style expanded src/scss/lcui.scss",
     "build-font": "node ./scripts/build-font.js",
-    "build-demo": "npm-run-all build-demo-css build-demo-exe",
+    "build-demo": "npm-run-all build-demo-bin build-demo-assets",
+    "build-demo-assets": "npm-run-all build-demo-css build-demo-docs",
+    "build-demo-bin": "node ./scripts/build-demo-bin.js",
     "build-demo-css": "node-sass --output demo/app/assets/stylesheets --output-style expanded demo/src/scss/demo.scss",
-    "build-demo-exe": "node ./scripts/build-demo-exe.js",
-    "build-docs": "python ./scripts/build-docs.py"
+    "build-demo-docs": "python ./scripts/build-demo-docs.py"
   },
   "repository": {
     "type": "git",

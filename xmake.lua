@@ -11,9 +11,6 @@ end
 -- the release mode
 if is_mode("release") then
 
-    -- set the symbols visibility: hidden
-    set_symbols("hidden")
-
     -- enable fastest optimization
     set_optimize("fastest")
 
@@ -26,9 +23,7 @@ target("LCUIEx")
     add_files("src/*.c")
     add_files("src/ui/*.c")
     add_files("src/ui/components/*.c")
-    add_includedirs("include")
-    add_includedirs("../LCUI/include")
-    add_includedirs("vendor/include")
-    add_linkdirs("vendor/lib")
+    add_includedirs("include", "../LCUI/include", "vendor/include", "vendor/lib")
     add_links("LCUI")
+    add_rpathdirs("/usr/local/lib")
     set_targetdir("dist/lib")

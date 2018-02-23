@@ -1,5 +1,5 @@
+var iconv = require('iconv-lite')
 var child_process = require('child_process')
-var iconv = require('iconv-lite');
 
 function getVisualStudioPath() {
   var options = { encoding: 'ASCII' }
@@ -26,15 +26,24 @@ function getVSDevCmdPath() {
   return path + 'Common7\\Tools\\VsDevCmd.bat'
 }
 
-function runBuildCmd(path) {
-  var encoding = 'cp936'
-  var binaryEncoding = 'binary'
-  var options = { encoding: binaryEncoding }
-  var cmd = 'cmd /c .\\scripts\\build-demo-exe "' + path + '"'
-  child_process.exec(cmd, options, function (err, stdout, stderr) {
-    console.log(iconv.decode(new Buffer(stdout, binaryEncoding), encoding))
-    console.log(iconv.decode(new Buffer(stderr, binaryEncoding), encoding))
-  })
+module.exports = {
+  exec: function (filename) {
+    var path = getVSDevCmdPath()
+  	if (!path) {
+  		return false
+  	}
+
+	  var encoding = 'cp936'
+  	var binaryEncoding = 'binary'
+	  var options = { encoding: binaryEncoding }
+  	var cmd = 'cmd /c ' + filename + ' "' + path + '"'
+	  child_process.exec(cmd, options, function (err, stdout, stderr) {
+	    console.log(iconv.decode(new Buffer(stdout, binaryEncoding), encoding))
+  	  console.log(iconv.decode(new Buffer(stderr, binaryEncoding), encoding))
+	  })
+  },
+  exists: function () {
+    return process.platform == 'win32' && !!getVSDevCmdPath()
+  }
 }
 
-runBuildCmd(getVSDevCmdPath())
