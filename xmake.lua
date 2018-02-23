@@ -1,3 +1,9 @@
+-- lcui.css 
+set_project("lcui.css")
+
+-- xmake minver
+set_xmakever("2.1.6")
+
 -- the debug mode
 if is_mode("debug") then
     
@@ -25,9 +31,12 @@ target("LCUIEx")
     add_files("src/ui/*.c")
     add_files("src/ui/components/*.c")
     add_includedirs("include", "../LCUI/include", "vendor/include", "vendor/lib")
-    add_links("LCUI")
     if is_os("windows") then
         add_linkdirs("vendor/lib")
-    else
-        add_rpathdirs("/usr/local/lib")
     end
+    on_load(function (target)
+        import("lib.detect.find_package")
+        target:add(find_package("LCUI"))
+    end)
+
+includes("demo")
