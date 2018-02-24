@@ -33,6 +33,7 @@ target("LCUIEx")
     add_includedirs("include", "../LCUI/include", "vendor/include", "vendor/lib")
     if is_os("windows") then
         add_linkdirs("vendor/lib")
+        add_links("LCUI")
     end
     on_load(function (target)
         import("lib.detect.find_package")
