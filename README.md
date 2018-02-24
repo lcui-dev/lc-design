@@ -18,6 +18,8 @@
 
 LCUI.css is a UI component framework for building [LCUI](https://github.com/lc-soft/LCUI) application, it provides basic styles for typography and elements, simple layout system, CSS components and utilities. Its CSS code is based [Bootstrap](https://github.com/twbs/bootstrap), so its usage is basically the same as Boostrap.
 
+[中文版说明文档](README.zh-cn.md)
+
 ## Build
 
 ### Prerequisites
