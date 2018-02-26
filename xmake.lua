@@ -30,14 +30,11 @@ target("LCUIEx")
     add_files("src/*.c")
     add_files("src/ui/*.c")
     add_files("src/ui/components/*.c")
-    add_includedirs("include", "../LCUI/include", "vendor/include", "vendor/lib")
-    if is_os("windows") then
-        add_linkdirs("vendor/lib")
-        add_links("LCUI")
-    end
+    add_defines("LCUI_EXPORTS")
+    add_includedirs("include", "../LCUI/include", "vendor/include")
     on_load(function (target)
         import("lib.detect.find_package")
-        target:add(find_package("LCUI"))
+        target:add(find_package("LCUI", {linkdirs = "vendor/lib"}))
     end)
 
 includes("demo")
