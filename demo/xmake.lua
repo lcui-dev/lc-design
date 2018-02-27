@@ -9,8 +9,11 @@ target("demo")
     add_includedirs("include", "../include", "../../LCUI/include", "../vendor/include")
 
     before_build(function (target)
-        os.cp("dist/lib/" .. target.filename("*", "shared"), "app/")
-        os.trycp("dist/assets/*", "app/assets")
+        if val("plat") == "windows" then
+            os.cp("dist/lib/" .. target.filename("*", "shared"), "$(scriptdir)/app/")
+            os.cp("vendor/lib/" .. target.filename("*", "shared"), "$(scriptdir)/app/")
+        end
+        os.trycp("dist/assets/*", "$(scriptdir)/app/assets")
     end)
 
     if is_mode("release") then
