@@ -94,7 +94,7 @@ static void OnViewLoaded( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
 			break;
 		default:return;
 		}
-		link = LCUIWidget_GetById( link_id );
+		link = GetNavigationItem( LCUIWidget_GetById( link_id ) );
 	}
 	Navgation_ActivePoint( link, id );
 }
