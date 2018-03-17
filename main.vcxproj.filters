@@ -59,5 +59,32 @@
     <ClInclude Include="include\LCUIEx\ui\components.h">
       <Filter>头文件\LCUIEx</Filter>
     </ClInclude>
+    <ClInclude Include="include\LCUIEx\ui\components\dropdown.h">
+      <Filter>头文件\LCUIEx\components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LCUIEx\ui\components\modal.h">
+      <Filter>头文件\LCUIEx\components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LCUIEx\ui\components\password.h">
+      <Filter>头文件\LCUIEx\components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LCUIEx\ui\components\icon.h">
+      <Filter>头文件\LCUIEx\components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LCUIEx\ui\components\typography.h">
+      <Filter>头文件\LCUIEx\components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LCUIEx\ui\components\label.h">
+      <Filter>头文件\LCUIEx\components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LCUIEx\ui\components\alert.h">
+      <Filter>头文件\LCUIEx\components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LCUIEx\ui\toggle.h">
+      <Filter>头文件\LCUIEx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LCUIEx\ui\dismiss.h">
+      <Filter>头文件\LCUIEx</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

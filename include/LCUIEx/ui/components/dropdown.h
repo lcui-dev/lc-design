@@ -1,6 +1,6 @@
 ﻿/*
- * label.c -- Label component, Label component, which is used to represents 
- * a caption for an item in a user interface.
+ * dropdown.h -- Dropdowns are toggleable, contextual overlays for displaying
+ * lists of links and more.
  *
  * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
  *
@@ -29,34 +29,19 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <LCUI_Build.h>
-#include <LCUI/LCUI.h>
-#include <LCUI/gui/widget.h>
+#ifndef LCUIEX_DROPDOWN_H_
+#define LCUIEX_DROPDOWN_H_
 
-static struct LCUIEx_LabelModule {
-	LCUI_WidgetPrototype proto;
-} self;
+LCUI_API void LCUIEx_InitDropdown( void );
 
-static void Label_OnClick( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
-{
-	LCUI_Widget target = NULL;
-	const char *target_id = Widget_GetAttribute( w, "for" );
-	if( target_id ) {
-		target = LCUIWidget_GetById( target_id );
-	}
-	if( target ) {
-		LCUIWidget_SetFocus( target );
-	}
-}
+LCUI_API void Dropdown_Hide( LCUI_Widget w );
 
-static void Label_Init( LCUI_Widget w )
-{
-	self.proto->proto->init( w );
-	Widget_BindEvent( w, "click", Label_OnClick, NULL, NULL );
-}
+LCUI_API void Dropdown_Show( LCUI_Widget w );
 
-void LCUIEx_InitLabel( void )
-{
-	self.proto = LCUIWidget_NewPrototype( "label", "textview" );
-	self.proto->init = Label_Init;
-}
+LCUI_API void Dropdown_BindTarget( LCUI_Widget w, LCUI_Widget target );
+
+LCUI_API void Dropdown_Toggle( LCUI_Widget w );
+
+LCUI_API void Dropdown_SetPosition( LCUI_Widget w, LCUI_StyleValue position );
+
+#endif
