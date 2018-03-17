@@ -5,7 +5,7 @@
       <w class="container">
         <w type="h1">LCUI.css</w>
         <w type="p" class="lead">
-          A simple CSS framework for building LCUI application.
+          A UI component framework for building LCUI application.
         </w>
         <w type="p" class="lead mb-4">
           LCUI.css is an open source toolkit for developing with XML, CSS, and C. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, simple grid system, common prebuilt components.

@@ -63,4 +63,4 @@ int main( int argc, char **argv )
 }
 ```
 
-That's all you need for overall app requirements. Visit the Layout docs or our official examples to start laying out your site’s content and components.
+That's all you need for overall app requirements. Visit the Layout docs or our official examples to start laying out your app’s content and components.
