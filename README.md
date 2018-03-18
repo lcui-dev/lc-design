@@ -20,6 +20,8 @@ LCUI.css is a UI component framework for building [LCUI](https://github.com/lc-s
 
 [中文版说明文档](README.zh-cn.md)
 
+![LCUI.css](https://lcui.lc-soft.io/static/images/screenshot-lcui-css.gif)
+
 ## Build
 
 ### Prerequisites
