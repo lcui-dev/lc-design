@@ -27,7 +27,7 @@ LCUI.css 是一个 UI 组件库，主要用于构建 [LCUI](https://github.com/l
 构建 LCUI.css 需要如下的依赖项：
 
 * [Xmake](http://xmake.io) - 一个构建工具，用于编译 C 源代码
-* [NodeJS](https://nodejs.org) - 一个 JavaScript 运行时，用于运行 JavaScript 写的构建工具
+* [NodeJS](https://nodejs.org) - 一个 JavaScript 运行时环境，用于运行 JavaScript 写的构建工具
 * [Python](https://www.python.org/) - 一个环境，用于运行 Python 写的构建工具
 
 在安装完 NodeJS 后，你需要运行以下命令来安装相关依赖包：
