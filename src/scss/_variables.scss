@@ -185,10 +185,11 @@ $component-active-bg:         theme-color("primary") !default;
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
+
 $font-color-base:             #333;
-$font-family-cjk:             "Microsft YaHei", "Malgun Gothic", simsun !default;
-$font-family-base:            "Segoe UI", Roboto, "Helvetica Neue", Arial, $font-family-cjk !default;
-$font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", $font-family-cjk !default;
+$font-family-cjk:             "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun !default;
+$font-family-base:            "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, $font-family-cjk !default;
+$font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Ubuntu Mono", "Courier New", $font-family-cjk !default;
 
 $font-size-base:              rem2px(1) !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                rem2px(1.25) !default;

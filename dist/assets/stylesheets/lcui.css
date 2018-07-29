@@ -14,7 +14,7 @@ p {
 
 i, b, a, p, h1, h2, h3, h4, h5, h6, label, cite, strong, textview, textedit, password, button, .text {
   color: #333;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -149,6 +149,96 @@ strong, b, cite, textview {
 }
 
 @font-face {
+  font-family: Noto Sans CJK;
+  src: url("/usr/share/fonts/opentype/noto/NotoSansCJK.ttc");
+}
+
+@font-face {
+  font-family: WenQuanYi Micro Hei;
+  src: url("/usr/share/fonts/opentype/noto/NotoSansCJK.ttc");
+}
+
+@font-face {
+  font-family: Ubuntu Mono;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/UbuntuMono-B.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu Mono;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/UbuntuMono-BI.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu Mono;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/UbuntuMono-R.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu Mono;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/UbuntuMono-RI.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-R.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-RI.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-B.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-BI.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-L.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-LI.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-M.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-MI.ttf");
+}
+
+@font-face {
+  font-family: Liberation Mono;
+  src: url("/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: Liberation Mono;
+  src: url("/usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf");
+}
+
+@font-face {
+  font-family: Liberation Mono;
+  src: url("/usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: Liberation Mono;
+  src: url("/usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf");
+}
+
+@font-face {
   font-family: "Material Design Icons";
   src: url("../fonts/iconfont.ttf");
   font-weight: normal;
@@ -233,6 +323,10 @@ strong, b, cite, textview {
   content: "\F010";
 }
 
+.icon-account-multiple-plus-outline {
+  content: "\F7FF";
+}
+
 .icon-account-network {
   content: "\F011";
 }
@@ -247,6 +341,10 @@ strong, b, cite, textview {
 
 .icon-account-plus {
   content: "\F014";
+}
+
+.icon-account-plus-outline {
+  content: "\F800";
 }
 
 .icon-account-remove {
@@ -375,6 +473,10 @@ strong, b, cite, textview {
 
 .icon-all-inclusive {
   content: "\F6BD";
+}
+
+.icon-allo {
+  content: "\F801";
 }
 
 .icon-alpha {
@@ -753,6 +855,10 @@ strong, b, cite, textview {
   content: "\F05E";
 }
 
+.icon-artist {
+  content: "\F802";
+}
+
 .icon-assistant {
   content: "\F064";
 }
@@ -763,6 +869,10 @@ strong, b, cite, textview {
 
 .icon-at {
   content: "\F065";
+}
+
+.icon-atlassian {
+  content: "\F803";
 }
 
 .icon-atom {
@@ -791,6 +901,10 @@ strong, b, cite, textview {
 
 .icon-av-timer {
   content: "\F06B";
+}
+
+.icon-azure {
+  content: "\F804";
 }
 
 .icon-baby {
@@ -851,6 +965,10 @@ strong, b, cite, textview {
 
 .icon-basket-unfill {
   content: "\F078";
+}
+
+.icon-basketball {
+  content: "\F805";
 }
 
 .icon-battery {
@@ -927,6 +1045,54 @@ strong, b, cite, textview {
 
 .icon-battery-charging-90 {
   content: "\F08B";
+}
+
+.icon-battery-charging-wireless {
+  content: "\F806";
+}
+
+.icon-battery-charging-wireless-10 {
+  content: "\F807";
+}
+
+.icon-battery-charging-wireless-20 {
+  content: "\F808";
+}
+
+.icon-battery-charging-wireless-30 {
+  content: "\F809";
+}
+
+.icon-battery-charging-wireless-40 {
+  content: "\F80A";
+}
+
+.icon-battery-charging-wireless-50 {
+  content: "\F80B";
+}
+
+.icon-battery-charging-wireless-60 {
+  content: "\F80C";
+}
+
+.icon-battery-charging-wireless-70 {
+  content: "\F80D";
+}
+
+.icon-battery-charging-wireless-80 {
+  content: "\F80E";
+}
+
+.icon-battery-charging-wireless-90 {
+  content: "\F80F";
+}
+
+.icon-battery-charging-wireless-alert {
+  content: "\F810";
+}
+
+.icon-battery-charging-wireless-outline {
+  content: "\F811";
 }
 
 .icon-battery-minus {
@@ -1031,6 +1197,10 @@ strong, b, cite, textview {
 
 .icon-bitbucket {
   content: "\F0A8";
+}
+
+.icon-bitcoin {
+  content: "\F812";
 }
 
 .icon-black-mesa {
@@ -1277,6 +1447,10 @@ strong, b, cite, textview {
   content: "\F0D8";
 }
 
+.icon-briefcase-outline {
+  content: "\F813";
+}
+
 .icon-briefcase-upload {
   content: "\F0D9";
 }
@@ -1339,10 +1513,6 @@ strong, b, cite, textview {
 
 .icon-bullseye {
   content: "\F5DD";
-}
-
-.icon-burst-mode {
-  content: "\F5DE";
 }
 
 .icon-bus {
@@ -1569,7 +1739,7 @@ strong, b, cite, textview {
   content: "\F10D";
 }
 
-.icon-car-convertable {
+.icon-car-convertible {
   content: "\F7A6";
 }
 
@@ -1715,6 +1885,10 @@ strong, b, cite, textview {
 
 .icon-cellphone-settings {
   content: "\F123";
+}
+
+.icon-cellphone-wireless {
+  content: "\F814";
 }
 
 .icon-certificate {
@@ -2101,6 +2275,10 @@ strong, b, cite, textview {
   content: "\F167";
 }
 
+.icon-clover {
+  content: "\F815";
+}
+
 .icon-code-array {
   content: "\F168";
 }
@@ -2237,8 +2415,16 @@ strong, b, cite, textview {
   content: "\F185";
 }
 
+.icon-comment-question {
+  content: "\F816";
+}
+
 .icon-comment-question-outline {
   content: "\F186";
+}
+
+.icon-comment-remove {
+  content: "\F5DE";
 }
 
 .icon-comment-remove-outline {
@@ -2303,6 +2489,10 @@ strong, b, cite, textview {
 
 .icon-content-save-all {
   content: "\F194";
+}
+
+.icon-content-save-outline {
+  content: "\F817";
 }
 
 .icon-content-save-settings {
@@ -2569,6 +2759,10 @@ strong, b, cite, textview {
   content: "\F5E8";
 }
 
+.icon-delete-restore {
+  content: "\F818";
+}
+
 .icon-delete-sweep {
   content: "\F5E9";
 }
@@ -2735,6 +2929,18 @@ strong, b, cite, textview {
 
 .icon-donkey {
   content: "\F7C1";
+}
+
+.icon-door {
+  content: "\F819";
+}
+
+.icon-door-closed {
+  content: "\F81A";
+}
+
+.icon-door-open {
+  content: "\F81B";
 }
 
 .icon-dots-horizontal {
@@ -3049,6 +3255,10 @@ strong, b, cite, textview {
   content: "\F210";
 }
 
+.icon-fan-off {
+  content: "\F81C";
+}
+
 .icon-fast-forward {
   content: "\F211";
 }
@@ -3153,6 +3363,10 @@ strong, b, cite, textview {
   content: "\F226";
 }
 
+.icon-file-percent {
+  content: "\F81D";
+}
+
 .icon-file-plus {
   content: "\F751";
 }
@@ -3229,6 +3443,10 @@ strong, b, cite, textview {
   content: "\F236";
 }
 
+.icon-finance {
+  content: "\F81E";
+}
+
 .icon-find-replace {
   content: "\F6D3";
 }
@@ -3261,10 +3479,6 @@ strong, b, cite, textview {
   content: "\F23D";
 }
 
-.icon-flag-outline-variant {
-  content: "\F23E";
-}
-
 .icon-flag-triangle {
   content: "\F23F";
 }
@@ -3273,12 +3487,20 @@ strong, b, cite, textview {
   content: "\F240";
 }
 
+.icon-flag-variant-outline {
+  content: "\F23E";
+}
+
 .icon-flash {
   content: "\F241";
 }
 
 .icon-flash-auto {
   content: "\F242";
+}
+
+.icon-flash-circle {
+  content: "\F81F";
 }
 
 .icon-flash-off {
@@ -3327,6 +3549,10 @@ strong, b, cite, textview {
 
 .icon-flip-to-front {
   content: "\F248";
+}
+
+.icon-floor-plan {
+  content: "\F820";
 }
 
 .icon-floppy {
@@ -3713,6 +3939,10 @@ strong, b, cite, textview {
   content: "\F28C";
 }
 
+.icon-forum-outline {
+  content: "\F821";
+}
+
 .icon-forward {
   content: "\F28D";
 }
@@ -3897,6 +4127,10 @@ strong, b, cite, textview {
   content: "\F2AC";
 }
 
+.icon-golf {
+  content: "\F822";
+}
+
 .icon-gondola {
   content: "\F685";
 }
@@ -3955,6 +4189,10 @@ strong, b, cite, textview {
 
 .icon-google-glass {
   content: "\F2B8";
+}
+
+.icon-google-home {
+  content: "\F823";
 }
 
 .icon-google-keep {
@@ -4039,6 +4277,10 @@ strong, b, cite, textview {
 
 .icon-guitar-pick-outline {
   content: "\F2C6";
+}
+
+.icon-guy-fawkes-mask {
+  content: "\F824";
 }
 
 .icon-hackernews {
@@ -4185,6 +4427,10 @@ strong, b, cite, textview {
   content: "\F2DC";
 }
 
+.icon-home-account {
+  content: "\F825";
+}
+
 .icon-home-assistant {
   content: "\F7CF";
 }
@@ -4195,6 +4441,10 @@ strong, b, cite, textview {
 
 .icon-home-circle {
   content: "\F7D1";
+}
+
+.icon-home-heart {
+  content: "\F826";
 }
 
 .icon-home-map-marker {
@@ -4237,6 +4487,10 @@ strong, b, cite, textview {
   content: "\F2E2";
 }
 
+.icon-hot-tub {
+  content: "\F827";
+}
+
 .icon-hotel {
   content: "\F2E3";
 }
@@ -4247,6 +4501,10 @@ strong, b, cite, textview {
 
 .icon-houzz-box {
   content: "\F2E5";
+}
+
+.icon-hulu {
+  content: "\F828";
 }
 
 .icon-human {
@@ -4287,6 +4545,10 @@ strong, b, cite, textview {
 
 .icon-humble-bundle {
   content: "\F743";
+}
+
+.icon-ice-cream {
+  content: "\F829";
 }
 
 .icon-image {
@@ -4355,6 +4617,10 @@ strong, b, cite, textview {
 
 .icon-image-multiple {
   content: "\F2F9";
+}
+
+.icon-image-off {
+  content: "\F82A";
 }
 
 .icon-import {
@@ -4427,6 +4693,10 @@ strong, b, cite, textview {
 
 .icon-json {
   content: "\F626";
+}
+
+.icon-karate {
+  content: "\F82B";
 }
 
 .icon-keg {
@@ -4507,6 +4777,10 @@ strong, b, cite, textview {
 
 .icon-label-outline {
   content: "\F316";
+}
+
+.icon-ladybug {
+  content: "\F82C";
 }
 
 .icon-lambda {
@@ -4607,6 +4881,10 @@ strong, b, cite, textview {
 
 .icon-lastfm {
   content: "\F326";
+}
+
+.icon-lastpass {
+  content: "\F446";
 }
 
 .icon-launch {
@@ -5305,6 +5583,10 @@ strong, b, cite, textview {
   content: "\F39E";
 }
 
+.icon-notebook {
+  content: "\F82D";
+}
+
 .icon-notification-clear-all {
   content: "\F39F";
 }
@@ -5789,6 +6071,10 @@ strong, b, cite, textview {
   content: "\F659";
 }
 
+.icon-phone-return {
+  content: "\F82E";
+}
+
 .icon-phone-settings {
   content: "\F3FD";
 }
@@ -5959,6 +6245,10 @@ strong, b, cite, textview {
 
 .icon-pokeball {
   content: "\F41D";
+}
+
+.icon-poker-chip {
+  content: "\F82F";
 }
 
 .icon-polaroid {
@@ -6177,20 +6467,12 @@ strong, b, cite, textview {
   content: "\F445";
 }
 
-.icon-rdio {
-  content: "\F446";
-}
-
 .icon-react {
   content: "\F707";
 }
 
 .icon-read {
   content: "\F447";
-}
-
-.icon-readability {
-  content: "\F448";
 }
 
 .icon-receipt {
@@ -6621,8 +6903,16 @@ strong, b, cite, textview {
   content: "\F494";
 }
 
+.icon-shape {
+  content: "\F830";
+}
+
 .icon-shape-circle-plus {
   content: "\F65D";
+}
+
+.icon-shape-outline {
+  content: "\F831";
 }
 
 .icon-shape-plus {
@@ -6659,6 +6949,10 @@ strong, b, cite, textview {
 
 .icon-shield-outline {
   content: "\F499";
+}
+
+.icon-ship-wheel {
+  content: "\F832";
 }
 
 .icon-shopping {
@@ -6857,6 +7151,10 @@ strong, b, cite, textview {
   content: "\F4B8";
 }
 
+.icon-soccer-field {
+  content: "\F833";
+}
+
 .icon-sofa {
   content: "\F4B9";
 }
@@ -6997,12 +7295,12 @@ strong, b, cite, textview {
   content: "\F783";
 }
 
-.icon-stackexchange {
-  content: "\F60B";
+.icon-stack-overflow {
+  content: "\F4CC";
 }
 
-.icon-stackoverflow {
-  content: "\F4CC";
+.icon-stackexchange {
+  content: "\F60B";
 }
 
 .icon-stadium {
@@ -7201,6 +7499,10 @@ strong, b, cite, textview {
   content: "\F4EB";
 }
 
+.icon-table-column {
+  content: "\F834";
+}
+
 .icon-table-column-plus-after {
   content: "\F4EC";
 }
@@ -7225,6 +7527,14 @@ strong, b, cite, textview {
   content: "\F4F1";
 }
 
+.icon-table-of-contents {
+  content: "\F835";
+}
+
+.icon-table-row {
+  content: "\F836";
+}
+
 .icon-table-row-height {
   content: "\F4F2";
 }
@@ -7239,6 +7549,10 @@ strong, b, cite, textview {
 
 .icon-table-row-remove {
   content: "\F4F5";
+}
+
+.icon-table-settings {
+  content: "\F837";
 }
 
 .icon-tablet {
@@ -7309,12 +7623,24 @@ strong, b, cite, textview {
   content: "\F502";
 }
 
+.icon-television-box {
+  content: "\F838";
+}
+
 .icon-television-classic {
   content: "\F7F3";
 }
 
+.icon-television-classic-off {
+  content: "\F839";
+}
+
 .icon-television-guide {
   content: "\F503";
+}
+
+.icon-television-off {
+  content: "\F83A";
 }
 
 .icon-temperature-celsius {
@@ -7519,6 +7845,10 @@ strong, b, cite, textview {
 
 .icon-tower-fire {
   content: "\F681";
+}
+
+.icon-towing {
+  content: "\F83B";
 }
 
 .icon-trackpad {
@@ -7737,6 +8067,10 @@ strong, b, cite, textview {
   content: "\F552";
 }
 
+.icon-upload-multiple {
+  content: "\F83C";
+}
+
 .icon-upload-network {
   content: "\F6F5";
 }
@@ -7837,6 +8171,10 @@ strong, b, cite, textview {
   content: "\F564";
 }
 
+.icon-venmo {
+  content: "\F578";
+}
+
 .icon-verified {
   content: "\F565";
 }
@@ -7851,6 +8189,26 @@ strong, b, cite, textview {
 
 .icon-video-3d {
   content: "\F7FC";
+}
+
+.icon-video-4k-box {
+  content: "\F83D";
+}
+
+.icon-video-input-antenna {
+  content: "\F83E";
+}
+
+.icon-video-input-component {
+  content: "\F83F";
+}
+
+.icon-video-input-hdmi {
+  content: "\F840";
+}
+
+.icon-video-input-svideo {
+  content: "\F841";
 }
 
 .icon-video-off {
@@ -7879,6 +8237,10 @@ strong, b, cite, textview {
 
 .icon-view-dashboard {
   content: "\F56E";
+}
+
+.icon-view-dashboard-variant {
+  content: "\F842";
 }
 
 .icon-view-day {
@@ -7923,10 +8285,6 @@ strong, b, cite, textview {
 
 .icon-vimeo {
   content: "\F577";
-}
-
-.icon-vine {
-  content: "\F578";
 }
 
 .icon-violin {
@@ -7991,6 +8349,10 @@ strong, b, cite, textview {
 
 .icon-vpn {
   content: "\F582";
+}
+
+.icon-vuejs {
+  content: "\F843";
 }
 
 .icon-walk {
@@ -8257,6 +8619,14 @@ strong, b, cite, textview {
   content: "\F5B8";
 }
 
+.icon-xamarin {
+  content: "\F844";
+}
+
+.icon-xamarin-outline {
+  content: "\F845";
+}
+
 .icon-xaml {
   content: "\F673";
 }
@@ -8337,8 +8707,20 @@ strong, b, cite, textview {
   content: "\F67F";
 }
 
+.icon-youtube-creator-studio {
+  content: "\F846";
+}
+
+.icon-youtube-gaming {
+  content: "\F847";
+}
+
 .icon-youtube-play {
   content: "\F5C3";
+}
+
+.icon-youtube-tv {
+  content: "\F448";
 }
 
 .icon-zip-box {
@@ -8385,7 +8767,7 @@ strong, b, cite, textview {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 7px;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
   font-weight: 600;
   line-height: 1.33;
   color: #333;
@@ -8434,7 +8816,7 @@ small,
 }
 
 code-block, pre {
-  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Ubuntu Mono", "Courier New", "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
 }
 
 blockquote, .blockquote {
@@ -8569,7 +8951,7 @@ strong, b {
 
 .alert-primary {
   color: #333;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
   font-size: 14px;
   line-height: 1.5;
   background-color: #d1e9ff;
@@ -8594,7 +8976,7 @@ strong, b {
 
 .alert-secondary {
   color: #333;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
   font-size: 14px;
   line-height: 1.5;
   background-color: #e7e8ea;
@@ -8619,7 +9001,7 @@ strong, b {
 
 .alert-success {
   color: #333;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
   font-size: 14px;
   line-height: 1.5;
   background-color: #d6f0d9;
@@ -8644,7 +9026,7 @@ strong, b {
 
 .alert-info {
   color: #333;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
   font-size: 14px;
   line-height: 1.5;
   background-color: #d1ecf1;
@@ -8669,7 +9051,7 @@ strong, b {
 
 .alert-warning {
   color: #333;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
   font-size: 14px;
   line-height: 1.5;
   background-color: #fff9cd;
@@ -8694,7 +9076,7 @@ strong, b {
 
 .alert-danger {
   color: #333;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
   font-size: 14px;
   line-height: 1.5;
   background-color: #f8d7da;
@@ -8719,7 +9101,7 @@ strong, b {
 
 .alert-light {
   color: #333;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
   font-size: 14px;
   line-height: 1.5;
   background-color: #fefefe;
@@ -8744,7 +9126,7 @@ strong, b {
 
 .alert-dark {
   color: #333;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
   font-size: 14px;
   line-height: 1.5;
   background-color: #d6d8d9;
@@ -9173,7 +9555,7 @@ strong, b {
   text-align: center;
   white-space: nowrap;
   color: #333;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsft YaHei", "Malgun Gothic", simsun;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, Ubuntu, "Microsft YaHei", "Malgun Gothic", "Noto Sans CJK SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", simsun;
   font-size: 14px;
   line-height: 1.5;
   padding: 5.25px 10.5px;
