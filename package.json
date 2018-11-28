@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "demo": "node ./scripts/demo.js",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "version": "npm run dist && git add -A dist/assets && conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "dist": "npm-run-all build-css build-font",
     "build": "npm-run-all build-css build-font build-bin build-demo",
     "build-bin": "node ./scripts/build-bin.js",
     "build-css": "node-sass --output dist/assets/stylesheets --output-style expanded src/scss/lcui.scss",
@@ -34,7 +37,7 @@
   "homepage": "https://github.com/lc-ui/lcui.css#readme",
   "devDependencies": {
     "iconv-lite": "^0.4.19",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.9.3",
     "npm-run-all": "^4.1.1"
   },
   "dependencies": {
