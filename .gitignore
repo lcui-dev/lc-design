@@ -1,5 +1,5 @@
 node_modules
-dist
+dist/lib
 .vs
 *.pdb
 *.ipdb
@@ -14,5 +14,5 @@ demo/app/assets/stylesheets
 demo/app/assets/fonts
 demo/app/assets/views
 demo/build
-vendor/lib
+vendor
 build
