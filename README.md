@@ -32,8 +32,9 @@ Building LCUI.css has the following dependencies:
 * [NodeJS](https://nodejs.org) - a JavaScript runtime to run build tools
 * [Python](https://www.python.org/) - a environment for run python build tools
 
-After installing NodeJS, please run the following command to install the NodeJS dependency packages:
+After installing them, you need to run the following command to install the other dependencies:
 
+    pip install misaka pygments
     npm install
 
 ### Build Targets

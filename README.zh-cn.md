@@ -30,8 +30,9 @@ LCUI.css 是一个 UI 组件库，主要用于构建 [LCUI](https://github.com/l
 * [NodeJS](https://nodejs.org) - 一个 JavaScript 运行时环境，用于运行 JavaScript 写的构建工具
 * [Python](https://www.python.org/) - 一个环境，用于运行 Python 写的构建工具
 
-在安装完 NodeJS 后，你需要运行以下命令来安装相关依赖包：
+在安装完它们后，你需要运行以下命令来安装相关依赖包：
 
+    pip install misaka pygments
     npm install
 
 ### 构建目标
