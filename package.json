@@ -1,6 +1,6 @@
 {
   "name": "lcui.css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple CSS framework for developing LCUI application.",
   "main": "index.js",
   "scripts": {
