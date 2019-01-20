@@ -1,7 +1,7 @@
 ﻿/*
  * icon.h -- Icon component.
  *
- * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
+ * Copyright (c) 2019, Liu chao <lc-soft@live.cn> All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -30,6 +30,8 @@
 
 #ifndef LCUIEX_ICON_H_
 #define LCUIEX_ICON_H_
+
+LCUI_API int Icon_SetName(LCUI_Widget w, const char *name);
 
 LCUI_API void LCUIEx_InitIcon( void );
 
