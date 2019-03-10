@@ -1,3 +1,16 @@
+## [0.1.2](https://github.com/lc-ui/lcui.css/compare/v0.1.1...v0.1.2) (2019-03-10)
+
+
+### 问题修复
+
+* **icon:** Icon_SetName() 未移除老的图标类 ([57e275e](https://github.com/lc-ui/lcui.css/commit/57e275e))
+
+
+### 新功能
+
+* 升级 mdi 图标字体的版本 ([bcc4eb5](https://github.com/lc-ui/lcui.css/commit/bcc4eb5))
+
+
 ## [0.1.1](https://github.com/lc-ui/lcui.css/compare/v0.1.0-alpha...v0.1.1) (2018-11-28)
 
 

@@ -1,3 +1,17 @@
+## [0.1.2](https://github.com/lc-ui/lcui.css/compare/v0.1.1...v0.1.2) (2019-03-10)
+
+
+### Bug Fixes
+
+* **icon:** Icon_SetName() does not remove old icon class ([57e275e](https://github.com/lc-ui/lcui.css/commit/57e275e))
+
+
+### Features
+
+* upgrade mdi version ([bcc4eb5](https://github.com/lc-ui/lcui.css/commit/bcc4eb5))
+
+
+
 ## [0.1.1](https://github.com/lc-ui/lcui.css/compare/v0.1.0-alpha...v0.1.1) (2018-11-28)
 
 

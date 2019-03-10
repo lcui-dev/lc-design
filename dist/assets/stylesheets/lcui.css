@@ -259,6 +259,10 @@ strong, b, cite, textview {
   content: "\F003";
 }
 
+.icon-access-point-network-off {
+  content: "\FBBD";
+}
+
 .icon-account {
   content: "\F004";
 }
@@ -267,8 +271,32 @@ strong, b, cite, textview {
   content: "\F005";
 }
 
+.icon-account-alert-outline {
+  content: "\FB2C";
+}
+
+.icon-account-arrow-left {
+  content: "\FB2D";
+}
+
+.icon-account-arrow-left-outline {
+  content: "\FB2E";
+}
+
+.icon-account-arrow-right {
+  content: "\FB2F";
+}
+
+.icon-account-arrow-right-outline {
+  content: "\FB30";
+}
+
 .icon-account-box {
   content: "\F006";
+}
+
+.icon-account-box-multiple {
+  content: "\F933";
 }
 
 .icon-account-box-outline {
@@ -283,36 +311,92 @@ strong, b, cite, textview {
   content: "\F008";
 }
 
+.icon-account-check-outline {
+  content: "\FBBE";
+}
+
+.icon-account-child {
+  content: "\FA88";
+}
+
+.icon-account-child-circle {
+  content: "\FA89";
+}
+
 .icon-account-circle {
   content: "\F009";
+}
+
+.icon-account-circle-outline {
+  content: "\FB31";
+}
+
+.icon-account-clock {
+  content: "\FB32";
+}
+
+.icon-account-clock-outline {
+  content: "\FB33";
 }
 
 .icon-account-convert {
   content: "\F00A";
 }
 
+.icon-account-details {
+  content: "\F631";
+}
+
 .icon-account-edit {
   content: "\F6BB";
+}
+
+.icon-account-group {
+  content: "\F848";
+}
+
+.icon-account-group-outline {
+  content: "\FB34";
+}
+
+.icon-account-heart {
+  content: "\F898";
+}
+
+.icon-account-heart-outline {
+  content: "\FBBF";
 }
 
 .icon-account-key {
   content: "\F00B";
 }
 
-.icon-account-location {
-  content: "\F00C";
+.icon-account-key-outline {
+  content: "\FBC0";
 }
 
 .icon-account-minus {
   content: "\F00D";
 }
 
+.icon-account-minus-outline {
+  content: "\FAEB";
+}
+
 .icon-account-multiple {
   content: "\F00E";
 }
 
+.icon-account-multiple-check {
+  content: "\F8C4";
+}
+
 .icon-account-multiple-minus {
   content: "\F5D3";
+}
+
+.icon-account-multiple-minus-outline {
+  content: "\FBC1";
 }
 
 .icon-account-multiple-outline {
@@ -331,8 +415,16 @@ strong, b, cite, textview {
   content: "\F011";
 }
 
+.icon-account-network-outline {
+  content: "\FBC2";
+}
+
 .icon-account-off {
   content: "\F012";
+}
+
+.icon-account-off-outline {
+  content: "\FBC3";
 }
 
 .icon-account-outline {
@@ -347,36 +439,72 @@ strong, b, cite, textview {
   content: "\F800";
 }
 
+.icon-account-question {
+  content: "\FB35";
+}
+
+.icon-account-question-outline {
+  content: "\FB36";
+}
+
 .icon-account-remove {
   content: "\F015";
+}
+
+.icon-account-remove-outline {
+  content: "\FAEC";
 }
 
 .icon-account-search {
   content: "\F016";
 }
 
-.icon-account-settings {
-  content: "\F630";
+.icon-account-search-outline {
+  content: "\F934";
 }
 
-.icon-account-settings-variant {
-  content: "\F631";
+.icon-account-settings {
+  content: "\F630";
 }
 
 .icon-account-star {
   content: "\F017";
 }
 
+.icon-account-star-outline {
+  content: "\FBC4";
+}
+
+.icon-account-supervisor {
+  content: "\FA8A";
+}
+
+.icon-account-supervisor-circle {
+  content: "\FA8B";
+}
+
 .icon-account-switch {
   content: "\F019";
+}
+
+.icon-accusoft {
+  content: "\F849";
 }
 
 .icon-adjust {
   content: "\F01A";
 }
 
+.icon-adobe {
+  content: "\F935";
+}
+
 .icon-air-conditioner {
   content: "\F01B";
+}
+
+.icon-airbag {
+  content: "\FBC5";
 }
 
 .icon-airballoon {
@@ -403,6 +531,10 @@ strong, b, cite, textview {
   content: "\F01F";
 }
 
+.icon-airport {
+  content: "\F84A";
+}
+
 .icon-alarm {
   content: "\F020";
 }
@@ -417,6 +549,10 @@ strong, b, cite, textview {
 
 .icon-alarm-light {
   content: "\F78E";
+}
+
+.icon-alarm-light-outline {
+  content: "\FBC6";
 }
 
 .icon-alarm-multiple {
@@ -471,16 +607,536 @@ strong, b, cite, textview {
   content: "\F02A";
 }
 
+.icon-alien {
+  content: "\F899";
+}
+
 .icon-all-inclusive {
   content: "\F6BD";
 }
 
-.icon-allo {
-  content: "\F801";
-}
-
 .icon-alpha {
   content: "\F02B";
+}
+
+.icon-alpha-a {
+  content: "\41";
+}
+
+.icon-alpha-a-box {
+  content: "\FAED";
+}
+
+.icon-alpha-a-box-outline {
+  content: "\FBC7";
+}
+
+.icon-alpha-a-circle {
+  content: "\FBC8";
+}
+
+.icon-alpha-a-circle-outline {
+  content: "\FBC9";
+}
+
+.icon-alpha-b {
+  content: "\42";
+}
+
+.icon-alpha-b-box {
+  content: "\FAEE";
+}
+
+.icon-alpha-b-box-outline {
+  content: "\FBCA";
+}
+
+.icon-alpha-b-circle {
+  content: "\FBCB";
+}
+
+.icon-alpha-b-circle-outline {
+  content: "\FBCC";
+}
+
+.icon-alpha-c {
+  content: "\43";
+}
+
+.icon-alpha-c-box {
+  content: "\FAEF";
+}
+
+.icon-alpha-c-box-outline {
+  content: "\FBCD";
+}
+
+.icon-alpha-c-circle {
+  content: "\FBCE";
+}
+
+.icon-alpha-c-circle-outline {
+  content: "\FBCF";
+}
+
+.icon-alpha-d {
+  content: "\44";
+}
+
+.icon-alpha-d-box {
+  content: "\FAF0";
+}
+
+.icon-alpha-d-box-outline {
+  content: "\FBD0";
+}
+
+.icon-alpha-d-circle {
+  content: "\FBD1";
+}
+
+.icon-alpha-d-circle-outline {
+  content: "\FBD2";
+}
+
+.icon-alpha-e {
+  content: "\45";
+}
+
+.icon-alpha-e-box {
+  content: "\FAF1";
+}
+
+.icon-alpha-e-box-outline {
+  content: "\FBD3";
+}
+
+.icon-alpha-e-circle {
+  content: "\FBD4";
+}
+
+.icon-alpha-e-circle-outline {
+  content: "\FBD5";
+}
+
+.icon-alpha-f {
+  content: "\46";
+}
+
+.icon-alpha-f-box {
+  content: "\FAF2";
+}
+
+.icon-alpha-f-box-outline {
+  content: "\FBD6";
+}
+
+.icon-alpha-f-circle {
+  content: "\FBD7";
+}
+
+.icon-alpha-f-circle-outline {
+  content: "\FBD8";
+}
+
+.icon-alpha-g {
+  content: "\47";
+}
+
+.icon-alpha-g-box {
+  content: "\FAF3";
+}
+
+.icon-alpha-g-box-outline {
+  content: "\FBD9";
+}
+
+.icon-alpha-g-circle {
+  content: "\FBDA";
+}
+
+.icon-alpha-g-circle-outline {
+  content: "\FBDB";
+}
+
+.icon-alpha-h {
+  content: "\48";
+}
+
+.icon-alpha-h-box {
+  content: "\FAF4";
+}
+
+.icon-alpha-h-box-outline {
+  content: "\FBDC";
+}
+
+.icon-alpha-h-circle {
+  content: "\FBDD";
+}
+
+.icon-alpha-h-circle-outline {
+  content: "\FBDE";
+}
+
+.icon-alpha-i {
+  content: "\49";
+}
+
+.icon-alpha-i-box {
+  content: "\FAF5";
+}
+
+.icon-alpha-i-box-outline {
+  content: "\FBDF";
+}
+
+.icon-alpha-i-circle {
+  content: "\FBE0";
+}
+
+.icon-alpha-i-circle-outline {
+  content: "\FBE1";
+}
+
+.icon-alpha-j {
+  content: "\4A";
+}
+
+.icon-alpha-j-box {
+  content: "\FAF6";
+}
+
+.icon-alpha-j-box-outline {
+  content: "\FBE2";
+}
+
+.icon-alpha-j-circle {
+  content: "\FBE3";
+}
+
+.icon-alpha-j-circle-outline {
+  content: "\FBE4";
+}
+
+.icon-alpha-k {
+  content: "\4B";
+}
+
+.icon-alpha-k-box {
+  content: "\FAF7";
+}
+
+.icon-alpha-k-box-outline {
+  content: "\FBE5";
+}
+
+.icon-alpha-k-circle {
+  content: "\FBE6";
+}
+
+.icon-alpha-k-circle-outline {
+  content: "\FBE7";
+}
+
+.icon-alpha-l {
+  content: "\4C";
+}
+
+.icon-alpha-l-box {
+  content: "\FAF8";
+}
+
+.icon-alpha-l-box-outline {
+  content: "\FBE8";
+}
+
+.icon-alpha-l-circle {
+  content: "\FBE9";
+}
+
+.icon-alpha-l-circle-outline {
+  content: "\FBEA";
+}
+
+.icon-alpha-m {
+  content: "\4D";
+}
+
+.icon-alpha-m-box {
+  content: "\FAF9";
+}
+
+.icon-alpha-m-box-outline {
+  content: "\FBEB";
+}
+
+.icon-alpha-m-circle {
+  content: "\FBEC";
+}
+
+.icon-alpha-m-circle-outline {
+  content: "\FBED";
+}
+
+.icon-alpha-n {
+  content: "\4E";
+}
+
+.icon-alpha-n-box {
+  content: "\FAFA";
+}
+
+.icon-alpha-n-box-outline {
+  content: "\FBEE";
+}
+
+.icon-alpha-n-circle {
+  content: "\FBEF";
+}
+
+.icon-alpha-n-circle-outline {
+  content: "\FBF0";
+}
+
+.icon-alpha-o {
+  content: "\4F";
+}
+
+.icon-alpha-o-box {
+  content: "\FAFB";
+}
+
+.icon-alpha-o-box-outline {
+  content: "\FBF1";
+}
+
+.icon-alpha-o-circle {
+  content: "\FBF2";
+}
+
+.icon-alpha-o-circle-outline {
+  content: "\FBF3";
+}
+
+.icon-alpha-p {
+  content: "\50";
+}
+
+.icon-alpha-p-box {
+  content: "\FAFC";
+}
+
+.icon-alpha-p-box-outline {
+  content: "\FBF4";
+}
+
+.icon-alpha-p-circle {
+  content: "\FBF5";
+}
+
+.icon-alpha-p-circle-outline {
+  content: "\FBF6";
+}
+
+.icon-alpha-q {
+  content: "\51";
+}
+
+.icon-alpha-q-box {
+  content: "\FAFD";
+}
+
+.icon-alpha-q-box-outline {
+  content: "\FBF7";
+}
+
+.icon-alpha-q-circle {
+  content: "\FBF8";
+}
+
+.icon-alpha-q-circle-outline {
+  content: "\FBF9";
+}
+
+.icon-alpha-r {
+  content: "\52";
+}
+
+.icon-alpha-r-box {
+  content: "\FAFE";
+}
+
+.icon-alpha-r-box-outline {
+  content: "\FBFA";
+}
+
+.icon-alpha-r-circle {
+  content: "\FBFB";
+}
+
+.icon-alpha-r-circle-outline {
+  content: "\FBFC";
+}
+
+.icon-alpha-s {
+  content: "\53";
+}
+
+.icon-alpha-s-box {
+  content: "\FAFF";
+}
+
+.icon-alpha-s-box-outline {
+  content: "\FBFD";
+}
+
+.icon-alpha-s-circle {
+  content: "\FBFE";
+}
+
+.icon-alpha-s-circle-outline {
+  content: "\FBFF";
+}
+
+.icon-alpha-t {
+  content: "\54";
+}
+
+.icon-alpha-t-box {
+  content: "\FB00";
+}
+
+.icon-alpha-t-box-outline {
+  content: "\FC00";
+}
+
+.icon-alpha-t-circle {
+  content: "\FC01";
+}
+
+.icon-alpha-t-circle-outline {
+  content: "\FC02";
+}
+
+.icon-alpha-u {
+  content: "\55";
+}
+
+.icon-alpha-u-box {
+  content: "\FB01";
+}
+
+.icon-alpha-u-box-outline {
+  content: "\FC03";
+}
+
+.icon-alpha-u-circle {
+  content: "\FC04";
+}
+
+.icon-alpha-u-circle-outline {
+  content: "\FC05";
+}
+
+.icon-alpha-v {
+  content: "\56";
+}
+
+.icon-alpha-v-box {
+  content: "\FB02";
+}
+
+.icon-alpha-v-box-outline {
+  content: "\FC06";
+}
+
+.icon-alpha-v-circle {
+  content: "\FC07";
+}
+
+.icon-alpha-v-circle-outline {
+  content: "\FC08";
+}
+
+.icon-alpha-w {
+  content: "\57";
+}
+
+.icon-alpha-w-box {
+  content: "\FB03";
+}
+
+.icon-alpha-w-box-outline {
+  content: "\FC09";
+}
+
+.icon-alpha-w-circle {
+  content: "\FC0A";
+}
+
+.icon-alpha-w-circle-outline {
+  content: "\FC0B";
+}
+
+.icon-alpha-x {
+  content: "\58";
+}
+
+.icon-alpha-x-box {
+  content: "\FB04";
+}
+
+.icon-alpha-x-box-outline {
+  content: "\FC0C";
+}
+
+.icon-alpha-x-circle {
+  content: "\FC0D";
+}
+
+.icon-alpha-x-circle-outline {
+  content: "\FC0E";
+}
+
+.icon-alpha-y {
+  content: "\59";
+}
+
+.icon-alpha-y-box {
+  content: "\FB05";
+}
+
+.icon-alpha-y-box-outline {
+  content: "\FC0F";
+}
+
+.icon-alpha-y-circle {
+  content: "\FC10";
+}
+
+.icon-alpha-y-circle-outline {
+  content: "\FC11";
+}
+
+.icon-alpha-z {
+  content: "\5A";
+}
+
+.icon-alpha-z-box {
+  content: "\FB06";
+}
+
+.icon-alpha-z-box-outline {
+  content: "\FC12";
+}
+
+.icon-alpha-z-circle {
+  content: "\FC13";
+}
+
+.icon-alpha-z-circle-outline {
+  content: "\FC14";
 }
 
 .icon-alphabetical {
@@ -495,12 +1151,20 @@ strong, b, cite, textview {
   content: "\F02D";
 }
 
-.icon-amazon-clouddrive {
+.icon-amazon-alexa {
+  content: "\F8C5";
+}
+
+.icon-amazon-drive {
   content: "\F02E";
 }
 
 .icon-ambulance {
   content: "\F02F";
+}
+
+.icon-ampersand {
+  content: "\FA8C";
 }
 
 .icon-amplifier {
@@ -515,6 +1179,10 @@ strong, b, cite, textview {
   content: "\F032";
 }
 
+.icon-android-auto {
+  content: "\FA8D";
+}
+
 .icon-android-debug-bridge {
   content: "\F033";
 }
@@ -525,6 +1193,18 @@ strong, b, cite, textview {
 
 .icon-android-studio {
   content: "\F034";
+}
+
+.icon-angle-acute {
+  content: "\F936";
+}
+
+.icon-angle-obtuse {
+  content: "\F937";
+}
+
+.icon-angle-right {
+  content: "\F938";
 }
 
 .icon-angular {
@@ -539,12 +1219,32 @@ strong, b, cite, textview {
   content: "\F5D8";
 }
 
+.icon-animation-outline {
+  content: "\FA8E";
+}
+
+.icon-animation-play {
+  content: "\F939";
+}
+
+.icon-animation-play-outline {
+  content: "\FA8F";
+}
+
+.icon-anvil {
+  content: "\F89A";
+}
+
 .icon-apple {
   content: "\F035";
 }
 
 .icon-apple-finder {
   content: "\F036";
+}
+
+.icon-apple-icloud {
+  content: "\F038";
 }
 
 .icon-apple-ios {
@@ -571,10 +1271,6 @@ strong, b, cite, textview {
   content: "\F636";
 }
 
-.icon-apple-mobileme {
-  content: "\F038";
-}
-
 .icon-apple-safari {
   content: "\F039";
 }
@@ -583,12 +1279,12 @@ strong, b, cite, textview {
   content: "\F614";
 }
 
-.icon-approval {
-  content: "\F790";
-}
-
 .icon-apps {
   content: "\F03B";
+}
+
+.icon-arch {
+  content: "\F8C6";
 }
 
 .icon-archive {
@@ -619,8 +1315,24 @@ strong, b, cite, textview {
   content: "\F042";
 }
 
+.icon-arrow-bottom-left-bold-outline {
+  content: "\F9B6";
+}
+
+.icon-arrow-bottom-left-thick {
+  content: "\F9B7";
+}
+
 .icon-arrow-bottom-right {
   content: "\F043";
+}
+
+.icon-arrow-bottom-right-bold-outline {
+  content: "\F9B8";
+}
+
+.icon-arrow-bottom-right-thick {
+  content: "\F9B9";
 }
 
 .icon-arrow-collapse {
@@ -635,6 +1347,10 @@ strong, b, cite, textview {
   content: "\F791";
 }
 
+.icon-arrow-collapse-horizontal {
+  content: "\F84B";
+}
+
 .icon-arrow-collapse-left {
   content: "\F792";
 }
@@ -645,6 +1361,26 @@ strong, b, cite, textview {
 
 .icon-arrow-collapse-up {
   content: "\F794";
+}
+
+.icon-arrow-collapse-vertical {
+  content: "\F84C";
+}
+
+.icon-arrow-decision {
+  content: "\F9BA";
+}
+
+.icon-arrow-decision-auto {
+  content: "\F9BB";
+}
+
+.icon-arrow-decision-auto-outline {
+  content: "\F9BC";
+}
+
+.icon-arrow-decision-outline {
+  content: "\F9BD";
 }
 
 .icon-arrow-down {
@@ -675,6 +1411,10 @@ strong, b, cite, textview {
   content: "\F049";
 }
 
+.icon-arrow-down-bold-outline {
+  content: "\F9BE";
+}
+
 .icon-arrow-down-box {
   content: "\F6BF";
 }
@@ -703,6 +1443,10 @@ strong, b, cite, textview {
   content: "\F795";
 }
 
+.icon-arrow-expand-horizontal {
+  content: "\F84D";
+}
+
 .icon-arrow-expand-left {
   content: "\F796";
 }
@@ -713,6 +1457,10 @@ strong, b, cite, textview {
 
 .icon-arrow-expand-up {
   content: "\F798";
+}
+
+.icon-arrow-expand-vertical {
+  content: "\F84E";
 }
 
 .icon-arrow-left {
@@ -743,6 +1491,10 @@ strong, b, cite, textview {
   content: "\F051";
 }
 
+.icon-arrow-left-bold-outline {
+  content: "\F9BF";
+}
+
 .icon-arrow-left-box {
   content: "\F6C0";
 }
@@ -753,6 +1505,10 @@ strong, b, cite, textview {
 
 .icon-arrow-left-drop-circle-outline {
   content: "\F053";
+}
+
+.icon-arrow-left-right-bold-outline {
+  content: "\F9C0";
 }
 
 .icon-arrow-left-thick {
@@ -787,6 +1543,10 @@ strong, b, cite, textview {
   content: "\F058";
 }
 
+.icon-arrow-right-bold-outline {
+  content: "\F9C1";
+}
+
 .icon-arrow-right-box {
   content: "\F6C1";
 }
@@ -803,12 +1563,36 @@ strong, b, cite, textview {
   content: "\F055";
 }
 
+.icon-arrow-split-horizontal {
+  content: "\F93A";
+}
+
+.icon-arrow-split-vertical {
+  content: "\F93B";
+}
+
 .icon-arrow-top-left {
   content: "\F05B";
 }
 
+.icon-arrow-top-left-bold-outline {
+  content: "\F9C2";
+}
+
+.icon-arrow-top-left-thick {
+  content: "\F9C3";
+}
+
 .icon-arrow-top-right {
   content: "\F05C";
+}
+
+.icon-arrow-top-right-bold-outline {
+  content: "\F9C4";
+}
+
+.icon-arrow-top-right-thick {
+  content: "\F9C5";
 }
 
 .icon-arrow-up {
@@ -839,8 +1623,16 @@ strong, b, cite, textview {
   content: "\F061";
 }
 
+.icon-arrow-up-bold-outline {
+  content: "\F9C6";
+}
+
 .icon-arrow-up-box {
   content: "\F6C2";
+}
+
+.icon-arrow-up-down-bold-outline {
+  content: "\F9C7";
 }
 
 .icon-arrow-up-drop-circle {
@@ -857,6 +1649,14 @@ strong, b, cite, textview {
 
 .icon-artist {
   content: "\F802";
+}
+
+.icon-artstation {
+  content: "\FB37";
+}
+
+.icon-aspect-ratio {
+  content: "\FA23";
 }
 
 .icon-assistant {
@@ -883,8 +1683,16 @@ strong, b, cite, textview {
   content: "\F066";
 }
 
+.icon-audio-video {
+  content: "\F93C";
+}
+
 .icon-audiobook {
   content: "\F067";
+}
+
+.icon-augmented-reality {
+  content: "\F84F";
 }
 
 .icon-auto-fix {
@@ -903,8 +1711,16 @@ strong, b, cite, textview {
   content: "\F06B";
 }
 
+.icon-axe {
+  content: "\F8C7";
+}
+
 .icon-azure {
   content: "\F804";
+}
+
+.icon-babel {
+  content: "\FA24";
 }
 
 .icon-baby {
@@ -923,8 +1739,36 @@ strong, b, cite, textview {
   content: "\F06E";
 }
 
+.icon-backspace-outline {
+  content: "\FB38";
+}
+
 .icon-backup-restore {
   content: "\F06F";
+}
+
+.icon-badminton {
+  content: "\F850";
+}
+
+.icon-balloon {
+  content: "\FA25";
+}
+
+.icon-ballot {
+  content: "\F9C8";
+}
+
+.icon-ballot-outline {
+  content: "\F9C9";
+}
+
+.icon-ballot-recount {
+  content: "\FC15";
+}
+
+.icon-ballot-recount-outline {
+  content: "\FC16";
 }
 
 .icon-bandcamp {
@@ -933,6 +1777,18 @@ strong, b, cite, textview {
 
 .icon-bank {
   content: "\F070";
+}
+
+.icon-bank-transfer {
+  content: "\FA26";
+}
+
+.icon-bank-transfer-in {
+  content: "\FA27";
+}
+
+.icon-bank-transfer-out {
+  content: "\FA28";
 }
 
 .icon-barcode {
@@ -947,8 +1803,24 @@ strong, b, cite, textview {
   content: "\F073";
 }
 
+.icon-barley-off {
+  content: "\FB39";
+}
+
+.icon-barn {
+  content: "\FB3A";
+}
+
 .icon-barrel {
   content: "\F074";
+}
+
+.icon-baseball {
+  content: "\F851";
+}
+
+.icon-baseball-bat {
+  content: "\F852";
 }
 
 .icon-basecamp {
@@ -971,6 +1843,18 @@ strong, b, cite, textview {
   content: "\F805";
 }
 
+.icon-basketball-hoop {
+  content: "\FC17";
+}
+
+.icon-basketball-hoop-outline {
+  content: "\FC18";
+}
+
+.icon-bat {
+  content: "\FB3B";
+}
+
 .icon-battery {
   content: "\F079";
 }
@@ -979,44 +1863,96 @@ strong, b, cite, textview {
   content: "\F07A";
 }
 
+.icon-battery-10-bluetooth {
+  content: "\F93D";
+}
+
 .icon-battery-20 {
   content: "\F07B";
+}
+
+.icon-battery-20-bluetooth {
+  content: "\F93E";
 }
 
 .icon-battery-30 {
   content: "\F07C";
 }
 
+.icon-battery-30-bluetooth {
+  content: "\F93F";
+}
+
 .icon-battery-40 {
   content: "\F07D";
+}
+
+.icon-battery-40-bluetooth {
+  content: "\F940";
 }
 
 .icon-battery-50 {
   content: "\F07E";
 }
 
+.icon-battery-50-bluetooth {
+  content: "\F941";
+}
+
 .icon-battery-60 {
   content: "\F07F";
+}
+
+.icon-battery-60-bluetooth {
+  content: "\F942";
 }
 
 .icon-battery-70 {
   content: "\F080";
 }
 
+.icon-battery-70-bluetooth {
+  content: "\F943";
+}
+
 .icon-battery-80 {
   content: "\F081";
+}
+
+.icon-battery-80-bluetooth {
+  content: "\F944";
 }
 
 .icon-battery-90 {
   content: "\F082";
 }
 
+.icon-battery-90-bluetooth {
+  content: "\F945";
+}
+
 .icon-battery-alert {
   content: "\F083";
 }
 
+.icon-battery-alert-bluetooth {
+  content: "\F946";
+}
+
+.icon-battery-bluetooth {
+  content: "\F947";
+}
+
+.icon-battery-bluetooth-variant {
+  content: "\F948";
+}
+
 .icon-battery-charging {
   content: "\F084";
+}
+
+.icon-battery-charging-10 {
+  content: "\F89B";
 }
 
 .icon-battery-charging-100 {
@@ -1035,8 +1971,16 @@ strong, b, cite, textview {
   content: "\F088";
 }
 
+.icon-battery-charging-50 {
+  content: "\F89C";
+}
+
 .icon-battery-charging-60 {
   content: "\F089";
+}
+
+.icon-battery-charging-70 {
+  content: "\F89D";
 }
 
 .icon-battery-charging-80 {
@@ -1045,6 +1989,10 @@ strong, b, cite, textview {
 
 .icon-battery-charging-90 {
   content: "\F08B";
+}
+
+.icon-battery-charging-outline {
+  content: "\F89E";
 }
 
 .icon-battery-charging-wireless {
@@ -1119,6 +2067,14 @@ strong, b, cite, textview {
   content: "\F091";
 }
 
+.icon-battery-unknown-bluetooth {
+  content: "\F949";
+}
+
+.icon-battlenet {
+  content: "\FB3C";
+}
+
 .icon-beach {
   content: "\F092";
 }
@@ -1129,6 +2085,10 @@ strong, b, cite, textview {
 
 .icon-beats {
   content: "\F097";
+}
+
+.icon-bed-empty {
+  content: "\F89F";
 }
 
 .icon-beer {
@@ -1147,12 +2107,20 @@ strong, b, cite, textview {
   content: "\F09B";
 }
 
+.icon-bell-off-outline {
+  content: "\FA90";
+}
+
 .icon-bell-outline {
   content: "\F09C";
 }
 
 .icon-bell-plus {
   content: "\F09D";
+}
+
+.icon-bell-plus-outline {
+  content: "\FA91";
 }
 
 .icon-bell-ring {
@@ -1167,8 +2135,16 @@ strong, b, cite, textview {
   content: "\F0A0";
 }
 
+.icon-bell-sleep-outline {
+  content: "\FA92";
+}
+
 .icon-beta {
   content: "\F0A1";
+}
+
+.icon-betamax {
+  content: "\F9CA";
 }
 
 .icon-bible {
@@ -1177,6 +2153,14 @@ strong, b, cite, textview {
 
 .icon-bike {
   content: "\F0A3";
+}
+
+.icon-billiards {
+  content: "\FB3D";
+}
+
+.icon-billiards-rack {
+  content: "\FB3E";
 }
 
 .icon-bing {
@@ -1283,12 +2267,32 @@ strong, b, cite, textview {
   content: "\F0BA";
 }
 
+.icon-book-lock {
+  content: "\F799";
+}
+
+.icon-book-lock-open {
+  content: "\F79A";
+}
+
 .icon-book-minus {
   content: "\F5D9";
 }
 
 .icon-book-multiple {
   content: "\F0BB";
+}
+
+.icon-book-multiple-minus {
+  content: "\FA93";
+}
+
+.icon-book-multiple-plus {
+  content: "\FA94";
+}
+
+.icon-book-multiple-remove {
+  content: "\FA95";
 }
 
 .icon-book-multiple-variant {
@@ -1299,6 +2303,10 @@ strong, b, cite, textview {
   content: "\F0BD";
 }
 
+.icon-book-open-outline {
+  content: "\FB3F";
+}
+
 .icon-book-open-page-variant {
   content: "\F5DA";
 }
@@ -1307,16 +2315,16 @@ strong, b, cite, textview {
   content: "\F0BE";
 }
 
+.icon-book-outline {
+  content: "\FB40";
+}
+
 .icon-book-plus {
   content: "\F5DB";
 }
 
-.icon-book-secure {
-  content: "\F799";
-}
-
-.icon-book-unsecure {
-  content: "\F79A";
+.icon-book-remove {
+  content: "\FA96";
 }
 
 .icon-book-variant {
@@ -1331,8 +2339,24 @@ strong, b, cite, textview {
   content: "\F0C1";
 }
 
+.icon-bookmark-minus {
+  content: "\F9CB";
+}
+
+.icon-bookmark-minus-outline {
+  content: "\F9CC";
+}
+
 .icon-bookmark-music {
   content: "\F0C2";
+}
+
+.icon-bookmark-off {
+  content: "\F9CD";
+}
+
+.icon-bookmark-off-outline {
+  content: "\F9CE";
 }
 
 .icon-bookmark-outline {
@@ -1363,8 +2387,16 @@ strong, b, cite, textview {
   content: "\F0C7";
 }
 
+.icon-border-all-variant {
+  content: "\F8A0";
+}
+
 .icon-border-bottom {
   content: "\F0C8";
+}
+
+.icon-border-bottom-variant {
+  content: "\F8A1";
 }
 
 .icon-border-color {
@@ -1383,8 +2415,16 @@ strong, b, cite, textview {
   content: "\F0CC";
 }
 
+.icon-border-left-variant {
+  content: "\F8A2";
+}
+
 .icon-border-none {
   content: "\F0CD";
+}
+
+.icon-border-none-variant {
+  content: "\F8A3";
 }
 
 .icon-border-outside {
@@ -1395,6 +2435,10 @@ strong, b, cite, textview {
   content: "\F0CF";
 }
 
+.icon-border-right-variant {
+  content: "\F8A4";
+}
+
 .icon-border-style {
   content: "\F0D0";
 }
@@ -1403,8 +2447,16 @@ strong, b, cite, textview {
   content: "\F0D1";
 }
 
+.icon-border-top-variant {
+  content: "\F8A5";
+}
+
 .icon-border-vertical {
   content: "\F0D2";
+}
+
+.icon-bottle-wine {
+  content: "\F853";
 }
 
 .icon-bow-tie {
@@ -1431,6 +2483,18 @@ strong, b, cite, textview {
   content: "\F637";
 }
 
+.icon-boxing-glove {
+  content: "\FB41";
+}
+
+.icon-braille {
+  content: "\F9CF";
+}
+
+.icon-brain {
+  content: "\F9D0";
+}
+
 .icon-bridge {
   content: "\F618";
 }
@@ -1447,12 +2511,60 @@ strong, b, cite, textview {
   content: "\F0D8";
 }
 
+.icon-briefcase-download-outline {
+  content: "\FC19";
+}
+
+.icon-briefcase-edit {
+  content: "\FA97";
+}
+
+.icon-briefcase-edit-outline {
+  content: "\FC1A";
+}
+
+.icon-briefcase-minus {
+  content: "\FA29";
+}
+
+.icon-briefcase-minus-outline {
+  content: "\FC1B";
+}
+
 .icon-briefcase-outline {
   content: "\F813";
 }
 
+.icon-briefcase-plus {
+  content: "\FA2A";
+}
+
+.icon-briefcase-plus-outline {
+  content: "\FC1C";
+}
+
+.icon-briefcase-remove {
+  content: "\FA2B";
+}
+
+.icon-briefcase-remove-outline {
+  content: "\FC1D";
+}
+
+.icon-briefcase-search {
+  content: "\FA2C";
+}
+
+.icon-briefcase-search-outline {
+  content: "\FC1E";
+}
+
 .icon-briefcase-upload {
   content: "\F0D9";
+}
+
+.icon-briefcase-upload-outline {
+  content: "\FC1F";
 }
 
 .icon-brightness-1 {
@@ -1495,12 +2607,32 @@ strong, b, cite, textview {
   content: "\F0E3";
 }
 
+.icon-buddhism {
+  content: "\F94A";
+}
+
 .icon-buffer {
   content: "\F619";
 }
 
 .icon-bug {
   content: "\F0E4";
+}
+
+.icon-bug-check {
+  content: "\FA2D";
+}
+
+.icon-bug-check-outline {
+  content: "\FA2E";
+}
+
+.icon-bug-outline {
+  content: "\FA2F";
+}
+
+.icon-bulldozer {
+  content: "\FB07";
 }
 
 .icon-bulletin-board {
@@ -1511,12 +2643,24 @@ strong, b, cite, textview {
   content: "\F0E6";
 }
 
+.icon-bullhorn-outline {
+  content: "\FB08";
+}
+
 .icon-bullseye {
   content: "\F5DD";
 }
 
+.icon-bullseye-arrow {
+  content: "\F8C8";
+}
+
 .icon-bus {
   content: "\F0E7";
+}
+
+.icon-bus-alert {
+  content: "\FA98";
 }
 
 .icon-bus-articulated-end {
@@ -1525,6 +2669,10 @@ strong, b, cite, textview {
 
 .icon-bus-articulated-front {
   content: "\F79C";
+}
+
+.icon-bus-clock {
+  content: "\F8C9";
 }
 
 .icon-bus-double-decker {
@@ -1559,20 +2707,52 @@ strong, b, cite, textview {
   content: "\F0EC";
 }
 
+.icon-calculator-variant {
+  content: "\FA99";
+}
+
 .icon-calendar {
   content: "\F0ED";
+}
+
+.icon-calendar-alert {
+  content: "\FA30";
 }
 
 .icon-calendar-blank {
   content: "\F0EE";
 }
 
+.icon-calendar-blank-outline {
+  content: "\FB42";
+}
+
 .icon-calendar-check {
   content: "\F0EF";
 }
 
+.icon-calendar-check-outline {
+  content: "\FC20";
+}
+
 .icon-calendar-clock {
   content: "\F0F0";
+}
+
+.icon-calendar-edit {
+  content: "\F8A6";
+}
+
+.icon-calendar-export {
+  content: "\FB09";
+}
+
+.icon-calendar-heart {
+  content: "\F9D1";
+}
+
+.icon-calendar-import {
+  content: "\FB0A";
 }
 
 .icon-calendar-multiple {
@@ -1581,6 +2761,14 @@ strong, b, cite, textview {
 
 .icon-calendar-multiple-check {
   content: "\F0F2";
+}
+
+.icon-calendar-multiselect {
+  content: "\FA31";
+}
+
+.icon-calendar-outline {
+  content: "\FB43";
 }
 
 .icon-calendar-plus {
@@ -1595,16 +2783,44 @@ strong, b, cite, textview {
   content: "\F678";
 }
 
+.icon-calendar-range-outline {
+  content: "\FB44";
+}
+
 .icon-calendar-remove {
   content: "\F0F4";
+}
+
+.icon-calendar-remove-outline {
+  content: "\FC21";
+}
+
+.icon-calendar-search {
+  content: "\F94B";
+}
+
+.icon-calendar-star {
+  content: "\F9D2";
 }
 
 .icon-calendar-text {
   content: "\F0F5";
 }
 
+.icon-calendar-text-outline {
+  content: "\FC22";
+}
+
 .icon-calendar-today {
   content: "\F0F6";
+}
+
+.icon-calendar-week {
+  content: "\FA32";
+}
+
+.icon-calendar-week-begin {
+  content: "\FA33";
 }
 
 .icon-call-made {
@@ -1647,12 +2863,24 @@ strong, b, cite, textview {
   content: "\F100";
 }
 
+.icon-camera-account {
+  content: "\F8CA";
+}
+
 .icon-camera-burst {
   content: "\F692";
 }
 
+.icon-camera-control {
+  content: "\FB45";
+}
+
 .icon-camera-enhance {
   content: "\F101";
+}
+
+.icon-camera-enhance-outline {
+  content: "\FB46";
 }
 
 .icon-camera-front {
@@ -1665,6 +2893,10 @@ strong, b, cite, textview {
 
 .icon-camera-gopro {
   content: "\F7A0";
+}
+
+.icon-camera-image {
+  content: "\F8CB";
 }
 
 .icon-camera-iris {
@@ -1727,12 +2959,24 @@ strong, b, cite, textview {
   content: "\F7A5";
 }
 
+.icon-caps-lock {
+  content: "\FA9A";
+}
+
 .icon-car {
   content: "\F10B";
 }
 
 .icon-car-battery {
   content: "\F10C";
+}
+
+.icon-car-brake-abs {
+  content: "\FC23";
+}
+
+.icon-car-brake-parking {
+  content: "\FC24";
 }
 
 .icon-car-connected {
@@ -1743,12 +2987,48 @@ strong, b, cite, textview {
   content: "\F7A6";
 }
 
+.icon-car-door {
+  content: "\FB47";
+}
+
+.icon-car-electric {
+  content: "\FB48";
+}
+
+.icon-car-esp {
+  content: "\FC25";
+}
+
 .icon-car-estate {
   content: "\F7A7";
 }
 
 .icon-car-hatchback {
   content: "\F7A8";
+}
+
+.icon-car-key {
+  content: "\FB49";
+}
+
+.icon-car-light-dimmed {
+  content: "\FC26";
+}
+
+.icon-car-light-fog {
+  content: "\FC27";
+}
+
+.icon-car-light-high {
+  content: "\FC28";
+}
+
+.icon-car-limousine {
+  content: "\F8CC";
+}
+
+.icon-car-multiple {
+  content: "\FB4A";
 }
 
 .icon-car-pickup {
@@ -1763,6 +3043,10 @@ strong, b, cite, textview {
   content: "\F7AB";
 }
 
+.icon-car-tire-alert {
+  content: "\FC29";
+}
+
 .icon-car-wash {
   content: "\F10E";
 }
@@ -1771,8 +3055,60 @@ strong, b, cite, textview {
   content: "\F7AC";
 }
 
+.icon-card {
+  content: "\FB4B";
+}
+
+.icon-card-bulleted {
+  content: "\FB4C";
+}
+
+.icon-card-bulleted-off {
+  content: "\FB4D";
+}
+
+.icon-card-bulleted-off-outline {
+  content: "\FB4E";
+}
+
+.icon-card-bulleted-outline {
+  content: "\FB4F";
+}
+
+.icon-card-bulleted-settings {
+  content: "\FB50";
+}
+
+.icon-card-bulleted-settings-outline {
+  content: "\FB51";
+}
+
+.icon-card-outline {
+  content: "\FB52";
+}
+
+.icon-card-text {
+  content: "\FB53";
+}
+
+.icon-card-text-outline {
+  content: "\FB54";
+}
+
 .icon-cards {
   content: "\F638";
+}
+
+.icon-cards-club {
+  content: "\F8CD";
+}
+
+.icon-cards-diamond {
+  content: "\F8CE";
+}
+
+.icon-cards-heart {
+  content: "\F8CF";
 }
 
 .icon-cards-outline {
@@ -1781,6 +3117,10 @@ strong, b, cite, textview {
 
 .icon-cards-playing-outline {
   content: "\F63A";
+}
+
+.icon-cards-spade {
+  content: "\F8D0";
 }
 
 .icon-cards-variant {
@@ -1793,6 +3133,10 @@ strong, b, cite, textview {
 
 .icon-cart {
   content: "\F110";
+}
+
+.icon-cart-arrow-right {
+  content: "\FC2A";
 }
 
 .icon-cart-off {
@@ -1823,8 +3167,16 @@ strong, b, cite, textview {
   content: "\F116";
 }
 
+.icon-cash-refund {
+  content: "\FA9B";
+}
+
 .icon-cash-usd {
   content: "\F117";
+}
+
+.icon-cassette {
+  content: "\F9D3";
 }
 
 .icon-cast {
@@ -1863,6 +3215,10 @@ strong, b, cite, textview {
   content: "\F11D";
 }
 
+.icon-cellphone-arrow-down {
+  content: "\F9D4";
+}
+
 .icon-cellphone-basic {
   content: "\F11E";
 }
@@ -1871,8 +3227,16 @@ strong, b, cite, textview {
   content: "\F11F";
 }
 
+.icon-cellphone-erase {
+  content: "\F94C";
+}
+
 .icon-cellphone-iphone {
   content: "\F120";
+}
+
+.icon-cellphone-key {
+  content: "\F94D";
 }
 
 .icon-cellphone-link {
@@ -1883,8 +3247,36 @@ strong, b, cite, textview {
   content: "\F122";
 }
 
+.icon-cellphone-lock {
+  content: "\F94E";
+}
+
+.icon-cellphone-message {
+  content: "\F8D2";
+}
+
+.icon-cellphone-off {
+  content: "\F94F";
+}
+
+.icon-cellphone-screenshot {
+  content: "\FA34";
+}
+
 .icon-cellphone-settings {
   content: "\F123";
+}
+
+.icon-cellphone-settings-variant {
+  content: "\F950";
+}
+
+.icon-cellphone-sound {
+  content: "\F951";
+}
+
+.icon-cellphone-text {
+  content: "\F8D1";
 }
 
 .icon-cellphone-wireless {
@@ -1897,6 +3289,10 @@ strong, b, cite, textview {
 
 .icon-chair-school {
   content: "\F125";
+}
+
+.icon-charity {
+  content: "\FC2B";
 }
 
 .icon-chart-arc {
@@ -1913,6 +3309,10 @@ strong, b, cite, textview {
 
 .icon-chart-bar-stacked {
   content: "\F769";
+}
+
+.icon-chart-bell-curve {
+  content: "\FC2C";
 }
 
 .icon-chart-bubble {
@@ -1947,6 +3347,10 @@ strong, b, cite, textview {
   content: "\F7B0";
 }
 
+.icon-chart-multiline {
+  content: "\F8D3";
+}
+
 .icon-chart-pie {
   content: "\F12B";
 }
@@ -1959,6 +3363,18 @@ strong, b, cite, textview {
   content: "\F66E";
 }
 
+.icon-chat {
+  content: "\FB55";
+}
+
+.icon-chat-alert {
+  content: "\FB56";
+}
+
+.icon-chat-processing {
+  content: "\FB57";
+}
+
 .icon-check {
   content: "\F12C";
 }
@@ -1967,12 +3383,40 @@ strong, b, cite, textview {
   content: "\F12D";
 }
 
+.icon-check-box-multiple-outline {
+  content: "\FC2D";
+}
+
+.icon-check-box-outline {
+  content: "\FC2E";
+}
+
 .icon-check-circle {
   content: "\F5E0";
 }
 
 .icon-check-circle-outline {
   content: "\F5E1";
+}
+
+.icon-check-decagram {
+  content: "\F790";
+}
+
+.icon-check-network {
+  content: "\FC2F";
+}
+
+.icon-check-network-outline {
+  content: "\FC30";
+}
+
+.icon-check-outline {
+  content: "\F854";
+}
+
+.icon-checkbook {
+  content: "\FA9C";
 }
 
 .icon-checkbox-blank {
@@ -1989,6 +3433,10 @@ strong, b, cite, textview {
 
 .icon-checkbox-blank-outline {
   content: "\F131";
+}
+
+.icon-checkbox-intermediate {
+  content: "\F855";
 }
 
 .icon-checkbox-marked {
@@ -2043,8 +3491,36 @@ strong, b, cite, textview {
   content: "\F13A";
 }
 
+.icon-chef-hat {
+  content: "\FB58";
+}
+
 .icon-chemical-weapon {
   content: "\F13B";
+}
+
+.icon-chess-bishop {
+  content: "\F85B";
+}
+
+.icon-chess-king {
+  content: "\F856";
+}
+
+.icon-chess-knight {
+  content: "\F857";
+}
+
+.icon-chess-pawn {
+  content: "\F858";
+}
+
+.icon-chess-queen {
+  content: "\F859";
+}
+
+.icon-chess-rook {
+  content: "\F85A";
 }
 
 .icon-chevron-double-down {
@@ -2067,16 +3543,80 @@ strong, b, cite, textview {
   content: "\F140";
 }
 
+.icon-chevron-down-box {
+  content: "\F9D5";
+}
+
+.icon-chevron-down-box-outline {
+  content: "\F9D6";
+}
+
+.icon-chevron-down-circle {
+  content: "\FB0B";
+}
+
+.icon-chevron-down-circle-outline {
+  content: "\FB0C";
+}
+
 .icon-chevron-left {
   content: "\F141";
+}
+
+.icon-chevron-left-box {
+  content: "\F9D7";
+}
+
+.icon-chevron-left-box-outline {
+  content: "\F9D8";
+}
+
+.icon-chevron-left-circle {
+  content: "\FB0D";
+}
+
+.icon-chevron-left-circle-outline {
+  content: "\FB0E";
 }
 
 .icon-chevron-right {
   content: "\F142";
 }
 
+.icon-chevron-right-box {
+  content: "\F9D9";
+}
+
+.icon-chevron-right-box-outline {
+  content: "\F9DA";
+}
+
+.icon-chevron-right-circle {
+  content: "\FB0F";
+}
+
+.icon-chevron-right-circle-outline {
+  content: "\FB10";
+}
+
 .icon-chevron-up {
   content: "\F143";
+}
+
+.icon-chevron-up-box {
+  content: "\F9DB";
+}
+
+.icon-chevron-up-box-outline {
+  content: "\F9DC";
+}
+
+.icon-chevron-up-circle {
+  content: "\FB11";
+}
+
+.icon-chevron-up-circle-outline {
+  content: "\FB12";
 }
 
 .icon-chili-hot {
@@ -2095,6 +3635,10 @@ strong, b, cite, textview {
   content: "\F61A";
 }
 
+.icon-christianity {
+  content: "\F952";
+}
+
 .icon-church {
   content: "\F144";
 }
@@ -2103,8 +3647,52 @@ strong, b, cite, textview {
   content: "\F764";
 }
 
+.icon-circle-edit-outline {
+  content: "\F8D4";
+}
+
+.icon-circle-medium {
+  content: "\F9DD";
+}
+
 .icon-circle-outline {
   content: "\F765";
+}
+
+.icon-circle-slice-1 {
+  content: "\FA9D";
+}
+
+.icon-circle-slice-2 {
+  content: "\FA9E";
+}
+
+.icon-circle-slice-3 {
+  content: "\FA9F";
+}
+
+.icon-circle-slice-4 {
+  content: "\FAA0";
+}
+
+.icon-circle-slice-5 {
+  content: "\FAA1";
+}
+
+.icon-circle-slice-6 {
+  content: "\FAA2";
+}
+
+.icon-circle-slice-7 {
+  content: "\FAA3";
+}
+
+.icon-circle-slice-8 {
+  content: "\FAA4";
+}
+
+.icon-circle-small {
+  content: "\F9DE";
 }
 
 .icon-cisco-webex {
@@ -2115,12 +3703,24 @@ strong, b, cite, textview {
   content: "\F146";
 }
 
+.icon-city-variant {
+  content: "\FA35";
+}
+
+.icon-city-variant-outline {
+  content: "\FA36";
+}
+
 .icon-clipboard {
   content: "\F147";
 }
 
 .icon-clipboard-account {
   content: "\F148";
+}
+
+.icon-clipboard-account-outline {
+  content: "\FC31";
 }
 
 .icon-clipboard-alert {
@@ -2131,12 +3731,28 @@ strong, b, cite, textview {
   content: "\F14A";
 }
 
+.icon-clipboard-arrow-down-outline {
+  content: "\FC32";
+}
+
 .icon-clipboard-arrow-left {
   content: "\F14B";
 }
 
+.icon-clipboard-arrow-up {
+  content: "\FC33";
+}
+
+.icon-clipboard-arrow-up-outline {
+  content: "\FC34";
+}
+
 .icon-clipboard-check {
   content: "\F14C";
+}
+
+.icon-clipboard-check-outline {
+  content: "\F8A7";
 }
 
 .icon-clipboard-flow {
@@ -2147,12 +3763,40 @@ strong, b, cite, textview {
   content: "\F14D";
 }
 
+.icon-clipboard-play {
+  content: "\FC35";
+}
+
+.icon-clipboard-play-outline {
+  content: "\FC36";
+}
+
 .icon-clipboard-plus {
   content: "\F750";
 }
 
+.icon-clipboard-pulse {
+  content: "\F85C";
+}
+
+.icon-clipboard-pulse-outline {
+  content: "\F85D";
+}
+
 .icon-clipboard-text {
   content: "\F14E";
+}
+
+.icon-clipboard-text-outline {
+  content: "\FA37";
+}
+
+.icon-clipboard-text-play {
+  content: "\FC37";
+}
+
+.icon-clipboard-text-play-outline {
+  content: "\FC38";
 }
 
 .icon-clippy {
@@ -2160,10 +3804,14 @@ strong, b, cite, textview {
 }
 
 .icon-clock {
-  content: "\F150";
+  content: "\F953";
 }
 
 .icon-clock-alert {
+  content: "\F954";
+}
+
+.icon-clock-alert-outline {
   content: "\F5CE";
 }
 
@@ -2183,6 +3831,10 @@ strong, b, cite, textview {
   content: "\F154";
 }
 
+.icon-clock-outline {
+  content: "\F150";
+}
+
 .icon-clock-start {
   content: "\F155";
 }
@@ -2193,6 +3845,14 @@ strong, b, cite, textview {
 
 .icon-close-box {
   content: "\F157";
+}
+
+.icon-close-box-multiple {
+  content: "\FC39";
+}
+
+.icon-close-box-multiple-outline {
+  content: "\FC3A";
 }
 
 .icon-close-box-outline {
@@ -2209,6 +3869,10 @@ strong, b, cite, textview {
 
 .icon-close-network {
   content: "\F15B";
+}
+
+.icon-close-network-outline {
+  content: "\FC3B";
 }
 
 .icon-close-octagon {
@@ -2231,6 +3895,10 @@ strong, b, cite, textview {
   content: "\F15F";
 }
 
+.icon-cloud-alert {
+  content: "\F9DF";
+}
+
 .icon-cloud-braces {
   content: "\F7B4";
 }
@@ -2245,6 +3913,10 @@ strong, b, cite, textview {
 
 .icon-cloud-download {
   content: "\F162";
+}
+
+.icon-cloud-download-outline {
+  content: "\FB59";
 }
 
 .icon-cloud-off-outline {
@@ -2263,6 +3935,18 @@ strong, b, cite, textview {
   content: "\F166";
 }
 
+.icon-cloud-question {
+  content: "\FA38";
+}
+
+.icon-cloud-search {
+  content: "\F955";
+}
+
+.icon-cloud-search-outline {
+  content: "\F956";
+}
+
 .icon-cloud-sync {
   content: "\F63F";
 }
@@ -2273,6 +3957,10 @@ strong, b, cite, textview {
 
 .icon-cloud-upload {
   content: "\F167";
+}
+
+.icon-cloud-upload-outline {
+  content: "\FB5A";
 }
 
 .icon-clover {
@@ -2351,6 +4039,14 @@ strong, b, cite, textview {
   content: "\F177";
 }
 
+.icon-coffin {
+  content: "\FB5B";
+}
+
+.icon-cogs {
+  content: "\F8D5";
+}
+
 .icon-coin {
   content: "\F178";
 }
@@ -2361,6 +4057,14 @@ strong, b, cite, textview {
 
 .icon-collage {
   content: "\F640";
+}
+
+.icon-collapse-all {
+  content: "\FAA5";
+}
+
+.icon-collapse-all-outline {
+  content: "\FAA6";
 }
 
 .icon-color-helper {
@@ -2387,6 +4091,22 @@ strong, b, cite, textview {
   content: "\F17E";
 }
 
+.icon-comment-arrow-left {
+  content: "\F9E0";
+}
+
+.icon-comment-arrow-left-outline {
+  content: "\F9E1";
+}
+
+.icon-comment-arrow-right {
+  content: "\F9E2";
+}
+
+.icon-comment-arrow-right-outline {
+  content: "\F9E3";
+}
+
 .icon-comment-check {
   content: "\F17F";
 }
@@ -2395,12 +4115,28 @@ strong, b, cite, textview {
   content: "\F180";
 }
 
+.icon-comment-eye {
+  content: "\FA39";
+}
+
+.icon-comment-eye-outline {
+  content: "\FA3A";
+}
+
+.icon-comment-multiple {
+  content: "\F85E";
+}
+
 .icon-comment-multiple-outline {
   content: "\F181";
 }
 
 .icon-comment-outline {
   content: "\F182";
+}
+
+.icon-comment-plus {
+  content: "\F9E4";
 }
 
 .icon-comment-plus-outline {
@@ -2431,8 +4167,24 @@ strong, b, cite, textview {
   content: "\F187";
 }
 
+.icon-comment-search {
+  content: "\FA3B";
+}
+
+.icon-comment-search-outline {
+  content: "\FA3C";
+}
+
 .icon-comment-text {
   content: "\F188";
+}
+
+.icon-comment-text-multiple {
+  content: "\F85F";
+}
+
+.icon-comment-text-multiple-outline {
+  content: "\F860";
 }
 
 .icon-comment-text-outline {
@@ -2447,6 +4199,14 @@ strong, b, cite, textview {
   content: "\F18B";
 }
 
+.icon-compass-off {
+  content: "\FB5C";
+}
+
+.icon-compass-off-outline {
+  content: "\FB5D";
+}
+
 .icon-compass-outline {
   content: "\F18C";
 }
@@ -2459,12 +4219,32 @@ strong, b, cite, textview {
   content: "\F7B6";
 }
 
+.icon-console-network {
+  content: "\F8A8";
+}
+
+.icon-console-network-outline {
+  content: "\FC3C";
+}
+
 .icon-contact-mail {
   content: "\F18E";
 }
 
 .icon-contacts {
   content: "\F6CA";
+}
+
+.icon-contain {
+  content: "\FA3D";
+}
+
+.icon-contain-end {
+  content: "\FA3E";
+}
+
+.icon-contain-start {
+  content: "\FA3F";
 }
 
 .icon-content-copy {
@@ -2499,6 +4279,10 @@ strong, b, cite, textview {
   content: "\F61B";
 }
 
+.icon-content-save-settings-outline {
+  content: "\FB13";
+}
+
 .icon-contrast {
   content: "\F195";
 }
@@ -2511,12 +4295,24 @@ strong, b, cite, textview {
   content: "\F197";
 }
 
+.icon-controller-classic {
+  content: "\FB5E";
+}
+
+.icon-controller-classic-outline {
+  content: "\FB5F";
+}
+
 .icon-cookie {
   content: "\F198";
 }
 
 .icon-copyright {
   content: "\F5E6";
+}
+
+.icon-cordova {
+  content: "\F957";
 }
 
 .icon-corn {
@@ -2529,6 +4325,10 @@ strong, b, cite, textview {
 
 .icon-cow {
   content: "\F19A";
+}
+
+.icon-crane {
+  content: "\F861";
 }
 
 .icon-creation {
@@ -2551,8 +4351,16 @@ strong, b, cite, textview {
   content: "\F675";
 }
 
+.icon-credit-card-refund {
+  content: "\FAA7";
+}
+
 .icon-credit-card-scan {
   content: "\F19D";
+}
+
+.icon-credit-card-settings {
+  content: "\F8D6";
 }
 
 .icon-crop {
@@ -2591,12 +4399,24 @@ strong, b, cite, textview {
   content: "\F1A5";
 }
 
+.icon-cryengine {
+  content: "\F958";
+}
+
+.icon-crystal-ball {
+  content: "\FB14";
+}
+
 .icon-cube {
   content: "\F1A6";
 }
 
 .icon-cube-outline {
   content: "\F1A7";
+}
+
+.icon-cube-scan {
+  content: "\FB60";
 }
 
 .icon-cube-send {
@@ -2617,6 +4437,22 @@ strong, b, cite, textview {
 
 .icon-cup-water {
   content: "\F1AB";
+}
+
+.icon-cupcake {
+  content: "\F959";
+}
+
+.icon-curling {
+  content: "\F862";
+}
+
+.icon-currency-bdt {
+  content: "\F863";
+}
+
+.icon-currency-brl {
+  content: "\FB61";
 }
 
 .icon-currency-btc {
@@ -2643,6 +4479,10 @@ strong, b, cite, textview {
   content: "\F1AE";
 }
 
+.icon-currency-ils {
+  content: "\FC3D";
+}
+
 .icon-currency-inr {
   content: "\F1AF";
 }
@@ -2655,8 +4495,16 @@ strong, b, cite, textview {
   content: "\F7BC";
 }
 
+.icon-currency-kzt {
+  content: "\F864";
+}
+
 .icon-currency-ngn {
   content: "\F1B0";
+}
+
+.icon-currency-php {
+  content: "\F9E5";
 }
 
 .icon-currency-rub {
@@ -2683,6 +4531,14 @@ strong, b, cite, textview {
   content: "\F679";
 }
 
+.icon-current-ac {
+  content: "\F95A";
+}
+
+.icon-current-dc {
+  content: "\F95B";
+}
+
 .icon-cursor-default {
   content: "\F1B4";
 }
@@ -2707,12 +4563,52 @@ strong, b, cite, textview {
   content: "\F1B8";
 }
 
+.icon-database-check {
+  content: "\FAA8";
+}
+
+.icon-database-edit {
+  content: "\FB62";
+}
+
+.icon-database-export {
+  content: "\F95D";
+}
+
+.icon-database-import {
+  content: "\F95C";
+}
+
+.icon-database-lock {
+  content: "\FAA9";
+}
+
 .icon-database-minus {
   content: "\F1B9";
 }
 
 .icon-database-plus {
   content: "\F1BA";
+}
+
+.icon-database-search {
+  content: "\F865";
+}
+
+.icon-death-star {
+  content: "\F8D7";
+}
+
+.icon-death-star-variant {
+  content: "\F8D8";
+}
+
+.icon-deathly-hallows {
+  content: "\FB63";
+}
+
+.icon-debian {
+  content: "\F8D9";
 }
 
 .icon-debug-step-into {
@@ -2751,12 +4647,24 @@ strong, b, cite, textview {
   content: "\F682";
 }
 
+.icon-delete-circle-outline {
+  content: "\FB64";
+}
+
 .icon-delete-empty {
   content: "\F6CB";
 }
 
 .icon-delete-forever {
   content: "\F5E8";
+}
+
+.icon-delete-forever-outline {
+  content: "\FB65";
+}
+
+.icon-delete-outline {
+  content: "\F9E6";
 }
 
 .icon-delete-restore {
@@ -2767,12 +4675,20 @@ strong, b, cite, textview {
   content: "\F5E9";
 }
 
+.icon-delete-sweep-outline {
+  content: "\FC3E";
+}
+
 .icon-delete-variant {
   content: "\F1C1";
 }
 
 .icon-delta {
   content: "\F1C2";
+}
+
+.icon-desk-lamp {
+  content: "\F95E";
 }
 
 .icon-deskphone {
@@ -2787,8 +4703,16 @@ strong, b, cite, textview {
   content: "\F1C4";
 }
 
+.icon-desktop-mac-dashboard {
+  content: "\F9E7";
+}
+
 .icon-desktop-tower {
   content: "\F1C5";
+}
+
+.icon-desktop-tower-monitor {
+  content: "\FAAA";
 }
 
 .icon-details {
@@ -2807,7 +4731,27 @@ strong, b, cite, textview {
   content: "\F61C";
 }
 
+.icon-diameter {
+  content: "\FC3F";
+}
+
+.icon-diameter-outline {
+  content: "\FC40";
+}
+
+.icon-diameter-variant {
+  content: "\FC41";
+}
+
 .icon-diamond {
+  content: "\FB66";
+}
+
+.icon-diamond-outline {
+  content: "\FB67";
+}
+
+.icon-diamond-stone {
   content: "\F1C8";
 }
 
@@ -2837,6 +4781,10 @@ strong, b, cite, textview {
 
 .icon-dice-d10 {
   content: "\F76E";
+}
+
+.icon-dice-d12 {
+  content: "\F866";
 }
 
 .icon-dice-d20 {
@@ -2875,16 +4823,24 @@ strong, b, cite, textview {
   content: "\F641";
 }
 
+.icon-disc {
+  content: "\F5EE";
+}
+
+.icon-disc-alert {
+  content: "\F1D1";
+}
+
+.icon-disc-player {
+  content: "\F95F";
+}
+
 .icon-discord {
   content: "\F66F";
 }
 
-.icon-disk {
-  content: "\F5EE";
-}
-
-.icon-disk-alert {
-  content: "\F1D1";
+.icon-dishwasher {
+  content: "\FAAB";
 }
 
 .icon-disqus {
@@ -2903,6 +4859,10 @@ strong, b, cite, textview {
   content: "\F1D5";
 }
 
+.icon-dlna {
+  content: "\FA40";
+}
+
 .icon-dna {
   content: "\F683";
 }
@@ -2911,12 +4871,36 @@ strong, b, cite, textview {
   content: "\F1D6";
 }
 
+.icon-dns-outline {
+  content: "\FB68";
+}
+
 .icon-do-not-disturb {
   content: "\F697";
 }
 
 .icon-do-not-disturb-off {
   content: "\F698";
+}
+
+.icon-docker {
+  content: "\F867";
+}
+
+.icon-doctor {
+  content: "\FA41";
+}
+
+.icon-dog {
+  content: "\FA42";
+}
+
+.icon-dog-service {
+  content: "\FAAC";
+}
+
+.icon-dog-side {
+  content: "\FA43";
 }
 
 .icon-dolby {
@@ -2943,12 +4927,24 @@ strong, b, cite, textview {
   content: "\F81B";
 }
 
+.icon-doorbell-video {
+  content: "\F868";
+}
+
+.icon-dot-net {
+  content: "\FAAD";
+}
+
 .icon-dots-horizontal {
   content: "\F1D8";
 }
 
 .icon-dots-horizontal-circle {
   content: "\F7C2";
+}
+
+.icon-dots-horizontal-circle-outline {
+  content: "\FB69";
 }
 
 .icon-dots-vertical {
@@ -2959,6 +4955,10 @@ strong, b, cite, textview {
   content: "\F7C3";
 }
 
+.icon-dots-vertical-circle-outline {
+  content: "\FB6A";
+}
+
 .icon-douban {
   content: "\F699";
 }
@@ -2967,8 +4967,20 @@ strong, b, cite, textview {
   content: "\F1DA";
 }
 
+.icon-download-multiple {
+  content: "\F9E8";
+}
+
 .icon-download-network {
   content: "\F6F3";
+}
+
+.icon-download-network-outline {
+  content: "\FC42";
+}
+
+.icon-download-outline {
+  content: "\FB6B";
 }
 
 .icon-drag {
@@ -2977,6 +4989,10 @@ strong, b, cite, textview {
 
 .icon-drag-horizontal {
   content: "\F1DC";
+}
+
+.icon-drag-variant {
+  content: "\FB6C";
 }
 
 .icon-drag-vertical {
@@ -3019,8 +5035,16 @@ strong, b, cite, textview {
   content: "\F1E6";
 }
 
+.icon-dump-truck {
+  content: "\FC43";
+}
+
 .icon-ear-hearing {
   content: "\F7C4";
+}
+
+.icon-ear-hearing-off {
+  content: "\FA44";
 }
 
 .icon-earth {
@@ -3043,8 +5067,24 @@ strong, b, cite, textview {
   content: "\F1E9";
 }
 
+.icon-egg {
+  content: "\FAAE";
+}
+
+.icon-egg-easter {
+  content: "\FAAF";
+}
+
+.icon-eight-track {
+  content: "\F9E9";
+}
+
 .icon-eject {
   content: "\F1EA";
+}
+
+.icon-eject-outline {
+  content: "\FB6D";
 }
 
 .icon-elephant {
@@ -3071,6 +5111,22 @@ strong, b, cite, textview {
   content: "\F6CE";
 }
 
+.icon-email-check {
+  content: "\FAB0";
+}
+
+.icon-email-check-outline {
+  content: "\FAB1";
+}
+
+.icon-email-lock {
+  content: "\F1F1";
+}
+
+.icon-email-mark-as-unread {
+  content: "\FB6E";
+}
+
 .icon-email-open {
   content: "\F1EF";
 }
@@ -3083,12 +5139,28 @@ strong, b, cite, textview {
   content: "\F1F0";
 }
 
-.icon-email-secure {
-  content: "\F1F1";
+.icon-email-plus {
+  content: "\F9EA";
+}
+
+.icon-email-plus-outline {
+  content: "\F9EB";
+}
+
+.icon-email-search {
+  content: "\F960";
+}
+
+.icon-email-search-outline {
+  content: "\F961";
 }
 
 .icon-email-variant {
   content: "\F5F0";
+}
+
+.icon-ember {
+  content: "\FB15";
 }
 
 .icon-emby {
@@ -3096,38 +5168,98 @@ strong, b, cite, textview {
 }
 
 .icon-emoticon {
-  content: "\F1F2";
+  content: "\FC44";
+}
+
+.icon-emoticon-angry {
+  content: "\FC45";
+}
+
+.icon-emoticon-angry-outline {
+  content: "\FC46";
 }
 
 .icon-emoticon-cool {
+  content: "\FC47";
+}
+
+.icon-emoticon-cool-outline {
   content: "\F1F3";
 }
 
+.icon-emoticon-cry {
+  content: "\FC48";
+}
+
+.icon-emoticon-cry-outline {
+  content: "\FC49";
+}
+
 .icon-emoticon-dead {
+  content: "\FC4A";
+}
+
+.icon-emoticon-dead-outline {
   content: "\F69A";
 }
 
 .icon-emoticon-devil {
+  content: "\FC4B";
+}
+
+.icon-emoticon-devil-outline {
   content: "\F1F4";
 }
 
 .icon-emoticon-excited {
+  content: "\FC4C";
+}
+
+.icon-emoticon-excited-outline {
   content: "\F69B";
 }
 
 .icon-emoticon-happy {
+  content: "\FC4D";
+}
+
+.icon-emoticon-happy-outline {
   content: "\F1F5";
 }
 
+.icon-emoticon-kiss {
+  content: "\FC4E";
+}
+
+.icon-emoticon-kiss-outline {
+  content: "\FC4F";
+}
+
 .icon-emoticon-neutral {
+  content: "\FC50";
+}
+
+.icon-emoticon-neutral-outline {
   content: "\F1F6";
+}
+
+.icon-emoticon-outline {
+  content: "\F1F2";
 }
 
 .icon-emoticon-poop {
   content: "\F1F7";
 }
 
+.icon-emoticon-poop-outline {
+  content: "\FC51";
+}
+
 .icon-emoticon-sad {
+  content: "\FC52";
+}
+
+.icon-emoticon-sad-outline {
   content: "\F1F8";
 }
 
@@ -3135,8 +5267,28 @@ strong, b, cite, textview {
   content: "\F1F9";
 }
 
+.icon-emoticon-tongue-outline {
+  content: "\FC53";
+}
+
+.icon-emoticon-wink {
+  content: "\FC54";
+}
+
+.icon-emoticon-wink-outline {
+  content: "\FC55";
+}
+
 .icon-engine {
   content: "\F1FA";
+}
+
+.icon-engine-off {
+  content: "\FA45";
+}
+
+.icon-engine-off-outline {
+  content: "\FA46";
 }
 
 .icon-engine-outline {
@@ -3161,6 +5313,18 @@ strong, b, cite, textview {
 
 .icon-escalator {
   content: "\F1FF";
+}
+
+.icon-eslint {
+  content: "\FC56";
+}
+
+.icon-et {
+  content: "\FAB2";
+}
+
+.icon-ethereum {
+  content: "\F869";
 }
 
 .icon-ethernet {
@@ -3195,16 +5359,48 @@ strong, b, cite, textview {
   content: "\F205";
 }
 
+.icon-exit-run {
+  content: "\FA47";
+}
+
 .icon-exit-to-app {
   content: "\F206";
+}
+
+.icon-expand-all {
+  content: "\FAB3";
+}
+
+.icon-expand-all-outline {
+  content: "\FAB4";
+}
+
+.icon-exponent {
+  content: "\F962";
+}
+
+.icon-exponent-box {
+  content: "\F963";
 }
 
 .icon-export {
   content: "\F207";
 }
 
+.icon-export-variant {
+  content: "\FB6F";
+}
+
 .icon-eye {
   content: "\F208";
+}
+
+.icon-eye-circle {
+  content: "\FB70";
+}
+
+.icon-eye-circle-outline {
+  content: "\FB71";
 }
 
 .icon-eye-off {
@@ -3219,6 +5415,22 @@ strong, b, cite, textview {
   content: "\F6CF";
 }
 
+.icon-eye-plus {
+  content: "\F86A";
+}
+
+.icon-eye-plus-outline {
+  content: "\F86B";
+}
+
+.icon-eye-settings {
+  content: "\F86C";
+}
+
+.icon-eye-settings-outline {
+  content: "\F86D";
+}
+
 .icon-eyedropper {
   content: "\F20A";
 }
@@ -3231,8 +5443,16 @@ strong, b, cite, textview {
   content: "\F643";
 }
 
+.icon-face-outline {
+  content: "\FB72";
+}
+
 .icon-face-profile {
   content: "\F644";
+}
+
+.icon-face-recognition {
+  content: "\FC57";
 }
 
 .icon-facebook {
@@ -3245,6 +5465,10 @@ strong, b, cite, textview {
 
 .icon-facebook-messenger {
   content: "\F20E";
+}
+
+.icon-facebook-workplace {
+  content: "\FB16";
 }
 
 .icon-factory {
@@ -3275,6 +5499,18 @@ strong, b, cite, textview {
   content: "\F6D2";
 }
 
+.icon-feature-search {
+  content: "\FA48";
+}
+
+.icon-feature-search-outline {
+  content: "\FA49";
+}
+
+.icon-fedora {
+  content: "\F8DA";
+}
+
 .icon-ferry {
   content: "\F213";
 }
@@ -3285,6 +5521,18 @@ strong, b, cite, textview {
 
 .icon-file-account {
   content: "\F73A";
+}
+
+.icon-file-alert {
+  content: "\FA4A";
+}
+
+.icon-file-alert-outline {
+  content: "\FA4B";
+}
+
+.icon-file-cabinet {
+  content: "\FAB5";
 }
 
 .icon-file-chart {
@@ -3299,6 +5547,10 @@ strong, b, cite, textview {
   content: "\F217";
 }
 
+.icon-file-compare {
+  content: "\F8A9";
+}
+
 .icon-file-delimited {
   content: "\F218";
 }
@@ -3309,6 +5561,30 @@ strong, b, cite, textview {
 
 .icon-file-document-box {
   content: "\F21A";
+}
+
+.icon-file-document-box-multiple {
+  content: "\FAB6";
+}
+
+.icon-file-document-box-multiple-outline {
+  content: "\FAB7";
+}
+
+.icon-file-document-box-outline {
+  content: "\F9EC";
+}
+
+.icon-file-document-outline {
+  content: "\F9ED";
+}
+
+.icon-file-download {
+  content: "\F964";
+}
+
+.icon-file-download-outline {
+  content: "\F965";
 }
 
 .icon-file-excel {
@@ -3327,6 +5603,10 @@ strong, b, cite, textview {
   content: "\F21E";
 }
 
+.icon-file-find-outline {
+  content: "\FB73";
+}
+
 .icon-file-hidden {
   content: "\F613";
 }
@@ -3341,6 +5621,10 @@ strong, b, cite, textview {
 
 .icon-file-lock {
   content: "\F221";
+}
+
+.icon-file-move {
+  content: "\FAB8";
 }
 
 .icon-file-multiple {
@@ -3383,16 +5667,60 @@ strong, b, cite, textview {
   content: "\F229";
 }
 
+.icon-file-question {
+  content: "\F86E";
+}
+
+.icon-file-remove {
+  content: "\FB74";
+}
+
+.icon-file-replace {
+  content: "\FB17";
+}
+
+.icon-file-replace-outline {
+  content: "\FB18";
+}
+
 .icon-file-restore {
   content: "\F670";
+}
+
+.icon-file-search {
+  content: "\FC58";
+}
+
+.icon-file-search-outline {
+  content: "\FC59";
 }
 
 .icon-file-send {
   content: "\F22A";
 }
 
+.icon-file-table {
+  content: "\FC5A";
+}
+
+.icon-file-table-outline {
+  content: "\FC5B";
+}
+
 .icon-file-tree {
   content: "\F645";
+}
+
+.icon-file-undo {
+  content: "\F8DB";
+}
+
+.icon-file-upload {
+  content: "\FA4C";
+}
+
+.icon-file-upload-outline {
+  content: "\FA4D";
 }
 
 .icon-file-video {
@@ -3459,6 +5787,14 @@ strong, b, cite, textview {
   content: "\F238";
 }
 
+.icon-fire-truck {
+  content: "\F8AA";
+}
+
+.icon-firebase {
+  content: "\F966";
+}
+
 .icon-firefox {
   content: "\F239";
 }
@@ -3475,8 +5811,20 @@ strong, b, cite, textview {
   content: "\F23C";
 }
 
+.icon-flag-minus {
+  content: "\FB75";
+}
+
 .icon-flag-outline {
   content: "\F23D";
+}
+
+.icon-flag-plus {
+  content: "\FB76";
+}
+
+.icon-flag-remove {
+  content: "\FB77";
 }
 
 .icon-flag-triangle {
@@ -3551,6 +5899,10 @@ strong, b, cite, textview {
   content: "\F248";
 }
 
+.icon-floor-lamp {
+  content: "\F8DC";
+}
+
 .icon-floor-plan {
   content: "\F820";
 }
@@ -3559,8 +5911,24 @@ strong, b, cite, textview {
   content: "\F249";
 }
 
+.icon-floppy-variant {
+  content: "\F9EE";
+}
+
 .icon-flower {
   content: "\F24A";
+}
+
+.icon-flower-outline {
+  content: "\F9EF";
+}
+
+.icon-flower-tulip {
+  content: "\F9F0";
+}
+
+.icon-flower-tulip-outline {
+  content: "\F9F1";
 }
 
 .icon-folder {
@@ -3571,8 +5939,24 @@ strong, b, cite, textview {
   content: "\F24C";
 }
 
+.icon-folder-account-outline {
+  content: "\FB78";
+}
+
+.icon-folder-clock {
+  content: "\FAB9";
+}
+
+.icon-folder-clock-outline {
+  content: "\FABA";
+}
+
 .icon-folder-download {
   content: "\F24D";
+}
+
+.icon-folder-edit {
+  content: "\F8DD";
 }
 
 .icon-folder-google-drive {
@@ -3581,6 +5965,18 @@ strong, b, cite, textview {
 
 .icon-folder-image {
   content: "\F24F";
+}
+
+.icon-folder-key {
+  content: "\F8AB";
+}
+
+.icon-folder-key-network {
+  content: "\F8AC";
+}
+
+.icon-folder-key-network-outline {
+  content: "\FC5C";
 }
 
 .icon-folder-lock {
@@ -3607,6 +6003,14 @@ strong, b, cite, textview {
   content: "\F255";
 }
 
+.icon-folder-network {
+  content: "\F86F";
+}
+
+.icon-folder-network-outline {
+  content: "\FC5D";
+}
+
 .icon-folder-open {
   content: "\F76F";
 }
@@ -3619,12 +6023,40 @@ strong, b, cite, textview {
   content: "\F257";
 }
 
+.icon-folder-plus-outline {
+  content: "\FB79";
+}
+
 .icon-folder-remove {
   content: "\F258";
 }
 
+.icon-folder-remove-outline {
+  content: "\FB7A";
+}
+
+.icon-folder-search {
+  content: "\F967";
+}
+
+.icon-folder-search-outline {
+  content: "\F968";
+}
+
 .icon-folder-star {
   content: "\F69C";
+}
+
+.icon-folder-star-outline {
+  content: "\FB7B";
+}
+
+.icon-folder-text {
+  content: "\FC5E";
+}
+
+.icon-folder-text-outline {
+  content: "\FC5F";
 }
 
 .icon-folder-upload {
@@ -3641,6 +6073,10 @@ strong, b, cite, textview {
 
 .icon-food-apple {
   content: "\F25B";
+}
+
+.icon-food-apple-outline {
+  content: "\FC60";
 }
 
 .icon-food-croissant {
@@ -3703,6 +6139,10 @@ strong, b, cite, textview {
   content: "\F754";
 }
 
+.icon-format-annotation-minus {
+  content: "\FABB";
+}
+
 .icon-format-annotation-plus {
   content: "\F646";
 }
@@ -3723,6 +6163,10 @@ strong, b, cite, textview {
   content: "\F69D";
 }
 
+.icon-format-columns {
+  content: "\F8DE";
+}
+
 .icon-format-float-center {
   content: "\F267";
 }
@@ -3741,6 +6185,14 @@ strong, b, cite, textview {
 
 .icon-format-font {
   content: "\F6D5";
+}
+
+.icon-format-font-size-decrease {
+  content: "\F9F2";
+}
+
+.icon-format-font-size-increase {
+  content: "\F9F3";
 }
 
 .icon-format-header-1 {
@@ -3807,6 +6259,18 @@ strong, b, cite, textview {
   content: "\F277";
 }
 
+.icon-format-letter-case {
+  content: "\FB19";
+}
+
+.icon-format-letter-case-lower {
+  content: "\FB1A";
+}
+
+.icon-format-letter-case-upper {
+  content: "\FB1B";
+}
+
 .icon-format-line-spacing {
   content: "\F278";
 }
@@ -3827,11 +6291,15 @@ strong, b, cite, textview {
   content: "\F27A";
 }
 
+.icon-format-list-checkbox {
+  content: "\F969";
+}
+
 .icon-format-list-checks {
   content: "\F755";
 }
 
-.icon-format-list-numbers {
+.icon-format-list-numbered {
   content: "\F27B";
 }
 
@@ -3947,24 +6415,32 @@ strong, b, cite, textview {
   content: "\F28D";
 }
 
+.icon-fountain {
+  content: "\F96A";
+}
+
 .icon-foursquare {
   content: "\F28E";
 }
 
-.icon-fridge {
-  content: "\F28F";
+.icon-freebsd {
+  content: "\F8DF";
 }
 
-.icon-fridge-filled {
+.icon-fridge {
   content: "\F290";
 }
 
-.icon-fridge-filled-bottom {
-  content: "\F291";
+.icon-fridge-bottom {
+  content: "\F292";
 }
 
-.icon-fridge-filled-top {
-  content: "\F292";
+.icon-fridge-outline {
+  content: "\F28F";
+}
+
+.icon-fridge-top {
+  content: "\F291";
 }
 
 .icon-fuel {
@@ -3983,6 +6459,18 @@ strong, b, cite, textview {
   content: "\F295";
 }
 
+.icon-function-variant {
+  content: "\F870";
+}
+
+.icon-fuse {
+  content: "\FC61";
+}
+
+.icon-fuse-blade {
+  content: "\FC62";
+}
+
 .icon-gamepad {
   content: "\F296";
 }
@@ -3993,6 +6481,10 @@ strong, b, cite, textview {
 
 .icon-garage {
   content: "\F6D8";
+}
+
+.icon-garage-alert {
+  content: "\F871";
 }
 
 .icon-garage-open {
@@ -4011,8 +6503,48 @@ strong, b, cite, textview {
   content: "\F299";
 }
 
+.icon-gate-and {
+  content: "\F8E0";
+}
+
+.icon-gate-nand {
+  content: "\F8E1";
+}
+
+.icon-gate-nor {
+  content: "\F8E2";
+}
+
+.icon-gate-not {
+  content: "\F8E3";
+}
+
+.icon-gate-or {
+  content: "\F8E4";
+}
+
+.icon-gate-xnor {
+  content: "\F8E5";
+}
+
+.icon-gate-xor {
+  content: "\F8E6";
+}
+
 .icon-gauge {
   content: "\F29A";
+}
+
+.icon-gauge-empty {
+  content: "\F872";
+}
+
+.icon-gauge-full {
+  content: "\F873";
+}
+
+.icon-gauge-low {
+  content: "\F874";
 }
 
 .icon-gavel {
@@ -4035,6 +6567,10 @@ strong, b, cite, textview {
   content: "\F29F";
 }
 
+.icon-gentoo {
+  content: "\F8E7";
+}
+
 .icon-gesture {
   content: "\F7CA";
 }
@@ -4043,8 +6579,20 @@ strong, b, cite, textview {
   content: "\F73B";
 }
 
+.icon-gesture-pinch {
+  content: "\FABC";
+}
+
+.icon-gesture-spread {
+  content: "\FABD";
+}
+
 .icon-gesture-swipe-down {
   content: "\F73C";
+}
+
+.icon-gesture-swipe-horizontal {
+  content: "\FABE";
 }
 
 .icon-gesture-swipe-left {
@@ -4057,6 +6605,10 @@ strong, b, cite, textview {
 
 .icon-gesture-swipe-up {
   content: "\F73F";
+}
+
+.icon-gesture-swipe-vertical {
+  content: "\FABF";
 }
 
 .icon-gesture-tap {
@@ -4073,6 +6625,10 @@ strong, b, cite, textview {
 
 .icon-ghost {
   content: "\F2A0";
+}
+
+.icon-ghost-off {
+  content: "\F9F4";
 }
 
 .icon-gift {
@@ -4095,6 +6651,14 @@ strong, b, cite, textview {
   content: "\F6DA";
 }
 
+.icon-gitlab {
+  content: "\FB7C";
+}
+
+.icon-glass-cocktail {
+  content: "\F356";
+}
+
 .icon-glass-flute {
   content: "\F2A5";
 }
@@ -4111,6 +6675,10 @@ strong, b, cite, textview {
   content: "\F2A8";
 }
 
+.icon-glass-wine {
+  content: "\F875";
+}
+
 .icon-glassdoor {
   content: "\F2A9";
 }
@@ -4119,12 +6687,20 @@ strong, b, cite, textview {
   content: "\F2AA";
 }
 
+.icon-globe-model {
+  content: "\F8E8";
+}
+
 .icon-gmail {
   content: "\F2AB";
 }
 
 .icon-gnome {
   content: "\F2AC";
+}
+
+.icon-gog {
+  content: "\FB7D";
 }
 
 .icon-golf {
@@ -4137,6 +6713,14 @@ strong, b, cite, textview {
 
 .icon-google {
   content: "\F2AD";
+}
+
+.icon-google-adwords {
+  content: "\FC63";
+}
+
+.icon-google-allo {
+  content: "\F801";
 }
 
 .icon-google-analytics {
@@ -4187,8 +6771,16 @@ strong, b, cite, textview {
   content: "\F2B7";
 }
 
+.icon-google-fit {
+  content: "\F96B";
+}
+
 .icon-google-glass {
   content: "\F2B8";
+}
+
+.icon-google-hangouts {
+  content: "\F2C9";
 }
 
 .icon-google-home {
@@ -4197,6 +6789,10 @@ strong, b, cite, textview {
 
 .icon-google-keep {
   content: "\F6DB";
+}
+
+.icon-google-lens {
+  content: "\F9F5";
 }
 
 .icon-google-maps {
@@ -4231,6 +6827,14 @@ strong, b, cite, textview {
   content: "\F2BE";
 }
 
+.icon-google-spreadsheet {
+  content: "\F9F6";
+}
+
+.icon-google-street-view {
+  content: "\FC64";
+}
+
 .icon-google-translate {
   content: "\F2BF";
 }
@@ -4239,12 +6843,32 @@ strong, b, cite, textview {
   content: "\F2C0";
 }
 
+.icon-gpu {
+  content: "\F8AD";
+}
+
 .icon-gradient {
   content: "\F69F";
 }
 
+.icon-graphql {
+  content: "\F876";
+}
+
+.icon-grave-stone {
+  content: "\FB7E";
+}
+
 .icon-grease-pencil {
   content: "\F648";
+}
+
+.icon-greater-than {
+  content: "\F96C";
+}
+
+.icon-greater-than-or-equal {
+  content: "\F96D";
 }
 
 .icon-grid {
@@ -4287,28 +6911,80 @@ strong, b, cite, textview {
   content: "\F624";
 }
 
+.icon-hail {
+  content: "\FAC0";
+}
+
+.icon-halloween {
+  content: "\FB7F";
+}
+
 .icon-hamburger {
   content: "\F684";
+}
+
+.icon-hammer {
+  content: "\F8E9";
+}
+
+.icon-hand {
+  content: "\FA4E";
+}
+
+.icon-hand-okay {
+  content: "\FA4F";
+}
+
+.icon-hand-peace {
+  content: "\FA50";
+}
+
+.icon-hand-peace-variant {
+  content: "\FA51";
+}
+
+.icon-hand-pointing-down {
+  content: "\FA52";
+}
+
+.icon-hand-pointing-left {
+  content: "\FA53";
 }
 
 .icon-hand-pointing-right {
   content: "\F2C7";
 }
 
+.icon-hand-pointing-up {
+  content: "\FA54";
+}
+
 .icon-hanger {
   content: "\F2C8";
 }
 
-.icon-hangouts {
-  content: "\F2C9";
+.icon-hard-hat {
+  content: "\F96E";
 }
 
 .icon-harddisk {
   content: "\F2CA";
 }
 
+.icon-hat-fedora {
+  content: "\FB80";
+}
+
+.icon-hazard-lights {
+  content: "\FC65";
+}
+
 .icon-headphones {
   content: "\F2CB";
+}
+
+.icon-headphones-bluetooth {
+  content: "\F96F";
 }
 
 .icon-headphones-box {
@@ -4351,6 +7027,14 @@ strong, b, cite, textview {
   content: "\F2D4";
 }
 
+.icon-heart-circle {
+  content: "\F970";
+}
+
+.icon-heart-circle-outline {
+  content: "\F971";
+}
+
 .icon-heart-half {
   content: "\F6DE";
 }
@@ -4363,6 +7047,14 @@ strong, b, cite, textview {
   content: "\F6DF";
 }
 
+.icon-heart-multiple {
+  content: "\FA55";
+}
+
+.icon-heart-multiple-outline {
+  content: "\FA56";
+}
+
 .icon-heart-off {
   content: "\F758";
 }
@@ -4373,6 +7065,10 @@ strong, b, cite, textview {
 
 .icon-heart-pulse {
   content: "\F5F6";
+}
+
+.icon-helicopter {
+  content: "\FAC1";
 }
 
 .icon-help {
@@ -4395,6 +7091,18 @@ strong, b, cite, textview {
   content: "\F6F4";
 }
 
+.icon-help-network-outline {
+  content: "\FC66";
+}
+
+.icon-help-rhombus {
+  content: "\FB81";
+}
+
+.icon-help-rhombus-outline {
+  content: "\FB82";
+}
+
 .icon-hexagon {
   content: "\F2D8";
 }
@@ -4407,16 +7115,64 @@ strong, b, cite, textview {
   content: "\F2D9";
 }
 
+.icon-hexagon-slice-1 {
+  content: "\FAC2";
+}
+
+.icon-hexagon-slice-2 {
+  content: "\FAC3";
+}
+
+.icon-hexagon-slice-3 {
+  content: "\FAC4";
+}
+
+.icon-hexagon-slice-4 {
+  content: "\FAC5";
+}
+
+.icon-hexagon-slice-5 {
+  content: "\FAC6";
+}
+
+.icon-hexagon-slice-6 {
+  content: "\FAC7";
+}
+
+.icon-hexagram {
+  content: "\FAC8";
+}
+
+.icon-hexagram-outline {
+  content: "\FAC9";
+}
+
 .icon-high-definition {
   content: "\F7CE";
+}
+
+.icon-high-definition-box {
+  content: "\F877";
 }
 
 .icon-highway {
   content: "\F5F7";
 }
 
+.icon-hinduism {
+  content: "\F972";
+}
+
 .icon-history {
   content: "\F2DA";
+}
+
+.icon-hockey-puck {
+  content: "\F878";
+}
+
+.icon-hockey-sticks {
+  content: "\F879";
 }
 
 .icon-hololens {
@@ -4431,6 +7187,10 @@ strong, b, cite, textview {
   content: "\F825";
 }
 
+.icon-home-alert {
+  content: "\F87A";
+}
+
 .icon-home-assistant {
   content: "\F7CF";
 }
@@ -4443,12 +7203,28 @@ strong, b, cite, textview {
   content: "\F7D1";
 }
 
+.icon-home-currency-usd {
+  content: "\F8AE";
+}
+
 .icon-home-heart {
   content: "\F826";
 }
 
+.icon-home-lock {
+  content: "\F8EA";
+}
+
+.icon-home-lock-open {
+  content: "\F8EB";
+}
+
 .icon-home-map-marker {
   content: "\F5F8";
+}
+
+.icon-home-minus {
+  content: "\F973";
 }
 
 .icon-home-modern {
@@ -4459,8 +7235,16 @@ strong, b, cite, textview {
   content: "\F6A0";
 }
 
+.icon-home-plus {
+  content: "\F974";
+}
+
 .icon-home-variant {
   content: "\F2DE";
+}
+
+.icon-home-variant-outline {
+  content: "\FB83";
 }
 
 .icon-hook {
@@ -4473,6 +7257,10 @@ strong, b, cite, textview {
 
 .icon-hops {
   content: "\F2DF";
+}
+
+.icon-horseshoe {
+  content: "\FA57";
 }
 
 .icon-hospital {
@@ -4519,6 +7307,18 @@ strong, b, cite, textview {
   content: "\F649";
 }
 
+.icon-human-female-boy {
+  content: "\FA58";
+}
+
+.icon-human-female-female {
+  content: "\FA59";
+}
+
+.icon-human-female-girl {
+  content: "\FA5A";
+}
+
 .icon-human-greeting {
   content: "\F64A";
 }
@@ -4535,8 +7335,20 @@ strong, b, cite, textview {
   content: "\F64D";
 }
 
+.icon-human-male-boy {
+  content: "\FA5B";
+}
+
 .icon-human-male-female {
   content: "\F2E8";
+}
+
+.icon-human-male-girl {
+  content: "\FA5C";
+}
+
+.icon-human-male-male {
+  content: "\FA5D";
 }
 
 .icon-human-pregnant {
@@ -4549,6 +7361,14 @@ strong, b, cite, textview {
 
 .icon-ice-cream {
   content: "\F829";
+}
+
+.icon-iframe {
+  content: "\FC67";
+}
+
+.icon-iframe-outline {
+  content: "\FC68";
 }
 
 .icon-image {
@@ -4615,12 +7435,44 @@ strong, b, cite, textview {
   content: "\F2F8";
 }
 
+.icon-image-move {
+  content: "\F9F7";
+}
+
 .icon-image-multiple {
   content: "\F2F9";
 }
 
 .icon-image-off {
   content: "\F82A";
+}
+
+.icon-image-outline {
+  content: "\F975";
+}
+
+.icon-image-plus {
+  content: "\F87B";
+}
+
+.icon-image-search {
+  content: "\F976";
+}
+
+.icon-image-search-outline {
+  content: "\F977";
+}
+
+.icon-image-size-select-actual {
+  content: "\FC69";
+}
+
+.icon-image-size-select-large {
+  content: "\FC6A";
+}
+
+.icon-image-size-select-small {
+  content: "\FC6B";
 }
 
 .icon-import {
@@ -4637,6 +7489,14 @@ strong, b, cite, textview {
 
 .icon-inbox-arrow-up {
   content: "\F3D1";
+}
+
+.icon-inbox-multiple {
+  content: "\F8AF";
+}
+
+.icon-inbox-multiple-outline {
+  content: "\FB84";
 }
 
 .icon-incognito {
@@ -4675,6 +7535,26 @@ strong, b, cite, textview {
   content: "\F301";
 }
 
+.icon-ip {
+  content: "\FA5E";
+}
+
+.icon-ip-network {
+  content: "\FA5F";
+}
+
+.icon-ip-network-outline {
+  content: "\FC6C";
+}
+
+.icon-ipod {
+  content: "\FC6D";
+}
+
+.icon-islam {
+  content: "\F978";
+}
+
 .icon-itunes {
   content: "\F676";
 }
@@ -4687,12 +7567,20 @@ strong, b, cite, textview {
   content: "\F303";
 }
 
+.icon-jquery {
+  content: "\F87C";
+}
+
 .icon-jsfiddle {
   content: "\F304";
 }
 
 .icon-json {
   content: "\F626";
+}
+
+.icon-judaism {
+  content: "\F979";
 }
 
 .icon-karate {
@@ -4751,8 +7639,20 @@ strong, b, cite, textview {
   content: "\F310";
 }
 
+.icon-keyboard-outline {
+  content: "\F97A";
+}
+
 .icon-keyboard-return {
   content: "\F311";
+}
+
+.icon-keyboard-settings {
+  content: "\F9F8";
+}
+
+.icon-keyboard-settings-outline {
+  content: "\F9F9";
 }
 
 .icon-keyboard-tab {
@@ -4767,6 +7667,14 @@ strong, b, cite, textview {
   content: "\F744";
 }
 
+.icon-knife {
+  content: "\F9FA";
+}
+
+.icon-knife-military {
+  content: "\F9FB";
+}
+
 .icon-kodi {
   content: "\F314";
 }
@@ -4775,8 +7683,24 @@ strong, b, cite, textview {
   content: "\F315";
 }
 
+.icon-label-off {
+  content: "\FACA";
+}
+
+.icon-label-off-outline {
+  content: "\FACB";
+}
+
 .icon-label-outline {
   content: "\F316";
+}
+
+.icon-label-variant {
+  content: "\FACC";
+}
+
+.icon-label-variant-outline {
+  content: "\FACD";
 }
 
 .icon-ladybug {
@@ -4827,12 +7751,24 @@ strong, b, cite, textview {
   content: "\F7D2";
 }
 
+.icon-language-haskell {
+  content: "\FC6E";
+}
+
 .icon-language-html5 {
   content: "\F31D";
 }
 
+.icon-language-java {
+  content: "\FB1C";
+}
+
 .icon-language-javascript {
   content: "\F31E";
+}
+
+.icon-language-lua {
+  content: "\F8B0";
 }
 
 .icon-language-php {
@@ -4849,6 +7785,10 @@ strong, b, cite, textview {
 
 .icon-language-r {
   content: "\F7D3";
+}
+
+.icon-language-ruby-on-rails {
+  content: "\FACE";
 }
 
 .icon-language-swift {
@@ -4879,6 +7819,10 @@ strong, b, cite, textview {
   content: "\F325";
 }
 
+.icon-laravel {
+  content: "\FACF";
+}
+
 .icon-lastfm {
   content: "\F326";
 }
@@ -4903,12 +7847,24 @@ strong, b, cite, textview {
   content: "\F329";
 }
 
+.icon-layers-off-outline {
+  content: "\F9FC";
+}
+
+.icon-layers-outline {
+  content: "\F9FD";
+}
+
 .icon-lead-pencil {
   content: "\F64F";
 }
 
 .icon-leaf {
   content: "\F32A";
+}
+
+.icon-leaf-maple {
+  content: "\FC6F";
 }
 
 .icon-led-off {
@@ -4939,6 +7895,14 @@ strong, b, cite, textview {
   content: "\F330";
 }
 
+.icon-less-than {
+  content: "\F97B";
+}
+
+.icon-less-than-or-equal {
+  content: "\F97C";
+}
+
 .icon-library {
   content: "\F331";
 }
@@ -4953,6 +7917,18 @@ strong, b, cite, textview {
 
 .icon-library-plus {
   content: "\F334";
+}
+
+.icon-library-shelves {
+  content: "\FB85";
+}
+
+.icon-lifebuoy {
+  content: "\F87D";
+}
+
+.icon-light-switch {
+  content: "\F97D";
 }
 
 .icon-lightbulb {
@@ -4971,12 +7947,24 @@ strong, b, cite, textview {
   content: "\F336";
 }
 
+.icon-lighthouse {
+  content: "\F9FE";
+}
+
+.icon-lighthouse-on {
+  content: "\F9FF";
+}
+
 .icon-link {
   content: "\F337";
 }
 
 .icon-link-off {
   content: "\F338";
+}
+
+.icon-link-plus {
+  content: "\FC70";
 }
 
 .icon-link-variant {
@@ -4999,12 +7987,28 @@ strong, b, cite, textview {
   content: "\F33D";
 }
 
+.icon-linux-mint {
+  content: "\F8EC";
+}
+
+.icon-litecoin {
+  content: "\FA60";
+}
+
 .icon-loading {
   content: "\F771";
 }
 
 .icon-lock {
   content: "\F33E";
+}
+
+.icon-lock-alert {
+  content: "\F8ED";
+}
+
+.icon-lock-clock {
+  content: "\F97E";
 }
 
 .icon-lock-open {
@@ -5027,8 +8031,16 @@ strong, b, cite, textview {
   content: "\F5FB";
 }
 
+.icon-lock-question {
+  content: "\F8EE";
+}
+
 .icon-lock-reset {
   content: "\F772";
+}
+
+.icon-lock-smart {
+  content: "\F8B1";
 }
 
 .icon-locker {
@@ -5071,6 +8083,10 @@ strong, b, cite, textview {
   content: "\F346";
 }
 
+.icon-lyft {
+  content: "\FB1D";
+}
+
 .icon-magnet {
   content: "\F347";
 }
@@ -5083,8 +8099,16 @@ strong, b, cite, textview {
   content: "\F349";
 }
 
+.icon-magnify-close {
+  content: "\F97F";
+}
+
 .icon-magnify-minus {
   content: "\F34A";
+}
+
+.icon-magnify-minus-cursor {
+  content: "\FA61";
 }
 
 .icon-magnify-minus-outline {
@@ -5093,6 +8117,10 @@ strong, b, cite, textview {
 
 .icon-magnify-plus {
   content: "\F34B";
+}
+
+.icon-magnify-plus-cursor {
+  content: "\FA62";
 }
 
 .icon-magnify-plus-outline {
@@ -5111,12 +8139,24 @@ strong, b, cite, textview {
   content: "\F34D";
 }
 
+.icon-map-legend {
+  content: "\FA00";
+}
+
 .icon-map-marker {
   content: "\F34E";
 }
 
+.icon-map-marker-check {
+  content: "\FC71";
+}
+
 .icon-map-marker-circle {
   content: "\F34F";
+}
+
+.icon-map-marker-distance {
+  content: "\F8EF";
 }
 
 .icon-map-marker-minus {
@@ -5143,6 +8183,30 @@ strong, b, cite, textview {
   content: "\F352";
 }
 
+.icon-map-minus {
+  content: "\F980";
+}
+
+.icon-map-outline {
+  content: "\F981";
+}
+
+.icon-map-plus {
+  content: "\F982";
+}
+
+.icon-map-search {
+  content: "\F983";
+}
+
+.icon-map-search-outline {
+  content: "\F984";
+}
+
+.icon-mapbox {
+  content: "\FB86";
+}
+
 .icon-margin {
   content: "\F353";
 }
@@ -5159,8 +8223,16 @@ strong, b, cite, textview {
   content: "\F355";
 }
 
-.icon-martini {
-  content: "\F356";
+.icon-mastodon {
+  content: "\FAD0";
+}
+
+.icon-mastodon-variant {
+  content: "\FAD1";
+}
+
+.icon-material-design {
+  content: "\F985";
 }
 
 .icon-material-ui {
@@ -5171,6 +8243,18 @@ strong, b, cite, textview {
   content: "\F358";
 }
 
+.icon-math-cos {
+  content: "\FC72";
+}
+
+.icon-math-sin {
+  content: "\FC73";
+}
+
+.icon-math-tan {
+  content: "\FC74";
+}
+
 .icon-matrix {
   content: "\F628";
 }
@@ -5179,12 +8263,20 @@ strong, b, cite, textview {
   content: "\F359";
 }
 
+.icon-medal {
+  content: "\F986";
+}
+
 .icon-medical-bag {
   content: "\F6EE";
 }
 
 .icon-medium {
   content: "\F35A";
+}
+
+.icon-meetup {
+  content: "\FAD2";
 }
 
 .icon-memory {
@@ -5207,8 +8299,28 @@ strong, b, cite, textview {
   content: "\F35E";
 }
 
+.icon-menu-left-outline {
+  content: "\FA01";
+}
+
+.icon-menu-open {
+  content: "\FB87";
+}
+
 .icon-menu-right {
   content: "\F35F";
+}
+
+.icon-menu-right-outline {
+  content: "\FA02";
+}
+
+.icon-menu-swap {
+  content: "\FA63";
+}
+
+.icon-menu-swap-outline {
+  content: "\FA64";
 }
 
 .icon-menu-up {
@@ -5225,6 +8337,10 @@ strong, b, cite, textview {
 
 .icon-message-alert {
   content: "\F362";
+}
+
+.icon-message-alert-outline {
+  content: "\FA03";
 }
 
 .icon-message-bulleted {
@@ -5303,12 +8419,20 @@ strong, b, cite, textview {
   content: "\F36C";
 }
 
+.icon-microphone-minus {
+  content: "\F8B2";
+}
+
 .icon-microphone-off {
   content: "\F36D";
 }
 
 .icon-microphone-outline {
   content: "\F36E";
+}
+
+.icon-microphone-plus {
+  content: "\F8B3";
 }
 
 .icon-microphone-settings {
@@ -5331,8 +8455,32 @@ strong, b, cite, textview {
   content: "\F372";
 }
 
+.icon-microsoft-dynamics {
+  content: "\F987";
+}
+
+.icon-microwave {
+  content: "\FC75";
+}
+
+.icon-midi {
+  content: "\F8F0";
+}
+
+.icon-midi-port {
+  content: "\F8F1";
+}
+
 .icon-minecraft {
   content: "\F373";
+}
+
+.icon-mini-sd {
+  content: "\FA04";
+}
+
+.icon-minidisc {
+  content: "\FA05";
 }
 
 .icon-minus {
@@ -5359,16 +8507,40 @@ strong, b, cite, textview {
   content: "\F378";
 }
 
+.icon-minus-network-outline {
+  content: "\FC76";
+}
+
 .icon-mixcloud {
   content: "\F62A";
+}
+
+.icon-mixed-reality {
+  content: "\F87E";
 }
 
 .icon-mixer {
   content: "\F7DC";
 }
 
+.icon-molecule {
+  content: "\FB88";
+}
+
 .icon-monitor {
   content: "\F379";
+}
+
+.icon-monitor-cellphone {
+  content: "\F988";
+}
+
+.icon-monitor-cellphone-star {
+  content: "\F989";
+}
+
+.icon-monitor-dashboard {
+  content: "\FA06";
 }
 
 .icon-monitor-multiple {
@@ -5385,6 +8557,10 @@ strong, b, cite, textview {
 
 .icon-mouse {
   content: "\F37D";
+}
+
+.icon-mouse-bluetooth {
+  content: "\F98A";
 }
 
 .icon-mouse-off {
@@ -5413,6 +8589,10 @@ strong, b, cite, textview {
 
 .icon-movie-roll {
   content: "\F7DD";
+}
+
+.icon-muffin {
+  content: "\F98B";
 }
 
 .icon-multiplication {
@@ -5445,6 +8625,10 @@ strong, b, cite, textview {
 
 .icon-music-circle {
   content: "\F386";
+}
+
+.icon-music-circle-outline {
+  content: "\FAD3";
 }
 
 .icon-music-note {
@@ -5487,6 +8671,14 @@ strong, b, cite, textview {
   content: "\F75A";
 }
 
+.icon-nas {
+  content: "\F8F2";
+}
+
+.icon-nativescript {
+  content: "\F87F";
+}
+
 .icon-nature {
   content: "\F38E";
 }
@@ -5507,20 +8699,68 @@ strong, b, cite, textview {
   content: "\F391";
 }
 
-.icon-nest-protect {
-  content: "\F392";
-}
-
-.icon-nest-thermostat {
-  content: "\F393";
-}
-
 .icon-netflix {
   content: "\F745";
 }
 
 .icon-network {
   content: "\F6F2";
+}
+
+.icon-network-off {
+  content: "\FC77";
+}
+
+.icon-network-off-outline {
+  content: "\FC78";
+}
+
+.icon-network-outline {
+  content: "\FC79";
+}
+
+.icon-network-strength-1 {
+  content: "\F8F3";
+}
+
+.icon-network-strength-1-alert {
+  content: "\F8F4";
+}
+
+.icon-network-strength-2 {
+  content: "\F8F5";
+}
+
+.icon-network-strength-2-alert {
+  content: "\F8F6";
+}
+
+.icon-network-strength-3 {
+  content: "\F8F7";
+}
+
+.icon-network-strength-3-alert {
+  content: "\F8F8";
+}
+
+.icon-network-strength-4 {
+  content: "\F8F9";
+}
+
+.icon-network-strength-4-alert {
+  content: "\F8FA";
+}
+
+.icon-network-strength-off {
+  content: "\F8FB";
+}
+
+.icon-network-strength-off-outline {
+  content: "\F8FC";
+}
+
+.icon-network-strength-outline {
+  content: "\F8FD";
 }
 
 .icon-new-box {
@@ -5553,6 +8793,14 @@ strong, b, cite, textview {
 
 .icon-nodejs {
   content: "\F399";
+}
+
+.icon-not-equal {
+  content: "\F98C";
+}
+
+.icon-not-equal-variant {
+  content: "\F98D";
 }
 
 .icon-note {
@@ -5595,6 +8843,14 @@ strong, b, cite, textview {
   content: "\F6F6";
 }
 
+.icon-npm-variant {
+  content: "\F98E";
+}
+
+.icon-npm-variant-outline {
+  content: "\F98F";
+}
+
 .icon-nuke {
   content: "\F6A3";
 }
@@ -5605,6 +8861,10 @@ strong, b, cite, textview {
 
 .icon-numeric {
   content: "\F3A0";
+}
+
+.icon-numeric-0 {
+  content: "\30";
 }
 
 .icon-numeric-0-box {
@@ -5619,6 +8879,18 @@ strong, b, cite, textview {
   content: "\F3A3";
 }
 
+.icon-numeric-0-circle {
+  content: "\FC7A";
+}
+
+.icon-numeric-0-circle-outline {
+  content: "\FC7B";
+}
+
+.icon-numeric-1 {
+  content: "\31";
+}
+
 .icon-numeric-1-box {
   content: "\F3A4";
 }
@@ -5629,6 +8901,18 @@ strong, b, cite, textview {
 
 .icon-numeric-1-box-outline {
   content: "\F3A6";
+}
+
+.icon-numeric-1-circle {
+  content: "\FC7C";
+}
+
+.icon-numeric-1-circle-outline {
+  content: "\FC7D";
+}
+
+.icon-numeric-2 {
+  content: "\32";
 }
 
 .icon-numeric-2-box {
@@ -5643,6 +8927,18 @@ strong, b, cite, textview {
   content: "\F3A9";
 }
 
+.icon-numeric-2-circle {
+  content: "\FC7E";
+}
+
+.icon-numeric-2-circle-outline {
+  content: "\FC7F";
+}
+
+.icon-numeric-3 {
+  content: "\33";
+}
+
 .icon-numeric-3-box {
   content: "\F3AA";
 }
@@ -5653,6 +8949,18 @@ strong, b, cite, textview {
 
 .icon-numeric-3-box-outline {
   content: "\F3AC";
+}
+
+.icon-numeric-3-circle {
+  content: "\FC80";
+}
+
+.icon-numeric-3-circle-outline {
+  content: "\FC81";
+}
+
+.icon-numeric-4 {
+  content: "\34";
 }
 
 .icon-numeric-4-box {
@@ -5667,6 +8975,18 @@ strong, b, cite, textview {
   content: "\F3AF";
 }
 
+.icon-numeric-4-circle {
+  content: "\FC82";
+}
+
+.icon-numeric-4-circle-outline {
+  content: "\FC83";
+}
+
+.icon-numeric-5 {
+  content: "\35";
+}
+
 .icon-numeric-5-box {
   content: "\F3B0";
 }
@@ -5677,6 +8997,18 @@ strong, b, cite, textview {
 
 .icon-numeric-5-box-outline {
   content: "\F3B2";
+}
+
+.icon-numeric-5-circle {
+  content: "\FC84";
+}
+
+.icon-numeric-5-circle-outline {
+  content: "\FC85";
+}
+
+.icon-numeric-6 {
+  content: "\36";
 }
 
 .icon-numeric-6-box {
@@ -5691,6 +9023,18 @@ strong, b, cite, textview {
   content: "\F3B5";
 }
 
+.icon-numeric-6-circle {
+  content: "\FC86";
+}
+
+.icon-numeric-6-circle-outline {
+  content: "\FC87";
+}
+
+.icon-numeric-7 {
+  content: "\37";
+}
+
 .icon-numeric-7-box {
   content: "\F3B6";
 }
@@ -5701,6 +9045,18 @@ strong, b, cite, textview {
 
 .icon-numeric-7-box-outline {
   content: "\F3B8";
+}
+
+.icon-numeric-7-circle {
+  content: "\FC88";
+}
+
+.icon-numeric-7-circle-outline {
+  content: "\FC89";
+}
+
+.icon-numeric-8 {
+  content: "\38";
 }
 
 .icon-numeric-8-box {
@@ -5715,6 +9071,18 @@ strong, b, cite, textview {
   content: "\F3BB";
 }
 
+.icon-numeric-8-circle {
+  content: "\FC8A";
+}
+
+.icon-numeric-8-circle-outline {
+  content: "\FC8B";
+}
+
+.icon-numeric-9 {
+  content: "\39";
+}
+
 .icon-numeric-9-box {
   content: "\F3BC";
 }
@@ -5727,6 +9095,14 @@ strong, b, cite, textview {
   content: "\F3BE";
 }
 
+.icon-numeric-9-circle {
+  content: "\FC8C";
+}
+
+.icon-numeric-9-circle-outline {
+  content: "\FC8D";
+}
+
 .icon-numeric-9-plus-box {
   content: "\F3BF";
 }
@@ -5737,6 +9113,14 @@ strong, b, cite, textview {
 
 .icon-numeric-9-plus-box-outline {
   content: "\F3C1";
+}
+
+.icon-numeric-9-plus-circle {
+  content: "\FC8E";
+}
+
+.icon-numeric-9-plus-circle-outline {
+  content: "\FC8F";
 }
 
 .icon-nut {
@@ -5775,6 +9159,10 @@ strong, b, cite, textview {
   content: "\F3C6";
 }
 
+.icon-office-building {
+  content: "\F990";
+}
+
 .icon-oil {
   content: "\F3C7";
 }
@@ -5787,12 +9175,20 @@ strong, b, cite, textview {
   content: "\F3C9";
 }
 
+.icon-one-up {
+  content: "\FB89";
+}
+
 .icon-onedrive {
   content: "\F3CA";
 }
 
 .icon-onenote {
   content: "\F746";
+}
+
+.icon-onepassword {
+  content: "\F880";
 }
 
 .icon-opacity {
@@ -5807,6 +9203,10 @@ strong, b, cite, textview {
   content: "\F3CC";
 }
 
+.icon-open-source-initiative {
+  content: "\FB8A";
+}
+
 .icon-openid {
   content: "\F3CD";
 }
@@ -5819,6 +9219,10 @@ strong, b, cite, textview {
   content: "\F018";
 }
 
+.icon-origin {
+  content: "\FB2B";
+}
+
 .icon-ornament {
   content: "\F3CF";
 }
@@ -5829,6 +9233,10 @@ strong, b, cite, textview {
 
 .icon-owl {
   content: "\F3D2";
+}
+
+.icon-pac-man {
+  content: "\FB8B";
 }
 
 .icon-package {
@@ -5879,12 +9287,76 @@ strong, b, cite, textview {
   content: "\F6FD";
 }
 
+.icon-page-next {
+  content: "\FB8C";
+}
+
+.icon-page-next-outline {
+  content: "\FB8D";
+}
+
+.icon-page-previous {
+  content: "\FB8E";
+}
+
+.icon-page-previous-outline {
+  content: "\FB8F";
+}
+
 .icon-palette {
   content: "\F3D8";
 }
 
 .icon-palette-advanced {
   content: "\F3D9";
+}
+
+.icon-palette-swatch {
+  content: "\F8B4";
+}
+
+.icon-pan {
+  content: "\FB90";
+}
+
+.icon-pan-bottom-left {
+  content: "\FB91";
+}
+
+.icon-pan-bottom-right {
+  content: "\FB92";
+}
+
+.icon-pan-down {
+  content: "\FB93";
+}
+
+.icon-pan-horizontal {
+  content: "\FB94";
+}
+
+.icon-pan-left {
+  content: "\FB95";
+}
+
+.icon-pan-right {
+  content: "\FB96";
+}
+
+.icon-pan-top-left {
+  content: "\FB97";
+}
+
+.icon-pan-top-right {
+  content: "\FB98";
+}
+
+.icon-pan-up {
+  content: "\FB99";
+}
+
+.icon-pan-vertical {
+  content: "\FB9A";
 }
 
 .icon-panda {
@@ -5923,12 +9395,24 @@ strong, b, cite, textview {
   content: "\F3E2";
 }
 
+.icon-parachute {
+  content: "\FC90";
+}
+
+.icon-parachute-outline {
+  content: "\FC91";
+}
+
 .icon-parking {
   content: "\F3E3";
 }
 
 .icon-passport {
   content: "\F7E2";
+}
+
+.icon-patreon {
+  content: "\F881";
 }
 
 .icon-pause {
@@ -5957,6 +9441,14 @@ strong, b, cite, textview {
 
 .icon-paw-off {
   content: "\F657";
+}
+
+.icon-paypal {
+  content: "\F882";
+}
+
+.icon-peace {
+  content: "\F883";
 }
 
 .icon-pen {
@@ -5991,6 +9483,10 @@ strong, b, cite, textview {
   content: "\F3EF";
 }
 
+.icon-pencil-outline {
+  content: "\FC92";
+}
+
 .icon-pentagon {
   content: "\F6FF";
 }
@@ -6001,6 +9497,10 @@ strong, b, cite, textview {
 
 .icon-percent {
   content: "\F3F0";
+}
+
+.icon-periodic-table {
+  content: "\F8B5";
 }
 
 .icon-periodic-table-co2 {
@@ -6043,7 +9543,7 @@ strong, b, cite, textview {
   content: "\F3F7";
 }
 
-.icon-phone-locked {
+.icon-phone-lock {
   content: "\F3F8";
 }
 
@@ -6075,6 +9575,14 @@ strong, b, cite, textview {
   content: "\F82E";
 }
 
+.icon-phone-rotate-landscape {
+  content: "\F884";
+}
+
+.icon-phone-rotate-portrait {
+  content: "\F885";
+}
+
 .icon-phone-settings {
   content: "\F3FD";
 }
@@ -6093,6 +9601,18 @@ strong, b, cite, textview {
 
 .icon-piano {
   content: "\F67C";
+}
+
+.icon-pickaxe {
+  content: "\F8B6";
+}
+
+.icon-pier {
+  content: "\F886";
+}
+
+.icon-pier-crane {
+  content: "\F887";
 }
 
 .icon-pig {
@@ -6115,6 +9635,14 @@ strong, b, cite, textview {
   content: "\F404";
 }
 
+.icon-pin-off-outline {
+  content: "\F92F";
+}
+
+.icon-pin-outline {
+  content: "\F930";
+}
+
 .icon-pine-tree {
   content: "\F405";
 }
@@ -6131,6 +9659,14 @@ strong, b, cite, textview {
   content: "\F408";
 }
 
+.icon-pinwheel {
+  content: "\FAD4";
+}
+
+.icon-pinwheel-outline {
+  content: "\FAD5";
+}
+
 .icon-pipe {
   content: "\F7E4";
 }
@@ -6139,16 +9675,24 @@ strong, b, cite, textview {
   content: "\F7E5";
 }
 
+.icon-pipe-leak {
+  content: "\F888";
+}
+
+.icon-pirate {
+  content: "\FA07";
+}
+
 .icon-pistol {
   content: "\F702";
 }
 
-.icon-pizza {
-  content: "\F409";
+.icon-piston {
+  content: "\F889";
 }
 
-.icon-plane-shield {
-  content: "\F6BA";
+.icon-pizza {
+  content: "\F409";
 }
 
 .icon-play {
@@ -6167,6 +9711,14 @@ strong, b, cite, textview {
   content: "\F40D";
 }
 
+.icon-play-network {
+  content: "\F88A";
+}
+
+.icon-play-network-outline {
+  content: "\FC93";
+}
+
 .icon-play-pause {
   content: "\F40E";
 }
@@ -6175,12 +9727,28 @@ strong, b, cite, textview {
   content: "\F40F";
 }
 
+.icon-play-speed {
+  content: "\F8FE";
+}
+
 .icon-playlist-check {
   content: "\F5C7";
 }
 
+.icon-playlist-edit {
+  content: "\F8FF";
+}
+
 .icon-playlist-minus {
   content: "\F410";
+}
+
+.icon-playlist-music {
+  content: "\FC94";
+}
+
+.icon-playlist-music-outline {
+  content: "\FC95";
 }
 
 .icon-playlist-play {
@@ -6227,8 +9795,20 @@ strong, b, cite, textview {
   content: "\F419";
 }
 
+.icon-plus-minus {
+  content: "\F991";
+}
+
+.icon-plus-minus-box {
+  content: "\F992";
+}
+
 .icon-plus-network {
   content: "\F41A";
+}
+
+.icon-plus-network-outline {
+  content: "\FC96";
 }
 
 .icon-plus-one {
@@ -6243,8 +9823,16 @@ strong, b, cite, textview {
   content: "\F41C";
 }
 
+.icon-podcast {
+  content: "\F993";
+}
+
 .icon-pokeball {
   content: "\F41D";
+}
+
+.icon-pokemon-go {
+  content: "\FA08";
 }
 
 .icon-poker-chip {
@@ -6275,6 +9863,10 @@ strong, b, cite, textview {
   content: "\F422";
 }
 
+.icon-postage-stamp {
+  content: "\FC97";
+}
+
 .icon-pot {
   content: "\F65A";
 }
@@ -6295,6 +9887,18 @@ strong, b, cite, textview {
   content: "\F425";
 }
 
+.icon-power-cycle {
+  content: "\F900";
+}
+
+.icon-power-off {
+  content: "\F901";
+}
+
+.icon-power-on {
+  content: "\F902";
+}
+
 .icon-power-plug {
   content: "\F6A4";
 }
@@ -6307,8 +9911,16 @@ strong, b, cite, textview {
   content: "\F426";
 }
 
+.icon-power-sleep {
+  content: "\F903";
+}
+
 .icon-power-socket {
   content: "\F427";
+}
+
+.icon-power-socket-au {
+  content: "\F904";
 }
 
 .icon-power-socket-eu {
@@ -6321,6 +9933,14 @@ strong, b, cite, textview {
 
 .icon-power-socket-us {
   content: "\F7E8";
+}
+
+.icon-power-standby {
+  content: "\F905";
+}
+
+.icon-powershell {
+  content: "\FA09";
 }
 
 .icon-prescription {
@@ -6351,6 +9971,10 @@ strong, b, cite, textview {
   content: "\F706";
 }
 
+.icon-printer-wireless {
+  content: "\FA0A";
+}
+
 .icon-priority-high {
   content: "\F603";
 }
@@ -6361,6 +9985,30 @@ strong, b, cite, textview {
 
 .icon-professional-hexagon {
   content: "\F42D";
+}
+
+.icon-progress-alert {
+  content: "\FC98";
+}
+
+.icon-progress-check {
+  content: "\F994";
+}
+
+.icon-progress-clock {
+  content: "\F995";
+}
+
+.icon-progress-download {
+  content: "\F996";
+}
+
+.icon-progress-upload {
+  content: "\F997";
+}
+
+.icon-progress-wrench {
+  content: "\FC99";
 }
 
 .icon-projector {
@@ -6379,8 +10027,20 @@ strong, b, cite, textview {
   content: "\F430";
 }
 
+.icon-pumpkin {
+  content: "\FB9B";
+}
+
 .icon-puzzle {
   content: "\F431";
+}
+
+.icon-puzzle-outline {
+  content: "\FA65";
+}
+
+.icon-qi {
+  content: "\F998";
 }
 
 .icon-qqchat {
@@ -6389,6 +10049,10 @@ strong, b, cite, textview {
 
 .icon-qrcode {
   content: "\F432";
+}
+
+.icon-qrcode-edit {
+  content: "\F8B7";
 }
 
 .icon-qrcode-scan {
@@ -6403,8 +10067,20 @@ strong, b, cite, textview {
   content: "\F435";
 }
 
+.icon-quality-low {
+  content: "\FA0B";
+}
+
+.icon-quality-medium {
+  content: "\FA0C";
+}
+
 .icon-quicktime {
   content: "\F436";
+}
+
+.icon-rabbit {
+  content: "\F906";
 }
 
 .icon-radar {
@@ -6415,8 +10091,24 @@ strong, b, cite, textview {
   content: "\F438";
 }
 
+.icon-radiator-disabled {
+  content: "\FAD6";
+}
+
+.icon-radiator-off {
+  content: "\FAD7";
+}
+
 .icon-radio {
   content: "\F439";
+}
+
+.icon-radio-am {
+  content: "\FC9A";
+}
+
+.icon-radio-fm {
+  content: "\FC9B";
 }
 
 .icon-radio-handheld {
@@ -6437,6 +10129,14 @@ strong, b, cite, textview {
 
 .icon-radiobox-marked {
   content: "\F43E";
+}
+
+.icon-radius {
+  content: "\FC9C";
+}
+
+.icon-radius-outline {
+  content: "\FC9D";
 }
 
 .icon-raspberrypi {
@@ -6483,6 +10183,10 @@ strong, b, cite, textview {
   content: "\F44A";
 }
 
+.icon-record-player {
+  content: "\F999";
+}
+
 .icon-record-rec {
   content: "\F44B";
 }
@@ -6503,12 +10207,24 @@ strong, b, cite, textview {
   content: "\F44F";
 }
 
+.icon-reflect-horizontal {
+  content: "\FA0D";
+}
+
+.icon-reflect-vertical {
+  content: "\FA0E";
+}
+
 .icon-refresh {
   content: "\F450";
 }
 
 .icon-regex {
   content: "\F451";
+}
+
+.icon-registered-trademark {
+  content: "\FA66";
 }
 
 .icon-relative-scale {
@@ -6519,8 +10235,16 @@ strong, b, cite, textview {
   content: "\F453";
 }
 
+.icon-reminder {
+  content: "\F88B";
+}
+
 .icon-remote {
   content: "\F454";
+}
+
+.icon-remote-desktop {
+  content: "\F8B8";
 }
 
 .icon-rename-box {
@@ -6563,6 +10287,18 @@ strong, b, cite, textview {
   content: "\F45C";
 }
 
+.icon-resistor {
+  content: "\FB1F";
+}
+
+.icon-resistor-nodes {
+  content: "\FB20";
+}
+
+.icon-resize {
+  content: "\FA67";
+}
+
 .icon-resize-bottom-right {
   content: "\F45D";
 }
@@ -6576,6 +10312,10 @@ strong, b, cite, textview {
 }
 
 .icon-restore {
+  content: "\F99A";
+}
+
+.icon-restore-clock {
   content: "\F6A7";
 }
 
@@ -6591,8 +10331,16 @@ strong, b, cite, textview {
   content: "\F70A";
 }
 
+.icon-rhombus-medium {
+  content: "\FA0F";
+}
+
 .icon-rhombus-outline {
   content: "\F70B";
+}
+
+.icon-rhombus-split {
+  content: "\FA10";
 }
 
 .icon-ribbon {
@@ -6619,12 +10367,28 @@ strong, b, cite, textview {
   content: "\F6A8";
 }
 
+.icon-robot-industrial {
+  content: "\FB21";
+}
+
+.icon-robot-vacuum {
+  content: "\F70C";
+}
+
+.icon-robot-vacuum-variant {
+  content: "\F907";
+}
+
 .icon-rocket {
   content: "\F463";
 }
 
-.icon-roomba {
-  content: "\F70C";
+.icon-rollupjs {
+  content: "\FB9C";
+}
+
+.icon-room-service {
+  content: "\F88C";
 }
 
 .icon-rotate-3d {
@@ -6655,6 +10419,10 @@ strong, b, cite, textview {
   content: "\F469";
 }
 
+.icon-router-wireless-settings {
+  content: "\FA68";
+}
+
 .icon-routes {
   content: "\F46A";
 }
@@ -6675,6 +10443,10 @@ strong, b, cite, textview {
   content: "\F46D";
 }
 
+.icon-ruler-square {
+  content: "\FC9E";
+}
+
 .icon-run {
   content: "\F70D";
 }
@@ -6683,8 +10455,16 @@ strong, b, cite, textview {
   content: "\F46E";
 }
 
+.icon-safe {
+  content: "\FA69";
+}
+
 .icon-sale {
   content: "\F46F";
+}
+
+.icon-salesforce {
+  content: "\F88D";
 }
 
 .icon-sass {
@@ -6695,8 +10475,16 @@ strong, b, cite, textview {
   content: "\F470";
 }
 
+.icon-satellite-uplink {
+  content: "\F908";
+}
+
 .icon-satellite-variant {
   content: "\F471";
+}
+
+.icon-sausage {
+  content: "\F8B9";
 }
 
 .icon-saxophone {
@@ -6719,8 +10507,16 @@ strong, b, cite, textview {
   content: "\F6AA";
 }
 
+.icon-scanner-off {
+  content: "\F909";
+}
+
 .icon-school {
   content: "\F474";
+}
+
+.icon-scissors-cutting {
+  content: "\FA6A";
 }
 
 .icon-screen-rotation {
@@ -6736,7 +10532,19 @@ strong, b, cite, textview {
 }
 
 .icon-script {
+  content: "\FB9D";
+}
+
+.icon-script-outline {
   content: "\F478";
+}
+
+.icon-script-text {
+  content: "\FB9E";
+}
+
+.icon-script-text-outline {
+  content: "\FB9F";
 }
 
 .icon-sd {
@@ -6749,6 +10557,10 @@ strong, b, cite, textview {
 
 .icon-search-web {
   content: "\F70E";
+}
+
+.icon-seat {
+  content: "\FC9F";
 }
 
 .icon-seat-flat {
@@ -6775,6 +10587,10 @@ strong, b, cite, textview {
   content: "\F480";
 }
 
+.icon-seat-outline {
+  content: "\FCA0";
+}
+
 .icon-seat-recline-extra {
   content: "\F481";
 }
@@ -6783,12 +10599,12 @@ strong, b, cite, textview {
   content: "\F482";
 }
 
-.icon-security {
-  content: "\F483";
+.icon-seatbelt {
+  content: "\FCA1";
 }
 
-.icon-security-home {
-  content: "\F689";
+.icon-security {
+  content: "\F483";
 }
 
 .icon-security-network {
@@ -6803,6 +10619,14 @@ strong, b, cite, textview {
   content: "\F486";
 }
 
+.icon-select-compare {
+  content: "\FAD8";
+}
+
+.icon-select-drag {
+  content: "\FA6B";
+}
+
 .icon-select-inverse {
   content: "\F487";
 }
@@ -6815,6 +10639,10 @@ strong, b, cite, textview {
   content: "\F489";
 }
 
+.icon-selection-drag {
+  content: "\FA6C";
+}
+
 .icon-selection-off {
   content: "\F776";
 }
@@ -6823,7 +10651,7 @@ strong, b, cite, textview {
   content: "\F48A";
 }
 
-.icon-send-secure {
+.icon-send-lock {
   content: "\F7EC";
 }
 
@@ -6895,12 +10723,24 @@ strong, b, cite, textview {
   content: "\F77E";
 }
 
+.icon-set-top-box {
+  content: "\F99E";
+}
+
 .icon-settings {
   content: "\F493";
 }
 
 .icon-settings-box {
   content: "\F494";
+}
+
+.icon-settings-helper {
+  content: "\FA6D";
+}
+
+.icon-settings-outline {
+  content: "\F8BA";
 }
 
 .icon-shape {
@@ -6935,24 +10775,124 @@ strong, b, cite, textview {
   content: "\F496";
 }
 
+.icon-share-outline {
+  content: "\F931";
+}
+
 .icon-share-variant {
   content: "\F497";
+}
+
+.icon-sheep {
+  content: "\FCA2";
 }
 
 .icon-shield {
   content: "\F498";
 }
 
+.icon-shield-account {
+  content: "\F88E";
+}
+
+.icon-shield-account-outline {
+  content: "\FA11";
+}
+
+.icon-shield-airplane {
+  content: "\F6BA";
+}
+
+.icon-shield-airplane-outline {
+  content: "\FCA3";
+}
+
+.icon-shield-check {
+  content: "\F565";
+}
+
+.icon-shield-check-outline {
+  content: "\FCA4";
+}
+
+.icon-shield-cross {
+  content: "\FCA5";
+}
+
+.icon-shield-cross-outline {
+  content: "\FCA6";
+}
+
 .icon-shield-half-full {
   content: "\F77F";
+}
+
+.icon-shield-home {
+  content: "\F689";
+}
+
+.icon-shield-home-outline {
+  content: "\FCA7";
+}
+
+.icon-shield-key {
+  content: "\FBA0";
+}
+
+.icon-shield-key-outline {
+  content: "\FBA1";
+}
+
+.icon-shield-lock {
+  content: "\F99C";
+}
+
+.icon-shield-lock-outline {
+  content: "\FCA8";
+}
+
+.icon-shield-off {
+  content: "\F99D";
+}
+
+.icon-shield-off-outline {
+  content: "\F99B";
 }
 
 .icon-shield-outline {
   content: "\F499";
 }
 
+.icon-shield-plus {
+  content: "\FAD9";
+}
+
+.icon-shield-plus-outline {
+  content: "\FADA";
+}
+
+.icon-shield-remove {
+  content: "\FADB";
+}
+
+.icon-shield-remove-outline {
+  content: "\FADC";
+}
+
 .icon-ship-wheel {
   content: "\F832";
+}
+
+.icon-shoe-formal {
+  content: "\FB22";
+}
+
+.icon-shoe-heel {
+  content: "\FB23";
+}
+
+.icon-shopify {
+  content: "\FADD";
 }
 
 .icon-shopping {
@@ -6969,6 +10909,14 @@ strong, b, cite, textview {
 
 .icon-shovel-off {
   content: "\F710";
+}
+
+.icon-shower {
+  content: "\F99F";
+}
+
+.icon-shower-head {
+  content: "\F9A0";
 }
 
 .icon-shredder {
@@ -7023,6 +10971,26 @@ strong, b, cite, textview {
   content: "\F713";
 }
 
+.icon-signal-5g {
+  content: "\FA6E";
+}
+
+.icon-signal-cellular-1 {
+  content: "\F8BB";
+}
+
+.icon-signal-cellular-2 {
+  content: "\F8BC";
+}
+
+.icon-signal-cellular-3 {
+  content: "\F8BD";
+}
+
+.icon-signal-cellular-outline {
+  content: "\F8BE";
+}
+
 .icon-signal-hspa {
   content: "\F714";
 }
@@ -7039,12 +11007,20 @@ strong, b, cite, textview {
   content: "\F60A";
 }
 
+.icon-silo {
+  content: "\FB24";
+}
+
 .icon-silverware {
   content: "\F4A3";
 }
 
 .icon-silverware-fork {
   content: "\F4A4";
+}
+
+.icon-silverware-fork-knife {
+  content: "\FA6F";
 }
 
 .icon-silverware-spoon {
@@ -7065,6 +11041,10 @@ strong, b, cite, textview {
 
 .icon-sim-off {
   content: "\F4A9";
+}
+
+.icon-sina-weibo {
+  content: "\FADE";
 }
 
 .icon-sitemap {
@@ -7107,6 +11087,18 @@ strong, b, cite, textview {
   content: "\F68B";
 }
 
+.icon-skull-crossbones {
+  content: "\FBA2";
+}
+
+.icon-skull-crossbones-outline {
+  content: "\FBA3";
+}
+
+.icon-skull-outline {
+  content: "\FBA4";
+}
+
 .icon-skype {
   content: "\F4AF";
 }
@@ -7119,12 +11111,24 @@ strong, b, cite, textview {
   content: "\F4B1";
 }
 
+.icon-slackware {
+  content: "\F90A";
+}
+
 .icon-sleep {
   content: "\F4B2";
 }
 
 .icon-sleep-off {
   content: "\F4B3";
+}
+
+.icon-smog {
+  content: "\FA70";
+}
+
+.icon-smoke-detector {
+  content: "\F392";
 }
 
 .icon-smoking {
@@ -7159,6 +11163,10 @@ strong, b, cite, textview {
   content: "\F4B9";
 }
 
+.icon-solar-power {
+  content: "\FA71";
+}
+
 .icon-solid {
   content: "\F68C";
 }
@@ -7185,6 +11193,14 @@ strong, b, cite, textview {
 
 .icon-sort-variant {
   content: "\F4BF";
+}
+
+.icon-sort-variant-lock {
+  content: "\FCA9";
+}
+
+.icon-sort-variant-lock-open {
+  content: "\FCAA";
 }
 
 .icon-soundcloud {
@@ -7235,12 +11251,36 @@ strong, b, cite, textview {
   content: "\F4C2";
 }
 
+.icon-source-repository {
+  content: "\FCAB";
+}
+
+.icon-source-repository-multiple {
+  content: "\FCAC";
+}
+
 .icon-soy-sauce {
   content: "\F7ED";
 }
 
+.icon-spa {
+  content: "\FCAD";
+}
+
+.icon-spa-outline {
+  content: "\FCAE";
+}
+
+.icon-space-invaders {
+  content: "\FBA5";
+}
+
 .icon-speaker {
   content: "\F4C3";
+}
+
+.icon-speaker-bluetooth {
+  content: "\F9A1";
 }
 
 .icon-speaker-off {
@@ -7259,6 +11299,10 @@ strong, b, cite, textview {
   content: "\F4C6";
 }
 
+.icon-spider-web {
+  content: "\FBA6";
+}
+
 .icon-spotify {
   content: "\F4C7";
 }
@@ -7275,8 +11319,16 @@ strong, b, cite, textview {
   content: "\F665";
 }
 
+.icon-spray-bottle {
+  content: "\FADF";
+}
+
 .icon-square {
   content: "\F763";
+}
+
+.icon-square-edit-outline {
+  content: "\F90B";
 }
 
 .icon-square-inc {
@@ -7287,6 +11339,14 @@ strong, b, cite, textview {
   content: "\F4CB";
 }
 
+.icon-square-medium {
+  content: "\FA12";
+}
+
+.icon-square-medium-outline {
+  content: "\FA13";
+}
+
 .icon-square-outline {
   content: "\F762";
 }
@@ -7295,12 +11355,28 @@ strong, b, cite, textview {
   content: "\F783";
 }
 
-.icon-stack-overflow {
-  content: "\F4CC";
+.icon-square-root-box {
+  content: "\F9A2";
 }
 
-.icon-stackexchange {
+.icon-square-small {
+  content: "\FA14";
+}
+
+.icon-squeegee {
+  content: "\FAE0";
+}
+
+.icon-ssh {
+  content: "\F8BF";
+}
+
+.icon-stack-exchange {
   content: "\F60B";
+}
+
+.icon-stack-overflow {
+  content: "\F4CC";
 }
 
 .icon-stadium {
@@ -7319,8 +11395,32 @@ strong, b, cite, textview {
   content: "\F4CE";
 }
 
+.icon-star-box {
+  content: "\FA72";
+}
+
+.icon-star-box-outline {
+  content: "\FA73";
+}
+
 .icon-star-circle {
   content: "\F4CF";
+}
+
+.icon-star-circle-outline {
+  content: "\F9A3";
+}
+
+.icon-star-face {
+  content: "\F9A4";
+}
+
+.icon-star-four-points {
+  content: "\FAE1";
+}
+
+.icon-star-four-points-outline {
+  content: "\FAE2";
 }
 
 .icon-star-half {
@@ -7335,12 +11435,28 @@ strong, b, cite, textview {
   content: "\F4D2";
 }
 
+.icon-star-three-points {
+  content: "\FAE3";
+}
+
+.icon-star-three-points-outline {
+  content: "\FAE4";
+}
+
 .icon-steam {
   content: "\F4D3";
 }
 
+.icon-steam-box {
+  content: "\F90C";
+}
+
 .icon-steering {
   content: "\F4D4";
+}
+
+.icon-steering-off {
+  content: "\F90D";
 }
 
 .icon-step-backward {
@@ -7399,12 +11515,24 @@ strong, b, cite, textview {
   content: "\F4DE";
 }
 
+.icon-strava {
+  content: "\FB25";
+}
+
 .icon-subdirectory-arrow-left {
   content: "\F60C";
 }
 
 .icon-subdirectory-arrow-right {
   content: "\F60D";
+}
+
+.icon-subtitles {
+  content: "\FA15";
+}
+
+.icon-subtitles-outline {
+  content: "\FA16";
 }
 
 .icon-subway {
@@ -7451,8 +11579,24 @@ strong, b, cite, textview {
   content: "\F4E1";
 }
 
+.icon-swap-horizontal-bold {
+  content: "\FBA9";
+}
+
+.icon-swap-horizontal-variant {
+  content: "\F8C0";
+}
+
 .icon-swap-vertical {
   content: "\F4E2";
+}
+
+.icon-swap-vertical-bold {
+  content: "\FBAA";
+}
+
+.icon-swap-vertical-variant {
+  content: "\F8C1";
 }
 
 .icon-swim {
@@ -7471,6 +11615,10 @@ strong, b, cite, textview {
   content: "\F786";
 }
 
+.icon-symfony {
+  content: "\FAE5";
+}
+
 .icon-sync {
   content: "\F4E6";
 }
@@ -7487,8 +11635,16 @@ strong, b, cite, textview {
   content: "\F4E9";
 }
 
+.icon-tab-minus {
+  content: "\FB26";
+}
+
 .icon-tab-plus {
   content: "\F75B";
+}
+
+.icon-tab-remove {
+  content: "\FB27";
 }
 
 .icon-tab-unselected {
@@ -7497,6 +11653,10 @@ strong, b, cite, textview {
 
 .icon-table {
   content: "\F4EB";
+}
+
+.icon-table-border {
+  content: "\FA17";
 }
 
 .icon-table-column {
@@ -7527,8 +11687,20 @@ strong, b, cite, textview {
   content: "\F4F1";
 }
 
+.icon-table-merge-cells {
+  content: "\F9A5";
+}
+
 .icon-table-of-contents {
   content: "\F835";
+}
+
+.icon-table-plus {
+  content: "\FA74";
+}
+
+.icon-table-remove {
+  content: "\FA75";
 }
 
 .icon-table-row {
@@ -7551,6 +11723,10 @@ strong, b, cite, textview {
   content: "\F4F5";
 }
 
+.icon-table-search {
+  content: "\F90E";
+}
+
 .icon-table-settings {
   content: "\F837";
 }
@@ -7561,6 +11737,10 @@ strong, b, cite, textview {
 
 .icon-tablet-android {
   content: "\F4F7";
+}
+
+.icon-tablet-cellphone {
+  content: "\F9A6";
 }
 
 .icon-tablet-ipad {
@@ -7583,6 +11763,14 @@ strong, b, cite, textview {
   content: "\F68A";
 }
 
+.icon-tag-heart-outline {
+  content: "\FBAB";
+}
+
+.icon-tag-minus {
+  content: "\F90F";
+}
+
 .icon-tag-multiple {
   content: "\F4FB";
 }
@@ -7603,12 +11791,28 @@ strong, b, cite, textview {
   content: "\F4FD";
 }
 
+.icon-tape-measure {
+  content: "\FB28";
+}
+
 .icon-target {
   content: "\F4FE";
 }
 
+.icon-target-account {
+  content: "\FBAC";
+}
+
+.icon-target-variant {
+  content: "\FA76";
+}
+
 .icon-taxi {
   content: "\F4FF";
+}
+
+.icon-teach {
+  content: "\F88F";
 }
 
 .icon-teamviewer {
@@ -7617,6 +11821,10 @@ strong, b, cite, textview {
 
 .icon-telegram {
   content: "\F501";
+}
+
+.icon-telescope {
+  content: "\FB29";
 }
 
 .icon-television {
@@ -7671,8 +11879,28 @@ strong, b, cite, textview {
   content: "\F668";
 }
 
+.icon-test-tube-empty {
+  content: "\F910";
+}
+
+.icon-test-tube-off {
+  content: "\F911";
+}
+
+.icon-text {
+  content: "\F9A7";
+}
+
 .icon-text-shadow {
   content: "\F669";
+}
+
+.icon-text-short {
+  content: "\F9A8";
+}
+
+.icon-text-subject {
+  content: "\F9A9";
 }
 
 .icon-text-to-speech {
@@ -7709,6 +11937,14 @@ strong, b, cite, textview {
 
 .icon-thermometer-lines {
   content: "\F510";
+}
+
+.icon-thermostat {
+  content: "\F393";
+}
+
+.icon-thermostat-box {
+  content: "\F890";
 }
 
 .icon-thought-bubble {
@@ -7751,6 +11987,10 @@ strong, b, cite, textview {
   content: "\F518";
 }
 
+.icon-ticket-outline {
+  content: "\F912";
+}
+
 .icon-ticket-percent {
   content: "\F723";
 }
@@ -7765,6 +12005,22 @@ strong, b, cite, textview {
 
 .icon-timelapse {
   content: "\F51A";
+}
+
+.icon-timeline {
+  content: "\FBAD";
+}
+
+.icon-timeline-outline {
+  content: "\FBAE";
+}
+
+.icon-timeline-text {
+  content: "\FBAF";
+}
+
+.icon-timeline-text-outline {
+  content: "\FBB0";
 }
 
 .icon-timer {
@@ -7799,6 +12055,10 @@ strong, b, cite, textview {
   content: "\F520";
 }
 
+.icon-toaster-oven {
+  content: "\FCAF";
+}
+
 .icon-toggle-switch {
   content: "\F521";
 }
@@ -7807,8 +12067,32 @@ strong, b, cite, textview {
   content: "\F522";
 }
 
+.icon-toggle-switch-off-outline {
+  content: "\FA18";
+}
+
+.icon-toggle-switch-outline {
+  content: "\FA19";
+}
+
+.icon-toilet {
+  content: "\F9AA";
+}
+
+.icon-toolbox {
+  content: "\F9AB";
+}
+
+.icon-toolbox-outline {
+  content: "\F9AC";
+}
+
 .icon-tooltip {
   content: "\F523";
+}
+
+.icon-tooltip-account {
+  content: "\F00C";
 }
 
 .icon-tooltip-edit {
@@ -7819,11 +12103,19 @@ strong, b, cite, textview {
   content: "\F525";
 }
 
+.icon-tooltip-image-outline {
+  content: "\FBB1";
+}
+
 .icon-tooltip-outline {
   content: "\F526";
 }
 
-.icon-tooltip-outline-plus {
+.icon-tooltip-plus {
+  content: "\FBB2";
+}
+
+.icon-tooltip-plus-outline {
   content: "\F527";
 }
 
@@ -7831,12 +12123,24 @@ strong, b, cite, textview {
   content: "\F528";
 }
 
+.icon-tooltip-text-outline {
+  content: "\FBB3";
+}
+
 .icon-tooth {
+  content: "\F8C2";
+}
+
+.icon-tooth-outline {
   content: "\F529";
 }
 
 .icon-tor {
   content: "\F52A";
+}
+
+.icon-tournament {
+  content: "\F9AD";
 }
 
 .icon-tower-beach {
@@ -7851,8 +12155,24 @@ strong, b, cite, textview {
   content: "\F83B";
 }
 
+.icon-track-light {
+  content: "\F913";
+}
+
 .icon-trackpad {
   content: "\F7F7";
+}
+
+.icon-trackpad-lock {
+  content: "\F932";
+}
+
+.icon-tractor {
+  content: "\F891";
+}
+
+.icon-trademark {
+  content: "\FA77";
 }
 
 .icon-traffic-light {
@@ -7861,6 +12181,14 @@ strong, b, cite, textview {
 
 .icon-train {
   content: "\F52C";
+}
+
+.icon-train-car {
+  content: "\FBB4";
+}
+
+.icon-train-variant {
+  content: "\F8C3";
 }
 
 .icon-tram {
@@ -7883,8 +12211,24 @@ strong, b, cite, textview {
   content: "\F6AD";
 }
 
+.icon-transition {
+  content: "\F914";
+}
+
+.icon-transition-masked {
+  content: "\F915";
+}
+
 .icon-translate {
   content: "\F5CA";
+}
+
+.icon-trash-can {
+  content: "\FA78";
+}
+
+.icon-trash-can-outline {
+  content: "\FA79";
 }
 
 .icon-treasure-chest {
@@ -7919,6 +12263,10 @@ strong, b, cite, textview {
   content: "\F537";
 }
 
+.icon-triforce {
+  content: "\FBB5";
+}
+
 .icon-trophy {
   content: "\F538";
 }
@@ -7943,6 +12291,10 @@ strong, b, cite, textview {
   content: "\F53D";
 }
 
+.icon-truck-check {
+  content: "\FCB0";
+}
+
 .icon-truck-delivery {
   content: "\F53E";
 }
@@ -7956,15 +12308,31 @@ strong, b, cite, textview {
 }
 
 .icon-tshirt-crew {
+  content: "\FA7A";
+}
+
+.icon-tshirt-crew-outline {
   content: "\F53F";
 }
 
 .icon-tshirt-v {
+  content: "\FA7B";
+}
+
+.icon-tshirt-v-outline {
   content: "\F540";
+}
+
+.icon-tumble-dryer {
+  content: "\F916";
 }
 
 .icon-tumblr {
   content: "\F541";
+}
+
+.icon-tumblr-box {
+  content: "\F917";
 }
 
 .icon-tumblr-reblog {
@@ -7977,6 +12345,18 @@ strong, b, cite, textview {
 
 .icon-tune-vertical {
   content: "\F66A";
+}
+
+.icon-turnstile {
+  content: "\FCB1";
+}
+
+.icon-turnstile-outline {
+  content: "\FCB2";
+}
+
+.icon-turtle {
+  content: "\FCB3";
 }
 
 .icon-twitch {
@@ -7999,8 +12379,16 @@ strong, b, cite, textview {
   content: "\F547";
 }
 
+.icon-two-factor-authentication {
+  content: "\F9AE";
+}
+
 .icon-uber {
   content: "\F748";
+}
+
+.icon-ubisoft {
+  content: "\FBB6";
 }
 
 .icon-ubuntu {
@@ -8017,6 +12405,10 @@ strong, b, cite, textview {
 
 .icon-umbrella {
   content: "\F54A";
+}
+
+.icon-umbrella-closed {
+  content: "\F9AF";
 }
 
 .icon-umbrella-outline {
@@ -8055,6 +12447,10 @@ strong, b, cite, textview {
   content: "\F6AE";
 }
 
+.icon-unreal {
+  content: "\F9B0";
+}
+
 .icon-untappd {
   content: "\F551";
 }
@@ -8075,6 +12471,10 @@ strong, b, cite, textview {
   content: "\F6F5";
 }
 
+.icon-upload-network-outline {
+  content: "\FCB4";
+}
+
 .icon-usb {
   content: "\F553";
 }
@@ -8091,12 +12491,20 @@ strong, b, cite, textview {
   content: "\F7FB";
 }
 
+.icon-variable {
+  content: "\FAE6";
+}
+
 .icon-vector-arrange-above {
   content: "\F554";
 }
 
 .icon-vector-arrange-below {
   content: "\F555";
+}
+
+.icon-vector-bezier {
+  content: "\FAE7";
 }
 
 .icon-vector-circle {
@@ -8125,6 +12533,10 @@ strong, b, cite, textview {
 
 .icon-vector-difference-ba {
   content: "\F55C";
+}
+
+.icon-vector-ellipse {
+  content: "\F892";
 }
 
 .icon-vector-intersection {
@@ -8175,12 +12587,16 @@ strong, b, cite, textview {
   content: "\F578";
 }
 
-.icon-verified {
-  content: "\F565";
+.icon-vhs {
+  content: "\FA1A";
 }
 
 .icon-vibrate {
   content: "\F566";
+}
+
+.icon-vibrate-off {
+  content: "\FCB5";
 }
 
 .icon-video {
@@ -8193,6 +12609,14 @@ strong, b, cite, textview {
 
 .icon-video-4k-box {
   content: "\F83D";
+}
+
+.icon-video-account {
+  content: "\F918";
+}
+
+.icon-video-image {
+  content: "\F919";
 }
 
 .icon-video-input-antenna {
@@ -8211,12 +12635,36 @@ strong, b, cite, textview {
   content: "\F841";
 }
 
+.icon-video-minus {
+  content: "\F9B1";
+}
+
 .icon-video-off {
   content: "\F568";
 }
 
+.icon-video-off-outline {
+  content: "\FBB7";
+}
+
+.icon-video-outline {
+  content: "\FBB8";
+}
+
+.icon-video-plus {
+  content: "\F9B2";
+}
+
+.icon-video-stabilization {
+  content: "\F91A";
+}
+
 .icon-video-switch {
   content: "\F569";
+}
+
+.icon-video-vintage {
+  content: "\FA1B";
 }
 
 .icon-view-agenda {
@@ -8237,6 +12685,10 @@ strong, b, cite, textview {
 
 .icon-view-dashboard {
   content: "\F56E";
+}
+
+.icon-view-dashboard-outline {
+  content: "\FA1C";
 }
 
 .icon-view-dashboard-variant {
@@ -8275,6 +12727,14 @@ strong, b, cite, textview {
   content: "\F728";
 }
 
+.icon-view-split-horizontal {
+  content: "\FBA7";
+}
+
+.icon-view-split-vertical {
+  content: "\FBA8";
+}
+
 .icon-view-stream {
   content: "\F575";
 }
@@ -8291,8 +12751,16 @@ strong, b, cite, textview {
   content: "\F60F";
 }
 
-.icon-visualstudio {
+.icon-virtual-reality {
+  content: "\F893";
+}
+
+.icon-visual-studio {
   content: "\F610";
+}
+
+.icon-visual-studio-code {
+  content: "\FA1D";
 }
 
 .icon-vk {
@@ -8317,6 +12785,10 @@ strong, b, cite, textview {
 
 .icon-voicemail {
   content: "\F57D";
+}
+
+.icon-volleyball {
+  content: "\F9B3";
 }
 
 .icon-volume-high {
@@ -8347,6 +12819,14 @@ strong, b, cite, textview {
   content: "\F75C";
 }
 
+.icon-vote {
+  content: "\FA1E";
+}
+
+.icon-vote-outline {
+  content: "\FA1F";
+}
+
 .icon-vpn {
   content: "\F582";
 }
@@ -8363,6 +12843,18 @@ strong, b, cite, textview {
   content: "\F7FD";
 }
 
+.icon-wall-sconce {
+  content: "\F91B";
+}
+
+.icon-wall-sconce-flat {
+  content: "\F91C";
+}
+
+.icon-wall-sconce-variant {
+  content: "\F91D";
+}
+
 .icon-wallet {
   content: "\F584";
 }
@@ -8373,6 +12865,10 @@ strong, b, cite, textview {
 
 .icon-wallet-membership {
   content: "\F586";
+}
+
+.icon-wallet-outline {
+  content: "\FBB9";
 }
 
 .icon-wallet-travel {
@@ -8395,12 +12891,28 @@ strong, b, cite, textview {
   content: "\F58A";
 }
 
+.icon-watch-export-variant {
+  content: "\F894";
+}
+
 .icon-watch-import {
   content: "\F58B";
 }
 
+.icon-watch-import-variant {
+  content: "\F895";
+}
+
+.icon-watch-variant {
+  content: "\F896";
+}
+
 .icon-watch-vibrate {
   content: "\F6B0";
+}
+
+.icon-watch-vibrate-off {
+  content: "\FCB6";
 }
 
 .icon-water {
@@ -8427,6 +12939,10 @@ strong, b, cite, textview {
   content: "\F78C";
 }
 
+.icon-waze {
+  content: "\FBBA";
+}
+
 .icon-weather-cloudy {
   content: "\F590";
 }
@@ -8437,6 +12953,10 @@ strong, b, cite, textview {
 
 .icon-weather-hail {
   content: "\F592";
+}
+
+.icon-weather-hurricane {
+  content: "\F897";
 }
 
 .icon-weather-lightning {
@@ -8523,12 +13043,20 @@ strong, b, cite, textview {
   content: "\F5A2";
 }
 
+.icon-weight-pound {
+  content: "\F9B4";
+}
+
 .icon-whatsapp {
   content: "\F5A3";
 }
 
 .icon-wheelchair-accessibility {
   content: "\F5A4";
+}
+
+.icon-whistle {
+  content: "\F9B5";
 }
 
 .icon-white-balance-auto {
@@ -8557,6 +13085,74 @@ strong, b, cite, textview {
 
 .icon-wifi-off {
   content: "\F5AA";
+}
+
+.icon-wifi-strength-1 {
+  content: "\F91E";
+}
+
+.icon-wifi-strength-1-alert {
+  content: "\F91F";
+}
+
+.icon-wifi-strength-1-lock {
+  content: "\F920";
+}
+
+.icon-wifi-strength-2 {
+  content: "\F921";
+}
+
+.icon-wifi-strength-2-alert {
+  content: "\F922";
+}
+
+.icon-wifi-strength-2-lock {
+  content: "\F923";
+}
+
+.icon-wifi-strength-3 {
+  content: "\F924";
+}
+
+.icon-wifi-strength-3-alert {
+  content: "\F925";
+}
+
+.icon-wifi-strength-3-lock {
+  content: "\F926";
+}
+
+.icon-wifi-strength-4 {
+  content: "\F927";
+}
+
+.icon-wifi-strength-4-alert {
+  content: "\F928";
+}
+
+.icon-wifi-strength-4-lock {
+  content: "\F929";
+}
+
+.icon-wifi-strength-alert-outline {
+  content: "\F92A";
+}
+
+.icon-wifi-strength-lock-outline {
+  content: "\F92B";
+}
+
+.icon-wifi-strength-off {
+  content: "\F92C";
+}
+
+.icon-wifi-strength-off-outline {
+  content: "\F92D";
+}
+
+.icon-wifi-strength-outline {
+  content: "\F92E";
 }
 
 .icon-wii {
@@ -8599,6 +13195,14 @@ strong, b, cite, textview {
   content: "\F5B3";
 }
 
+.icon-windows-classic {
+  content: "\FA20";
+}
+
+.icon-wiper {
+  content: "\FAE8";
+}
+
 .icon-wordpress {
   content: "\F5B4";
 }
@@ -8611,8 +13215,16 @@ strong, b, cite, textview {
   content: "\F5B6";
 }
 
+.icon-wrap-disabled {
+  content: "\FBBB";
+}
+
 .icon-wrench {
   content: "\F5B7";
+}
+
+.icon-wrench-outline {
+  content: "\FBBC";
 }
 
 .icon-wunderlist {
@@ -8641,6 +13253,10 @@ strong, b, cite, textview {
 
 .icon-xbox-controller-battery-alert {
   content: "\F74A";
+}
+
+.icon-xbox-controller-battery-charging {
+  content: "\FA21";
 }
 
 .icon-xbox-controller-battery-empty {
@@ -8691,6 +13307,10 @@ strong, b, cite, textview {
   content: "\F7FE";
 }
 
+.icon-yahoo {
+  content: "\FB2A";
+}
+
 .icon-yammer {
   content: "\F788";
 }
@@ -8707,6 +13327,10 @@ strong, b, cite, textview {
   content: "\F67F";
 }
 
+.icon-youtube {
+  content: "\F5C3";
+}
+
 .icon-youtube-creator-studio {
   content: "\F846";
 }
@@ -8715,16 +13339,72 @@ strong, b, cite, textview {
   content: "\F847";
 }
 
-.icon-youtube-play {
-  content: "\F5C3";
-}
-
 .icon-youtube-tv {
   content: "\F448";
 }
 
+.icon-z-wave {
+  content: "\FAE9";
+}
+
+.icon-zend {
+  content: "\FAEA";
+}
+
 .icon-zip-box {
   content: "\F5C4";
+}
+
+.icon-zip-disk {
+  content: "\FA22";
+}
+
+.icon-zodiac-aquarius {
+  content: "\FA7C";
+}
+
+.icon-zodiac-aries {
+  content: "\FA7D";
+}
+
+.icon-zodiac-cancer {
+  content: "\FA7E";
+}
+
+.icon-zodiac-capricorn {
+  content: "\FA7F";
+}
+
+.icon-zodiac-gemini {
+  content: "\FA80";
+}
+
+.icon-zodiac-leo {
+  content: "\FA81";
+}
+
+.icon-zodiac-libra {
+  content: "\FA82";
+}
+
+.icon-zodiac-pisces {
+  content: "\FA83";
+}
+
+.icon-zodiac-sagittarius {
+  content: "\FA84";
+}
+
+.icon-zodiac-scorpio {
+  content: "\FA85";
+}
+
+.icon-zodiac-taurus {
+  content: "\FA86";
+}
+
+.icon-zodiac-virgo {
+  content: "\FA87";
 }
 
 .icon-blank {
