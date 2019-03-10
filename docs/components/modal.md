@@ -100,7 +100,7 @@ When modals become too long for the user’s viewport or device, they scroll ind
           <w type="cite">- Bill Gates</w>
         </w>
 
-        <w type="alert" class="alert alert-warning alert-dismissible">
+        <w type="alert" class="alert alert-warning">
           <w type="strong">MIT License</w>
 
           <w type="p">Copyright (c) 2017 LC's UI</w>
@@ -111,8 +111,6 @@ When modals become too long for the user’s viewport or device, they scroll ind
 
           <w type="p">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           </w>
-    
-          <w type="button" class="close" data-dismiss="alert">&#215;</w>
         </w>
       </w>
       <w class="modal-footer">
