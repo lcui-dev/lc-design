@@ -105,8 +105,8 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>LCUI.lib;LCUIEx.lib;LCUIMain.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LCUI.lib;LCUIEx.lib;LCUIMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\dist\lib\$(PlatformTarget)-windows\$(Configuration);$(SolutionDir)\vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>copy "$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)\LCUI*.dll" "$(ProjectDir)app\"
@@ -125,8 +125,8 @@ xcopy "$(SolutionDir)dist\assets" "$(ProjectDir)app\assets" /S /Y</Command>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>LCUI.lib;LCUIEx.lib;LCUIMain.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LCUI.lib;LCUIEx.lib;LCUIMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\dist\lib\$(PlatformTarget)-windows\$(Configuration);$(SolutionDir)\vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>msvcrt</IgnoreSpecificDefaultLibraries>
     </Link>
     <PreBuildEvent>
@@ -150,8 +150,8 @@ xcopy "$(SolutionDir)dist\assets" "$(ProjectDir)app\assets" /S /Y</Command>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>LCUI.lib;LCUIEx.lib;LCUIMain.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LCUI.lib;LCUIEx.lib;LCUIMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\dist\lib\$(PlatformTarget)-windows\$(Configuration);$(SolutionDir)\vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>msvcrtd</IgnoreSpecificDefaultLibraries>
     </Link>
     <PreBuildEvent>
@@ -175,8 +175,8 @@ xcopy "$(SolutionDir)dist\assets" "$(ProjectDir)app\assets" /S /Y</Command>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>LCUI.lib;LCUIEx.lib;LCUIMain.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LCUI.lib;LCUIEx.lib;LCUIMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\dist\lib\$(PlatformTarget)-windows\$(Configuration);$(SolutionDir)\vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>copy "$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)\LCUI*.dll" "$(ProjectDir)app\"
