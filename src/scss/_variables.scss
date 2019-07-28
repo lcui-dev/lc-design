@@ -60,6 +60,15 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
 $theme-colors: () !default;
 $theme-colors: map-merge((
   "primary":    $blue,
@@ -120,7 +129,7 @@ $sizes: (
 ) !default;
 
 $text-elements: i, b, a, p, h1, h2, h3, h4, h5, h6,
-label, cite, strong, textview, textedit, password, button;
+label, cite, small, strong, text, textview, textedit, password, button;
 
 // Body
 //
@@ -179,6 +188,10 @@ $border-radius:               0;
 $border-radius-lg:            0;
 $border-radius-sm:            0;
 
+$box-shadow-sm:               0 rem2px(.125) rem2px(.25) rgba($black, .075) !default;
+$box-shadow:                  0 rem2px(.5) rem2px(1) rgba($black, .15) !default;
+$box-shadow-lg:               0 rem2px(1) rem2px(3) rgba($black, .175) !default;
+
 $component-active-color:      $white !default;
 $component-active-bg:         theme-color("primary") !default;
 
@@ -218,7 +231,7 @@ $headings-color:              $font-color-base !default;
 $lead-font-size:              ($font-size-base * 1.25) !default;
 $lead-font-weight:            300 !default;
 
-$small-font-size:             80% !default;
+$small-font-size:             ($font-size-base * 0.8) !default;
 
 $text-muted:                  $gray-600 !default;
 
@@ -373,6 +386,23 @@ $dropdown-item-padding-y:           rem2px(.25) !default;
 $dropdown-item-padding-x:           rem2px(1.5) !default;
 
 $dropdown-header-color:             $gray-600 !default;
+
+
+// Toasts
+
+$toast-max-width:                   350px !default;
+$toast-padding-x:                   rem2px(.75) !default;
+$toast-padding-y:                   rem2px(.25) !default;
+$toast-font-size:                   rem2px(.875) !default;
+$toast-background-color:            rgba($white, .85) !default;
+$toast-border-width:                1px !default;
+$toast-border-color:                rgba(0, 0, 0, .1) !default;
+$toast-border-radius:               $border-radius !default;
+$toast-box-shadow:                  $box-shadow !default;
+
+$toast-header-color:                $gray-600 !default;
+$toast-header-background-color:     rgba($white, .85) !default;
+$toast-header-border-color:         rgba(0, 0, 0, .05) !default;
 
 
 // Z-index master list

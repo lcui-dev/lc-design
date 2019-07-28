@@ -13,7 +13,7 @@ root {
 .demo-navbar {
   width: 100%;
   background-color: $navbar-bg-color;
-  
+
   .navbar-brand {
     width: 37.75px;
     text-align: center;
@@ -189,6 +189,27 @@ root {
       padding: 15px;
       box-sizing: border-box;
       border: 1px solid #eee;
+    }
+  }
+  &.translucent-toast-demo,
+  &.basic-toast-demo,
+  &.stacking-toast-demo {
+    .demo-preview-box {
+      background-color: $light;
+    }
+    .toast {
+      display: block;
+      opacity: 1;
+    }
+    .toast-header img {
+      width: $toast-font-size * 1.25;
+      height: $toast-font-size * 1.25;
+      background-color: $primary;
+    }
+  }
+  &.translucent-toast-demo {
+    .demo-preview-box {
+      background-color: $dark;
     }
   }
 }

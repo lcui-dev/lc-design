@@ -10,7 +10,7 @@
     @content;
   }
 
-  textview, .text {
+  #{$text-elements}, .text {
     @content;
   }
 }

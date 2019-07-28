@@ -1,0 +1,63 @@
+.toast {
+  max-width: $toast-max-width;
+  background-color: $toast-background-color;
+  background-clip: padding-box;
+  border: $toast-border-width solid $toast-border-color;
+  box-shadow: $toast-box-shadow;
+  margin-bottom: $toast-padding-x;
+  opacity: 0;
+
+  @include text {
+    font-size: $toast-font-size;
+  }
+
+  @include border-radius($toast-border-radius);
+
+  small, small {
+    font-size: $toast-font-size * 0.8;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.showing {
+    opacity: 1;
+  }
+
+  &.show {
+    display: block;
+    opacity: 1;
+  }
+
+  &.hide {
+    display: none;
+  }
+}
+
+.toast-header {
+  @include text {
+    color: $toast-header-color;
+  }
+
+  padding: $toast-padding-y $toast-padding-x;
+  background-color: $toast-header-background-color;
+  border-bottom: $toast-border-width solid $toast-header-border-color;
+}
+
+.toast-header-right {
+  @include float-right;
+
+  top: $toast-padding-y;
+  right: $toast-padding-x;
+
+  .close {
+    top: -$toast-padding-y;
+    font-size: $close-font-size;
+    position: relative;
+  }
+}
+
+.toast-body {
+  padding: $toast-padding-x; // apply to both vertical and horizontal
+}

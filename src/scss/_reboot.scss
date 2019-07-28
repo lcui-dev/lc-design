@@ -29,6 +29,6 @@ p {
   @include text-default-style;
 }
 
-strong, b, cite, textview {
+span, small, strong, b, cite, img, text, textview {
   display: inline-block;
 }
