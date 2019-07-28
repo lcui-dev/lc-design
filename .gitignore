@@ -9,6 +9,7 @@ dist/lib
 *.lib
 *.dll
 *.d
+*.tlog
 .xmake
 demo/app/assets/stylesheets
 demo/app/assets/fonts

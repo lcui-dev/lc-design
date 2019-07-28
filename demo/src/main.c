@@ -1,9 +1,9 @@
-#include <LCUI_Build.h>
-#include <LCUI/LCUI.h>
+#include <LCUI.h>
+#include <LCDesign.h>
 #include <LCUI/gui/widget.h>
 #include <LCUI/gui/builder.h>
 #include <LCUI/timer.h>
-#include <LCUIEx.h>
+#include <LCUI/display.h>
 #include "ui.h"
 
 int main(int argc, char **argv)
@@ -11,7 +11,8 @@ int main(int argc, char **argv)
 	LCUI_Widget root, pack;
 
 	LCUI_Init();
-	LCUIEx_Init();
+	LCDesign_Init();
+	LCUIDisplay_SetSize(1280, 800);
 	root = LCUIWidget_GetRoot();
 	pack = LCUIBuilder_LoadFile("assets/views/main.xml");
 	if (!pack) {

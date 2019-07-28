@@ -32,13 +32,13 @@
 #include <LCUI_Build.h>
 #include <LCUI/LCUI.h>
 #include <LCUI/gui/widget.h>
-#include <LCUIEx/ui/components/dropdown.h>
+#include <LCDesign/ui/components/dropdown.h>
 
-typedef struct LCUIEx_DropdownRec_ {
+typedef struct LCDesign_DropdownRec_ {
 	int handler_id;
 	LCUI_Widget target;
 	LCUI_StyleValue position;
-} LCUIEx_DropdownRec, *LCUIEx_Dropdown;
+} LCDesign_DropdownRec, *LCDesign_Dropdown;
 
 static struct DropdwonModule {
 	LCUI_WidgetPrototype menu;
@@ -48,7 +48,7 @@ static struct DropdwonModule {
 void Dropdown_UpdatePosition(LCUI_Widget w)
 {
 	float x, y;
-	LCUIEx_Dropdown data = Widget_GetData(w, self.menu);
+	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
 	if (!data->target) {
 		Widget_Move(w, 0, 0);
 		return;
@@ -114,7 +114,7 @@ void Dropdown_UpdatePosition(LCUI_Widget w)
 
 void Dropdown_Hide(LCUI_Widget w)
 {
-	LCUIEx_Dropdown data = Widget_GetData(w, self.menu);
+	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
 	if (data->target) {
 		Widget_RemoveClass(data->target, "active");
 	}
@@ -125,7 +125,7 @@ void Dropdown_Hide(LCUI_Widget w)
 void Dropdown_Show(LCUI_Widget w)
 {
 	LCUI_Widget root = LCUIWidget_GetRoot();
-	LCUIEx_Dropdown data = Widget_GetData(w, self.menu);
+	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
 	if (data->target) {
 		Widget_AddClass(data->target, "active");
 	}
@@ -149,7 +149,7 @@ static void Dropdown_OnClickOutside(LCUI_Widget w,
 				    LCUI_WidgetEvent e, void *arg)
 {
 	LCUI_Widget target;
-	LCUIEx_Dropdown dropdown = Widget_GetData(e->data, self.menu);
+	LCDesign_Dropdown dropdown = Widget_GetData(e->data, self.menu);
 	for (target = e->target; target; target = target->parent) {
 		if (target == dropdown->target) {
 			return;
@@ -162,7 +162,7 @@ static void Dropdown_OnClick(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 {
 	LCUI_Widget item;
 	LCUI_WidgetEventRec ev = { 0 };
-	LCUIEx_Dropdown data;
+	LCDesign_Dropdown data;
 
 	data = Widget_GetData(w, self.menu);
 	for (item = e->target; item; item = item->parent) {
@@ -179,8 +179,8 @@ static void Dropdown_OnClick(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 
 static void Dropdown_Init(LCUI_Widget w)
 {
-	const size_t size = sizeof(LCUIEx_DropdownRec);
-	LCUIEx_Dropdown data = Widget_AddData(w, self.menu, size);
+	const size_t size = sizeof(LCDesign_DropdownRec);
+	LCDesign_Dropdown data = Widget_AddData(w, self.menu, size);
 
 	data->target = NULL;
 	data->position = SV_BOTTOM_LEFT;
@@ -193,7 +193,7 @@ static void Dropdown_Init(LCUI_Widget w)
 
 static void Dropdown_Destroy(LCUI_Widget w)
 {
-	LCUIEx_Dropdown data = Widget_GetData(w, self.menu);
+	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
 	Widget_UnbindEventByHandlerId(LCUIWidget_GetRoot(), data->handler_id);
 }
 
@@ -208,7 +208,7 @@ static void DropdownTarget_OnClick(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 
 void Dropdown_BindTarget(LCUI_Widget w, LCUI_Widget target)
 {
-	LCUIEx_Dropdown data = Widget_GetData(w, self.menu);
+	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
 	data->target = target;
 	if (data->target) {
 		Widget_UnbindEvent(target, "click", DropdownTarget_OnClick);
@@ -219,7 +219,7 @@ void Dropdown_BindTarget(LCUI_Widget w, LCUI_Widget target)
 
 void Dropdown_SetPosition(LCUI_Widget w, LCUI_StyleValue position)
 {
-	LCUIEx_Dropdown data = Widget_GetData(w, self.menu);
+	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
 	data->position = position;
 	Dropdown_UpdatePosition(w);
 }
@@ -228,7 +228,7 @@ static void Dropdown_SetAttr(LCUI_Widget w, const char *name,
 			     const char *value)
 {
 	if (strcmp(name, "data-position") == 0) {
-		LCUIEx_Dropdown menu = Widget_GetData(w, self.menu);
+		LCDesign_Dropdown menu = Widget_GetData(w, self.menu);
 		int position = LCUI_GetStyleValue(value);
 		if (position <= 0) {
 			position = SV_BOTTOM_LEFT;
@@ -237,7 +237,7 @@ static void Dropdown_SetAttr(LCUI_Widget w, const char *name,
 	}
 }
 
-void LCUIEx_InitDropdown(void)
+void LCDesign_InitDropdown(void)
 {
 	self.menu = LCUIWidget_NewPrototype("dropdown-menu", NULL);
 	self.menu->init = Dropdown_Init;

@@ -28,19 +28,19 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <LCUI_Build.h>
-#include <LCUI/LCUI.h>
-#include <LCUIEx.h>
+#include <LCUI.h>
+#include <LCDesign.h>
 
-void LCUIEx_Init( void )
+void LCDesign_Init(void)
 {
-	LCUIEx_InitAlert();
-	LCUIEx_InitLabel();
-	LCUIEx_InitIcon();
-	LCUIEx_InitPassword();
-	LCUIEx_InitTypograhy();
-	LCUIEx_InitModal();
-	LCUIEx_InitDropdown();
-	LCUIEx_InitToggle();
-	LCUIEx_InitDismiss();
+	LCDesign_InitAlert();
+	LCDesign_InitLabel();
+	LCDesign_InitIcon();
+	LCDesign_InitImg();
+	LCDesign_InitPassword();
+	LCDesign_InitTypograhy();
+	LCDesign_InitModal();
+	LCDesign_InitDropdown();
+	LCDesign_InitToggle();
+	LCDesign_InitDismiss();
 }

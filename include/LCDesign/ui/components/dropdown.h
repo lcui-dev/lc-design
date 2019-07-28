@@ -32,7 +32,7 @@
 #ifndef LCUIEX_DROPDOWN_H_
 #define LCUIEX_DROPDOWN_H_
 
-LCUI_API void LCUIEx_InitDropdown( void );
+LCUI_API void LCDesign_InitDropdown( void );
 
 LCUI_API void Dropdown_Hide( LCUI_Widget w );
 

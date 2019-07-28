@@ -1,7 +1,7 @@
 ﻿/*
  * typography.c -- Including headings, body text, and more.
  *
- * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
+ * Copyright (c) 2018-2019, Liu chao <lc-soft@live.cn> All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -28,25 +28,27 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <LCUI_Build.h>
-#include <LCUI/LCUI.h>
+#include <LCUI.h>
 #include <LCUI/gui/widget.h>
-#include <LCUIEx/ui/components/typography.h>
+#include <LCDesign/ui/components/typography.h>
 
-void LCUIEx_InitTypograhy( void )
+void LCDesign_InitTypograhy(void)
 {
-	LCUIWidget_NewPrototype( "h1", "textview" );
-	LCUIWidget_NewPrototype( "h2", "textview" );
-	LCUIWidget_NewPrototype( "h3", "textview" );
-	LCUIWidget_NewPrototype( "h4", "textview" );
-	LCUIWidget_NewPrototype( "h5", "textview" );
-	LCUIWidget_NewPrototype( "h6", "textview" );
-	LCUIWidget_NewPrototype( "p", "textview" );
-	LCUIWidget_NewPrototype( "pre", "textview" );
-	LCUIWidget_NewPrototype( "code-block", "textview" );
-	LCUIWidget_NewPrototype( "blockquote", "textview" );
-	LCUIWidget_NewPrototype( "i", "textview" );
-	LCUIWidget_NewPrototype( "b", "textview" );
-	LCUIWidget_NewPrototype( "cite", "textview" );
-	LCUIWidget_NewPrototype( "strong", "textview" );
+	LCUIWidget_NewPrototype("text", "textview");
+	LCUIWidget_NewPrototype("span", "textview");
+	LCUIWidget_NewPrototype("h1", "textview");
+	LCUIWidget_NewPrototype("h2", "textview");
+	LCUIWidget_NewPrototype("h3", "textview");
+	LCUIWidget_NewPrototype("h4", "textview");
+	LCUIWidget_NewPrototype("h5", "textview");
+	LCUIWidget_NewPrototype("h6", "textview");
+	LCUIWidget_NewPrototype("p", "textview");
+	LCUIWidget_NewPrototype("pre", "textview");
+	LCUIWidget_NewPrototype("code-block", "textview");
+	LCUIWidget_NewPrototype("blockquote", "textview");
+	LCUIWidget_NewPrototype("i", "textview");
+	LCUIWidget_NewPrototype("b", "textview");
+	LCUIWidget_NewPrototype("cite", "textview");
+	LCUIWidget_NewPrototype("strong", "textview");
+	LCUIWidget_NewPrototype("small", "textview");
 }

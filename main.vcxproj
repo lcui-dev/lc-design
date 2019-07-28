@@ -24,7 +24,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>main</RootNamespace>
     <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
-    <ProjectName>LCUIEx</ProjectName>
+    <ProjectName>LCDesign</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -164,6 +164,7 @@
     <ClCompile Include="src\ui\components\alert.c" />
     <ClCompile Include="src\ui\components\dropdown.c" />
     <ClCompile Include="src\ui\components\icon.c" />
+    <ClCompile Include="src\ui\components\img.c" />
     <ClCompile Include="src\ui\components\label.c" />
     <ClCompile Include="src\ui\components\modal.c" />
     <ClCompile Include="src\ui\components\password.c" />
@@ -172,17 +173,18 @@
     <ClCompile Include="src\ui\toggle.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\LCUIEx.h" />
-    <ClInclude Include="include\LCUIEx\ui\components.h" />
-    <ClInclude Include="include\LCUIEx\ui\components\alert.h" />
-    <ClInclude Include="include\LCUIEx\ui\components\dropdown.h" />
-    <ClInclude Include="include\LCUIEx\ui\components\icon.h" />
-    <ClInclude Include="include\LCUIEx\ui\components\label.h" />
-    <ClInclude Include="include\LCUIEx\ui\components\modal.h" />
-    <ClInclude Include="include\LCUIEx\ui\components\password.h" />
-    <ClInclude Include="include\LCUIEx\ui\components\typography.h" />
-    <ClInclude Include="include\LCUIEx\ui\dismiss.h" />
-    <ClInclude Include="include\LCUIEx\ui\toggle.h" />
+    <ClInclude Include="include\LCDesign.h" />
+    <ClInclude Include="include\LCDesign\ui\components.h" />
+    <ClInclude Include="include\LCDesign\ui\components\alert.h" />
+    <ClInclude Include="include\LCDesign\ui\components\dropdown.h" />
+    <ClInclude Include="include\LCDesign\ui\components\icon.h" />
+    <ClInclude Include="include\LCDesign\ui\components\img.h" />
+    <ClInclude Include="include\LCDesign\ui\components\label.h" />
+    <ClInclude Include="include\LCDesign\ui\components\modal.h" />
+    <ClInclude Include="include\LCDesign\ui\components\password.h" />
+    <ClInclude Include="include\LCDesign\ui\components\typography.h" />
+    <ClInclude Include="include\LCDesign\ui\dismiss.h" />
+    <ClInclude Include="include\LCDesign\ui\toggle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

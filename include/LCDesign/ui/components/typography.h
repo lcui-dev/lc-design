@@ -1,5 +1,5 @@
-/*
- * LCUIEx.h -- LCUI.css main header file.
+﻿/*
+ * typography.h -- Including headings, body text, and more.
  *
  * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
  *
@@ -28,13 +28,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_H_
-#define LCUIEX_H_
+#ifndef LCUIEX_TYPOGRAPHY_H_
+#define LCUIEX_TYPOGRAPHY_H_
 
-#include <LCUIEx/ui/components.h>
-#include <LCUIEx/ui/toggle.h>
-#include <LCUIEx/ui/dismiss.h>
-
-LCUI_API void LCUIEx_Init( void );
+LCUI_API void LCDesign_InitTypograhy(void);
 
 #endif

@@ -1,15 +1,21 @@
 # Introduction
 
-LCUI.css is a UI component framework for building LCUI application, it provides basic styles for typography and elements, simple layout system, CSS components and utilities. Its CSS code is based Bootstrap, so its usage is basically the same as Boostrap.
+LC Design is a UI component framework for building LCUI application, it provides basic styles for typography and elements, simple layout system, CSS components and utilities. Its CSS code is based Bootstrap, so its usage is basically the same as Boostrap.
 
 ## Installation
 
-Download the compiled LCUI.css package:
+Install with LCPkg:
+
+``` shell
+lcpkg install github.com/lc-ui/lc-desgin
+```
+
+Or, you can download the compiled package:
 
 ``` embedded-xml
-<w type="p">
-  <w type="a" class="btn" href="https://github.com/lc-ui/lcui.css/releases">Download LCUI.css</w>
-</w>
+<p>
+  <a class="btn" href="https://github.com/lc-ui/lcui.css/releases">Download LC Design</a>
+</p>
 ```
 
 ### CSS
@@ -17,7 +23,7 @@ Download the compiled LCUI.css package:
 Copy the files from the dist directory to your project directory, and configure your project assets include path.
 
 ``` xml
-<resource type="text/css" src="assets/stylesheets/lcui.css"/>
+<resource type="text/css" src="assets/stylesheets/lc-design.css" />
 ```
 
 ### C Dependencies
@@ -31,9 +37,9 @@ main.xml:
 ``` xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <lcui-app>
-  <resource type="text/css" src="assets/stylesheets/lcui.css"/>
+  <resource type="text/css" src="assets/stylesheets/lc-design.css" />
   <ui>
-    <w type="h1">Hello, world!</w>
+    <h1>Hello, world!</h1>
   </ui>
 </lcui-app>
 ```
@@ -41,24 +47,24 @@ main.xml:
 main.c:
 
 ``` c
-#include <LCUI_Build.h>
-#include <LCUI/LCUI.h>
+#include <LCUI.h>
+#include <LCDesign.h>
 #include <LCUI/gui/widget.h>
 #include <LCUI/gui/builder.h>
 
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
         LCUI_Widget root, pack;
 
         LCUI_Init();
-        LCUIEx_Init();
+        LCDesgin_Init();
         root = LCUIWidget_GetRoot();
-        pack = LCUIBuilder_LoadFile( "main.xml" );
-        if( !pack ) {
+        pack = LCUIBuilder_LoadFile("main.xml");
+        if(!pack) {
                 return -1;
         }
-        Widget_Append( root, pack );
-        Widget_Unwrap( pack );
+        Widget_Append(root, pack);
+        Widget_Unwrap(pack);
         return LCUI_Main();
 }
 ```

@@ -1,7 +1,7 @@
-﻿/*
- * modal.h -- Modal component for adding dialogs.
+/*
+ * components.h -- UI components operation set.
  *
- * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
+ * Copyright (c) 2018-2019, Liu chao <lc-soft@live.cn> All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -28,13 +28,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_MODAL_H_
-#define LCUIEX_MODAL_H_
+#ifndef LCUIEX_UI_COMPONETS_H
+#define LCUIEX_UI_COMPONETS_H
 
-LCUI_API void LCUIEx_InitModal( void );
-
-LCUI_API void Modal_Show( LCUI_Widget w );
-
-LCUI_API void Modal_Hide( LCUI_Widget w );
+#include <LCUI/gui/widget.h>
+#include <LCDesign/ui/components/alert.h>
+#include <LCDesign/ui/components/label.h>
+#include <LCDesign/ui/components/icon.h>
+#include <LCDesign/ui/components/img.h>
+#include <LCDesign/ui/components/password.h>
+#include <LCDesign/ui/components/typography.h>
+#include <LCDesign/ui/components/modal.h>
+#include <LCDesign/ui/components/dropdown.h>
 
 #endif

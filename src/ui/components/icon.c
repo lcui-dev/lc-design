@@ -29,9 +29,9 @@
  */
 
 #include <stdio.h>
-#include <LCUI_Build.h>
-#include <LCUI/LCUI.h>
+#include <LCUI.h>
 #include <LCUI/gui/widget.h>
+#include <LCDesign/ui/components/icon.h>
 
 #define CLASS_NAME		"icon"
 #define CLASS_PREFIX_NAME	"icon-"
@@ -40,7 +40,7 @@ typedef struct IconRec_ {
 	char class_name[256];
 } IconRec, *Icon;
 
-static struct LCUIEx_IconModule {
+static struct LCDesign_IconModule {
 	LCUI_WidgetPrototype proto;
 } self;
 
@@ -73,7 +73,7 @@ static void Icon_SetAttr(LCUI_Widget w, const char *name,
 	}
 }
 
-void LCUIEx_InitIcon(void)
+void LCDesign_InitIcon(void)
 {
 	self.proto = LCUIWidget_NewPrototype("icon", "textview");
 	self.proto->init = Icon_Init;

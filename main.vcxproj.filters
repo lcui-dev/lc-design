@@ -13,10 +13,10 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="头文件\LCUIEx">
+    <Filter Include="头文件\LCDesign">
       <UniqueIdentifier>{77a88f5c-5e32-4f96-823c-71ef7b7eaa5e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\LCUIEx\components">
+    <Filter Include="头文件\LCDesign\components">
       <UniqueIdentifier>{147f2b02-5a02-4e85-9225-f945930f2cfa}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -51,40 +51,46 @@
     <ClCompile Include="src\ui\components\icon.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\ui\components\img.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\LCUIEx.h">
+    <ClInclude Include="include\LCDesign.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\LCUIEx\ui\components.h">
-      <Filter>头文件\LCUIEx</Filter>
+    <ClInclude Include="include\LCDesign\ui\components\alert.h">
+      <Filter>头文件\LCDesign\components</Filter>
     </ClInclude>
-    <ClInclude Include="include\LCUIEx\ui\components\dropdown.h">
-      <Filter>头文件\LCUIEx\components</Filter>
+    <ClInclude Include="include\LCDesign\ui\components\dropdown.h">
+      <Filter>头文件\LCDesign\components</Filter>
     </ClInclude>
-    <ClInclude Include="include\LCUIEx\ui\components\modal.h">
-      <Filter>头文件\LCUIEx\components</Filter>
+    <ClInclude Include="include\LCDesign\ui\components\icon.h">
+      <Filter>头文件\LCDesign\components</Filter>
     </ClInclude>
-    <ClInclude Include="include\LCUIEx\ui\components\password.h">
-      <Filter>头文件\LCUIEx\components</Filter>
+    <ClInclude Include="include\LCDesign\ui\components\label.h">
+      <Filter>头文件\LCDesign\components</Filter>
     </ClInclude>
-    <ClInclude Include="include\LCUIEx\ui\components\icon.h">
-      <Filter>头文件\LCUIEx\components</Filter>
+    <ClInclude Include="include\LCDesign\ui\components\modal.h">
+      <Filter>头文件\LCDesign\components</Filter>
     </ClInclude>
-    <ClInclude Include="include\LCUIEx\ui\components\typography.h">
-      <Filter>头文件\LCUIEx\components</Filter>
+    <ClInclude Include="include\LCDesign\ui\components\password.h">
+      <Filter>头文件\LCDesign\components</Filter>
     </ClInclude>
-    <ClInclude Include="include\LCUIEx\ui\components\label.h">
-      <Filter>头文件\LCUIEx\components</Filter>
+    <ClInclude Include="include\LCDesign\ui\components\typography.h">
+      <Filter>头文件\LCDesign\components</Filter>
     </ClInclude>
-    <ClInclude Include="include\LCUIEx\ui\components\alert.h">
-      <Filter>头文件\LCUIEx\components</Filter>
+    <ClInclude Include="include\LCDesign\ui\components.h">
+      <Filter>头文件\LCDesign</Filter>
     </ClInclude>
-    <ClInclude Include="include\LCUIEx\ui\toggle.h">
-      <Filter>头文件\LCUIEx</Filter>
+    <ClInclude Include="include\LCDesign\ui\dismiss.h">
+      <Filter>头文件\LCDesign</Filter>
     </ClInclude>
-    <ClInclude Include="include\LCUIEx\ui\dismiss.h">
-      <Filter>头文件\LCUIEx</Filter>
+    <ClInclude Include="include\LCDesign\ui\toggle.h">
+      <Filter>头文件\LCDesign</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LCDesign\ui\components\img.h">
+      <Filter>头文件\LCDesign\components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

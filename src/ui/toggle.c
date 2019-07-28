@@ -28,18 +28,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <LCUI_Build.h>
-#include <LCUI/LCUI.h>
+#include <LCUI.h>
 #include <LCUI/gui/widget.h>
-#include <LCUIEx/ui/components.h>
-#include <LCUIEx/ui/toggle.h>
+#include <LCDesign/ui/components.h>
+#include <LCDesign/ui/toggle.h>
 
 #define HANDLERS_COUNT 2
 
-typedef struct LCUIEx_ToggleHandlerRec_ {
+typedef struct LCDesign_ToggleHandlerRec_ {
 	const char *name;
 	void( *toggle )(LCUI_Widget, LCUI_Widget);
-} LCUIEx_ToggleHandlerRec, *LCUIEx_ToggleHandler;
+} LCDesign_ToggleHandlerRec, *LCDesign_ToggleHandler;
 
 static void ToggleModal( LCUI_Widget btn, LCUI_Widget target )
 {
@@ -56,8 +55,8 @@ static void ToggleDropdown( LCUI_Widget btn, LCUI_Widget target )
 	}
 }
 
-static struct LCUIEx_ToggleModule {
-	LCUIEx_ToggleHandlerRec handlers[HANDLERS_COUNT];
+static struct LCDesign_ToggleModule {
+	LCDesign_ToggleHandlerRec handlers[HANDLERS_COUNT];
 } self = {
 	{
 		{ "modal", ToggleModal },
@@ -70,7 +69,7 @@ static void OnClick( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
 	int i;
 	const char *target_id;
 	const char *name = NULL;
-	LCUIEx_ToggleHandler handler;
+	LCDesign_ToggleHandler handler;
 	LCUI_Widget btn;
 
 	for( btn = e->target; btn; btn = btn->parent ) {
@@ -92,7 +91,7 @@ static void OnClick( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
 	}
 }
 
-void LCUIEx_InitToggle( void )
+void LCDesign_InitToggle( void )
 {
 	LCUI_Widget root = LCUIWidget_GetRoot();
 	Widget_BindEvent( root, "click", OnClick, NULL, NULL );

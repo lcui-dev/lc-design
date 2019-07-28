@@ -5,99 +5,104 @@
       <w id="demo-sidebar" class="demo-sidebar float-left">
         <w id="demo-sidebar-links" class="nav demo-links scrolllayer">
           <w class="nav-item">
-            <w class="nav-link nav-header" type="a" href="getting-started/introduction.xml" target="demo-content">
+            <a class="nav-link nav-header" href="getting-started/introduction.xml" target="demo-content">
               Getting started
-            </w>
+            </a>
             <w class="subnav">
               <w class="nav-item">
-                <w id="doc-link-getting-strted" class="nav-link" type="a" href="getting-started/introduction.xml" target="demo-content">
+                <a id="doc-link-getting-strted" class="nav-link" href="getting-started/introduction.xml" target="demo-content">
                   Introduction
-                </w>
+                </a>
               </w>
             </w>
           </w>
           <w class="nav-item">
-            <w class="nav-link nav-header" type="a" href="layout/overview.xml" target="demo-content">
+            <a class="nav-link nav-header" href="layout/overview.xml" target="demo-content">
               Layout
-            </w>
+            </a>
             <w class="subnav">
               <w class="nav-item">
-                <w class="nav-link" type="a" href="layout/overview.xml" target="demo-content">
+                <a class="nav-link" href="layout/overview.xml" target="demo-content">
                   Overview
-                </w>
+                </a>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="a" href="layout/grid.xml" target="demo-content">
+                <a class="nav-link" href="layout/grid.xml" target="demo-content">
                   Grid
-                </w>
+                </a>
               </w>
             </w>
           </w>
           <w class="nav-item">
-            <w class="nav-link nav-header" type="textview">
+            <text class="nav-link nav-header">
               Content
-            </w>
+            </text>
             <w class="subnav">
               <w class="nav-item">
-                <w class="nav-link" type="a" href="content/typography.xml" target="demo-content">
+                <a class="nav-link" href="content/typography.xml" target="demo-content">
                   Typography
-                </w>
+                </a>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="a" href="content/icons.xml" target="demo-content">
+                <a class="nav-link" href="content/icons.xml" target="demo-content">
                   Icons
-                </w>
+                </a>
               </w>
             </w>
           </w>
           <w class="nav-item">
-            <w class="nav-link nav-header" type="textview">
+            <text class="nav-link nav-header">
               Components
-            </w>
+            </text>
             <w class="subnav">
               <w class="nav-item">
-                <w class="nav-link" type="a" href="components/alerts.xml" target="demo-content">
+                <a class="nav-link" href="components/alerts.xml" target="demo-content">
                   Alerts
-                </w>
+                </a>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="a" href="components/buttons.xml" target="demo-content">
+                <a class="nav-link" href="components/buttons.xml" target="demo-content">
                   Buttons
-                </w>
+                </a>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="a" href="components/dropdowns.xml" target="demo-content">
+                <a class="nav-link" href="components/dropdowns.xml" target="demo-content">
                   Dropdowns
-                </w>
+                </a>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="a" href="components/forms.xml" target="demo-content">
+                <a class="nav-link" href="components/forms.xml" target="demo-content">
                   Forms
-                </w>
+                </a>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="a" href="components/list-group.xml" target="demo-content">
+                <a class="nav-link" href="components/list-group.xml" target="demo-content">
                   List group
-                </w>
+                </a>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="a" href="components/modal.xml" target="demo-content">
+                <a class="nav-link" href="components/modal.xml" target="demo-content">
                   Modal
-                </w>
+                </a>
               </w>
               <w class="nav-item">
-                <w class="nav-link" type="a" href="components/scrollbar.xml" target="demo-content">
+                <a class="nav-link" href="components/toasts.xml" target="demo-content">
+                  Toasts
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/scrollbar.xml" target="demo-content">
                   Scrollbar
-                </w>
+                </a>
               </w>
             </w>
           </w>
         </w>
-        <w type="scrollbar" target="demo-sidebar-links"/>
+        <scrollbar target="demo-sidebar-links" />
       </w>
       <w class="demo-content-wrapper">
-        <w class="demo-content scrolllayer" id="demo-content"></w>
-        <w type="scrollbar" target="demo-content"/>
+        <w class="demo-content scrolllayer" id="demo-content" />
+        <scrollbar target="demo-content" />
       </w>
     </w>
   </ui>

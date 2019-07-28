@@ -28,7 +28,7 @@ Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading 
 Set heights using classes like `.form-control-lg` and `.form-control-sm`.
 
 ``` forms-sizing-demo-xml
-<w class="form-control form-control-lg" type="textedit" placeholder=".form-control-lg" />
-<w class="form-control" type="textedit" placeholder="Default input" />
-<w class="form-control form-control-sm" type="textedit" placeholder=".form-control-sm" />
+<textedit class="form-control form-control-lg" placeholder=".form-control-lg" />
+<textedit class="form-control" placeholder="Default input" />
+<textedit class="form-control form-control-sm" placeholder=".form-control-sm" />
 ```

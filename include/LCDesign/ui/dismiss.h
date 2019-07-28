@@ -31,6 +31,6 @@
 #ifndef LCUIEX_DISMISS_H_
 #define LCUIEX_DISMISS_H_
 
-LCUI_API void LCUIEx_InitDismiss( void );
+LCUI_API void LCDesign_InitDismiss( void );
 
 #endif

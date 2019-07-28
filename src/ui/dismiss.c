@@ -28,47 +28,49 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <LCUI_Build.h>
-#include <LCUI/LCUI.h>
+#include <LCUI.h>
 #include <LCUI/gui/widget.h>
-#include <LCUIEx/ui/components.h>
-#include <LCUIEx/ui/dismiss.h>
+#include <LCDesign/ui/components.h>
+#include <LCDesign/ui/dismiss.h>
 
-#define HANDLERS_COUNT 2
+#define HANDLERS_COUNT 3
 
-typedef struct LCUIEx_DismissHandlerRec_ {
+typedef struct LCDesign_DismissHandlerRec_ {
 	const char *name;
-	void( *dismiss )(LCUI_Widget);
-} LCUIEx_DismissHandlerRec, *LCUIEx_DismissHandler;
+	void(*dismiss)(LCUI_Widget);
+} LCDesign_DismissHandlerRec, *LCDesign_DismissHandler;
 
-static struct LCUIEx_DismissModule {
-	LCUIEx_DismissHandlerRec handlers[HANDLERS_COUNT];
+static struct LCDesign_DismissModule {
+	LCDesign_DismissHandlerRec handlers[HANDLERS_COUNT];
 } self = {
 	{
 		{ "modal", Modal_Hide },
-		{ "alert", Widget_Destroy }
+{ "alert", Widget_Destroy },
+{ "toast", Widget_Destroy }
 	}
 };
 
-static void OnClick( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
+static void OnClick(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 {
 	int i;
 	const char *name = NULL;
-	LCUIEx_DismissHandler handler;
-	if( e->target ) {
-		name = Widget_GetAttribute( e->target, "data-dismiss" );
+	LCDesign_DismissHandler handler;
+
+	if (e->target) {
+		name = Widget_GetAttribute(e->target, "data-dismiss");
 	}
-	if( !name ) {
+	if (!name) {
 		return;
 	}
-	for( i = 0; i < HANDLERS_COUNT; ++i ) {
+	for (i = 0; i < HANDLERS_COUNT; ++i) {
 		handler = &self.handlers[i];
-		if( strcmp( handler->name, name ) != 0 ) {
+		if (strcmp(handler->name, name) != 0) {
 			continue;
 		}
-		for( w = e->target->parent; w; w = w->parent ) {
-			if( Widget_CheckType( w, handler->name ) ) {
-				handler->dismiss( w );
+		for (w = e->target->parent; w; w = w->parent) {
+			if (Widget_CheckType(w, handler->name) ||
+			    Widget_HasClass(w, handler->name)) {
+				handler->dismiss(w);
 				break;
 			}
 		}
@@ -76,8 +78,8 @@ static void OnClick( LCUI_Widget w, LCUI_WidgetEvent e, void *arg )
 	}
 }
 
-void LCUIEx_InitDismiss( void )
+void LCDesign_InitDismiss(void)
 {
 	LCUI_Widget root = LCUIWidget_GetRoot();
-	Widget_BindEvent( root, "click", OnClick, NULL, NULL );
+	Widget_BindEvent(root, "click", OnClick, NULL, NULL);
 }

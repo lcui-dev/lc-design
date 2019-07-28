@@ -28,26 +28,25 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <LCUI_Build.h>
-#include <LCUI/LCUI.h>
+#include <LCUI.h>
 #include <LCUI/gui/widget.h>
 #include <LCUI/gui/widget/scrollbar.h>
-#include <LCUIEx/ui/components/modal.h>
+#include <LCDesign/ui/components/modal.h>
 
-typedef struct LCUIEx_ModalRec_ {
+typedef struct LCDesign_ModalRec_ {
 	LCUI_Widget backdrop;
 	LCUI_Widget scrollbar;
 	LCUI_Widget dialog;
-} LCUIEx_ModalRec, *LCUIEx_Modal;
+} LCDesign_ModalRec, *LCDesign_Modal;
 
-static struct LCUIEx_ModalModule {
+static struct LCDesign_ModalModule {
 	LCUI_WidgetPrototype proto;
 } self;
 
 static void Modal_Init( LCUI_Widget w )
 {
-	const size_t size = sizeof( LCUIEx_ModalRec );
-	LCUIEx_Modal modal = Widget_AddData( w, self.proto, size );
+	const size_t size = sizeof( LCDesign_ModalRec );
+	LCDesign_Modal modal = Widget_AddData( w, self.proto, size );
 
 	modal->dialog = NULL;
 	modal->backdrop = NULL;
@@ -58,7 +57,7 @@ static void Modal_Init( LCUI_Widget w )
 
 static void Modal_Destroy( LCUI_Widget w )
 {
-	LCUIEx_Modal modal = Widget_GetData( w, self.proto );
+	LCDesign_Modal modal = Widget_GetData( w, self.proto );
 	if( modal->backdrop ) {
 		Widget_Destroy( modal->backdrop );
 		modal->backdrop = NULL;
@@ -68,7 +67,7 @@ static void Modal_Destroy( LCUI_Widget w )
 static void Modal_InitDialog( LCUI_Widget w )
 {
 	LinkedListNode *node;
-	LCUIEx_Modal modal = Widget_GetData( w, self.proto );
+	LCDesign_Modal modal = Widget_GetData( w, self.proto );
 	for( LinkedList_Each( node, &w->children ) ) {
 		if( Widget_HasClass( node->data, "modal-dialog" ) ) {
 			modal->dialog = node->data;
@@ -83,7 +82,7 @@ static void Modal_InitDialog( LCUI_Widget w )
 void Modal_Show( LCUI_Widget w )
 {
 	LCUI_Widget root = LCUIWidget_GetRoot();
-	LCUIEx_Modal modal = Widget_GetData( w, self.proto );
+	LCDesign_Modal modal = Widget_GetData( w, self.proto );
 	if( !modal->backdrop ) {
 		modal->backdrop = LCUIWidget_New( NULL );
 		Widget_AddClass( modal->backdrop, "modal-backdrop" );
@@ -98,7 +97,7 @@ void Modal_Show( LCUI_Widget w )
 
 void Modal_Hide( LCUI_Widget w )
 {
-	LCUIEx_Modal modal = Widget_GetData( w, self.proto );
+	LCDesign_Modal modal = Widget_GetData( w, self.proto );
 	if( modal->backdrop ) {
 		Widget_Destroy( modal->backdrop );
 		modal->backdrop = NULL;
@@ -106,7 +105,7 @@ void Modal_Hide( LCUI_Widget w )
 	Widget_RemoveClass( w, "show" );
 }
 
-void LCUIEx_InitModal( void )
+void LCDesign_InitModal( void )
 {
 	self.proto = LCUIWidget_NewPrototype( "modal", NULL );
 	self.proto->init = Modal_Init;

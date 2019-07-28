@@ -1,5 +1,5 @@
-﻿/*
- * password.h -- Password input box.
+/*
+ * LCDesign.h -- LCUI.css main header file.
  *
  * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
  *
@@ -28,9 +28,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_PASSWORD_H_
-#define LCUIEX_PASSWORD_H_
+#ifndef LCUIEX_H_
+#define LCUIEX_H_
 
-LCUI_API void LCUIEx_InitPassword( void );
+#include <LCDesign/ui/components.h>
+#include <LCDesign/ui/toggle.h>
+#include <LCDesign/ui/dismiss.h>
+
+LCUI_API void LCDesign_Init(void);
 
 #endif

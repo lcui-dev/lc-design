@@ -1,6 +1,5 @@
 ﻿/*
- * alert.h -- Provide contextual feedback messages for typical user actions
- * with the handful of available and flexible alert messages.
+ * toggle.h -- The widget status toggle controller.
  *
  * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
  *
@@ -29,9 +28,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_ALERT_H_
-#define LCUIEX_ALERT_H_
+#ifndef LCUIEX_TOGGLE_H_
+#define LCUIEX_TOGGLE_H_
 
-LCUI_API void LCUIEx_InitAlert( void );
+LCUI_API void LCDesign_InitToggle( void );
 
 #endif

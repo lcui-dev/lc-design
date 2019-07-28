@@ -1,5 +1,5 @@
 ﻿/*
- * toggle.h -- The widget status toggle controller.
+ * password.h -- Password input box.
  *
  * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
  *
@@ -28,9 +28,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_TOGGLE_H_
-#define LCUIEX_TOGGLE_H_
+#ifndef LCUIEX_PASSWORD_H_
+#define LCUIEX_PASSWORD_H_
 
-LCUI_API void LCUIEx_InitToggle( void );
+LCUI_API void LCDesign_InitPassword(void);
 
 #endif

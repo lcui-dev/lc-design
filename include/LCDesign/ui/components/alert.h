@@ -1,6 +1,6 @@
 ﻿/*
- * label.h -- Label component, Label component, which is used to represents 
- * a caption for an item in a user interface.
+ * alert.h -- Provide contextual feedback messages for typical user actions
+ * with the handful of available and flexible alert messages.
  *
  * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
  *
@@ -29,9 +29,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_LABEL_H_
-#define LCUIEX_LABEL_H_
+#ifndef LCUIEX_ALERT_H_
+#define LCUIEX_ALERT_H_
 
-LCUI_API void LCUIEx_InitLabel( void );
+LCUI_API void LCDesign_InitAlert(void);
 
 #endif

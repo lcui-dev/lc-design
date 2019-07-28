@@ -1,7 +1,8 @@
 ﻿/*
- * icon.h -- Icon component.
+ * label.h -- Label component, Label component, which is used to represents
+ * a caption for an item in a user interface.
  *
- * Copyright (c) 2019, Liu chao <lc-soft@live.cn> All rights reserved.
+ * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -28,11 +29,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_ICON_H_
-#define LCUIEX_ICON_H_
+#ifndef LCUIEX_LABEL_H_
+#define LCUIEX_LABEL_H_
 
-LCUI_API int Icon_SetName(LCUI_Widget w, const char *name);
-
-LCUI_API void LCUIEx_InitIcon( void );
+LCUI_API void LCDesign_InitLabel(void);
 
 #endif

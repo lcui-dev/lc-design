@@ -28,12 +28,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <LCUI_Build.h>
-#include <LCUI/LCUI.h>
+#include <LCUI.h>
 #include <LCUI/gui/widget.h>
 #include <LCUI/gui/widget/textedit.h>
+#include <LCDesign/ui/components/password.h>
 
-static struct LCUIEx_PasswordModule {
+static struct LCDesign_PasswordModule {
 	LCUI_WidgetPrototype proto;
 } self;
 
@@ -43,7 +43,7 @@ static void Password_Init( LCUI_Widget w )
 	TextEdit_SetPasswordChar( w, L'●' );
 }
 
-void LCUIEx_InitPassword( void )
+void LCDesign_InitPassword( void )
 {
 	self.proto = LCUIWidget_NewPrototype( "password", "textedit" );
 	self.proto->init = Password_Init;

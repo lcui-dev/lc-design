@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <lcui-app>
-  <resource type="text/css" src="assets/stylesheets/lcui.css"/>
+  <resource type="text/css" src="assets/stylesheets/lc-design.css"/>
   <resource type="text/css" src="assets/stylesheets/demo.css"/>
   <ui>
     <w class="navbar navbar-dark demo-navbar float-top">
