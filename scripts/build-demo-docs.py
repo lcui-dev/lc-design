@@ -197,6 +197,7 @@ def convert_html(html):
         class_name = ''
         tag_left = html.find(span_head)
         if tag_left == -1:
+            xml += html
             break
         xml += html[:tag_left]
         tag_right = html.find('>')
@@ -253,16 +254,16 @@ class XMLRenderer(m.HtmlRenderer):
 
     def emphasis(self, text):
         return '[b]{}[/b]'.format(text)
-    
+
     def double_emphasis(self, text):
         return '[b]{}[/b]'.format(text)
-    
+
     def triple_emphasis(self, text):
         return '[b]{}[/b]'.format(text)
-    
+
     def paragraph(self, text):
         return '<w type="p">{}</w>\n'.format(text)
-    
+
     def codespan(self, text):
         return '[color=#bd4147][bgcolor=#fdf4f4]'\
                 ' {} [/bgcolor][/color]'.format(text.strip())
