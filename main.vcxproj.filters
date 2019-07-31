@@ -55,6 +55,7 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\ui\components\rate.c">
+    <ClCompile Include="src\ui\components\spinner.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -96,6 +97,9 @@
       <Filter>头文件\LCDesign\components</Filter>
     </ClInclude>
     <ClInclude Include="include\LCDesign\ui\components\rate.h">
+      <Filter>头文件\LCDesign\components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LCDesign\ui\components\spinner.h">
       <Filter>头文件\LCDesign\components</Filter>
     </ClInclude>
   </ItemGroup>

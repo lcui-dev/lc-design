@@ -37,14 +37,14 @@ static struct LCDesign_PasswordModule {
 	LCUI_WidgetPrototype proto;
 } self;
 
-static void Password_Init( LCUI_Widget w )
+static void Password_Init(LCUI_Widget w)
 {
-	self.proto->proto->init( w );
-	TextEdit_SetPasswordChar( w, L'●' );
+	self.proto->proto->init(w);
+	TextEdit_SetPasswordChar(w, L'●');
 }
 
-void LCDesign_InitPassword( void )
+void LCDesign_InitPassword(void)
 {
-	self.proto = LCUIWidget_NewPrototype( "password", "textedit" );
+	self.proto = LCUIWidget_NewPrototype("password", "textedit");
 	self.proto->init = Password_Init;
 }

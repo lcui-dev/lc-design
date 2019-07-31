@@ -1,7 +1,8 @@
 /*
- * components.h -- UI components operation set.
+ * spinner.h -- Spinner, used to indicate the loading state of a component
+ * or page.
  *
- * Copyright (c) 2018-2019, Liu chao <lc-soft@live.cn> All rights reserved.
+ * Copyright (c) 2019, Liu chao <lc-soft@live.cn> All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -28,19 +29,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCDESIGN_UI_COMPONETS_H
-#define LCDESIGN_UI_COMPONETS_H
+#ifndef LCUIEX_SPINNER_H_
+#define LCUIEX_SPINNER_H_
 
-#include <LCUI/gui/widget.h>
-#include <LCDesign/ui/components/alert.h>
-#include <LCDesign/ui/components/label.h>
-#include <LCDesign/ui/components/icon.h>
-#include <LCDesign/ui/components/img.h>
-#include <LCDesign/ui/components/rate.h>
-#include <LCDesign/ui/components/spinner.h>
-#include <LCDesign/ui/components/password.h>
-#include <LCDesign/ui/components/typography.h>
-#include <LCDesign/ui/components/modal.h>
-#include <LCDesign/ui/components/dropdown.h>
+LCUI_API void LCDesign_InitSpinner(void);
 
 #endif
