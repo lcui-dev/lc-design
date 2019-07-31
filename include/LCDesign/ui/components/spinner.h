@@ -1,7 +1,8 @@
-﻿/*
- * password.c -- Password input box.
+/*
+ * spinner.h -- Spinner, used to indicate the loading state of a component
+ * or page.
  *
- * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
+ * Copyright (c) 2019, Liu chao <lc-soft@live.cn> All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -28,23 +29,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <LCUI.h>
-#include <LCUI/gui/widget.h>
-#include <LCUI/gui/widget/textedit.h>
-#include <LCDesign/ui/components/password.h>
+#ifndef LCUIEX_SPINNER_H_
+#define LCUIEX_SPINNER_H_
 
-static struct LCDesign_PasswordModule {
-	LCUI_WidgetPrototype proto;
-} self;
+LCUI_API void LCDesign_InitSpinner(void);
 
-static void Password_Init(LCUI_Widget w)
-{
-	self.proto->proto->init(w);
-	TextEdit_SetPasswordChar(w, L'●');
-}
-
-void LCDesign_InitPassword(void)
-{
-	self.proto = LCUIWidget_NewPrototype("password", "textedit");
-	self.proto->init = Password_Init;
-}
+#endif

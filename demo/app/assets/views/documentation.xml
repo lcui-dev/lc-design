@@ -91,6 +91,11 @@
                 </a>
               </w>
               <w class="nav-item">
+                <a class="nav-link" href="components/spinners.xml" target="demo-content">
+                  Spinners
+                </a>
+              </w>
+              <w class="nav-item">
                 <a class="nav-link" href="components/scrollbar.xml" target="demo-content">
                   Scrollbar
                 </a>

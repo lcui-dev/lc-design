@@ -168,6 +168,7 @@
     <ClCompile Include="src\ui\components\label.c" />
     <ClCompile Include="src\ui\components\modal.c" />
     <ClCompile Include="src\ui\components\password.c" />
+    <ClCompile Include="src\ui\components\spinner.c" />
     <ClCompile Include="src\ui\components\typography.c" />
     <ClCompile Include="src\ui\dismiss.c" />
     <ClCompile Include="src\ui\toggle.c" />
@@ -182,6 +183,7 @@
     <ClInclude Include="include\LCDesign\ui\components\label.h" />
     <ClInclude Include="include\LCDesign\ui\components\modal.h" />
     <ClInclude Include="include\LCDesign\ui\components\password.h" />
+    <ClInclude Include="include\LCDesign\ui\components\spinner.h" />
     <ClInclude Include="include\LCDesign\ui\components\typography.h" />
     <ClInclude Include="include\LCDesign\ui\dismiss.h" />
     <ClInclude Include="include\LCDesign\ui\toggle.h" />

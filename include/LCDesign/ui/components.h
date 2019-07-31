@@ -36,6 +36,7 @@
 #include <LCDesign/ui/components/label.h>
 #include <LCDesign/ui/components/icon.h>
 #include <LCDesign/ui/components/img.h>
+#include <LCDesign/ui/components/spinner.h>
 #include <LCDesign/ui/components/password.h>
 #include <LCDesign/ui/components/typography.h>
 #include <LCDesign/ui/components/modal.h>
