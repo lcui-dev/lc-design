@@ -28,8 +28,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_PASSWORD_H_
-#define LCUIEX_PASSWORD_H_
+#ifndef LCDESIGN_PASSWORD_H_
+#define LCDESIGN_PASSWORD_H_
 
 LCUI_API void LCDesign_InitPassword(void);
 

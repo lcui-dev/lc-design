@@ -28,8 +28,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_TOGGLE_H_
-#define LCUIEX_TOGGLE_H_
+#ifndef LCDESIGN_TOGGLE_H_
+#define LCDESIGN_TOGGLE_H_
 
 LCUI_API void LCDesign_InitToggle( void );
 

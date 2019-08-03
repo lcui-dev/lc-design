@@ -28,8 +28,8 @@
 * POSSIBILITY OF SUCH DAMAGE.
 */
 
-#ifndef LCUIEX_IMG_H_
-#define LCUIEX_IMG_H_
+#ifndef LCDESIGN_IMG_H_
+#define LCDESIGN_IMG_H_
 
 LCUI_API void LCDesign_InitImg(void);
 

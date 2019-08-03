@@ -29,8 +29,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_DROPDOWN_H_
-#define LCUIEX_DROPDOWN_H_
+#ifndef LCDESIGN_DROPDOWN_H_
+#define LCDESIGN_DROPDOWN_H_
 
 LCUI_API void LCDesign_InitDropdown( void );
 

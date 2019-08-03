@@ -28,8 +28,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_ICON_H_
-#define LCUIEX_ICON_H_
+#ifndef LCDESIGN_ICON_H_
+#define LCDESIGN_ICON_H_
 
 LCUI_API int Icon_SetName(LCUI_Widget w, const char *name);
 

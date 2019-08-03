@@ -28,8 +28,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_MODAL_H_
-#define LCUIEX_MODAL_H_
+#ifndef LCDESIGN_MODAL_H_
+#define LCDESIGN_MODAL_H_
 
 LCUI_API void LCDesign_InitModal(void);
 

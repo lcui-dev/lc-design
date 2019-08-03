@@ -28,8 +28,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_DISMISS_H_
-#define LCUIEX_DISMISS_H_
+#ifndef LCDESIGN_DISMISS_H_
+#define LCDESIGN_DISMISS_H_
 
 LCUI_API void LCDesign_InitDismiss( void );
 

@@ -29,8 +29,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_LABEL_H_
-#define LCUIEX_LABEL_H_
+#ifndef LCDESIGN_LABEL_H_
+#define LCDESIGN_LABEL_H_
 
 LCUI_API void LCDesign_InitLabel(void);
 

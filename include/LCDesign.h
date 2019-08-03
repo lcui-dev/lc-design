@@ -28,8 +28,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_H_
-#define LCUIEX_H_
+#ifndef LCDESIGN_H_
+#define LCDESIGN_H_
 
 #include <LCDesign/ui/components.h>
 #include <LCDesign/ui/toggle.h>

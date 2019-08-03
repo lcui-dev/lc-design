@@ -28,8 +28,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_TYPOGRAPHY_H_
-#define LCUIEX_TYPOGRAPHY_H_
+#ifndef LCDESIGN_TYPOGRAPHY_H_
+#define LCDESIGN_TYPOGRAPHY_H_
 
 LCUI_API void LCDesign_InitTypograhy(void);
 
