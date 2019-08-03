@@ -1,0 +1,15 @@
+rate {
+  display: inline-block;
+
+  icon,
+  span {
+    font-size: $rate-star-size;
+    display: inline-block;
+    color: $rate-star-color;
+    margin-right: map-get($spacers, 2);
+  }
+}
+
+.rate-star-void {
+  color: $rate-star-void-color;
+}

@@ -37,6 +37,7 @@ void LCDesign_Init(void)
 	LCDesign_InitLabel();
 	LCDesign_InitIcon();
 	LCDesign_InitImg();
+	LCDesign_InitRate();
 	LCDesign_InitPassword();
 	LCDesign_InitTypograhy();
 	LCDesign_InitModal();

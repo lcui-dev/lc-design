@@ -81,6 +81,11 @@
                 </a>
               </w>
               <w class="nav-item">
+                <a class="nav-link" href="components/rate.xml" target="demo-content">
+                  Rate
+                </a>
+              </w>
+              <w class="nav-item">
                 <a class="nav-link" href="components/modal.xml" target="demo-content">
                   Modal
                 </a>

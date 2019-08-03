@@ -28,14 +28,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_UI_COMPONETS_H
-#define LCUIEX_UI_COMPONETS_H
+#ifndef LCDESIGN_UI_COMPONETS_H
+#define LCDESIGN_UI_COMPONETS_H
 
 #include <LCUI/gui/widget.h>
 #include <LCDesign/ui/components/alert.h>
 #include <LCDesign/ui/components/label.h>
 #include <LCDesign/ui/components/icon.h>
 #include <LCDesign/ui/components/img.h>
+#include <LCDesign/ui/components/rate.h>
 #include <LCDesign/ui/components/password.h>
 #include <LCDesign/ui/components/typography.h>
 #include <LCDesign/ui/components/modal.h>

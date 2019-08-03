@@ -54,6 +54,9 @@
     <ClCompile Include="src\ui\components\img.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\ui\components\rate.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LCDesign.h">
@@ -90,6 +93,9 @@
       <Filter>头文件\LCDesign</Filter>
     </ClInclude>
     <ClInclude Include="include\LCDesign\ui\components\img.h">
+      <Filter>头文件\LCDesign\components</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LCDesign\ui\components\rate.h">
       <Filter>头文件\LCDesign\components</Filter>
     </ClInclude>
   </ItemGroup>
