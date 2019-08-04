@@ -91,6 +91,11 @@
                 </a>
               </w>
               <w class="nav-item">
+                <a class="nav-link" href="components/tooltips.xml" target="demo-content">
+                  Tooltips
+                </a>
+              </w>
+              <w class="nav-item">
                 <a class="nav-link" href="components/toasts.xml" target="demo-content">
                   Toasts
                 </a>

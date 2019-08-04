@@ -388,6 +388,23 @@ $dropdown-item-padding-x:           rem2px(1.5) !default;
 $dropdown-header-color:             $gray-600 !default;
 
 
+// Tooltips
+
+$tooltip-font-size:                 $font-size-sm !default;
+$tooltip-max-width:                 200px !default;
+$tooltip-color:                     $white !default;
+$tooltip-bg:                        $black !default;
+$tooltip-border-radius:             $border-radius !default;
+$tooltip-opacity:                   .9 !default;
+$tooltip-padding-y:                 rem2px(.25) !default;
+$tooltip-padding-x:                 rem2px(.5) !default;
+$tooltip-margin:                    0 !default;
+
+$tooltip-arrow-width:               rem2px(.8) !default;
+$tooltip-arrow-height:              rem2px(.4) !default;
+$tooltip-arrow-color:               $tooltip-bg !default;
+
+
 // Toasts
 
 $toast-max-width:                   350px !default;
@@ -413,6 +430,7 @@ $toast-header-border-color:         rgba(0, 0, 0, .05) !default;
 $zindex-dropdown:                   1000 !default;
 $zindex-modal-backdrop:             1040 !default;
 $zindex-modal:                      1050 !default;
+$zindex-tooltip:                    1070 !default;
 
 
 // Navs

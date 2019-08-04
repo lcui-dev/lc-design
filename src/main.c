@@ -38,6 +38,7 @@ void LCDesign_Init(void)
 	LCDesign_InitIcon();
 	LCDesign_InitImg();
 	LCDesign_InitRate();
+	LCDesign_InitTooltip();
 	LCDesign_InitSpinner();
 	LCDesign_InitPassword();
 	LCDesign_InitTypograhy();

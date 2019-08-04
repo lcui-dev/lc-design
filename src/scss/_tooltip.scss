@@ -1,0 +1,94 @@
+// Base class
+.tooltip {
+  position: absolute;
+  z-index: $zindex-tooltip;
+  display: block;
+  margin: $tooltip-margin;
+  font-size: $tooltip-font-size;
+  opacity: 0;
+  pointer-events: none;
+
+  &.show { opacity: $tooltip-opacity; }
+
+  .tooltip-arrow {
+    position: absolute;
+    display: block;
+    width: $tooltip-arrow-width;
+    height: $tooltip-arrow-height;
+    border-color: transparent;
+  }
+}
+
+.tooltip-top {
+  padding: $tooltip-arrow-height 0;
+
+  .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -$tooltip-arrow-width / 2;
+    border-top-width: $tooltip-arrow-height;
+    border-right-width: $tooltip-arrow-width / 2;
+    border-left-width: $tooltip-arrow-width / 2;
+    border-bottom-width: 0;
+    border-top-color: $tooltip-arrow-color;
+  }
+}
+
+.tooltip-right {
+  padding: 0 $tooltip-arrow-height;
+
+  .tooltip-arrow {
+    left: 0;
+    top: 50%;
+    margin-top: -$tooltip-arrow-width / 2;
+    width: $tooltip-arrow-height;
+    height: $tooltip-arrow-width;
+    border-top-width: $tooltip-arrow-width / 2;
+    border-right-width: $tooltip-arrow-height;
+    border-bottom-width: $tooltip-arrow-width / 2;
+    border-left-width: 0;
+    border-right-color: $tooltip-arrow-color;
+  }
+}
+
+.tooltip-bottom {
+  padding: $tooltip-arrow-height 0;
+
+  .tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -$tooltip-arrow-width / 2;
+    border-top-width: 0;
+    border-right-width: $tooltip-arrow-width / 2;
+    border-bottom-width: $tooltip-arrow-height;
+    border-left-width: $tooltip-arrow-width / 2;
+    border-bottom-color: $tooltip-arrow-color;
+  }
+}
+
+.tooltip-left {
+  padding: 0 $tooltip-arrow-height;
+
+  .tooltip-arrow {
+    top: 50%;
+    right: 0;
+    width: $tooltip-arrow-height;
+    height: $tooltip-arrow-width;
+    margin-top: -$tooltip-arrow-width / 2;
+    border-top-width: $tooltip-arrow-width / 2;
+    border-right-width: 0;
+    border-bottom-width: $tooltip-arrow-width / 2;
+    border-left-width: $tooltip-arrow-height;
+    border-left-color: $tooltip-arrow-color;
+  }
+}
+
+// Wrapper for the tooltip content
+.tooltip-inner {
+  max-width: $tooltip-max-width;
+  padding: $tooltip-padding-y $tooltip-padding-x;
+  color: $tooltip-color;
+  text-align: center;
+  background-color: $tooltip-bg;
+  @include border-radius($tooltip-border-radius);
+}

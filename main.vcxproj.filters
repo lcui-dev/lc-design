@@ -1,106 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="头文件\LCDesign">
-      <UniqueIdentifier>{77a88f5c-5e32-4f96-823c-71ef7b7eaa5e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\LCDesign\components">
-      <UniqueIdentifier>{147f2b02-5a02-4e85-9225-f945930f2cfa}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\ui\components\alert.c" />
+    <ClCompile Include="src\ui\components\dropdown.c" />
+    <ClCompile Include="src\ui\components\icon.c" />
+    <ClCompile Include="src\ui\components\img.c" />
+    <ClCompile Include="src\ui\components\label.c" />
+    <ClCompile Include="src\ui\components\modal.c" />
+    <ClCompile Include="src\ui\components\password.c" />
+    <ClCompile Include="src\ui\components\rate.c" />
+    <ClCompile Include="src\ui\components\spinner.c" />
+    <ClCompile Include="src\ui\components\typography.c" />
+    <ClCompile Include="src\ui\dismiss.c" />
+    <ClCompile Include="src\ui\toggle.c" />
+    <ClCompile Include="src\ui\components\tooltip.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\components\typography.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\components\dropdown.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\components\label.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\components\password.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\components\alert.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\components\modal.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\toggle.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\dismiss.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\components\icon.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\components\img.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\components\rate.c">
-    <ClCompile Include="src\ui\components\spinner.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="include\LCDesign.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\components\alert.h">
-      <Filter>头文件\LCDesign\components</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\components\dropdown.h">
-      <Filter>头文件\LCDesign\components</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\components\icon.h">
-      <Filter>头文件\LCDesign\components</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\components\label.h">
-      <Filter>头文件\LCDesign\components</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\components\modal.h">
-      <Filter>头文件\LCDesign\components</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\components\password.h">
-      <Filter>头文件\LCDesign\components</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\components\typography.h">
-      <Filter>头文件\LCDesign\components</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\components.h">
-      <Filter>头文件\LCDesign</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\dismiss.h">
-      <Filter>头文件\LCDesign</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\toggle.h">
-      <Filter>头文件\LCDesign</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\components\img.h">
-      <Filter>头文件\LCDesign\components</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\components\rate.h">
-      <Filter>头文件\LCDesign\components</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LCDesign\ui\components\spinner.h">
-      <Filter>头文件\LCDesign\components</Filter>
-    </ClInclude>
+    <ClInclude Include="include\LCDesign.h" />
+    <ClInclude Include="include\LCDesign\ui\components.h" />
+    <ClInclude Include="include\LCDesign\ui\components\alert.h" />
+    <ClInclude Include="include\LCDesign\ui\components\dropdown.h" />
+    <ClInclude Include="include\LCDesign\ui\components\icon.h" />
+    <ClInclude Include="include\LCDesign\ui\components\img.h" />
+    <ClInclude Include="include\LCDesign\ui\components\label.h" />
+    <ClInclude Include="include\LCDesign\ui\components\modal.h" />
+    <ClInclude Include="include\LCDesign\ui\components\password.h" />
+    <ClInclude Include="include\LCDesign\ui\components\rate.h" />
+    <ClInclude Include="include\LCDesign\ui\components\spinner.h" />
+    <ClInclude Include="include\LCDesign\ui\components\typography.h" />
+    <ClInclude Include="include\LCDesign\ui\dismiss.h" />
+    <ClInclude Include="include\LCDesign\ui\toggle.h" />
+    <ClInclude Include="include\LCDesign\ui\components\tooltip.h" />
   </ItemGroup>
 </Project>
