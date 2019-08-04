@@ -39,10 +39,7 @@
 #include <LCUI/gui/css_fontstyle.h>
 
 #define M_PI 3.14159265358979323846
-typedef enum SpinnerType {
-	SPINNER_DEFAULT,
-	SPINNER_RING
-} SpinnerType;
+typedef enum SpinnerType { SPINNER_DEFAULT, SPINNER_RING } SpinnerType;
 
 typedef struct SpinnerRec_ {
 	int size;
@@ -114,6 +111,7 @@ static void Spinner_Render(LCUI_Widget w)
 	}
 	ctx->clearRect(ctx, 0, 0, ctx->width, ctx->height);
 	if (ctx->width < spinner->size || ctx->height < spinner->size) {
+		ctx->release(ctx);
 		return;
 	}
 	for (y = 0; y < spinner->size; ++y) {
@@ -137,6 +135,7 @@ static void Spinner_Render(LCUI_Widget w)
 		}
 	}
 	Widget_InvalidateArea(w, NULL, SV_CONTENT_BOX);
+	ctx->release(ctx);
 }
 
 static Spinner_OnFrame(LCUI_Widget w)
@@ -155,7 +154,8 @@ static Spinner_OnFrame(LCUI_Widget w)
 
 static void Spinner_OnInit(LCUI_Widget w)
 {
-	Spinner spinner = Widget_AddData(w, spinner_module.proto, sizeof(SpinnerRec));
+	Spinner spinner =
+	    Widget_AddData(w, spinner_module.proto, sizeof(SpinnerRec));
 
 	spinner_module.proto->proto->init(w);
 	spinner->line_width = 2;
@@ -166,7 +166,8 @@ static void Spinner_OnInit(LCUI_Widget w)
 	spinner->start = 360;
 	spinner->duration = 750;
 	spinner->start_time = clock();
-	spinner->timer = LCUI_SetInterval(LCUI_MAX_FRAME_MSEC, Spinner_OnFrame, w);
+	spinner->timer =
+	    LCUI_SetInterval(LCUI_MAX_FRAME_MSEC, Spinner_OnFrame, w);
 }
 
 static void Spinner_OnDestroy(LCUI_Widget w)

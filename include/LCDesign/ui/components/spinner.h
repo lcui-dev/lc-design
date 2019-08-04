@@ -29,8 +29,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCUIEX_SPINNER_H_
-#define LCUIEX_SPINNER_H_
+#ifndef LCDESIGN_SPINNER_H_
+#define LCDESIGN_SPINNER_H_
 
 LCUI_API void LCDesign_InitSpinner(void);
 
