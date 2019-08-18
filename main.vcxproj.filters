@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="src\main.c" />
@@ -15,6 +15,7 @@
     <ClCompile Include="src\ui\dismiss.c" />
     <ClCompile Include="src\ui\toggle.c" />
     <ClCompile Include="src\ui\components\tooltip.c" />
+    <ClCompile Include="src\ui\components\checkbox.c" />
     <ClCompile Include="src\ui\components\switch.c" />
   </ItemGroup>
   <ItemGroup>
@@ -33,6 +34,7 @@
     <ClInclude Include="include\LCDesign\ui\dismiss.h" />
     <ClInclude Include="include\LCDesign\ui\toggle.h" />
     <ClInclude Include="include\LCDesign\ui\components\tooltip.h" />
+    <ClInclude Include="include\LCDesign\ui\components\checkbox.h" />
     <ClInclude Include="include\LCDesign\ui\components\switch.h" />
   </ItemGroup>
 </Project>

@@ -576,3 +576,13 @@ $switch-bar-width: $switch-icon-width * 2 + $switch-slider-width;
 $switch-width: $switch-icon-width + $switch-slider-width + $switch-border-width * 2;
 $switch-checked-color: $primary;
 $switch-color: $text-muted;
+
+
+// CheckBox
+
+$checkbox-size: $font-size-base + 2px;
+$checkbox-border-width: 1px;
+$checkbox-border-color: $border-color;
+$checkbox-checked-color: $primary;
+$checkbox-disabled-bg: $gray-100;
+$checkbox-disabled-color: $gray-600;

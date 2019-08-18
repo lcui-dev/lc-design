@@ -66,6 +66,11 @@
                 </a>
               </w>
               <w class="nav-item">
+                <a class="nav-link" href="components/checkbox.xml" target="demo-content">
+                  Checkbox
+                </a>
+              </w>
+              <w class="nav-item">
                 <a class="nav-link" href="components/dropdowns.xml" target="demo-content">
                   Dropdowns
                 </a>

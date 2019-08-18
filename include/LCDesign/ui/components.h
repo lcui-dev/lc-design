@@ -35,6 +35,7 @@
 #include <LCDesign/ui/components/alert.h>
 #include <LCDesign/ui/components/label.h>
 #include <LCDesign/ui/components/icon.h>
+#include <LCDesign/ui/components/checkbox.h>
 #include <LCDesign/ui/components/img.h>
 #include <LCDesign/ui/components/rate.h>
 #include <LCDesign/ui/components/spinner.h>

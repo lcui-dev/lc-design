@@ -1,7 +1,8 @@
-/*
- * main.c -- LCUI.css main source file.
+﻿/*
+ * checkbox.h -- Checkbox, used to make multiple selections in a set of
+ * options, or mark the status of an option.
  *
- * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
+ * Copyright (c) 2019, Liu chao <lc-soft@live.cn> All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -28,24 +29,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <LCUI.h>
-#include <LCDesign.h>
+#ifndef LCDESIGN_CHECKBOX_H_
+#define LCDESIGN_CHECKBOX_H_
 
-void LCDesign_Init(void)
-{
-	LCDesign_InitAlert();
-	LCDesign_InitCheckBox();
-	LCDesign_InitLabel();
-	LCDesign_InitIcon();
-	LCDesign_InitImg();
-	LCDesign_InitRate();
-	LCDesign_InitTooltip();
-	LCDesign_InitSpinner();
-	LCDesign_InitSwitch();
-	LCDesign_InitPassword();
-	LCDesign_InitTypograhy();
-	LCDesign_InitModal();
-	LCDesign_InitDropdown();
-	LCDesign_InitToggle();
-	LCDesign_InitDismiss();
-}
+LCUI_API void LCDesign_InitCheckBox(void);
+
+LCUI_API LCUI_BOOL CheckBox_IsChecked(LCUI_Widget w);
+
+LCUI_API void CheckBox_SetChecked(LCUI_Widget w, LCUI_BOOL checked);
+
+#endif
