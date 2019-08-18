@@ -40,6 +40,7 @@ void LCDesign_Init(void)
 	LCDesign_InitRate();
 	LCDesign_InitTooltip();
 	LCDesign_InitSpinner();
+	LCDesign_InitSwitch();
 	LCDesign_InitPassword();
 	LCDesign_InitTypograhy();
 	LCDesign_InitModal();

@@ -562,3 +562,17 @@ $close-color:                       $black !default;
 $rate-star-size:                    $font-size-base * 1.5 !default;
 $rate-star-color:                   $orange !default;
 $rate-star-void-color:              $gray-400 !default;
+
+
+// Switch
+
+$switch-height: 20px;
+$switch-border-width: 2px;
+$switch-margin-left: $font-size-base / 2;
+$switch-slider-width: $switch-height - $switch-border-width * 2;
+$switch-icon-width: $switch-height + $switch-border-width * 2;
+$switch-icon-height: $switch-height - $switch-border-width * 2;
+$switch-bar-width: $switch-icon-width * 2 + $switch-slider-width;
+$switch-width: $switch-icon-width + $switch-slider-width + $switch-border-width * 2;
+$switch-checked-color: $primary;
+$switch-color: $text-muted;

@@ -1,4 +1,4 @@
-/*
+﻿/*
  * spinner.c -- Spinner, used to indicate the loading state of a component
  * or page.
  *

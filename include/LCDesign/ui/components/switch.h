@@ -1,7 +1,8 @@
-/*
- * components.h -- UI components operation set.
+﻿/*
+ * switch.h -- Switch, used to represent the switching between two states or
+ * on-off state.
  *
- * Copyright (c) 2018-2019, Liu chao <lc-soft@live.cn> All rights reserved.
+ * Copyright (c) 2019, Liu chao <lc-soft@live.cn> All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -28,21 +29,21 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCDESIGN_UI_COMPONETS_H
-#define LCDESIGN_UI_COMPONETS_H
+#ifndef LCDESIGN_SWITCH_H_
+#define LCDESIGN_SWITCH_H_
 
-#include <LCUI/gui/widget.h>
-#include <LCDesign/ui/components/alert.h>
-#include <LCDesign/ui/components/label.h>
-#include <LCDesign/ui/components/icon.h>
-#include <LCDesign/ui/components/img.h>
-#include <LCDesign/ui/components/rate.h>
-#include <LCDesign/ui/components/spinner.h>
-#include <LCDesign/ui/components/switch.h>
-#include <LCDesign/ui/components/tooltip.h>
-#include <LCDesign/ui/components/password.h>
-#include <LCDesign/ui/components/typography.h>
-#include <LCDesign/ui/components/modal.h>
-#include <LCDesign/ui/components/dropdown.h>
+LCUI_API void LCDesign_InitSwitch(void);
+
+LCUI_API LCUI_BOOL Switch_IsChecked(LCUI_Widget w);
+
+LCUI_API void Switch_SetChecked(LCUI_Widget w, LCUI_BOOL checked);
+
+LCUI_API void Switch_SetCheckedText(LCUI_Widget w, const char *text);
+
+LCUI_API void Switch_SetUncheckedText(LCUI_Widget w, const char *text);
+
+LCUI_API void Switch_SetCheckedIcon(LCUI_Widget w, const char *icon_name);
+
+LCUI_API void Switch_SetUncheckedIcon(LCUI_Widget w, const char *icon_name);
 
 #endif

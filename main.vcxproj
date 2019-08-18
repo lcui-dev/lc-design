@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -170,6 +170,7 @@
     <ClCompile Include="src\ui\components\password.c" />
     <ClCompile Include="src\ui\components\rate.c" />
     <ClCompile Include="src\ui\components\spinner.c" />
+    <ClCompile Include="src\ui\components\switch.c" />
     <ClCompile Include="src\ui\components\tooltip.c" />
     <ClCompile Include="src\ui\components\typography.c" />
     <ClCompile Include="src\ui\dismiss.c" />
@@ -187,6 +188,7 @@
     <ClInclude Include="include\LCDesign\ui\components\password.h" />
     <ClInclude Include="include\LCDesign\ui\components\rate.h" />
     <ClInclude Include="include\LCDesign\ui\components\spinner.h" />
+    <ClInclude Include="include\LCDesign\ui\components\switch.h" />
     <ClInclude Include="include\LCDesign\ui\components\tooltip.h" />
     <ClInclude Include="include\LCDesign\ui\components\typography.h" />
     <ClInclude Include="include\LCDesign\ui\dismiss.h" />
