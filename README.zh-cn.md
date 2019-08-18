@@ -3,12 +3,12 @@
     <img src="https://lc-soft.io/static/images/logo-lcui-css.png" width=72 height=72>
   </a>
 
-  <h3 align="center">LCUI.css</h3>
+  <h3 align="center">LCDesign</h3>
 
   <p align="center">
     一个适用于 LCUI 应用程序的 UI 组件库
     <br>
-    <a href="docs"><strong>浏览 LCUI.css 的文档 &raquo;</strong></a>
+    <a href="docs"><strong>浏览 LCDesign 的文档 &raquo;</strong></a>
   </p>
 </p>
 
@@ -16,19 +16,51 @@
 
 ## 介绍
 
-LCUI.css 是一个 UI 组件库，主要用于构建 [LCUI](https://github.com/lc-soft/LCUI) 应用程序，它提供了用于文本排版和常用元素的基本样式、简单的布局系统、CSS 组件和实用工具。它的 CSS 代码基于 [Bootstrap](https://github.com/twbs/bootstrap)，其用法和 Bootstrap 大致一样，但受限于 LCUI 现有特性以及对 CSS 标准的支持程度，并未完全实现 Boostrap 中的功能。
+LCDesign (LC's Design) 是一个专为 [LCUI](https://github.com/lc-soft/LCUI) 设计的 UI 组件库，它提供了用于文本排版和常用元素的基本样式、简单的布局系统、CSS 组件和实用工具。它的 CSS 代码基于 [Bootstrap](https://github.com/twbs/bootstrap)，其用法和 Bootstrap 大致一样，但需要注意的是，受限于 LCUI 现有特性以及对 CSS 标准的支持程度，并未完全实现 Boostrap 中的功能。
 
-![LCUI.css](https://lcui.lc-soft.io/static/images/screenshot-lcui-css.gif)
+![LC Design](https://lcui.lc-soft.io/static/images/screenshot-lcui-css.gif)
+
+## 组件
+
+- [Alert 警告框](docs/components/alerts.md)
+- [Button 按钮](docs/components/buttonss.md)
+- [Checkbox 多选框](docs/components/checkbox.md)
+- [Dropdown 下拉框](docs/components/dropdowns.md)
+- [Icon 图标](docs/content/icons.md)
+- [Modal 模态框](docs/components/modal.md)
+- [Rate 评分](docs/components/rate.md)
+- [Spinner 加载中](docs/components/spinners.md)
+- [Switch 开关](docs/components/switch.md)
+- [Toast 提示弹框](docs/components/toasts.md)
+- [Tooltip 提示](docs/components/tooltips.md)
+- [Typography 排版](docs/content/typography.md)
+  - h1, h2, h3, h4, h5, h6
+  - p
+  - span
+  - blockquote
+  - cite
+  - ...
+
+## 快速开始
+
+有以下方式可以选择:
+
+- [下载最新发行版](https://github.com/lc-ui/lc-design/releases)
+- 用 [lcpkg](https://github.com/lc-soft/lcpkg) 安装: `lcpkg install github.com/lc-ui/lc-design`
+
+如果你使用的不是 Windows 系统，请继续阅读下面的内容。
 
 ## 构建
 
+LCDesign 目前没有适用于 Linux 二进制包，你需要手动下载源码并构建它。
+
 ### 先决条件
 
-构建 LCUI.css 需要如下的依赖项：
+构建 LCDesign 需要如下的依赖项：
 
-* [Xmake](http://xmake.io) - 一个构建工具，用于编译 C 源代码
-* [NodeJS](https://nodejs.org) - 一个 JavaScript 运行时环境，用于运行 JavaScript 写的构建工具
-* [Python](https://www.python.org/) - 一个环境，用于运行 Python 写的构建工具
+- [Xmake](http://xmake.io) - 一个构建工具，用于编译 C 源代码
+- [NodeJS](https://nodejs.org) - 一个 JavaScript 运行时环境，用于运行 JavaScript 写的构建工具
+- [Python](https://www.python.org/) - 一个环境，用于运行 Python 写的构建工具
 
 在安装完它们后，你需要运行以下命令来安装相关依赖包：
 
@@ -77,9 +109,15 @@ yourapp/
 └── ...
 ```
 
+## 设计参考
+
+- [Bootstrap](https://github.com/twbs/bootstrap)
+- [Ant Design](https://github.com/ant-design/ant-design)
+- [Element UI](https://github.com/ElemeFE/element)
+
 ## 作者
 
-**Liu Chao**
+**Liu Chao:**
 
 - <https://lc-soft.io>
 - <https://github.com/lc-soft>

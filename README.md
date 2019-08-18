@@ -3,12 +3,12 @@
     <img src="https://lc-soft.io/static/images/logo-lcui-css.png" width=72 height=72>
   </a>
 
-  <h3 align="center">LCUI.css</h3>
+  <h3 align="center">LCDesign</h3>
 
   <p align="center">
     A UI component framework for building LCUI application.
     <br>
-    <a href="docs"><strong>Explore LCUI.css docs &raquo;</strong></a>
+    <a href="docs"><strong>Explore LCDesign docs &raquo;</strong></a>
   </p>
 </p>
 
@@ -16,21 +16,53 @@
 
 ## Introduction
 
-LCUI.css is a UI component framework for building [LCUI](https://github.com/lc-soft/LCUI) application, it provides basic styles for typography and elements, simple layout system, CSS components and utilities. Its CSS code is based [Bootstrap](https://github.com/twbs/bootstrap), so its usage is basically the same as Boostrap.
+LCDesign (LC's Design) is a UI component framework for building [LCUI](https://github.com/lc-soft/LCUI) application, it provides basic styles for typography and elements, simple layout system, CSS components and utilities. Its CSS code is based [Bootstrap](https://github.com/twbs/bootstrap), so its usage is basically the same as Boostrap.
 
 [中文版说明文档](README.zh-cn.md)
 
-![LCUI.css](https://lcui.lc-soft.io/static/images/screenshot-lcui-css.gif)
+![LC's Design](https://lcui.lc-soft.io/static/images/screenshot-lcui-css.gif)
+
+## Components
+
+- [Alert](docs/components/alerts.md)
+- [Button](docs/components/buttonss.md)
+- [Checkbox](docs/components/checkbox.md)
+- [Dropdown](docs/components/dropdowns.md)
+- [Icon](docs/content/icons.md)
+- [Modal](docs/components/modal.md)
+- [Rate](docs/components/rate.md)
+- [Spinner](docs/components/spinners.md)
+- [Switch](docs/components/switch.md)
+- [Toast](docs/components/toasts.md)
+- [Tooltip](docs/components/tooltips.md)
+- [Typography](docs/content/typography.md)
+  - h1, h2, h3, h4, h5, h6
+  - p
+  - span
+  - blockquote
+  - cite
+  - ...
+
+## Quick start
+
+Several quick start options are available:
+
+- [Download the latest release.](https://github.com/lc-ui/lc-design/releases)
+- Install with [lcpkg](https://github.com/lc-soft/lcpkg): `lcpkg install github.com/lc-ui/lc-design`
+
+If your operating system is not Windows, please continue reading below.
 
 ## Build
 
+LCDesign does not have a binary package for Linux, you need to manually download the source code and build it.
+
 ### Prerequisites
 
-Building LCUI.css has the following dependencies:
+Building LCDesign has the following dependencies:
 
-* [Xmake](http://xmake.io) - a build tool for compiling C source code
-* [NodeJS](https://nodejs.org) - a JavaScript runtime to run build tools
-* [Python](https://www.python.org/) - a environment for run python build tools
+- [Xmake](http://xmake.io) - a build tool for compiling C source code
+- [NodeJS](https://nodejs.org) - a JavaScript runtime to run build tools
+- [Python](https://www.python.org/) - a environment for run python build tools
 
 After installing them, you need to run the following command to install the other dependencies:
 
@@ -79,9 +111,15 @@ yourapp/
 └── ...
 ```
 
+## Design reference
+
+- [Bootstrap](https://github.com/twbs/bootstrap)
+- [Ant Design](https://github.com/ant-design/ant-design)
+- [Element UI](https://github.com/ElemeFE/element)
+
 ## Creator
 
-**Liu Chao**
+**Liu Chao:**
 
 - <https://lc-soft.io>
 - <https://github.com/lc-soft>
