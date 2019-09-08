@@ -568,9 +568,10 @@ $rate-star-void-color:              $gray-400 !default;
 
 $switch-height: 20px;
 $switch-border-width: 2px;
+$switch-border-radius: $switch-height / 2;
 $switch-margin-left: $font-size-base / 2;
 $switch-slider-width: $switch-height - $switch-border-width * 2;
-$switch-icon-width: $switch-height + $switch-border-width * 2;
+$switch-icon-width: $switch-height;
 $switch-icon-height: $switch-height - $switch-border-width * 2;
 $switch-bar-width: $switch-icon-width * 2 + $switch-slider-width;
 $switch-width: $switch-icon-width + $switch-slider-width + $switch-border-width * 2;
@@ -586,3 +587,15 @@ $checkbox-border-color: $border-color;
 $checkbox-checked-color: $primary;
 $checkbox-disabled-bg: $gray-100;
 $checkbox-disabled-color: $gray-600;
+
+
+// Radio
+
+$radio-size: $font-size-base + 2px;
+$radio-border-width: 1px;
+$radio-border-color: $border-color;
+$radio-inner-icon-margin: 3px;
+$radio-inner-icon-size: $radio-size - $radio-border-width * 2 - $radio-inner-icon-margin * 2;
+$radio-checked-color: $primary;
+$radio-disabled-bg: $gray-100;
+$radio-disabled-color: $gray-600;

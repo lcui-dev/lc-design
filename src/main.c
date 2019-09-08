@@ -35,6 +35,8 @@ void LCDesign_Init(void)
 {
 	LCDesign_InitAlert();
 	LCDesign_InitCheckBox();
+	LCDesign_InitRadio();
+	LCDesign_InitRadioGroup();
 	LCDesign_InitLabel();
 	LCDesign_InitIcon();
 	LCDesign_InitImg();

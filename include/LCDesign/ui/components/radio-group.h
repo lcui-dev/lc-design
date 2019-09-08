@@ -1,7 +1,7 @@
-/*
- * components.h -- UI components operation set.
+﻿/*
+ * radio-group.h -- Radio group
  *
- * Copyright (c) 2018-2019, Liu chao <lc-soft@live.cn> All rights reserved.
+ * Copyright (c) 2019, Liu chao <lc-soft@live.cn> All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -28,24 +28,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCDESIGN_UI_COMPONETS_H
-#define LCDESIGN_UI_COMPONETS_H
+#ifndef LCDESIGN_RADIO_GROUP_H_
+#define LCDESIGN_RADIO_GROUP_H_
 
-#include <LCUI/gui/widget.h>
-#include <LCDesign/ui/components/alert.h>
-#include <LCDesign/ui/components/label.h>
-#include <LCDesign/ui/components/icon.h>
-#include <LCDesign/ui/components/checkbox.h>
-#include <LCDesign/ui/components/radio.h>
-#include <LCDesign/ui/components/radio-group.h>
-#include <LCDesign/ui/components/img.h>
-#include <LCDesign/ui/components/rate.h>
-#include <LCDesign/ui/components/spinner.h>
-#include <LCDesign/ui/components/switch.h>
-#include <LCDesign/ui/components/tooltip.h>
-#include <LCDesign/ui/components/password.h>
-#include <LCDesign/ui/components/typography.h>
-#include <LCDesign/ui/components/modal.h>
-#include <LCDesign/ui/components/dropdown.h>
+int RadioGroup_SetCheckedRadio(LCUI_Widget w, LCUI_Widget radio);
+
+int RadioGroup_SetValue(LCUI_Widget w, const char *value);
+
+const char *RadioGroup_GetValue(LCUI_Widget w);
+
+void LCDesign_InitRadioGroup(void);
 
 #endif

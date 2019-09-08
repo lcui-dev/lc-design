@@ -1,6 +1,5 @@
 ﻿/*
- * checkbox.c -- Checkbox, used to make multiple selections in a set of
- * options, or mark the status of an option.
+ * radio.c -- Radio, used to select one of a set of options.
  *
  * Copyright (c) 2019, Liu chao <lc-soft@live.cn> All rights reserved.
  *
@@ -33,81 +32,84 @@
 #include <LCUI/timer.h>
 #include <LCUI/gui/widget.h>
 #include <LCUI/gui/widget/textview.h>
-#include <LCDesign/ui/components/icon.h>
-#include <LCDesign/ui/components/checkbox.h>
+#include <LCDesign/ui/components/radio.h>
+#include <LCDesign/ui/components/radio-group.h>
 
-typedef struct CheckBoxRec_ {
+typedef struct RadioRec_ {
 	LCUI_Widget inner;
 	LCUI_Widget content;
 	LCUI_BOOL checked;
-} CheckBoxRec, *CheckBox;
+} RadioRec, *Radio;
 
-static struct CheckBoxModule {
+static struct RadioModule {
 	LCUI_WidgetPrototype prototype;
 } self;
 
-static void CheckBox_OnClick(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
+static void Radio_OnClick(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 {
 	LCUI_WidgetEventRec ev;
-	CheckBox data = Widget_GetData(w, self.prototype);
+	Radio data = Widget_GetData(w, self.prototype);
 
-	if (w->disabled) {
+	if (w->disabled || data->checked) {
 		return;
 	}
-	CheckBox_SetChecked(w, !data->checked);
+	if (w->parent && Widget_CheckType(w->parent, "radio-group")) {
+		RadioGroup_SetValue(w->parent, Widget_GetAttribute(w, "value"));
+	} else {
+		Radio_SetChecked(w, TRUE);
+	}
 	LCUI_InitWidgetEvent(&ev, "change");
 	ev.cancel_bubble = TRUE;
 	Widget_TriggerEvent(w, &ev, NULL);
 }
 
-static void CheckBox_OnInit(LCUI_Widget w)
+static void Radio_OnInit(LCUI_Widget w)
 {
 	LCUI_Widget icon;
-	CheckBox data = Widget_AddData(w, self.prototype, sizeof(CheckBoxRec));
+	Radio data = Widget_AddData(w, self.prototype, sizeof(RadioRec));
 
 	data->checked = FALSE;
 	data->content = NULL;
 	data->inner = LCUIWidget_New(NULL);
-	icon = LCUIWidget_New("icon");
-	Icon_SetName(icon, "check");
-	Widget_AddClass(w, "checkbox");
-	Widget_AddClass(icon, "checkbox-inner-icon");
-	Widget_AddClass(data->inner, "checkbox-inner");
+	icon = LCUIWidget_New(NULL);
+	Widget_AddClass(w, "radio");
+	Widget_AddClass(icon, "radio-inner-icon");
+	Widget_AddClass(data->inner, "radio-inner");
 	Widget_Append(data->inner, icon);
 	Widget_Append(w, data->inner);
-	Widget_BindEvent(w, "click", CheckBox_OnClick, NULL, NULL);
+	Widget_BindEvent(w, "click", Radio_OnClick, NULL, NULL);
 }
 
-static void CheckBox_OnSetText(LCUI_Widget w, const char *text)
+static void Radio_OnSetText(LCUI_Widget w, const char *text)
 {
-	CheckBox data = Widget_GetData(w, self.prototype);
+	Radio data = Widget_GetData(w, self.prototype);
 
 	if (!data->content) {
 		data->content = LCUIWidget_New("span");
-		Widget_AddClass(data->content, "checkbox-text");
+		Widget_AddClass(data->content, "radio-text");
 		Widget_Append(w, data->content);
 	}
 	TextView_SetText(data->content, text);
 }
 
-static void CheckBox_OnSetAttribute(LCUI_Widget w, const char *name,
-				  const char *value)
+static void Radio_OnSetAttribute(LCUI_Widget w, const char *name,
+				 const char *value)
 {
 	if (strcmp(name, "checked") == 0) {
-		CheckBox_SetChecked(w, strcmp(value, "checked") == 0);
+		Radio_SetChecked(w, strcmp(value, "checked") == 0);
 	}
 }
 
-LCUI_BOOL CheckBox_IsChecked(LCUI_Widget w)
+LCUI_BOOL Radio_IsChecked(LCUI_Widget w)
 {
-	CheckBox data = Widget_GetData(w, self.prototype);
+	Radio data = Widget_GetData(w, self.prototype);
 
 	return data->checked;
 }
 
-void CheckBox_SetChecked(LCUI_Widget w, LCUI_BOOL checked)
+void Radio_SetChecked(LCUI_Widget w, LCUI_BOOL checked)
 {
-	CheckBox data = Widget_GetData(w, self.prototype);
+	Radio data = Widget_GetData(w, self.prototype);
 
 	data->checked = checked;
 	if (data->checked) {
@@ -117,10 +119,10 @@ void CheckBox_SetChecked(LCUI_Widget w, LCUI_BOOL checked)
 	}
 }
 
-void LCDesign_InitCheckBox(void)
+void LCDesign_InitRadio(void)
 {
-	self.prototype = LCUIWidget_NewPrototype("checkbox", NULL);
-	self.prototype->init = CheckBox_OnInit;
-	self.prototype->settext = CheckBox_OnSetText;
-	self.prototype->setattr = CheckBox_OnSetAttribute;
+	self.prototype = LCUIWidget_NewPrototype("radio", NULL);
+	self.prototype->init = Radio_OnInit;
+	self.prototype->settext = Radio_OnSetText;
+	self.prototype->setattr = Radio_OnSetAttribute;
 }

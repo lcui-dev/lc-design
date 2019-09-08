@@ -17,6 +17,8 @@
     <ClCompile Include="src\ui\components\tooltip.c" />
     <ClCompile Include="src\ui\components\checkbox.c" />
     <ClCompile Include="src\ui\components\switch.c" />
+    <ClCompile Include="src\ui\components\radio.c" />
+    <ClCompile Include="src\ui\components\radio-group.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LCDesign.h" />
@@ -36,5 +38,7 @@
     <ClInclude Include="include\LCDesign\ui\components\tooltip.h" />
     <ClInclude Include="include\LCDesign\ui\components\checkbox.h" />
     <ClInclude Include="include\LCDesign\ui\components\switch.h" />
+    <ClInclude Include="include\LCDesign\ui\components\radio.h" />
+    <ClInclude Include="include\LCDesign\ui\components\radio-group.h" />
   </ItemGroup>
 </Project>

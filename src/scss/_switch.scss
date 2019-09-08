@@ -8,6 +8,7 @@
 .switch-slider {
   background-color: #fff;
   width: $switch-slider-width;
+  border-radius: $switch-border-radius;
   height: 100%;
 }
 
@@ -31,6 +32,7 @@
 	height: $switch-height;
 	display: inline-block;
 	border: $switch-border-width solid $switch-color;
+  border-radius: $switch-border-radius;
 	background-color: $switch-color;
 
   &.checked {
