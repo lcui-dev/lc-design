@@ -17,7 +17,9 @@ root {
   .navbar-brand {
     width: 37.75px;
     text-align: center;
+    font-weight: bold;
     border: 1px solid #fff;
+    border-radius: 5px;
   }
   .navbar-nav .icon {
     font-size: 16px;
@@ -45,6 +47,10 @@ root {
 
   h1 {
     color: #7952b3;
+  }
+  .button-container {
+    margin: -5px -5px 14px -5px;
+    padding: 5px;
   }
 }
 .demo-sidebar {

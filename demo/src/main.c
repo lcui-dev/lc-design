@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	Logger_SetLevel(LOGGER_LEVEL_ALL);
 	Widget_Append(root, pack);
 	Widget_Unwrap(pack);
-	Widget_SetTitleW(root, L"LCUI.css - A UI component framework for building LCUI application.");
+	Widget_SetTitleW(root, L"LC Design - A UI component framework for building LCUI application.");
 	Navigation_Init();
 	Navbar_Init();
 	return LCUI_Main();
