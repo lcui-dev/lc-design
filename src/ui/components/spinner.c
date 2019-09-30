@@ -193,7 +193,7 @@ static void Spinner_OnUpdateStyle(LCUI_Widget w)
 
 	CSSFontStyle_Init(&style);
 	CSSFontStyle_Compute(&style, w->style);
-	if (Widget_HasAutoStyle(w, key_font_size)) {
+	if (Widget_HasAutoStyle(w, LCUI_GetFontStyleKey(key_font_size))) {
 		spinner->size = spinner->custom_size;
 	} else {
 		spinner->size = style.font_size;
