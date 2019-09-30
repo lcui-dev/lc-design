@@ -121,7 +121,7 @@ static void Tooltip_OnInit(LCUI_Widget w)
 	    Widget_AddData(w, tooltip_module.proto, sizeof(TooltipRec));
 
 	tooltip->target = NULL;
-	tooltip->delay = 200;
+	tooltip->delay = 100;
 	tooltip->visible = FALSE;
 	tooltip->node.data = w;
 	tooltip->timer_hide = 0;
@@ -138,6 +138,14 @@ static void Tooltip_OnInit(LCUI_Widget w)
 	LinkedList_AppendNode(&tooltip_module.tooltips, &tooltip->node);
 }
 
+static void OnTargetDestroy(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
+{
+	Tooltip tooltip;
+
+	tooltip = Widget_GetData(e->data, tooltip_module.proto);
+	tooltip->target= NULL;
+}
+
 static void Tooltip_OnDestroy(LCUI_Widget w)
 {
 	Tooltip tooltip = Widget_GetData(w, tooltip_module.proto);
@@ -149,6 +157,9 @@ static void Tooltip_OnDestroy(LCUI_Widget w)
 	if (tooltip->timer_show) {
 		LCUITimer_Free(tooltip->timer_show);
 		tooltip->timer_show = 0;
+	}
+	if (tooltip->target) {
+		Widget_UnbindEvent(tooltip->target, "destroy", OnTargetDestroy);
 	}
 	LinkedList_Unlink(&tooltip_module.tooltips, &tooltip->node);
 }
@@ -186,9 +197,6 @@ static void Tooltip_DelayShow(LCUI_Widget w)
 	Tooltip tooltip;
 
 	tooltip = Widget_GetData(w, tooltip_module.proto);
-	if (tooltip->visible) {
-		return;
-	}
 	if (tooltip->timer_hide) {
 		LCUITimer_Free(tooltip->timer_hide);
 		tooltip->timer_hide = 0;
@@ -205,9 +213,6 @@ static void Tooltip_DelayHide(LCUI_Widget w)
 	Tooltip tooltip;
 
 	tooltip = Widget_GetData(w, tooltip_module.proto);
-	if (!tooltip->visible) {
-		return;
-	}
 	if (tooltip->timer_show) {
 		LCUITimer_Free(tooltip->timer_show);
 		tooltip->timer_show = 0;
@@ -219,14 +224,18 @@ static void Tooltip_DelayHide(LCUI_Widget w)
 	    LCUI_SetTimeout(tooltip->delay, (TimerCallback)Tooltip_Hide, w);
 }
 
-static void OnTargetDestroy(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
+static void OnTargetMouseOut(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 {
-	Widget_Destroy(e->data);
+	Tooltip tooltip;
+
+	tooltip = Widget_GetData(e->data, tooltip_module.proto);
+	Tooltip_DelayHide(e->data);
 }
 
-static void OnTargetMouseout(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
+static void OnTooltipReady(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 {
-	Tooltip_DelayHide(e->data);
+	Tooltip_UpdatePlacement(w);
+	Widget_UnbindEvent(w, "ready", OnTooltipReady);
 }
 
 static LCUI_Widget SetupTooltip(LCUI_Widget target)
@@ -250,7 +259,8 @@ static LCUI_Widget SetupTooltip(LCUI_Widget target)
 	if (!w) {
 		w = LCUIWidget_New("tooltip");
 		Widget_Append(LCUIWidget_GetRoot(), w);
-		Widget_BindEvent(target, "mouseout", OnTargetMouseout, w, NULL);
+		Widget_BindEvent(w, "ready", OnTooltipReady, NULL, NULL);
+		Widget_BindEvent(target, "mouseout", OnTargetMouseOut, w, NULL);
 		Widget_BindEvent(target, "destroy", OnTargetDestroy, w, NULL);
 	}
 	tooltip = Widget_GetData(w, tooltip_module.proto);
