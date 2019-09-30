@@ -84,13 +84,24 @@ root {
 }
 .demo-content-wrapper {
   height: 100%;
-  padding: rem2px(1) rem2px(2) rem2px(1) $sidebar-width + rem2px(2);
+  padding: 0 0 0 $sidebar-width;
 
   h2 {
     margin-top: rem2px(2);
   }
   h2:first-child, .demo-box h2 {
     margin-top: 0;
+  }
+  .view {
+    padding: rem2px(1) rem2px(2) rem2px(1) rem2px(2);
+  }
+  .button-container {
+    margin: -5px -5px 5px -5px;
+    padding: 5px;
+
+    .btn {
+      margin-right: map-get($spacers, 2);
+    }
   }
 }
 .code-block {
@@ -195,27 +206,6 @@ root {
       padding: 15px;
       box-sizing: border-box;
       border: 1px solid #eee;
-    }
-  }
-  &.translucent-toast-demo,
-  &.basic-toast-demo,
-  &.stacking-toast-demo {
-    .demo-preview-box {
-      background-color: $light;
-    }
-    .toast {
-      display: block;
-      opacity: 1;
-    }
-    .toast-header img {
-      width: $toast-font-size * 1.25;
-      height: $toast-font-size * 1.25;
-      background-color: $primary;
-    }
-  }
-  &.translucent-toast-demo {
-    .demo-preview-box {
-      background-color: $dark;
     }
   }
 }
