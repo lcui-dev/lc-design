@@ -35,20 +35,20 @@
 void LCDesign_InitTypograhy(void)
 {
 	LCUIWidget_NewPrototype("text", "textview");
-	LCUIWidget_NewPrototype("span", "textview");
-	LCUIWidget_NewPrototype("h1", "textview");
-	LCUIWidget_NewPrototype("h2", "textview");
-	LCUIWidget_NewPrototype("h3", "textview");
-	LCUIWidget_NewPrototype("h4", "textview");
-	LCUIWidget_NewPrototype("h5", "textview");
-	LCUIWidget_NewPrototype("h6", "textview");
-	LCUIWidget_NewPrototype("p", "textview");
-	LCUIWidget_NewPrototype("pre", "textview");
-	LCUIWidget_NewPrototype("code-block", "textview");
-	LCUIWidget_NewPrototype("blockquote", "textview");
-	LCUIWidget_NewPrototype("i", "textview");
-	LCUIWidget_NewPrototype("b", "textview");
-	LCUIWidget_NewPrototype("cite", "textview");
-	LCUIWidget_NewPrototype("strong", "textview");
-	LCUIWidget_NewPrototype("small", "textview");
+	LCUIWidget_NewPrototype("span", "text");
+	LCUIWidget_NewPrototype("h1", "text");
+	LCUIWidget_NewPrototype("h2", "text");
+	LCUIWidget_NewPrototype("h3", "text");
+	LCUIWidget_NewPrototype("h4", "text");
+	LCUIWidget_NewPrototype("h5", "text");
+	LCUIWidget_NewPrototype("h6", "text");
+	LCUIWidget_NewPrototype("p", "text");
+	LCUIWidget_NewPrototype("pre", "text");
+	LCUIWidget_NewPrototype("code-block", "text");
+	LCUIWidget_NewPrototype("blockquote", "text");
+	LCUIWidget_NewPrototype("i", "text");
+	LCUIWidget_NewPrototype("b", "text");
+	LCUIWidget_NewPrototype("cite", "text");
+	LCUIWidget_NewPrototype("strong", "text");
+	LCUIWidget_NewPrototype("small", "text");
 }
