@@ -122,7 +122,9 @@ XML_TEMPLATE = '''\
 <?xml version="1.0" encoding="UTF-8" ?>
 <lcui-app>
   <ui>
-    {}
+    <w type="{}-view" class="view">
+      {}
+    </w>
   </ui>
 </lcui-app>
 '''
@@ -283,7 +285,8 @@ def build_docs(docs_dir='docs', output_dir='demo/app/assets/views'):
     md = m.Markdown(renderer, extensions=('fenced-code',))
     for root, dirs, files in os.walk(docs_dir):
         for name in files:
-            if name.find('.md') == -1:
+            i = name.find('.md')
+            if i == -1:
                 continue
             doc_path = os.path.join(root, name)
             xml_path = replace_dirname(doc_path, docs_dir, output_dir)
@@ -299,7 +302,7 @@ def build_docs(docs_dir='docs', output_dir='demo/app/assets/views'):
                 md_file = open(doc_path, 'r')
                 xml_file = open(xml_path, 'w+')
             xml_content = md(md_file.read())
-            xml_content = XML_TEMPLATE.format(xml_content)
+            xml_content = XML_TEMPLATE.format(name[:i], xml_content)
             xml_file.write(xml_content)
             xml_file.close()
             md_file.close()
