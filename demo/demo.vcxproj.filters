@@ -21,16 +21,19 @@
     <ClCompile Include="src\navigation.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\ui\views\documentation_view.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ui\views\home_view.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\ui\helpers\ui_helper.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\ui\views\navbar.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\views\home-view.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\views\documentation-view.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\views\message-view.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

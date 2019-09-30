@@ -167,6 +167,7 @@
     <ClCompile Include="src\ui\components\icon.c" />
     <ClCompile Include="src\ui\components\img.c" />
     <ClCompile Include="src\ui\components\label.c" />
+    <ClCompile Include="src\ui\components\message.c" />
     <ClCompile Include="src\ui\components\modal.c" />
     <ClCompile Include="src\ui\components\password.c" />
     <ClCompile Include="src\ui\components\radio-group.c" />
@@ -188,6 +189,7 @@
     <ClInclude Include="include\LCDesign\ui\components\icon.h" />
     <ClInclude Include="include\LCDesign\ui\components\img.h" />
     <ClInclude Include="include\LCDesign\ui\components\label.h" />
+    <ClInclude Include="include\LCDesign\ui\components\message.h" />
     <ClInclude Include="include\LCDesign\ui\components\modal.h" />
     <ClInclude Include="include\LCDesign\ui\components\password.h" />
     <ClInclude Include="include\LCDesign\ui\components\radio-group.h" />

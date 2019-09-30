@@ -23,6 +23,7 @@ int main(int argc, char **argv)
 	Widget_Unwrap(pack);
 	Widget_SetTitleW(root, L"LC Design - A UI component framework for building LCUI application.");
 	Navigation_Init();
+	UI_InitMessageView();
 	Navbar_Init();
 	return LCUI_Main();
 }

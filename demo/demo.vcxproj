@@ -188,8 +188,9 @@ xcopy "$(SolutionDir)dist\assets" "$(ProjectDir)app\assets" /S /Y</Command>
     <ClCompile Include="src\main.c" />
     <ClCompile Include="src\navigation.c" />
     <ClCompile Include="src\ui\helpers\ui_helper.c" />
-    <ClCompile Include="src\ui\views\documentation_view.c" />
-    <ClCompile Include="src\ui\views\home_view.c" />
+    <ClCompile Include="src\ui\views\documentation-view.c" />
+    <ClCompile Include="src\ui\views\home-view.c" />
+    <ClCompile Include="src\ui\views\message-view.c" />
     <ClCompile Include="src\ui\views\navbar.c" />
   </ItemGroup>
   <ItemGroup>

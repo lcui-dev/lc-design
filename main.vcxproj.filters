@@ -19,6 +19,7 @@
     <ClCompile Include="src\ui\components\switch.c" />
     <ClCompile Include="src\ui\components\radio.c" />
     <ClCompile Include="src\ui\components\radio-group.c" />
+    <ClCompile Include="src\ui\components\message.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LCDesign.h" />
@@ -40,5 +41,6 @@
     <ClInclude Include="include\LCDesign\ui\components\switch.h" />
     <ClInclude Include="include\LCDesign\ui\components\radio.h" />
     <ClInclude Include="include\LCDesign\ui\components\radio-group.h" />
+    <ClInclude Include="include\LCDesign\ui\components\message.h" />
   </ItemGroup>
 </Project>

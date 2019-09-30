@@ -95,7 +95,7 @@ $yiq-text-light: $white !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:              true !default;
-$enable-rounded:            false !default;
+$enable-rounded:            true !default;
 $enable-shadows:            true !default;
 $enable-gradients:          false !default;
 $enable-transitions:        false !default;
@@ -184,9 +184,9 @@ $line-height-sm:              1.5 !default;
 
 $border-width:                1px !default;
 $border-color:                $gray-200 !default;
-$border-radius:               0;
-$border-radius-lg:            0;
-$border-radius-sm:            0;
+$border-radius:               4px !default;
+$border-radius-lg:            6px !default;
+$border-radius-sm:            3px !default;
 
 $box-shadow-sm:               0 rem2px(.125) rem2px(.25) rgba($black, .075) !default;
 $box-shadow:                  0 rem2px(.5) rem2px(1) rgba($black, .15) !default;
@@ -405,23 +405,6 @@ $tooltip-arrow-height:              rem2px(.4) !default;
 $tooltip-arrow-color:               $tooltip-bg !default;
 
 
-// Toasts
-
-$toast-max-width:                   350px !default;
-$toast-padding-x:                   rem2px(.75) !default;
-$toast-padding-y:                   rem2px(.25) !default;
-$toast-font-size:                   rem2px(.875) !default;
-$toast-background-color:            rgba($white, .85) !default;
-$toast-border-width:                1px !default;
-$toast-border-color:                rgba(0, 0, 0, .1) !default;
-$toast-border-radius:               $border-radius !default;
-$toast-box-shadow:                  $box-shadow !default;
-
-$toast-header-color:                $gray-600 !default;
-$toast-header-background-color:     rgba($white, .85) !default;
-$toast-header-border-color:         rgba(0, 0, 0, .05) !default;
-
-
 // Z-index master list
 //
 // Warning: Avoid customizing these values. They're used for a bird's eye view
@@ -430,8 +413,8 @@ $toast-header-border-color:         rgba(0, 0, 0, .05) !default;
 $zindex-dropdown:                   1000 !default;
 $zindex-modal-backdrop:             1040 !default;
 $zindex-modal:                      1050 !default;
+$zindex-message-notice:             1060 !default;
 $zindex-tooltip:                    1070 !default;
-
 
 // Navs
 
@@ -599,3 +582,12 @@ $radio-inner-icon-size: $radio-size - $radio-border-width * 2 - $radio-inner-ico
 $radio-checked-color: $primary;
 $radio-disabled-bg: $gray-100;
 $radio-disabled-color: $gray-600;
+
+
+// Message
+
+$message-notice-bg: $white;
+$message-notice-icon-size: $font-size-base * 1.5;
+$message-notice-padding-x: map-get($spacers, 3);
+$message-notice-padding-y: map-get($spacers, 2);
+$message-notice-border: $border-width solid $border-color;

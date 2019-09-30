@@ -46,6 +46,7 @@
 #include <LCDesign/ui/components/password.h>
 #include <LCDesign/ui/components/typography.h>
 #include <LCDesign/ui/components/modal.h>
+#include <LCDesign/ui/components/message.h>
 #include <LCDesign/ui/components/dropdown.h>
 
 #endif

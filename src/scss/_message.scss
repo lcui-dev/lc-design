@@ -1,0 +1,69 @@
+.message-notice-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: map-get($spacers, 2);
+  z-index: $zindex-message-notice;
+  position: absolute;
+  pointer-events: none;
+}
+
+.message-notice-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: map-get($spacers, 2) 0;
+  margin: 0 0 map-get($spacers, 2) 0;
+}
+
+.message-notice {
+  display: inline-block;
+  padding: $message-notice-padding-y $message-notice-padding-x;
+  background-color: $message-notice-bg;
+  border: $message-notice-border;
+  border-radius: $border-radius;
+  pointer-events: auto;
+}
+
+.message-notice-icon {
+  width: $message-notice-icon-size;
+  height: $message-notice-icon-size;
+  font-size: $message-notice-icon-size;
+  line-height: $message-notice-icon-size;
+  margin-right: map-get($spacers, 2);
+  display: inline-block;
+}
+
+.message-notice-content {
+  text-align: center;
+  display: inline-block;
+}
+
+.message-notice-success {
+  .message-notice-icon {
+    color: $green;
+  }
+}
+
+.message-notice-info {
+  .message-notice-icon {
+    color: $blue;
+  }
+}
+
+.message-notice-warning {
+  .message-notice-icon {
+    color: $orange;
+  }
+}
+
+.message-notice-error {
+  .message-notice-icon {
+    color: $red;
+  }
+}
+
+.message-notice-loading {
+  .message-notice-icon {
+    color: $primary;
+  }
+}
