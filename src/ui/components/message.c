@@ -1,6 +1,4 @@
-
-
-#include <LCUI.h>
+﻿#include <LCUI.h>
 #include <LCUI/timer.h>
 #include <LCUI/gui/widget.h>
 #include <LCUI/gui/widget/textview.h>

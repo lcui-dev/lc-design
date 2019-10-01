@@ -1,4 +1,4 @@
-#include <LCUI.h>
+﻿#include <LCUI.h>
 #include <LCUI/gui/widget.h>
 #include <LCDesign/ui/components/message.h>
 

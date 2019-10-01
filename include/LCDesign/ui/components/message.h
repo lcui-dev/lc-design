@@ -1,4 +1,4 @@
-#ifndef LCDESIGN_MESSAGE_H
+﻿#ifndef LCDESIGN_MESSAGE_H
 #define LCDESIGN_MESSAGE_H
 
 typedef struct LCDesign_MessageConfigRec_ {
