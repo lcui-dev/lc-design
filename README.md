@@ -16,9 +16,11 @@
 
 ## Introduction
 
+(**English**/[中文](README.zh-cn.md))
+
 LCDesign (LC's Design) is a UI component framework for building [LCUI](https://github.com/lc-soft/LCUI) application, it provides basic styles for typography and elements, simple layout system, CSS components and utilities. Its CSS code is based [Bootstrap](https://github.com/twbs/bootstrap), so its usage is basically the same as Boostrap.
 
-[中文版说明文档](README.zh-cn.md)
+**Note:** This is not a component library for the web front end, you can't use the web browser to experience the effect, the correct way is to download the source code, then build it, and then run the demo.
 
 ![LC's Design](https://lcui.lc-soft.io/static/images/screenshot-lcui-css.gif)
 
@@ -67,8 +69,8 @@ LCDesign does not have a binary package for Linux, you need to manually download
 
 Building LCDesign has the following dependencies:
 
-- [Xmake](http://xmake.io) - a build tool for compiling C source code
-- [NodeJS](https://nodejs.org) - a JavaScript runtime to run build tools
+- [Xake](http://xmake.io) - a build tool for compiling C source code
+- [NodeJS](https://nodejs.org) - a JavaScript runtime for run build tools
 - [Python](https://www.python.org/) - a environment for run python build tools
 
 After installing them, you need to run the following command to install the other dependencies:
