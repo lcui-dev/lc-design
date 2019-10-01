@@ -22,3 +22,4 @@ void HomeView_Init(void);
 void HomeView_Free(void);
 
 void UI_InitMessageView(void);
+void UI_InitNotificationView(void);

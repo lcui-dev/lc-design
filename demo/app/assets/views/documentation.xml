@@ -101,6 +101,11 @@
                 </a>
               </w>
               <w class="nav-item">
+                <a class="nav-link" href="components/notification.xml" target="demo-content">
+                  Notification
+                </a>
+              </w>
+              <w class="nav-item">
                 <a class="nav-link" href="components/modal.xml" target="demo-content">
                   Modal
                 </a>

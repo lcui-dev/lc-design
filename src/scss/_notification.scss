@@ -1,0 +1,92 @@
+.notification-container {
+  width: 100%;
+  max-width: 384px;
+  padding: map-get($spacers, 3);
+  z-index: $zindex-notification-notice;
+  position: absolute;
+  pointer-events: none;
+}
+
+.notification-notice {
+  padding: $notification-notice-padding-y $notification-notice-padding-x;
+  background-color: $notification-notice-bg;
+  border: $notification-notice-border;
+  border-radius: $border-radius;
+  pointer-events: auto;
+  margin-bottom: $notification-margin-bottom;
+}
+
+.notification-notice-close {
+  top: $notification-notice-padding-y;
+  right: $notification-notice-padding-x;
+  position: absolute;
+  opacity: .5;
+  line-height: 1;
+  color: $close-color;
+  font-size: $close-font-size;
+
+  @include hover-focus {
+    color: $close-color;
+    opacity: .75;
+  }
+}
+
+.notification-notice-title {
+  font-size: $notification-notice-title-size;
+  margin-bottom: $notification-notice-title-margin-bottom;
+}
+
+.notification-notice-description {
+  color: $notification-color;
+}
+
+.notification-notice-icon {
+  width: $notification-notice-icon-size;
+  height: $notification-notice-icon-size;
+  font-size: $notification-notice-icon-size;
+  line-height: $notification-notice-icon-size;
+  top: $notification-notice-padding-y;
+  left: $notification-notice-padding-x;
+  position: absolute;
+}
+
+.notification-has-icon .notification-notice-content {
+  padding-left: $notification-notice-icon-size + map-get($spacers, 2);
+}
+
+.notification-notice-icon-success {
+  color: $green;
+}
+
+.notification-notice-icon-info {
+  color: $blue;
+}
+
+.notification-notice-icon-warning {
+  color: $orange;
+}
+
+.notification-notice-icon-error {
+  color: $red;
+}
+
+.notification-container-top-left {
+  top: 0;
+  left: 0;
+}
+
+.notification-container-top-right {
+  top: 0;
+  right: 0;
+}
+
+.notification-container-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.notification-container-bottom-right {
+  bottom: 0;
+  right: 0;
+}
+

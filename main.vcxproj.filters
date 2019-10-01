@@ -20,6 +20,7 @@
     <ClCompile Include="src\ui\components\radio.c" />
     <ClCompile Include="src\ui\components\radio-group.c" />
     <ClCompile Include="src\ui\components\message.c" />
+    <ClCompile Include="src\ui\components\notification.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LCDesign.h" />
@@ -42,5 +43,6 @@
     <ClInclude Include="include\LCDesign\ui\components\radio.h" />
     <ClInclude Include="include\LCDesign\ui\components\radio-group.h" />
     <ClInclude Include="include\LCDesign\ui\components\message.h" />
+    <ClInclude Include="include\LCDesign\ui\components\notification.h" />
   </ItemGroup>
 </Project>

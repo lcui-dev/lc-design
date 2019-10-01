@@ -95,7 +95,7 @@ $yiq-text-light: $white !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:              true !default;
-$enable-rounded:            true !default;
+$enable-rounded:            false !default;
 $enable-shadows:            true !default;
 $enable-gradients:          false !default;
 $enable-transitions:        false !default;
@@ -414,6 +414,7 @@ $zindex-dropdown:                   1000 !default;
 $zindex-modal-backdrop:             1040 !default;
 $zindex-modal:                      1050 !default;
 $zindex-message-notice:             1060 !default;
+$zindex-notification-notice:        1060 !default;
 $zindex-tooltip:                    1070 !default;
 
 // Navs
@@ -591,3 +592,15 @@ $message-notice-icon-size: $font-size-base * 1.5;
 $message-notice-padding-x: map-get($spacers, 3);
 $message-notice-padding-y: map-get($spacers, 2);
 $message-notice-border: $border-width solid $border-color;
+
+// Notification
+
+$notification-color: $gray-600;
+$notification-margin-bottom: map-get($spacers, 3);
+$notification-notice-bg: $white;
+$notification-notice-icon-size: $font-size-base * 1.725;
+$notification-notice-title-size: 16px;
+$notification-notice-title-margin-bottom: map-get($spacers, 2);
+$notification-notice-padding-x: map-get($spacers, 4);
+$notification-notice-padding-y: map-get($spacers, 3);
+$notification-notice-border: $border-width solid $border-color;
