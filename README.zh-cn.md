@@ -22,24 +22,31 @@ LCDesign (LC's Design) 是一个专为 [LCUI](https://github.com/lc-soft/LCUI) �
 
 ## 组件
 
-- [Alert 警告框](docs/components/alerts.md)
-- [Button 按钮](docs/components/buttonss.md)
-- [Checkbox 多选框](docs/components/checkbox.md)
-- [Dropdown 下拉框](docs/components/dropdowns.md)
-- [Icon 图标](docs/content/icons.md)
-- [Modal 模态框](docs/components/modal.md)
-- [Rate 评分](docs/components/rate.md)
-- [Spinner 加载中](docs/components/spinners.md)
-- [Switch 开关](docs/components/switch.md)
-- [Toast 提示弹框](docs/components/toasts.md)
-- [Tooltip 提示](docs/components/tooltips.md)
-- [Typography 排版](docs/content/typography.md)
-  - h1, h2, h3, h4, h5, h6
-  - p
-  - span
-  - blockquote
-  - cite
-  - ...
+- General 通用
+  - [Button 按钮](docs/components/buttonss.md)
+  - [Icon 图标](docs/content/icons.md)
+  - [Typography 排版](docs/content/typography.md)
+    - h1, h2, h3, h4, h5, h6
+    - p
+    - span
+    - blockquote
+    - cite
+    - ...
+- Navigation 导航
+  - [Dropdown 下拉菜单](docs/components/dropdowns.md)
+- Data Entry 数据录入
+  - [Checkbox 多选框](docs/components/checkbox.md)
+  - [Radio 单选框](docs/components/radio.md)
+  - [Rate 评分](docs/components/rate.md)
+  - [Switch 开关](docs/components/switch.md)
+- Data Display 数据展示
+  - [Tooltip 提示](docs/components/tooltips.md)
+- Feedback 反馈
+  - [Alert 警告提示](docs/components/alerts.md)
+  - [Modal 对话框](docs/components/modal.md)
+  - [Message 全局提示](docs/components/message.md)
+  - [Notification 通知提醒框](docs/components/notification.md)
+  - [Spinner 加载中](docs/components/spinners.md)
 
 ## 快速开始
 

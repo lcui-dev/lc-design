@@ -24,24 +24,31 @@ LCDesign (LC's Design) is a UI component framework for building [LCUI](https://g
 
 ## Components
 
-- [Alert](docs/components/alerts.md)
-- [Button](docs/components/buttonss.md)
-- [Checkbox](docs/components/checkbox.md)
-- [Dropdown](docs/components/dropdowns.md)
-- [Icon](docs/content/icons.md)
-- [Modal](docs/components/modal.md)
-- [Rate](docs/components/rate.md)
-- [Spinner](docs/components/spinners.md)
-- [Switch](docs/components/switch.md)
-- [Toast](docs/components/toasts.md)
-- [Tooltip](docs/components/tooltips.md)
-- [Typography](docs/content/typography.md)
-  - h1, h2, h3, h4, h5, h6
-  - p
-  - span
-  - blockquote
-  - cite
-  - ...
+- General
+  - [Button](docs/components/buttonss.md)
+  - [Icon](docs/content/icons.md)
+  - [Typography](docs/content/typography.md)
+    - h1, h2, h3, h4, h5, h6
+    - p
+    - span
+    - blockquote
+    - cite
+    - ...
+- Navigation
+  - [Dropdown](docs/components/dropdowns.md)
+- Data Entry
+  - [Checkbox](docs/components/checkbox.md)
+  - [Radio](docs/components/radio.md)
+  - [Rate](docs/components/rate.md)
+  - [Switch](docs/components/switch.md)
+- Data Display
+  - [Tooltip](docs/components/tooltips.md)
+- Feedback
+  - [Alert](docs/components/alerts.md)
+  - [Modal](docs/components/modal.md)
+  - [Message](docs/components/message.md)
+  - [Notification](docs/components/notification.md)
+  - [Spinner](docs/components/spinners.md)
 
 ## Quick start
 
