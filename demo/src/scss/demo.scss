@@ -182,6 +182,10 @@ root {
     }
   }
   &.static-modal-demo {
+    .demo-preview-box {
+      background-color: #fafafa;
+    }
+
     .modal {
       width: auto;
       height: auto;
