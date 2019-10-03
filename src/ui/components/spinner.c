@@ -39,6 +39,10 @@
 #include <LCUI/gui/css_fontstyle.h>
 
 #define M_PI 3.14159265358979323846
+#define SmoothLeftPixel(PX, X) (uchar_t)((PX)->a * (1.0 - (X - 1.0 * (int)X)))
+#define SmoothRightPixel(PX, X) (uchar_t)((PX)->a * (X - 1.0 * (int)X))
+
+
 typedef enum SpinnerType { SPINNER_DEFAULT, SPINNER_RING } SpinnerType;
 
 typedef struct SpinnerRec_ {
@@ -91,15 +95,19 @@ static INLINE LCUI_BOOL CheckInSlider(double x, double y, int start, int end)
 
 static void Spinner_Render(LCUI_Widget w)
 {
+	LCUI_Color c;
 	LCUI_Color slider_color, border_color;
 	LCUI_CanvasContext ctx = Canvas_GetContext(w);
 	Spinner spinner = Widget_GetData(w, spinner_module.proto);
 
-	int x, y;
-	double radius = spinner->size / 2.0;
-	double inner_radius = radius - spinner->line_width * ctx->scale;
+	int xi, yi;
 	int start = spinner->start;
 	int end = start - spinner->angle;
+
+	double d;
+	double r = spinner->size / 2.0 - 0.5;
+	double inner_r = r - spinner->line_width * ctx->scale;
+	double outer_smooth_r2 = (r + 1.0) * (r + 1.0);
 
 	if (spinner->type == SPINNER_RING) {
 		border_color = spinner->color;
@@ -114,24 +122,37 @@ static void Spinner_Render(LCUI_Widget w)
 		ctx->release(ctx);
 		return;
 	}
-	for (y = 0; y < spinner->size; ++y) {
-		double fy = radius - y;
-		double fy2 = fy * fy;
-		double foutx2 = radius * radius - fy2;
-		double finnerx2 = inner_radius * inner_radius - fy2;
+	for (yi = 0; yi < spinner->size; ++yi) {
+		double y = r - yi;
+		double y2 = y * y;
 
-		for (x = 0; x < spinner->size; ++x) {
-			double fx = x - radius;
-			double fx2 = fx * fx;
+		for (xi = 0; xi < spinner->size; ++xi) {
+			double x = xi - r;
+			double x2 = x * x;
 
-			if (fx2 > foutx2 || fx2 < finnerx2) {
+			d = x2 + y2;
+			if (d >= outer_smooth_r2) {
 				continue;
 			}
-			if (CheckInSlider(fx, fy, start, end)) {
-				FillPixel(&ctx->buffer, x, y, &slider_color);
+			if (CheckInSlider(x, y, start, end)) {
+				c = slider_color;
+			} else {
+				c = border_color;
+			}
+			d = sqrt(d) - r;
+			if (d >= 0) {
+				c.a = SmoothLeftPixel(&c, d);
+				FillPixel(&ctx->buffer, xi, yi, &c);
 				continue;
 			}
-			FillPixel(&ctx->buffer, x, y, &border_color);
+			d = d + r - inner_r;
+			if (d < 0) {
+				continue;
+			}
+			if (d < 1.0) {
+				c.a = SmoothRightPixel(&c, d);
+			}
+			FillPixel(&ctx->buffer, xi, yi, &c);
 		}
 	}
 	Widget_InvalidateArea(w, NULL, SV_CONTENT_BOX);
