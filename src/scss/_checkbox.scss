@@ -4,6 +4,8 @@
   border: $checkbox-border-width solid $checkbox-border-color;
   display: inline-block;
   vertical-align: middle;
+
+  @include border-radius($border-radius);
 }
 
 .checkbox-inner-icon {

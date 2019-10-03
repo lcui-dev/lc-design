@@ -21,6 +21,7 @@
 .modal-dialog {
   width: auto;
   position: relative;
+  padding: $box-shadow-wrapper-padding;
   margin: $modal-dialog-margin;
   // allow clicks to pass through for custom click handling to close modal
   pointer-events: none;

@@ -11,8 +11,12 @@
 .message-notice-wrapper {
   display: flex;
   justify-content: center;
-  padding: map-get($spacers, 2) 0;
-  margin: 0 0 map-get($spacers, 2) 0;
+  padding: $box-shadow-wrapper-padding;
+  margin-top: 0 - map-get($spacers, 3);
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .message-notice {
@@ -20,8 +24,10 @@
   padding: $message-notice-padding-y $message-notice-padding-x;
   background-color: $message-notice-bg;
   border: $message-notice-border;
-  border-radius: $border-radius;
   pointer-events: auto;
+
+  @include border-radius($border-radius);
+  @include box-shadow($box-shadow);
 }
 
 .message-notice-icon {

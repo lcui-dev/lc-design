@@ -95,7 +95,7 @@ $yiq-text-light: $white !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:              true !default;
-$enable-rounded:            false !default;
+$enable-rounded:            true !default;
 $enable-shadows:            true !default;
 $enable-gradients:          false !default;
 $enable-transitions:        false !default;
@@ -191,6 +191,8 @@ $border-radius-sm:            3px !default;
 $box-shadow-sm:               0 rem2px(.125) rem2px(.25) rgba($black, .075) !default;
 $box-shadow:                  0 rem2px(.5) rem2px(1) rgba($black, .15) !default;
 $box-shadow-lg:               0 rem2px(1) rem2px(3) rgba($black, .175) !default;
+
+$box-shadow-wrapper-padding:  rem2px(.5) rem2px(1) rem2px(1.5) rem2px(1) !default;
 
 $component-active-color:      $white !default;
 $component-active-bg:         theme-color("primary") !default;

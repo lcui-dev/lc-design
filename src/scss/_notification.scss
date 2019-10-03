@@ -1,7 +1,7 @@
 .notification-container {
   width: 100%;
   max-width: 384px;
-  padding: map-get($spacers, 3);
+  padding: $box-shadow-wrapper-padding;
   z-index: $zindex-notification-notice;
   position: absolute;
   pointer-events: none;
@@ -11,9 +11,11 @@
   padding: $notification-notice-padding-y $notification-notice-padding-x;
   background-color: $notification-notice-bg;
   border: $notification-notice-border;
-  border-radius: $border-radius;
   pointer-events: auto;
   margin-bottom: $notification-margin-bottom;
+
+  @include box-shadow($box-shadow);
+  @include border-radius($border-radius);
 }
 
 .notification-notice-close {
