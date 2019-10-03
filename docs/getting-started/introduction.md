@@ -13,9 +13,9 @@ lcpkg install github.com/lc-ui/lc-desgin
 Or, you can download the compiled package:
 
 ``` embedded-xml
-<p>
+<w class="button-container">
   <a class="btn" href="https://github.com/lc-ui/lcui.css/releases">Download LC Design</a>
-</p>
+</w>
 ```
 
 ### CSS
