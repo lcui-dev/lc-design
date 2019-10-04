@@ -69,6 +69,8 @@ int RadioGroup_SetCheckedRadio(LCUI_Widget w, LCUI_Widget radio)
 int RadioGroup_SetValue(LCUI_Widget w, const char *value)
 {
 	int found = -1;
+	const char *radio_value;
+
 	LCUI_Widget child;
 	LinkedListNode *node;
 	RadioGroup data = Widget_GetData(w, self.prototype);
@@ -79,7 +81,8 @@ int RadioGroup_SetValue(LCUI_Widget w, const char *value)
 		if (!Widget_CheckType(child, "radio")) {
 			continue;
 		}
-		if (strcmp(value, Widget_GetAttribute(child, "value")) == 0) {
+		radio_value = Widget_GetAttribute(child, "value");
+		if (radio_value && strcmp(value, radio_value) == 0) {
 			Radio_SetChecked(child, TRUE);
 			data->checked_radio = child;
 			found = 0;
