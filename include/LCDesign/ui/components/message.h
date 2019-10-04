@@ -12,6 +12,8 @@ typedef struct LCDesign_MessageConfigRec_ {
 	long duration;
 } LCDesign_MessageConfigRec, *LCDesign_MessageConfig;
 
+LCUI_API void LCDesign_SetMessageContainer(LCUI_Widget w);
+
 LCUI_API LCUI_Widget LCDesign_OpenMessage(LCDesign_MessageConfig config);
 
 LCUI_API void LCDesign_CloseMessage(LCUI_Widget message);

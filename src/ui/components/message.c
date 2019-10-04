@@ -7,6 +7,11 @@
 
 static LCUI_Widget container;
 
+void LCDesign_SetMessageContainer(LCUI_Widget w)
+{
+	container = w;
+}
+
 LCUI_Widget LCDesign_OpenMessage(LCDesign_MessageConfig config)
 {
 	LCUI_Widget wrapper;
