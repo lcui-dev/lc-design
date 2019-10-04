@@ -11,7 +11,7 @@
     "dist": "npm-run-all build-css build-font",
     "build": "npm-run-all build-css build-font build-bin build-demo",
     "build-bin": "node ./scripts/build-bin.js",
-    "build-css": "node-sass --output dist/assets/stylesheets --output-style expanded src/scss/lc-design.scss",
+    "build-css": "node-sass --output dist/app/assets/stylesheets --output-style expanded src/scss/lc-design.scss",
     "build-font": "node ./scripts/build-font.js",
     "build-demo": "npm-run-all build-demo-bin build-demo-assets",
     "build-demo-assets": "npm-run-all build-demo-css build-demo-docs",
