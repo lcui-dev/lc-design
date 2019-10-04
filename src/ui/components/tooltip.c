@@ -229,6 +229,9 @@ static void OnTargetMouseOut(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 	Tooltip tooltip;
 
 	tooltip = Widget_GetData(e->data, tooltip_module.proto);
+	if (LCUIWidget_GetFocus() == tooltip->target) {
+		return;
+	}
 	Tooltip_DelayHide(e->data);
 }
 
@@ -269,8 +272,26 @@ static LCUI_Widget SetupTooltip(LCUI_Widget target)
 	return w;
 }
 
+
+static void OnBlur(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
+{
+	Widget_UnbindEvent(w, "blur", OnBlur);
+	Tooltip_DelayHide(e->data);
+}
+
 static void OnFocus(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 {
+	const char *value = Widget_GetAttribute(e->target, "data-toggle");
+
+	if (!value || strcmp(value, "tooltip") != 0) {
+		return;
+	}
+	w = SetupTooltip(e->target);
+	if (!w) {
+		return;
+	}
+	Widget_BindEvent(e->target, "blur", OnBlur, w, NULL);
+	Tooltip_DelayShow(w);
 }
 
 static void OnMouseMove(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
