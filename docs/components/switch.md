@@ -5,7 +5,7 @@ Represent the switching between two states or on-off state.
 ## Basic
 
 ``` switch-basic-demo-xml
-<switch checked="checked" />
+<switch checked="checked">Subscribe to weekly newsletter</switch>
 ```
 
 ## Text & icon
@@ -28,9 +28,9 @@ With text and icon.
 
 ``` switch-text-icon-demo-xml
 <p>
-  <switch disabled="disabled" />
+  <switch disabled="disabled">Disabled</switch>
 </p>
 <p>
-  <switch disabled="disabled" checked="checked" />
+  <switch disabled="disabled" checked="checked">Disabled Checked</switch>
 </p>
 ```

@@ -41,6 +41,8 @@ typedef struct SwitchRec_ {
 	char *checked_icon;
 	char *unchecked_text;
 	char *unchecked_icon;
+	LCUI_Widget content;
+	LCUI_Widget inner;
 	LCUI_Widget txt_off;
 	LCUI_Widget txt_on;
 	LCUI_Widget slider;
@@ -96,8 +98,8 @@ static void Switch_ResetChildren(LCUI_Widget w)
 			TextView_SetText(data->txt_off, data->unchecked_text);
 		}
 	}
-	Widget_AddClass(data->txt_on, "switch-on-block");
-	Widget_AddClass(data->txt_off, "switch-off-block");
+	Widget_AddClass(data->txt_on, "switch-inner-on-block");
+	Widget_AddClass(data->txt_off, "switch-inner-off-block");
 	Widget_Append(data->bar, data->txt_on);
 	Widget_Append(data->bar, data->slider);
 	Widget_Append(data->bar, data->txt_off);
@@ -109,6 +111,8 @@ static void Switch_OnInit(LCUI_Widget w)
 	Switch data = Widget_AddData(w, self.prototype, data_size);
 
 	data->checked = FALSE;
+	data->content = NULL;
+	data->inner = LCUIWidget_New(NULL);
 	data->bar = LCUIWidget_New(NULL);
 	data->slider = LCUIWidget_New(NULL);
 	data->checked_text = NULL;
@@ -118,9 +122,11 @@ static void Switch_OnInit(LCUI_Widget w)
 	data->txt_off = NULL;
 	data->txt_on = NULL;
 	Widget_AddClass(w, "switch");
-	Widget_AddClass(data->bar, "switch-bar");
-	Widget_AddClass(data->slider, "switch-slider");
-	Widget_Append(w, data->bar);
+	Widget_AddClass(data->inner, "switch-inner");
+	Widget_AddClass(data->bar, "switch-inner-bar");
+	Widget_AddClass(data->slider, "switch-inner-slider");
+	Widget_Append(data->inner, data->bar);
+	Widget_Append(w, data->inner);
 	Widget_BindEvent(w, "click", Switch_OnClick, NULL, NULL);
 	Switch_ResetChildren(w);
 }
@@ -232,9 +238,22 @@ void Switch_SetUncheckedIcon(LCUI_Widget w, const char *icon_name)
 	Switch_ResetChildren(w);
 }
 
+static void Switch_OnSetText(LCUI_Widget w, const char *text)
+{
+	Switch data = Widget_GetData(w, self.prototype);
+
+	if (!data->content) {
+		data->content = LCUIWidget_New("span");
+		Widget_AddClass(data->content, "switch-text");
+		Widget_Append(w, data->content);
+	}
+	TextView_SetText(data->content, text);
+}
+
 void LCDesign_InitSwitch(void)
 {
 	self.prototype = LCUIWidget_NewPrototype("switch", NULL);
 	self.prototype->setattr = Switch_OnSetAttribute;
+	self.prototype->settext = Switch_OnSetText;
 	self.prototype->init = Switch_OnInit;
 }
