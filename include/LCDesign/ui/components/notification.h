@@ -19,6 +19,8 @@ typedef struct LCDesign_NotificationConfigRec_ {
 	long duration;
 } LCDesign_NotificationConfigRec, *LCDesign_NotificationConfig;
 
+LCUI_API void LCDesign_SetNotificationContainer(LCUI_Widget w);
+
 LCUI_API LCUI_Widget
 LCDesign_OpenNotification(LCDesign_NotificationConfig config);
 

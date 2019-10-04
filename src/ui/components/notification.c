@@ -10,11 +10,18 @@ struct LCDesign_Notification {
 	LCUI_Widget top_right_container;
 	LCUI_Widget bottom_left_container;
 	LCUI_Widget bottom_right_container;
+	LCUI_Widget custom_container;
 } self;
 
 static void OnClickCloseButton(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 {
 	LCDesign_CloseNotification(e->data);
+}
+
+
+void LCDesign_SetNotificationContainer(LCUI_Widget w)
+{
+	self.custom_container = w;
 }
 
 LCUI_Widget LCDesign_OpenNotification(LCDesign_NotificationConfig config)
@@ -31,7 +38,9 @@ LCUI_Widget LCDesign_OpenNotification(LCDesign_NotificationConfig config)
 	if (!placement) {
 		placement = "top-right";
 	}
-	if (strcmp(placement, "top-left") == 0) {
+	if (self.custom_container) {
+		container = self.custom_container;
+	} else if (strcmp(placement, "top-left") == 0) {
 		container = self.top_left_container;
 		if (!container) {
 			container = LCUIWidget_New(NULL);
@@ -39,6 +48,7 @@ LCUI_Widget LCDesign_OpenNotification(LCDesign_NotificationConfig config)
 			Widget_AddClass(container,
 					"notification-container "
 					"notification-container-top-left");
+			Widget_Append(LCUIWidget_GetRoot(), container);
 		}
 	} else if (strcmp(placement, "bottom-left") == 0) {
 		container = self.bottom_left_container;
@@ -48,6 +58,7 @@ LCUI_Widget LCDesign_OpenNotification(LCDesign_NotificationConfig config)
 			Widget_AddClass(container,
 					"notification-container "
 					"notification-container-bottom-left");
+			Widget_Append(LCUIWidget_GetRoot(), container);
 		}
 	} else if (strcmp(placement, "bottom-right") == 0) {
 		container = self.bottom_right_container;
@@ -57,6 +68,7 @@ LCUI_Widget LCDesign_OpenNotification(LCDesign_NotificationConfig config)
 			Widget_AddClass(container,
 					"notification-container "
 					"notification-container-bottom-right");
+			Widget_Append(LCUIWidget_GetRoot(), container);
 		}
 	} else {
 		container = self.top_right_container;
@@ -66,6 +78,7 @@ LCUI_Widget LCDesign_OpenNotification(LCDesign_NotificationConfig config)
 			Widget_AddClass(container,
 					"notification-container "
 					"notification-container-top-right");
+			Widget_Append(LCUIWidget_GetRoot(), container);
 		}
 	}
 	box = LCUIWidget_New(NULL);
@@ -92,7 +105,6 @@ LCUI_Widget LCDesign_OpenNotification(LCDesign_NotificationConfig config)
 	Widget_Append(box, content);
 	Widget_Append(box, close);
 	Widget_Append(container, box);
-	Widget_Append(LCUIWidget_GetRoot(), container);
 	if (config->duration > 0) {
 		LCUI_SetTimeout(config->duration,
 				(TimerCallback)LCDesign_CloseNotification, box);

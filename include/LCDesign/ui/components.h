@@ -47,6 +47,7 @@
 #include <LCDesign/ui/components/typography.h>
 #include <LCDesign/ui/components/modal.h>
 #include <LCDesign/ui/components/message.h>
+#include <LCDesign/ui/components/notification.h>
 #include <LCDesign/ui/components/dropdown.h>
 
 #endif
