@@ -18,11 +18,11 @@
 
 ([English](README.md)/**中文**)
 
+![LC Design Preview](docs/images/preview.png)
+
 LCDesign (LC's Design) 是一个专为 [LCUI](https://github.com/lc-soft/LCUI) 设计的 UI 组件库，它提供了用于文本排版和常用元素的基本样式、简单的布局系统、CSS 组件和实用工具。它的 CSS 代码基于 [Bootstrap](https://github.com/twbs/bootstrap)，其用法和 Bootstrap 大致一样，但需要注意的是，受限于 LCUI 现有特性以及对 CSS 标准的支持程度，并未完全实现 Boostrap 中的功能。
 
 **注意：** 这不是 web 前端组件库，你无法用网络浏览器体验它的效果，正确的做法是下载源代码、构建、然后运行 demo 程序。
-
-![LC Design](https://lcui.lc-soft.io/static/images/screenshot-lcui-css.gif)
 
 ## 组件
 
