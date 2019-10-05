@@ -50,5 +50,6 @@ void LCDesign_Init(void)
 	LCDesign_InitDropdown();
 	LCDesign_InitToggle();
 	LCDesign_InitDismiss();
+	LCDesign_InitMessage();
 	LCDesign_InitNotification();
 }
