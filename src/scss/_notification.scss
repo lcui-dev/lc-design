@@ -52,7 +52,7 @@
   position: absolute;
 }
 
-.notification-has-icon .notification-notice-content {
+.notification-notice-has-icon .notification-notice-content {
   padding-left: $notification-notice-icon-size + map-get($spacers, 2);
 }
 
