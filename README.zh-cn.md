@@ -113,7 +113,7 @@ LCDesign 目前没有适用于 Linux 二进制包，你需要手动下载源码�
 
 构建 LCDesign 需要如下的依赖项：
 
-- [Xmake](http://xmake.io) - 一个构建工具，用于编译 C 源代码
+- [XMake](http://xmake.io) - 一个构建工具，用于编译 C 源代码
 - [NodeJS](https://nodejs.org) - 一个 JavaScript 运行时环境，用于运行 JavaScript 写的构建工具
 - [Python](https://www.python.org/) - 一个环境，用于运行 Python 写的构建工具
 

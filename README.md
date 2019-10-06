@@ -113,7 +113,7 @@ LCDesign does not have a binary package for Linux, you need to manually download
 
 Building LCDesign has the following dependencies:
 
-- [Xake](http://xmake.io) - a build tool for compiling C source code
+- [XMake](http://xmake.io) - a build tool for compiling C source code
 - [NodeJS](https://nodejs.org) - a JavaScript runtime for run build tools
 - [Python](https://www.python.org/) - a environment for run python build tools
 
