@@ -14,6 +14,19 @@
 
 <br>
 
+## Table of contents
+
+- [Introduction](#introduction)
+- [Components](#components)
+- [Quick start](#quick-start)
+- [Build](#build)
+    - [Prerequisites](#prerequisites)
+    - [Build Targets](#build-targets)
+- [Install](#install)
+- [Design reference](#design-reference)
+- [Creator](#creator)
+- [Legal](#legal)
+
 ## Introduction
 
 (**English**/[中文](README.zh-cn.md))
@@ -56,8 +69,39 @@ LCDesign (LC's Design) is a UI component framework for building [LCUI](https://g
 
 Several quick start options are available:
 
+- clone and run the [lc-ui/lc-design-app](https://github.com/lc-ui/lc-design-appt) repository to preview:
+
+  ```bash
+  # Clone this repository
+  git clone https://github.com/lc-ui/lc-design-app
+
+  # Go into the repository
+  cd lc-design-app
+
+  # Install NodeJS dependencies
+  npm install
+
+  # Install C/C++ dependencies for x64 CPU architecture
+  lcpkg install --arch x64
+
+  # Run the app with debug mode
+  lcpkg run start --mode debug
+  ```
+
+- Install with [lcpkg](https://github.com/lc-soft/lcpkg)
+
+  ```bash
+  # Install with default options
+  lcpkg install github.com/lc-ui/lc-design
+
+  # For x64 CPU architecture
+  lcpkg install github.com/lc-ui/lc-design --arch x64
+
+  # For Universal Windows Platform (UWP) and x64 CPU architecture
+  lcpkg install github.com/lc-ui/lc-design --arch x64 --platform uwp
+  ```
+
 - [Download the latest release.](https://github.com/lc-ui/lc-design/releases)
-- Install with [lcpkg](https://github.com/lc-soft/lcpkg): `lcpkg install github.com/lc-ui/lc-design`
 
 If your operating system is not Windows, please continue reading below.
 

@@ -14,6 +14,19 @@
 
 <br>
 
+## 目录
+
+- [介绍](#介绍)
+- [组件](#组件)
+- [快速开始](#快速开始)
+- [构建](#构建)
+    - [先决条件](#先决条件)
+    - [构建目标](#构建目标)
+- [安装](#安装)
+- [设计参考](#设计参考)
+- [作者](#作者)
+- [许可](#许可)
+
 ## 介绍
 
 ([English](README.md)/**中文**)
@@ -56,8 +69,39 @@ LCDesign (LC's Design) 是一个专为 [LCUI](https://github.com/lc-soft/LCUI) �
 
 有以下方式可以选择:
 
+- 克隆并运行 [lcui/lc-design-app](https://github.com/lc-ui/lc-design-app) 示例应用以快速预览 LC Design 的示例效果
+
+  ```bash
+  # 克隆这个仓库
+  git clone https://github.com/lc-ui/lc-design-app
+
+  # 进入仓库
+  cd lc-design-app
+
+  # 安装 NodeJS 依赖包
+  npm install
+
+  # 安装适用于 x64 CPU 架构的 C/C++ 依赖库
+  lcpkg install --arch x64
+
+  # 以调试模式运行应用程序
+  lcpkg run start --mode debug
+  ```
+
+- 用 [lcpkg](https://github.com/lc-soft/lcpkg) 安装
+
+  ```bash
+  # 按照默认选项来安装
+  lcpkg install github.com/lc-ui/lc-design
+
+  # 如果你需要适用于 x64 CPU 架构的版本
+  lcpkg install github.com/lc-ui/lc-design --arch x64
+
+  # 如果你需要适用于 Windows 通用应用平台(UWP) 的版本
+  lcpkg install github.com/lc-ui/lc-design --arch x64 --platform uwp
+  ```
+
 - [下载最新发行版](https://github.com/lc-ui/lc-design/releases)
-- 用 [lcpkg](https://github.com/lc-soft/lcpkg) 安装: `lcpkg install github.com/lc-ui/lc-design`
 
 如果你使用的不是 Windows 系统，请继续阅读下面的内容。
 
