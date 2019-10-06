@@ -44,5 +44,6 @@
     <ClInclude Include="include\LCDesign\ui\components\radio-group.h" />
     <ClInclude Include="include\LCDesign\ui\components\message.h" />
     <ClInclude Include="include\LCDesign\ui\components\notification.h" />
+    <ClInclude Include="include\LCDesign\build.h" />
   </ItemGroup>
 </Project>

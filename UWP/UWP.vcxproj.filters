@@ -17,5 +17,38 @@
     <ClCompile Include="..\src\ui\components\dropdown.c" />
     <ClCompile Include="..\src\ui\dismiss.c" />
     <ClCompile Include="..\src\ui\components\alert.c" />
+    <ClCompile Include="..\src\ui\components\message.c" />
+    <ClCompile Include="..\src\ui\components\notification.c" />
+    <ClCompile Include="..\src\ui\components\tooltip.c" />
+    <ClCompile Include="..\src\ui\components\radio-group.c" />
+    <ClCompile Include="..\src\ui\components\switch.c" />
+    <ClCompile Include="..\src\ui\components\spinner.c" />
+    <ClCompile Include="..\src\ui\components\radio.c" />
+    <ClCompile Include="..\src\ui\components\checkbox.c" />
+    <ClCompile Include="..\src\ui\components\rate.c" />
+    <ClCompile Include="..\src\ui\components\img.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\LCDesign\ui\components\message.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\notification.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\radio.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\radio-group.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\checkbox.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\spinner.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\switch.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\tooltip.h" />
+    <ClInclude Include="..\include\LCDesign\ui\toggle.h" />
+    <ClInclude Include="..\include\LCDesign\ui\dismiss.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\typography.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\password.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\modal.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\label.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\img.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\icon.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\dropdown.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\alert.h" />
+    <ClInclude Include="..\include\LCDesign.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\rate.h" />
   </ItemGroup>
 </Project>

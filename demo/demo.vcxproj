@@ -100,13 +100,13 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)vendor\include;$(SolutionDir)..\LCUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalDependencies>LCUI.lib;LCDesign.lib;LCUIMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration);$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\$(Configuration)\lib;$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>copy "$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)\LC*.dll" "$(ProjectDir)app\"
@@ -120,13 +120,13 @@ xcopy "$(SolutionDir)dist\app\assets" "$(ProjectDir)app\assets" /S /Y</Command>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)vendor\include;$(SolutionDir)..\LCUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalDependencies>LCUI.lib;LCDesign.lib;LCUIMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration);$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\$(Configuration)\lib;$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>msvcrt</IgnoreSpecificDefaultLibraries>
     </Link>
     <PreBuildEvent>
@@ -143,15 +143,15 @@ xcopy "$(SolutionDir)dist\app\assets" "$(ProjectDir)app\assets" /S /Y</Command>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)vendor\include;$(SolutionDir)..\LCUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>LCUI.lib;LCDesign.lib;LCUIMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration);$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\lib;$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>msvcrtd</IgnoreSpecificDefaultLibraries>
     </Link>
     <PreBuildEvent>
@@ -168,15 +168,15 @@ xcopy "$(SolutionDir)dist\app\assets" "$(ProjectDir)app\assets" /S /Y</Command>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)vendor\include;$(SolutionDir)..\LCUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>LCUI.lib;LCDesign.lib;LCUIMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration);$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\lib;$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>copy "$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)\LC*.dll" "$(ProjectDir)app\"

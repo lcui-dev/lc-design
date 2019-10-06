@@ -29,14 +29,47 @@
   <ItemGroup>
     <ClCompile Include="..\src\main.c" />
     <ClCompile Include="..\src\ui\components\alert.c" />
+    <ClCompile Include="..\src\ui\components\checkbox.c" />
     <ClCompile Include="..\src\ui\components\dropdown.c" />
     <ClCompile Include="..\src\ui\components\icon.c" />
+    <ClCompile Include="..\src\ui\components\img.c" />
     <ClCompile Include="..\src\ui\components\label.c" />
+    <ClCompile Include="..\src\ui\components\message.c" />
     <ClCompile Include="..\src\ui\components\modal.c" />
+    <ClCompile Include="..\src\ui\components\notification.c" />
     <ClCompile Include="..\src\ui\components\password.c" />
+    <ClCompile Include="..\src\ui\components\radio-group.c" />
+    <ClCompile Include="..\src\ui\components\radio.c" />
+    <ClCompile Include="..\src\ui\components\rate.c" />
+    <ClCompile Include="..\src\ui\components\spinner.c" />
+    <ClCompile Include="..\src\ui\components\switch.c" />
+    <ClCompile Include="..\src\ui\components\tooltip.c" />
     <ClCompile Include="..\src\ui\components\typography.c" />
     <ClCompile Include="..\src\ui\dismiss.c" />
     <ClCompile Include="..\src\ui\toggle.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\LCDesign.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\alert.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\checkbox.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\dropdown.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\icon.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\img.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\label.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\message.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\modal.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\notification.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\password.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\radio-group.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\radio.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\rate.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\spinner.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\switch.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\tooltip.h" />
+    <ClInclude Include="..\include\LCDesign\ui\components\typography.h" />
+    <ClInclude Include="..\include\LCDesign\ui\dismiss.h" />
+    <ClInclude Include="..\include\LCDesign\ui\toggle.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{02864f77-72f5-4001-9cd8-5dd05b0416ad}</ProjectGuid>
@@ -57,12 +90,12 @@
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
@@ -73,13 +106,13 @@
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <PlatformToolset>v141</PlatformToolset>
@@ -111,27 +144,39 @@
   <PropertyGroup />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GenerateManifest>false</GenerateManifest>
-    <OutDir>$(SolutionDir)dist\lib\$(PlatformTarget)-uwp\$(Configuration)\</OutDir>
-    <TargetName>LCUIEx</TargetName>
-    <IntDir>$(SolutionDir)build\$(PlatformTarget)-uwp\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)build\$(PlatformTarget)-uwp\$(Configuration)\</OutDir>
+    <TargetName>LCDesign</TargetName>
+    <IntDir>$(SolutionDir)build\objs\$(PlatformTarget)-uwp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <GenerateManifest>false</GenerateManifest>
-    <OutDir>$(SolutionDir)dist\lib\$(PlatformTarget)-uwp\$(Configuration)\</OutDir>
-    <TargetName>LCUIEx</TargetName>
-    <IntDir>$(SolutionDir)build\$(PlatformTarget)-uwp\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)build\$(PlatformTarget)-uwp\$(Configuration)\</OutDir>
+    <TargetName>LCDesign</TargetName>
+    <IntDir>$(SolutionDir)build\objs\$(PlatformTarget)-uwp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(SolutionDir)build\$(PlatformTarget)-uwp\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\objs\$(PlatformTarget)-uwp\$(Configuration)\</IntDir>
+    <TargetName>LCDesign</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(SolutionDir)build\$(PlatformTarget)-uwp\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\objs\$(PlatformTarget)-uwp\$(Configuration)\</IntDir>
+    <TargetName>LCDesign</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(SolutionDir)build\$(PlatformTarget)-uwp\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\objs\$(PlatformTarget)-uwp\$(Configuration)\</IntDir>
+    <TargetName>LCDesign</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(SolutionDir)build\$(PlatformTarget)-uwp\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\objs\$(PlatformTarget)-uwp\$(Configuration)\</IntDir>
+    <TargetName>LCDesign</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -139,14 +184,14 @@
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)vendor\include;$(SolutionDir)..\LCUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>LCDESIGN_EXPORTS;_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\LCUI\bin\$(Configuration)\uwp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\$(Configuration)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LCUI.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -156,63 +201,83 @@
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)vendor\include;$(SolutionDir)..\LCUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>LCDESIGN_EXPORTS;_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\LCUI\bin\$(Configuration)\uwp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LCUI.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>LCDESIGN_EXPORTS;_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\$(Configuration)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LCUI.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>LCDESIGN_EXPORTS;_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LCUI.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>LCDESIGN_EXPORTS;_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <AdditionalDependencies>LCUI.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\$(Configuration)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)include;$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>LCDESIGN_EXPORTS;_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <AdditionalDependencies>LCUI.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-uwp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
