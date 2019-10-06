@@ -119,21 +119,25 @@ Building LCDesign has the following dependencies:
 
 After installing them, you need to run the following command to install the other dependencies:
 
-    pip install misaka pygments
-    npm install
+```bash
+pip install misaka pygments
+npm install
+```
 
 ### Build Targets
 
-    npm run build               # Build all targets.
-    npm run build-bin           # Build binary files.
-    npm run build-css           # Build css file.
-    npm run build-font          # Build iconfont file.
-    npm run build-demo          # Build demo application.
-    npm run build-demo-assets   # Build assets of demo application.
-    npm run build-demo-bin      # Build binary file of demo application.
-    npm run build-demo-css      # Build css file of demo application.
-    npm run build-demo-docs     # Build documentations of demo application.
-    npm run demo                # Run demo application.
+```bash
+npm run build               # Build all targets.
+npm run build-bin           # Build binary files.
+npm run build-css           # Build css file.
+npm run build-font          # Build iconfont file.
+npm run build-demo          # Build demo application.
+npm run build-demo-assets   # Build assets of demo application.
+npm run build-demo-bin      # Build binary file of demo application.
+npm run build-demo-css      # Build css file of demo application.
+npm run build-demo-docs     # Build documentations of demo application.
+npm run demo                # Run demo application.
+```
 
 ## Install
 
