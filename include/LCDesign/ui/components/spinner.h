@@ -32,6 +32,6 @@
 #ifndef LCDESIGN_SPINNER_H_
 #define LCDESIGN_SPINNER_H_
 
-LCUI_API void LCDesign_InitSpinner(void);
+LCDESIGN_API void LCDesign_InitSpinner(void);
 
 #endif

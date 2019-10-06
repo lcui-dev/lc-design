@@ -30,6 +30,7 @@
 
 #include <LCUI.h>
 #include <LCUI/gui/widget.h>
+#include <LCDesign/build.h>
 #include <LCDesign/ui/components/img.h>
 
 void LCDesign_InitImg(void)

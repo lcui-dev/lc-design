@@ -33,6 +33,7 @@
 #include <LCUI/font.h>
 #include <LCUI/gui/widget.h>
 #include <LCUI/gui/widget/textview.h>
+#include <LCDesign/build.h>
 #include <LCDesign/ui/components/rate.h>
 #include <LCDesign/ui/components/icon.h>
 

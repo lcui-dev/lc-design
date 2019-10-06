@@ -31,6 +31,6 @@
 #ifndef LCDESIGN_TOOLTIP_H_
 #define LCDESIGN_TOOLTIP_H_
 
-LCUI_API void LCDesign_InitTooltip(void);
+LCDESIGN_API void LCDesign_InitTooltip(void);
 
 #endif

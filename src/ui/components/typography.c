@@ -30,6 +30,7 @@
 
 #include <LCUI.h>
 #include <LCUI/gui/widget.h>
+#include <LCDesign/build.h>
 #include <LCDesign/ui/components/typography.h>
 
 void LCDesign_InitTypograhy(void)

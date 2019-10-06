@@ -31,6 +31,6 @@
 #ifndef LCDESIGN_PASSWORD_H_
 #define LCDESIGN_PASSWORD_H_
 
-LCUI_API void LCDesign_InitPassword(void);
+LCDESIGN_API void LCDesign_InitPassword(void);
 
 #endif

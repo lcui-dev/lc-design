@@ -31,6 +31,7 @@
 #include <LCUI.h>
 #include <LCUI/gui/widget.h>
 #include <LCUI/gui/widget/textedit.h>
+#include <LCDesign/build.h>
 #include <LCDesign/ui/components/password.h>
 
 static struct LCDesign_PasswordModule {

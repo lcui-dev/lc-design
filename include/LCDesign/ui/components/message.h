@@ -43,27 +43,27 @@ typedef struct LCDesign_MessageConfigRec_ {
 	long duration;
 } LCDesign_MessageConfigRec, *LCDesign_MessageConfig;
 
-LCUI_API void LCDesign_SetMessageContainer(LCUI_Widget w);
+LCDESIGN_API void LCDesign_SetMessageContainer(LCUI_Widget w);
 
-LCUI_API LCUI_Widget LCDesign_OpenMessage(LCDesign_MessageConfig config);
+LCDESIGN_API LCUI_Widget LCDesign_OpenMessage(LCDesign_MessageConfig config);
 
-LCUI_API void LCDesign_CloseMessage(LCUI_Widget message);
+LCDESIGN_API void LCDesign_CloseMessage(LCUI_Widget message);
 
-LCUI_API LCUI_Widget LCDesign_OpenSuccessMessage(const wchar_t *content,
+LCDESIGN_API LCUI_Widget LCDesign_OpenSuccessMessage(const wchar_t *content,
 						 long duration);
 
-LCUI_API LCUI_Widget LCDesign_OpenInfoMessage(const wchar_t *content,
+LCDESIGN_API LCUI_Widget LCDesign_OpenInfoMessage(const wchar_t *content,
 					      long duration);
 
-LCUI_API LCUI_Widget LCDesign_OpenWarningMessage(const wchar_t *content,
+LCDESIGN_API LCUI_Widget LCDesign_OpenWarningMessage(const wchar_t *content,
 						 long duration);
 
-LCUI_API LCUI_Widget LCDesign_OpenErrorMessage(const wchar_t *content,
+LCDESIGN_API LCUI_Widget LCDesign_OpenErrorMessage(const wchar_t *content,
 					       long duration);
 
-LCUI_API LCUI_Widget LCDesign_OpenLoadingMessage(const wchar_t *content,
+LCDESIGN_API LCUI_Widget LCDesign_OpenLoadingMessage(const wchar_t *content,
 						 long duration);
 
-LCUI_API void LCDesign_InitMessage(void);
+LCDESIGN_API void LCDesign_InitMessage(void);
 
 #endif

@@ -1,7 +1,5 @@
 ﻿#include <LCUI.h>
-#include <LCUI/gui/widget.h>
-#include <LCDesign/ui/components/icon.h>
-#include <LCDesign/ui/components/notification.h>
+#include <LCDesign.h>
 
 static LCUI_WidgetPrototype notification_view_proto;
 

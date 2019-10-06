@@ -29,8 +29,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <LCUI_Build.h>
-#include <LCUI/LCUI.h>
+#include <LCUI.h>
+#include <LCDesign/build.h>
 #include <LCUI/gui/widget.h>
 #include <LCDesign/ui/components/dropdown.h>
 

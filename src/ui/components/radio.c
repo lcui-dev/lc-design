@@ -32,6 +32,7 @@
 #include <LCUI/timer.h>
 #include <LCUI/gui/widget.h>
 #include <LCUI/gui/widget/textview.h>
+#include <LCDesign/build.h>
 #include <LCDesign/ui/components/radio.h>
 #include <LCDesign/ui/components/radio-group.h>
 

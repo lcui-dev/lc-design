@@ -31,6 +31,7 @@
 #include <stdio.h>
 #include <LCUI.h>
 #include <LCUI/gui/widget.h>
+#include <LCDesign/build.h>
 #include <LCDesign/ui/components/icon.h>
 
 #define CLASS_NAME		"icon"

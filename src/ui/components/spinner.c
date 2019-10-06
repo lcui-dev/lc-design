@@ -37,6 +37,7 @@
 #include <LCUI/gui/widget/canvas.h>
 #include <LCUI/gui/css_parser.h>
 #include <LCUI/gui/css_fontstyle.h>
+#include <LCDesign/build.h>
 
 #define M_PI 3.14159265358979323846
 #define SmoothLeftPixel(PX, X) (uchar_t)((PX)->a * (1.0 - (X - 1.0 * (int)X)))

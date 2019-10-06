@@ -32,18 +32,18 @@
 #ifndef LCDESIGN_SWITCH_H_
 #define LCDESIGN_SWITCH_H_
 
-LCUI_API void LCDesign_InitSwitch(void);
+LCDESIGN_API void LCDesign_InitSwitch(void);
 
-LCUI_API LCUI_BOOL Switch_IsChecked(LCUI_Widget w);
+LCDESIGN_API LCUI_BOOL Switch_IsChecked(LCUI_Widget w);
 
-LCUI_API void Switch_SetChecked(LCUI_Widget w, LCUI_BOOL checked);
+LCDESIGN_API void Switch_SetChecked(LCUI_Widget w, LCUI_BOOL checked);
 
-LCUI_API void Switch_SetCheckedText(LCUI_Widget w, const char *text);
+LCDESIGN_API void Switch_SetCheckedText(LCUI_Widget w, const char *text);
 
-LCUI_API void Switch_SetUncheckedText(LCUI_Widget w, const char *text);
+LCDESIGN_API void Switch_SetUncheckedText(LCUI_Widget w, const char *text);
 
-LCUI_API void Switch_SetCheckedIcon(LCUI_Widget w, const char *icon_name);
+LCDESIGN_API void Switch_SetCheckedIcon(LCUI_Widget w, const char *icon_name);
 
-LCUI_API void Switch_SetUncheckedIcon(LCUI_Widget w, const char *icon_name);
+LCDESIGN_API void Switch_SetUncheckedIcon(LCUI_Widget w, const char *icon_name);
 
 #endif

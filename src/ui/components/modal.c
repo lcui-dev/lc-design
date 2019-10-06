@@ -31,6 +31,7 @@
 #include <LCUI.h>
 #include <LCUI/gui/widget.h>
 #include <LCUI/gui/widget/scrollbar.h>
+#include <LCDesign/build.h>
 #include <LCDesign/ui/components/modal.h>
 
 typedef struct LCDesign_ModalRec_ {

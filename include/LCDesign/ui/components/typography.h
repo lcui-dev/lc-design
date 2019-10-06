@@ -31,6 +31,6 @@
 #ifndef LCDESIGN_TYPOGRAPHY_H_
 #define LCDESIGN_TYPOGRAPHY_H_
 
-LCUI_API void LCDesign_InitTypograhy(void);
+LCDESIGN_API void LCDesign_InitTypograhy(void);
 
 #endif

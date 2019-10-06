@@ -32,6 +32,6 @@
 #ifndef LCDESIGN_ALERT_H_
 #define LCDESIGN_ALERT_H_
 
-LCUI_API void LCDesign_InitAlert(void);
+LCDESIGN_API void LCDesign_InitAlert(void);
 
 #endif

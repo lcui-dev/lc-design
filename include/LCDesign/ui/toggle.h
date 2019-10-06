@@ -31,6 +31,6 @@
 #ifndef LCDESIGN_TOGGLE_H_
 #define LCDESIGN_TOGGLE_H_
 
-LCUI_API void LCDesign_InitToggle( void );
+LCDESIGN_API void LCDesign_InitToggle( void );
 
 #endif

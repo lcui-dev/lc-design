@@ -1,7 +1,7 @@
 ﻿/*
- * modal.h -- Modal component for adding dialogs.
+ * build.h -- Build related macro definitions
  *
- * Copyright (c) 2018, Liu chao <lc-soft@live.cn> All rights reserved.
+ * Copyright (c) 2019, Liu chao <lc-soft@live.cn> All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -28,13 +28,16 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LCDESIGN_MODAL_H_
-#define LCDESIGN_MODAL_H_
+#ifndef LCDESIGN_BUILD_H
+#define LCDESIGN_BUILD_H
 
-LCDESIGN_API void LCDesign_InitModal(void);
-
-LCDESIGN_API void Modal_Show(LCUI_Widget w);
-
-LCDESIGN_API void Modal_Hide(LCUI_Widget w);
-
+#if defined(__GNUC__)
+#define LCDESIGN_API
+#else /* newer compiler */
+#ifdef LCDESIGN_EXPORTS
+#define LCDESIGN_API __declspec(dllexport)
+#else
+#define LCDESIGN_API
+#endif
+#endif
 #endif

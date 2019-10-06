@@ -31,6 +31,6 @@
 #ifndef LCDESIGN_IMG_H_
 #define LCDESIGN_IMG_H_
 
-LCUI_API void LCDesign_InitImg(void);
+LCDESIGN_API void LCDesign_InitImg(void);
 
 #endif

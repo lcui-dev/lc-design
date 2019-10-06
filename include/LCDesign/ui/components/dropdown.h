@@ -32,16 +32,16 @@
 #ifndef LCDESIGN_DROPDOWN_H_
 #define LCDESIGN_DROPDOWN_H_
 
-LCUI_API void LCDesign_InitDropdown( void );
+LCDESIGN_API void LCDesign_InitDropdown( void );
 
-LCUI_API void Dropdown_Hide( LCUI_Widget w );
+LCDESIGN_API void Dropdown_Hide( LCUI_Widget w );
 
-LCUI_API void Dropdown_Show( LCUI_Widget w );
+LCDESIGN_API void Dropdown_Show( LCUI_Widget w );
 
-LCUI_API void Dropdown_BindTarget( LCUI_Widget w, LCUI_Widget target );
+LCDESIGN_API void Dropdown_BindTarget( LCUI_Widget w, LCUI_Widget target );
 
-LCUI_API void Dropdown_Toggle( LCUI_Widget w );
+LCDESIGN_API void Dropdown_Toggle( LCUI_Widget w );
 
-LCUI_API void Dropdown_SetPosition( LCUI_Widget w, LCUI_StyleValue position );
+LCDESIGN_API void Dropdown_SetPosition( LCUI_Widget w, LCUI_StyleValue position );
 
 #endif

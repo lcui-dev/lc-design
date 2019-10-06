@@ -1,6 +1,5 @@
 ﻿#include <LCUI.h>
-#include <LCUI/gui/widget.h>
-#include <LCDesign/ui/components/message.h>
+#include <LCDesign.h>
 
 static LCUI_WidgetPrototype message_view_proto;
 

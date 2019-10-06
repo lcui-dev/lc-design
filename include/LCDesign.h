@@ -31,10 +31,11 @@
 #ifndef LCDESIGN_H_
 #define LCDESIGN_H_
 
+#include <LCDesign/build.h>
 #include <LCDesign/ui/components.h>
 #include <LCDesign/ui/toggle.h>
 #include <LCDesign/ui/dismiss.h>
 
-LCUI_API void LCDesign_Init(void);
+LCDESIGN_API void LCDesign_Init(void);
 
 #endif

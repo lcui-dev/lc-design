@@ -49,36 +49,36 @@ typedef struct LCDesign_NotificationConfigRec_ {
 	long duration;
 } LCDesign_NotificationConfigRec, *LCDesign_NotificationConfig;
 
-LCUI_API void LCDesign_SetNotificationContainer(LCUI_Widget w);
+LCDESIGN_API void LCDesign_SetNotificationContainer(LCUI_Widget w);
 
-LCUI_API LCUI_Widget
+LCDESIGN_API LCUI_Widget
 LCDesign_OpenNotification(LCDesign_NotificationConfig config);
 
-LCUI_API void LCDesign_CloseNotification(LCUI_Widget message);
+LCDESIGN_API void LCDesign_CloseNotification(LCUI_Widget message);
 
-LCUI_API LCUI_Widget LCDesign_OpenNormalNotification(const wchar_t *title,
+LCDESIGN_API LCUI_Widget LCDesign_OpenNormalNotification(const wchar_t *title,
 						     const wchar_t *description,
 						     const char *placement,
 						     long duration);
 
-LCUI_API LCUI_Widget LCDesign_OpenSuccessNotification(
+LCDESIGN_API LCUI_Widget LCDesign_OpenSuccessNotification(
     const wchar_t *title, const wchar_t *description, const char *placement,
     long duration);
 
-LCUI_API LCUI_Widget LCDesign_OpenInfoNotification(const wchar_t *title,
+LCDESIGN_API LCUI_Widget LCDesign_OpenInfoNotification(const wchar_t *title,
 						   const wchar_t *description,
 						   const char *placement,
 						   long duration);
 
-LCUI_API LCUI_Widget LCDesign_OpenWarningNotification(
+LCDESIGN_API LCUI_Widget LCDesign_OpenWarningNotification(
     const wchar_t *title, const wchar_t *description, const char *placement,
     long duration);
 
-LCUI_API LCUI_Widget LCDesign_OpenErrorNotification(const wchar_t *title,
+LCDESIGN_API LCUI_Widget LCDesign_OpenErrorNotification(const wchar_t *title,
 						    const wchar_t *description,
 						    const char *placement,
 						    long duration);
 
-LCUI_API void LCDesign_InitNotification(void);
+LCDESIGN_API void LCDesign_InitNotification(void);
 
 #endif

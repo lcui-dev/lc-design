@@ -31,8 +31,8 @@
 #ifndef LCDESIGN_ICON_H_
 #define LCDESIGN_ICON_H_
 
-LCUI_API int Icon_SetName(LCUI_Widget w, const char *name);
+LCDESIGN_API int Icon_SetName(LCUI_Widget w, const char *name);
 
-LCUI_API void LCDesign_InitIcon(void);
+LCDESIGN_API void LCDesign_InitIcon(void);
 
 #endif

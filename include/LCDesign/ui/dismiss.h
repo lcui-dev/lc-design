@@ -31,6 +31,6 @@
 #ifndef LCDESIGN_DISMISS_H_
 #define LCDESIGN_DISMISS_H_
 
-LCUI_API void LCDesign_InitDismiss( void );
+LCDESIGN_API void LCDesign_InitDismiss( void );
 
 #endif

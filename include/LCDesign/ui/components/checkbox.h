@@ -32,10 +32,10 @@
 #ifndef LCDESIGN_CHECKBOX_H_
 #define LCDESIGN_CHECKBOX_H_
 
-LCUI_API void LCDesign_InitCheckBox(void);
+LCDESIGN_API void LCDesign_InitCheckBox(void);
 
-LCUI_API LCUI_BOOL CheckBox_IsChecked(LCUI_Widget w);
+LCDESIGN_API LCUI_BOOL CheckBox_IsChecked(LCUI_Widget w);
 
-LCUI_API void CheckBox_SetChecked(LCUI_Widget w, LCUI_BOOL checked);
+LCDESIGN_API void CheckBox_SetChecked(LCUI_Widget w, LCUI_BOOL checked);
 
 #endif

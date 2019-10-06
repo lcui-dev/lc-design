@@ -32,6 +32,6 @@
 #ifndef LCDESIGN_LABEL_H_
 #define LCDESIGN_LABEL_H_
 
-LCUI_API void LCDesign_InitLabel(void);
+LCDESIGN_API void LCDesign_InitLabel(void);
 
 #endif
