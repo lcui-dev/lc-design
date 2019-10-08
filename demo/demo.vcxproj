@@ -109,7 +109,7 @@
       <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\$(Configuration)\lib;$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
-      <Command>copy "$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)\LC*.dll" "$(ProjectDir)app\"
+      <Command>copy "$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\$(Configuration)\bin\LC*.dll" "$(ProjectDir)app\"
 copy "$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration)\LC*.dll" "$(ProjectDir)app\"
 xcopy "$(SolutionDir)dist\app\assets" "$(ProjectDir)app\assets" /S /Y</Command>
     </PreBuildEvent>
@@ -130,7 +130,7 @@ xcopy "$(SolutionDir)dist\app\assets" "$(ProjectDir)app\assets" /S /Y</Command>
       <IgnoreSpecificDefaultLibraries>msvcrt</IgnoreSpecificDefaultLibraries>
     </Link>
     <PreBuildEvent>
-      <Command>copy "$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)\LC*.dll" "$(ProjectDir)app\"
+      <Command>copy "$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\$(Configuration)\bin\LC*.dll" "$(ProjectDir)app\"
 copy "$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration)\LC*.dll" "$(ProjectDir)app\"
 xcopy "$(SolutionDir)dist\app\assets" "$(ProjectDir)app\assets" /S /Y</Command>
     </PreBuildEvent>
@@ -155,7 +155,7 @@ xcopy "$(SolutionDir)dist\app\assets" "$(ProjectDir)app\assets" /S /Y</Command>
       <IgnoreSpecificDefaultLibraries>msvcrtd</IgnoreSpecificDefaultLibraries>
     </Link>
     <PreBuildEvent>
-      <Command>copy "$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)\LC*.dll" "$(ProjectDir)app\"
+      <Command>copy "$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\bin\LC*.dll" "$(ProjectDir)app\"
 copy "$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration)\LC*.dll" "$(ProjectDir)app\"
 xcopy "$(SolutionDir)dist\app\assets" "$(ProjectDir)app\assets" /S /Y</Command>
     </PreBuildEvent>
@@ -179,7 +179,7 @@ xcopy "$(SolutionDir)dist\app\assets" "$(ProjectDir)app\assets" /S /Y</Command>
       <AdditionalLibraryDirectories>$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\lib;$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
-      <Command>copy "$(SolutionDir)vendor\lib\$(PlatformTarget)-windows\$(Configuration)\LC*.dll" "$(ProjectDir)app\"
+      <Command>copy "$(SolutionDir)lcpkg\installed\$(PlatformTarget)-windows\bin\LC*.dll" "$(ProjectDir)app\"
 copy "$(SolutionDir)build\$(PlatformTarget)-windows\$(Configuration)\LC*.dll" "$(ProjectDir)app\"
 xcopy "$(SolutionDir)dist\app\assets" "$(ProjectDir)app\assets" /S /Y</Command>
     </PreBuildEvent>
