@@ -1,5 +1,26 @@
-## [0.1.2](https://github.com/lc-ui/lcui.css/compare/v0.1.1...v0.1.2) (2019-03-10)
+# [1.0.0](https://github.com/lc-ui/lcui.css/compare/v0.1.2...v1.0.0) (2019-10-07)
 
+### 问题修复
+
+* .active 样式污染 ([25c64d4](https://github.com/lc-ui/lcui.css/commit/25c64d4))
+* 移除不受支持的 "!important" 关键字 ([f212f54](https://github.com/lc-ui/lcui.css/commit/f212f54))
+
+### 新功能
+
+* 添加多选框（Checkbox）组件 ([b4d6b63](https://github.com/lc-ui/lcui.css/commit/b4d6b63))
+* 添加布局相关的实用类 ([d5a55ec](https://github.com/lc-ui/lcui.css/commit/d5a55ec))
+* 添加全局提示（Message）组件 ([343a3df](https://github.com/lc-ui/lcui.css/commit/343a3df))
+* 添加通知提醒框（Notification）组件 ([a8885c5](https://github.com/lc-ui/lcui.css/commit/a8885c5))
+* 添加单选框（Radio）组件 ([b259bad](https://github.com/lc-ui/lcui.css/commit/b259bad))
+* 添加评分（Rate）组件 ([e036f13](https://github.com/lc-ui/lcui.css/commit/e036f13))
+* 添加加载中（Spinner）组件 ([70ff5ef](https://github.com/lc-ui/lcui.css/commit/70ff5ef))
+* 添加开关（Switch）组件 ([b28c219](https://github.com/lc-ui/lcui.css/commit/b28c219))
+* 添加提示（Tooltip）组件 ([ea4b744](https://github.com/lc-ui/lcui.css/commit/ea4b744))
+* 启用圆角边框 ([c59f6f8](https://github.com/lc-ui/lcui.css/commit/c59f6f8))
+* 更新主视图样式 ([c0a8b23](https://github.com/lc-ui/lcui.css/commit/c0a8b23))
+* 使用 text 代替 textview ([9f557f6](https://github.com/lc-ui/lcui.css/commit/9f557f6))
+
+## [0.1.2](https://github.com/lc-ui/lcui.css/compare/v0.1.1...v0.1.2) (2019-03-10)
 
 ### 问题修复
 
