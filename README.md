@@ -69,7 +69,7 @@ LCDesign (LC's Design) is a UI component framework for building [LCUI](https://g
 
 Several quick start options are available:
 
-- Clone and run the [lc-ui/lc-design-app](https://github.com/lc-ui/lc-design-appt) repository to preview:
+- Clone and run the [lc-ui/lc-design-app](https://github.com/lc-ui/lc-design-app) repository to preview:
 
   ```bash
   # Clone this repository
