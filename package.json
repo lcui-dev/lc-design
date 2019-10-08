@@ -1,7 +1,7 @@
 {
-  "name": "lcui.css",
-  "version": "0.1.2",
-  "description": "Simple CSS framework for developing LCUI application.",
+  "name": "lc-design",
+  "version": "1.0.0",
+  "description": "A UI component framework for building LCUI application.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -36,6 +36,9 @@
   },
   "homepage": "https://github.com/lc-ui/lcui.css#readme",
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/travis-cli": "^8.2.0",
     "iconv-lite": "^0.4.19",
     "node-sass": "^4.9.3",
     "npm-run-all": "^4.1.1"
