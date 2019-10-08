@@ -1,0 +1,43 @@
+{
+  "name": "lc-design",
+  "version": "1.0.0",
+  "description": "A UI component framework for building LCUI application.",
+  "author": "Liu",
+  "arch": [
+    "x86",
+    "x64"
+  ],
+  "platform": [
+    "windows",
+    "uwp"
+  ],
+  "mode": [
+    "debug",
+    "release"
+  ],
+  "package": {
+    "entry": {
+      "lib": "build/${arch}-${platform}/${mode}",
+      "bin": "build/${arch}-${platform}/${mode}",
+      "content": "dist",
+      "include": {
+        "input": "include",
+        "recursive": true
+      }
+    }
+  },
+  "dependencies": {
+    "LCUI": {
+      "version": "v1.3.0",
+      "uri": "github:lc-soft/LCUI",
+      "resolved": {
+        "x64-uwp": "https://github.com/lc-soft/LCUI/releases/download/v1.3.0/LCUI-1.3.0_x64-uwp.lcpkg.zip",
+        "all": "https://github.com/lc-soft/LCUI/releases/download/v1.3.0/LCUI-1.3.0_x86-windows.lcpkg.zip",
+        "x64-windows": "https://github.com/lc-soft/LCUI/releases/download/v1.3.0/LCUI-1.3.0_x64-windows.lcpkg.zip",
+        "x86-uwp": "https://github.com/lc-soft/LCUI/releases/download/v1.3.0/LCUI-1.3.0_x86-uwp.lcpkg.zip",
+        "x86-windows": "https://github.com/lc-soft/LCUI/releases/download/v1.3.0/LCUI-1.3.0_x86-windows.lcpkg.zip"
+      },
+      "linkage": "auto"
+    }
+  }
+}
