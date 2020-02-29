@@ -38,4 +38,6 @@
 
 LCDESIGN_API void LCDesign_Init(void);
 
+LCDESIGN_API const char *LCDesign_GetVersion(void);
+
 #endif

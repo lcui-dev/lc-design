@@ -40,4 +40,7 @@
 #define LCDESIGN_API
 #endif
 #endif
+
+#define LCDESIGN_VERSION_STRING "1.1.0"
+
 #endif

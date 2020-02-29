@@ -31,6 +31,11 @@
 #include <LCUI.h>
 #include <LCDesign.h>
 
+const char *LCDesign_GetVersion(void)
+{
+	return LCDESIGN_VERSION_STRING;
+}
+
 void LCDesign_Init(void)
 {
 	LCDesign_InitAlert();
