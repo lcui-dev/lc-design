@@ -35,6 +35,7 @@
 
 void LCDesign_InitTypograhy(void)
 {
+	LCUIWidget_NewPrototype("hr", NULL);
 	LCUIWidget_NewPrototype("text", "textview");
 	LCUIWidget_NewPrototype("span", "text");
 	LCUIWidget_NewPrototype("h1", "text");
