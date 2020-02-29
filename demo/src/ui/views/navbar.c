@@ -35,5 +35,4 @@ void Navbar_Init(void)
 	btn = LCUIWidget_GetById(BTN_CHANGE_SCALE);
 	dropdown = LCUIWidget_GetById(DROPDOWN_SCALE);
 	Widget_BindEvent(dropdown, "change.dropdown", OnChangeScale, btn, NULL);;
-
 }

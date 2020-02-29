@@ -43,7 +43,6 @@
 #define SmoothLeftPixel(PX, X) (uchar_t)((PX)->a * (1.0 - (X - 1.0 * (int)X)))
 #define SmoothRightPixel(PX, X) (uchar_t)((PX)->a * (X - 1.0 * (int)X))
 
-
 typedef enum SpinnerType { SPINNER_DEFAULT, SPINNER_RING } SpinnerType;
 
 typedef struct SpinnerRec_ {
@@ -199,7 +198,8 @@ static void Spinner_OnDestroy(LCUI_Widget w)
 	LCUITimer_Free(spinner->timer);
 }
 
-static void Spinner_AutoSize(LCUI_Widget w, float *width, float *height)
+static void Spinner_AutoSize(LCUI_Widget w, float *width, float *height,
+			     LCUI_LayoutRule rule)
 {
 	float scale = LCUIMetrics_GetScale();
 	Spinner spinner = Widget_GetData(w, spinner_module.proto);
@@ -223,7 +223,7 @@ static void Spinner_OnUpdateStyle(LCUI_Widget w)
 	spinner->line_width = max(2, spinner->size / 8);
 	spinner->color = style.color;
 	CSSFontStyle_Destroy(&style);
-	Widget_UpdateSize(w);
+	Widget_AddTask(w, LCUI_WTASK_REFLOW);
 }
 
 static void Spinner_OnSetAttribute(LCUI_Widget w, const char *name,
