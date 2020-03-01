@@ -48,7 +48,9 @@ static struct DropdwonModule {
 void Dropdown_UpdatePosition(LCUI_Widget w)
 {
 	float x, y;
-	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
+	LCDesign_Dropdown data;
+
+	data = Widget_GetData(w, self.menu);
 	if (!data->target) {
 		Widget_Move(w, 0, 0);
 		return;
@@ -114,7 +116,9 @@ void Dropdown_UpdatePosition(LCUI_Widget w)
 
 void Dropdown_Hide(LCUI_Widget w)
 {
-	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
+	LCDesign_Dropdown data;
+
+	data = Widget_GetData(w, self.menu);
 	if (data->target) {
 		Widget_RemoveClass(data->target, "active");
 	}
@@ -126,6 +130,7 @@ void Dropdown_Show(LCUI_Widget w)
 {
 	LCUI_Widget root = LCUIWidget_GetRoot();
 	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
+
 	if (data->target) {
 		Widget_AddClass(data->target, "active");
 	}
@@ -145,11 +150,13 @@ void Dropdown_Toggle(LCUI_Widget w)
 	}
 }
 
-static void Dropdown_OnClickOutside(LCUI_Widget w,
-				    LCUI_WidgetEvent e, void *arg)
+static void Dropdown_OnClickOutside(LCUI_Widget w, LCUI_WidgetEvent e,
+				    void *arg)
 {
 	LCUI_Widget target;
-	LCDesign_Dropdown dropdown = Widget_GetData(e->data, self.menu);
+	LCDesign_Dropdown dropdown;
+
+	dropdown = Widget_GetData(e->data, self.menu);
 	for (target = e->target; target; target = target->parent) {
 		if (target == dropdown->target) {
 			return;
@@ -179,22 +186,15 @@ static void Dropdown_OnClick(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 
 static void Dropdown_Init(LCUI_Widget w)
 {
-	const size_t size = sizeof(LCDesign_DropdownRec);
-	LCDesign_Dropdown data = Widget_AddData(w, self.menu, size);
+	LCDesign_Dropdown data;
 
+	data = Widget_AddData(w, self.menu, sizeof(LCDesign_DropdownRec));
 	data->target = NULL;
 	data->position = SV_BOTTOM_LEFT;
 	data->handler_id = Widget_BindEvent(LCUIWidget_GetRoot(), "click",
-					    Dropdown_OnClickOutside,
-					    w, NULL);
+					    Dropdown_OnClickOutside, w, NULL);
 	Widget_BindEvent(w, "click", Dropdown_OnClick, NULL, NULL);
 	Widget_AddClass(w, "dropdown-menu");
-}
-
-static void Dropdown_Destroy(LCUI_Widget w)
-{
-	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
-	Widget_UnbindEventByHandlerId(LCUIWidget_GetRoot(), data->handler_id);
 }
 
 static void DropdownTarget_OnClick(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
@@ -206,29 +206,69 @@ static void DropdownTarget_OnClick(LCUI_Widget w, LCUI_WidgetEvent e, void *arg)
 	e->cancel_bubble = TRUE;
 }
 
+static void DropdownTarget_OnDestroy(LCUI_Widget w, LCUI_WidgetEvent e,
+				     void *arg)
+{
+	LCDesign_Dropdown data;
+
+	data = Widget_GetData(e->data, self.menu);
+	data->target = NULL;
+	Widget_Destroy(e->data);
+}
+
+static void Dropdown_UnbindTarget(LCUI_Widget w)
+{
+	LCDesign_Dropdown data;
+
+	data = Widget_GetData(w, self.menu);
+	if (data->target) {
+		Widget_UnbindEvent(data->target, "click",
+				   DropdownTarget_OnClick);
+		Widget_UnbindEvent(data->target, "destroy",
+				   DropdownTarget_OnDestroy);
+	}
+	data->target = NULL;
+}
+
+static void Dropdown_Destroy(LCUI_Widget w)
+{
+	LCDesign_Dropdown data;
+
+	Dropdown_UnbindTarget(w);
+	data = Widget_GetData(w, self.menu);
+	Widget_UnbindEventByHandlerId(LCUIWidget_GetRoot(), data->handler_id);
+}
+
 void Dropdown_BindTarget(LCUI_Widget w, LCUI_Widget target)
 {
-	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
-	data->target = target;
-	if (data->target) {
-		Widget_UnbindEvent(target, "click", DropdownTarget_OnClick);
+	LCDesign_Dropdown data;
+
+	data = Widget_GetData(w, self.menu);
+	Dropdown_UnbindTarget(w);
+	if (target) {
+		Widget_BindEvent(target, "click", DropdownTarget_OnClick, w,
+				 NULL);
+		Widget_BindEvent(target, "destroy", DropdownTarget_OnDestroy, w,
+				 NULL);
 	}
-	Widget_BindEvent(target, "click", DropdownTarget_OnClick, w, NULL);
 	data->target = target;
 }
 
 void Dropdown_SetPosition(LCUI_Widget w, LCUI_StyleValue position)
 {
-	LCDesign_Dropdown data = Widget_GetData(w, self.menu);
+	LCDesign_Dropdown data;
+
+	data = Widget_GetData(w, self.menu);
 	data->position = position;
 	Dropdown_UpdatePosition(w);
 }
 
-static void Dropdown_SetAttr(LCUI_Widget w, const char *name,
-			     const char *value)
+static void Dropdown_SetAttr(LCUI_Widget w, const char *name, const char *value)
 {
+	LCDesign_Dropdown menu;
+
 	if (strcmp(name, "data-position") == 0) {
-		LCDesign_Dropdown menu = Widget_GetData(w, self.menu);
+		menu = Widget_GetData(w, self.menu);
 		int position = LCUI_GetStyleValue(value);
 		if (position <= 0) {
 			position = SV_BOTTOM_LEFT;
