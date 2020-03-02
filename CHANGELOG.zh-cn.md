@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/lc-ui/lcui.css/compare/v1.0.0...v1.1.0) (2020-03-02)
+
+### 问题修复
+
+* 下拉菜单应该与目标一同销毁，避免非法内存访问 ([2d5a89b](https://github.com/lc-ui/lcui.css/commit/2d5a89b))
+
+### 新功能
+
+* 添加 hr 部件 ([b3df646](https://github.com/lc-ui/lcui.css/commit/b3df646))
+* 添加 LCDesign_GetVersion() ([8dbd846](https://github.com/lc-ui/lcui.css/commit/8dbd846))
+* 迁移至 LCUI 2.0.0 ([e7e0ace](https://github.com/lc-ui/lcui.css/commit/e7e0ace))
+
+
 # [1.0.0](https://github.com/lc-ui/lcui.css/compare/v0.1.2...v1.0.0) (2019-10-07)
 
 ### 问题修复
