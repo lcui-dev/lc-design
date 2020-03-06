@@ -29,6 +29,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <string.h>
 #include <math.h>
 #include <LCUI.h>
 #include <LCUI/timer.h>
@@ -55,19 +56,19 @@ typedef struct SpinnerRec_ {
 	int line_width;
 	SpinnerType type;
 	LCUI_Color color;
-	clock_t start_time;
+	int64_t start_time;
 } SpinnerRec, *Spinner;
 
 static struct {
 	LCUI_WidgetPrototype proto;
 } spinner_module;
 
-static INLINE FillPixel(LCUI_Graph *g, int x, int y, LCUI_Color *color)
+INLINE void FillPixel(LCUI_Graph *g, int x, int y, LCUI_Color *color)
 {
 	g->argb[g->width * y + x] = *color;
 }
 
-static INLINE int line_angle(double x, double y)
+INLINE int line_angle(double x, double y)
 {
 	double radians = atan(y / x);
 
@@ -81,7 +82,7 @@ static INLINE int line_angle(double x, double y)
 	return (int)(radians * 180 / M_PI);
 }
 
-static INLINE LCUI_BOOL CheckInSlider(double x, double y, int start, int end)
+INLINE LCUI_BOOL CheckInSlider(double x, double y, int start, int end)
 {
 	int angle = line_angle(x, y);
 
@@ -159,16 +160,14 @@ static void Spinner_Render(LCUI_Widget w)
 	ctx->release(ctx);
 }
 
-static Spinner_OnFrame(LCUI_Widget w)
+static void Spinner_OnFrame(LCUI_Widget w)
 {
 	Spinner spinner = Widget_GetData(w, spinner_module.proto);
+	int duration = (int)LCUI_GetTimeDelta(spinner->start_time);
 
-	clock_t now = clock();
-	clock_t duration = (now - spinner->start_time) % spinner->duration;
-
-	spinner->start = (int)(360.0 - duration * 360.0 / spinner->duration);
-	if (duration >= spinner->start_time) {
-		spinner->start_time = now;
+	spinner->start = 360 - (int)(duration * 360.0 / spinner->duration) % 360;
+	if (duration >= spinner->duration) {
+		spinner->start_time += duration;
 	}
 	Spinner_Render(w);
 }
@@ -186,9 +185,9 @@ static void Spinner_OnInit(LCUI_Widget w)
 	spinner->angle = 90;
 	spinner->start = 360;
 	spinner->duration = 750;
-	spinner->start_time = clock();
+	spinner->start_time = LCUI_GetTime();
 	spinner->timer =
-	    LCUI_SetInterval(LCUI_MAX_FRAME_MSEC, Spinner_OnFrame, w);
+	    LCUI_SetInterval(LCUI_MAX_FRAME_MSEC, (TimerCallback)Spinner_OnFrame, w);
 }
 
 static void Spinner_OnDestroy(LCUI_Widget w)
