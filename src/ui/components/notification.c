@@ -28,6 +28,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <string.h>
 #include <LCUI.h>
 #include <LCUI/timer.h>
 #include <LCUI/gui/widget.h>
@@ -46,7 +47,7 @@ typedef struct NotificationNoticeRec_ {
 	LCUI_Widget description;
 } NotificationNoticeRec, *NotificationNotice;
 
-struct LCDesign_Notification {
+static struct LCDesign_Notification {
 	LCUI_Widget top_left_container;
 	LCUI_Widget top_right_container;
 	LCUI_Widget bottom_left_container;
