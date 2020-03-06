@@ -1,40 +1,27 @@
--- lcui.css 
-set_project("lcui.css")
+add_rules("mode.debug", "mode.release")
+set_warnings("all")
 
--- xmake minver
-set_xmakever("2.1.6")
-
--- the debug mode
+lcpkg_dir = "./lcpkg/installed/$(arch)-$(os)"
+lcpkg_incdir = lcpkg_dir.."/include"
+lcpkg_pkgdir = lcpkg_dir
 if is_mode("debug") then
-    
-    -- enable the debug symbols
-    set_symbols("debug")
-
-    -- disable optimization
-    set_optimize("none")
+    lcpkg_pkgdir = lcpkg_dir.."/debug"
 end
+lcpkg_libdir = lcpkg_pkgdir.."/lib"
+add_includedirs("include", lcpkg_incdir)
+add_linkdirs(lcpkg_libdir, "/usr/local/lib", "/usr/lib")
+add_defines("LCDESIGN_EXPORTS")
+add_files("src/**.c")
+add_headerfiles("include/(**.h)")
+add_installfiles("dist/app/assets/(**)", { prefixdir = "share/assets" })
 
--- the release mode
-if is_mode("release") then
+target("static")
+    set_kind("static")
+    set_basename("LCDesign")
 
-    -- enable fastest optimization
-    set_optimize("fastest")
-
-    -- strip all symbols
-    set_strip("all")
-end
-
-target("LCUIEx")
+target("shared")
     set_kind("shared")
-    set_targetdir("dist/lib")
-    add_files("src/*.c")
-    add_files("src/ui/*.c")
-    add_files("src/ui/components/*.c")
-    add_defines("LCUI_EXPORTS")
-    add_includedirs("include", "../LCUI/include", "vendor/include")
-    on_load(function (target)
-        import("lib.detect.find_package")
-        target:add(find_package("LCUI", {linkdirs = "vendor/lib"}))
-    end)
+    add_links("LCUI")
+    set_basename("LCDesign")
 
 includes("demo")
