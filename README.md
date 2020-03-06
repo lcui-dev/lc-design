@@ -4,7 +4,15 @@
   </a>
 
   <h3 align="center">LCDesign</h3>
-
+  <p align="center">
+    <a class="https://github.com/lc-ui/lc-design/actions"><img src="https://github.com/lc-ui/lc-design/workflows/C%2FC%2B%2B%20CI/badge.svg" alt="GitHub Actions"></a>
+    <a class="https://travis-ci.org/lc-ui/lc-design"><img src="https://travis-ci.org/lc-ui/lc-design.svg?branch=develop" alt="Build Status"></a>
+    <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/github/license/lc-ui/lc-design.svg" alt="License"></a>
+    <a href="https://github.com/lc-ui/lc-design/releases"><img src="https://img.shields.io/github/release/lc-ui/lc-design/all.svg" alt="Github Release"></a>
+    <a href="https://github.com/lc-ui/lc-design/releases"><img src="https://img.shields.io/github/downloads/lc-ui/lc-design/total.svg" alt="Github All Releases"></a>
+    <img src="https://img.shields.io/github/repo-size/lc-ui/lc-design.svg" alt="Repo size">
+    <img src="https://img.shields.io/github/languages/code-size/lc-ui/lc-design.svg" alt="Code size">
+  </p>
   <p align="center">
     A UI component framework for building LCUI application.
     <br>
