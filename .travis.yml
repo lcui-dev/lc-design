@@ -1,0 +1,29 @@
+dist: bionic
+language: c
+compiler:
+  - gcc
+
+before_install:
+  - mkdir .tmp
+  - cd .tmp
+  - bash <(curl -fsSL https://raw.githubusercontent.com/tboox/xmake/master/scripts/get.sh)
+  - source ~/.xmake/profile
+  - wget https://github.com/lc-soft/LCUI/archive/develop.zip -O LCUI-develop.zip
+  - unzip LCUI-develop.zip
+  - rm LCUI-develop.zip
+  - cd LCUI-develop
+  - sh ./autogen.sh
+  - ./configure
+  - make
+  - sudo make install
+  - cd ../..
+  - rm -rf .tmp
+  - npm install
+  - pip install misaka pygments
+
+before_script:
+  - ./node_modules/.bin/commitlint-travis
+
+script:
+  - xmake config -o build/xmake
+  - npm run build

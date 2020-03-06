@@ -1,0 +1,33 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: install valgrind
+      run: |
+        sudo apt-get update --fix-missing
+        sudo apt install valgrind -yy
+    - name: install xmake
+      uses: xmake-io/github-action-setup-xmake@v1.0.1
+    - name: install LCUI
+      run: |
+        wget https://github.com/lc-soft/LCUI/archive/develop.zip -O LCUI-develop.zip
+        unzip LCUI-develop.zip
+        rm LCUI-develop.zip
+        cd LCUI-develop
+        sh ./autogen.sh
+        ./configure
+        make
+        sudo make install
+    - name: install python packages
+      run: pip install misaka pygments
+    - name: build
+      run: |
+        xmake config -o build/xmake
+        npm run build
