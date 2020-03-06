@@ -9,10 +9,6 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: install valgrind
-      run: |
-        sudo apt-get update --fix-missing
-        sudo apt install valgrind -yy
     - name: install xmake
       uses: xmake-io/github-action-setup-xmake@v1.0.1
     - name: install LCUI
@@ -25,8 +21,12 @@ jobs:
         ./configure
         make
         sudo make install
-    - name: install python packages
+    - name: install Python packages
       run: pip install misaka pygments
+    - name: install Node.js packages
+      run: npm install
+    - name: check commit message format
+      run: ./node_modules/.bin/commitlint-travis
     - name: build
       run: |
         xmake config -o build/xmake
