@@ -48,7 +48,7 @@ LCDesign (LC's Design) 是一个专为 [LCUI](https://github.com/lc-soft/LCUI) �
 ## 组件
 
 - General 通用
-  - [Button 按钮](docs/components/buttonss.md)
+  - [Button 按钮](docs/components/buttons.md)
   - [Icon 图标](docs/content/icons.md)
   - [Typography 排版](docs/content/typography.md)
     - h1, h2, h3, h4, h5, h6
