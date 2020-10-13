@@ -48,7 +48,7 @@ LCDesign (LC's Design) is a UI component framework for building [LCUI](https://g
 ## Components
 
 - General
-  - [Button](docs/components/buttonss.md)
+  - [Button](docs/components/buttons.md)
   - [Icon](docs/content/icons.md)
   - [Typography](docs/content/typography.md)
     - h1, h2, h3, h4, h5, h6
